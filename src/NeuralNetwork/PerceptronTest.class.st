@@ -4,6 +4,17 @@ Class {
 	#category : #NeuralNetwork
 }
 
+{ #category : #examples }
+PerceptronTest >> chapter02Example01SimpleNeuron [
+	<gtExample>
+	| p |
+	p := Neuron new.
+	p weights: #( 1 2 ).
+	p bias: -2.
+	p feed: #( 5 2 ).
+	^ p
+]
+
 { #category : #'as yet unclassified' }
 PerceptronTest >> digitalComparator: inputs [
     "Return an array of three elements"

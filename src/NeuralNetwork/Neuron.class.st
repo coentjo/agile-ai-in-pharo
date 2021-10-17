@@ -54,6 +54,16 @@ Neuron >> feed: inputs [
 	^ output    
 ]
 
+{ #category : #accessing }
+Neuron >> gtPrintFor: aView [
+	<gtView>
+	^ aView textEditor
+		title: 'Print';
+		priority: 1;
+		aptitude: BrGlamorousCodeEditorAptitude;
+		text: [ self printString asRopedText ]
+]
+
 { #category : #'as yet unclassified' }
 Neuron >> initialize [
 	super initialize.
@@ -83,6 +93,19 @@ Neuron >> numberOfWeights [
 Neuron >> output [
 	"Return the output value, previous computed when doing a feed:"
 	^ output
+]
+
+{ #category : #accessing }
+Neuron >> printString [
+	"Answer a String whose characters are a description of the receiver. 
+	If you want to print without a character limit, use fullPrintString."
+	| cr tab |
+	cr := Character cr asString.
+	tab := Character tab asString .
+	^ 'Neutron '
+		, cr , tab , 'bias: ', self bias printString 
+		, cr , tab , ' learningRate: ', self learningRate printString
+		, cr, tab , ' weights: ', self weights printString
 ]
 
 { #category : #'as yet unclassified' }
