@@ -15,7 +15,6 @@ The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://Apress/agile-ai-in-pharo/src';
-    onConflictUseLoaded;
     load.
 ```
 or (for this git-fork)
@@ -23,6 +22,7 @@ or (for this git-fork)
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://Apress/agile-ai-in-pharo/src';
+    onConflictUseLoaded;
     load.
 ```
 
