@@ -15,6 +15,7 @@ The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://Apress/agile-ai-in-pharo/src';
+    onConflictUseLoaded;
     load.
 ```
 
@@ -34,7 +35,15 @@ on every package:
 
 ![Load from git](img/GT.git.load.png)
 
+### You can (a) load the Lepiter files by executing:
 
+```Smalltalk
+LeDatabasesRegistry defaultLogicalDatabase properties
+    addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
+LeDatabasesRegistry default defaultLogicalDatabase reload.
+```
+
+### Or (b) Loading the Lepiter files manually
 
 Open Lepiter
 
