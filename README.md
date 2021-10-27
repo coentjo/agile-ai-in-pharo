@@ -31,7 +31,7 @@ or (for this git-fork)
 ```Smalltalk
 Metacello new
     baseline: 'AgileArtificialIntelligence';
-    repository: 'github://Apress/agile-ai-in-pharo/src';
+    repository: 'github://coentjo/agile-ai-in-pharo/src';
     onConflictUseLoaded;
     load.
 ```
