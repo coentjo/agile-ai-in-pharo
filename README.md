@@ -1,6 +1,12 @@
 # Apress Source Code
 
-This repository accompanies [*Agile Artificial Intelligence in Pharo*](https://www.apress.com/9781484253830) by Alexandre Bergel (Apress, 2020).
+The repository 
+[https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)
+accompanies [*Agile Artificial Intelligence in Pharo*](https://www.apress.com/9781484253830) by Alexandre Bergel (Apress, 2020). 
+
+This fork 
+[https://github.com/coentjo/agile-ai-in-pharo](https://github.com/coentjo/agile-ai-in-pharo) is a (start of a) port to use the scripts in GToolkit. 
+
 
 [comment]: #cover
 ![Cover image](img/9781484253830.jpg)
