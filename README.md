@@ -11,7 +11,11 @@ This fork
 [comment]: #cover
 ![Cover image](img/9781484253830.jpg)
 
+First there was the book: 
 The book provides a complete implementation of a number of complex algorithms. Download the files as a zip using the green button, or clone the repository to your machine using Git.
+
+But if you haven't seen it yet look at this film: 
+[https://tube.switch.ch/videos/v6uqRi7Lfm](https://tube.switch.ch/videos/v6uqRi7Lfm)
 
 ## How to load it in Pharo? (see below for Glamorous Toolkit)
 
