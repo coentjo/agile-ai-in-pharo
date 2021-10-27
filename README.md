@@ -18,6 +18,13 @@ Metacello new
     onConflictUseLoaded;
     load.
 ```
+or (for this git-fork)
+```Smalltalk
+Metacello new
+    baseline: 'AgileArtificialIntelligence';
+    repository: 'github://Apress/agile-ai-in-pharo/src';
+    load.
+```
 
 ## How to load it in Glamorous Toolkit?
 
