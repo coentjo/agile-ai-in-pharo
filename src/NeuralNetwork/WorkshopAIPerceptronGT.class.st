@@ -244,15 +244,26 @@ p feed: #(0 1).
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron06 [
-<gtExample>
-| g d |
-g := 'RTGrapher new'.
-d := 'RTData new'.
-d connectColor: Color blue.
-d points: (1 to: 100).
-d y: [ :x | (x / 3.14) sin  ].
-g add: d.
-g
+	<gtExample>
+	"started as copy of GtPlotterRawLineExamples>>content"
+
+	| aScaleY aScaleX vertices f xValues contentLine |
+	f := [ :x | (x / 3.14) sin ].
+	xValues := 1 to: 100.
+	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 100.
+	aScaleY := GtPlotterLinearScale new domainFrom: -1 to: 1.
+		vertices := xValues collect: [ :i | 
+		               (aScaleX map: i) @ (1 - (aScaleY map: (f  value: i))) ].
+	contentLine := BlElement new
+		geometry: (BlNormalizedPolyline vertices: vertices);
+		border: (BlBorder paint: Color orange width: 2);
+		outskirts: BlOutskirts centered;
+		constraintsDo: [ :c | 
+			c horizontal matchParent.
+			c vertical matchParent ].
+	^ BrFrame new
+		  matchParent;
+		  addChildren: { contentLine }
 ]
 
 { #category : #example }
