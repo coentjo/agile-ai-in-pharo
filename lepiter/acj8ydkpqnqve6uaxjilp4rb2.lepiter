@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:20:56.33633+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:22.681069+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron01}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron01}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -251,7 +251,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:22:01.216769+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:19.58266+02:00"
 					}
 				},
 				"uid" : {
@@ -261,7 +261,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron03}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron03}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -325,7 +325,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:22:25.159999+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:15.822898+02:00"
 					}
 				},
 				"uid" : {
@@ -335,7 +335,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron04}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron04}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -399,7 +399,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:23:01.164472+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:11.92424+02:00"
 					}
 				},
 				"uid" : {
@@ -409,7 +409,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron05}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron05}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -436,7 +436,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:23:09.508698+02:00"
+						"dateAndTimeString" : "2021-10-28T20:01:33.575855+02:00"
 					}
 				},
 				"uid" : {
@@ -446,7 +446,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "example6"
+				"string" : "example6: displaying a sine wave using the block [ :x | (x / 3.14) sin ]. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -473,7 +473,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:23:32.059431+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:06.980842+02:00"
 					}
 				},
 				"uid" : {
@@ -483,7 +483,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron06}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron06}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -547,7 +547,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:24:05.945748+02:00"
+						"dateAndTimeString" : "2021-10-28T19:51:32.725394+02:00"
 					}
 				},
 				"uid" : {
@@ -557,7 +557,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron07}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron07}}"
 			}
 		]
 	},

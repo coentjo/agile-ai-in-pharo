@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T17:57:24.961954+02:00"
+						"dateAndTimeString" : "2021-10-28T19:50:46.875815+02:00"
 					}
 				},
 				"uid" : {
@@ -79,7 +79,7 @@
 				"string" : "[[01 Perceptron]]"
 			},
 			{
-				"__type" : "pictureSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:41:21.772218+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:25.920588+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,14 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:43:15.709105+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:27.865036+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "TzuKe+2KDQCqEGdCDS1vJA=="
+					"uidString" : "1dzJIs+LDQCzCgMfAa9F9w=="
 				},
-				"url" : "attachments/25ngvq19h53k4jqhaa5z4og3r/AI-Bergel-1-neuron.png"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[02 Neuron]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:44:51.984603+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:32.123099+02:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T15:03:02.960083+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:33.756363+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "xk5qseyKDQCHq6E1DZayog=="
+					"uidString" : "mYO3I8+LDQCzDMbmAa9F9w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Perceptron"
+				"string" : "[[03 Neural Networks]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T19:29:07.636562+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:44.474713+02:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-18T08:55:54.782376+02:00"
+						"dateAndTimeString" : "2021-10-28T19:54:44.474713+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "BPGWgPGKDQCiEcJmCL9BEw=="
+					"uidString" : "fb+FJM+LDQCzDgxdAa9F9w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "First an Example you can run: "
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
