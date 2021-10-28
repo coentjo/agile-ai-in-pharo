@@ -25,5 +25,13 @@ BaselineOfAgileArtificialIntelligence >> baseline: spec [
 			spec package: 'MiniMario' with: [ spec requires: 'NEAT' ].
 			
 			spec group: 'Core' with: #('NeuralNetwork' 'Matrix' 'NeuralNetwork-Matrix' 'GeneticAlgorithm-Core' 'GeneticAlgorithm-Tests' 'Robot' 'Creature' 'NEAT' 'MiniMario')
-		]
+		]. 
+		
+spec for: #GToolkit do: [ 
+		spec package: 'NeuralNetwork-GToolkit' with: [ spec requires: #(ComputerWorld) ] ]
+]
+
+{ #category : #accessing }
+BaselineOfAgileArtificialIntelligence >> isGTImage [
+^ RPackageOrganizer default packageNames anySatisfy: [ :pn | pn beginsWith: 'GToolkit-']
 ]
