@@ -28,7 +28,7 @@ BaselineOfAgileArtificialIntelligence >> baseline: spec [
 		]. 
 		
 spec for: #GToolkit do: [ 
-		spec package: 'NeuralNetwork-GToolkit' with: [ spec requires: #(ComputerWorld) ] ]
+		spec package: 'NeuralNetwork-GToolkit' with: [ spec requires: #(NeuralNetwork-GToolkit) ] ]
 ]
 
 { #category : #accessing }
