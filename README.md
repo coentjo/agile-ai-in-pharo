@@ -21,13 +21,17 @@ But if you haven't seen it yet look at this film:
 
 The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 8 and Pharo 9. Open a playground and execute the instructions:
 
+Original:
+
 ```Smalltalk
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://Apress/agile-ai-in-pharo/src';
     load.
 ```
-or (for this git-fork)
+
+or (for this git-fork):
+
 ```Smalltalk
 Metacello new
     baseline: 'AgileArtificialIntelligence';
@@ -35,8 +39,9 @@ Metacello new
     onConflictUseLoaded;
     load.
 ```
+Which works in GT also. 
 
-## How to load it in Glamorous Toolkit?
+## How to load the code manually in Glamorous Toolkit?
 
 Download GT from [https://gtoolkit.com/](https://gtoolkit.com/) and open it.
 
