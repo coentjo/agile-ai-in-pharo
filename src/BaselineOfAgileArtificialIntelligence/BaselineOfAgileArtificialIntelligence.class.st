@@ -32,6 +32,13 @@ spec for: #GToolkit do: [
 ]
 
 { #category : #accessing }
+BaselineOfAgileArtificialIntelligence >> customProjectAttributes [
+	^ self isGTImage
+			ifFalse: [ #(notGToolkit) ]
+			ifTrue: [ #(GToolkit) ]
+]
+
+{ #category : #accessing }
 BaselineOfAgileArtificialIntelligence >> isGTImage [
 ^ RPackageOrganizer default packageNames anySatisfy: [ :pn | pn beginsWith: 'GToolkit-']
 ]
