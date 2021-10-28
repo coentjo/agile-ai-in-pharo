@@ -30,7 +30,7 @@ Metacello new
     load.
 ```
 
-or (for this git-fork):
+Load this fork programmatically in Pharo or GT:
 
 ```Smalltalk
 Metacello new
@@ -39,9 +39,16 @@ Metacello new
     onConflictUseLoaded;
     load.
 ```
-Which works in GT also. 
 
-## How to load the code manually in Glamorous Toolkit?
+and then in GT you can (a) load the Lepiter files by executing:
+
+```Smalltalk
+    LeDatabasesRegistry defaultLogicalDatabase properties
+    addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
+    LeDatabasesRegistry default defaultLogicalDatabase reload.
+```
+
+### Alternative: How to load the code manually in Glamorous Toolkit?
 
 Download GT from [https://gtoolkit.com/](https://gtoolkit.com/) and open it.
 
@@ -57,17 +64,10 @@ on every package:
 
 ![Load from git](img/GT.git.load.png)
 
-### You can (a) load the Lepiter files by executing:
 
-```Smalltalk
-LeDatabasesRegistry defaultLogicalDatabase properties
-    addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
-LeDatabasesRegistry default defaultLogicalDatabase reload.
-```
+### Alternative: Loading the Lepiter files manually in GT
 
-### Or (b) Loading the Lepiter files manually
-
-Open Lepiter
+Open Lepiter: 
 
 ![lepiter](img/GT.lepiter.png)
 
