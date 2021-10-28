@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T15:08:32.879236+02:00"
+						"dateAndTimeString" : "2021-10-28T17:28:42.26106+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "WORK IN PROGRESS!"
+				"string" : "WORK IN PROGRESS! "
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:02:37.082666+02:00"
+						"dateAndTimeString" : "2021-10-28T17:41:36.831007+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,54 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:05:07.537422+02:00"
+						"dateAndTimeString" : "2021-10-28T17:57:24.961954+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "NL4/GuyKDQCblAAmDNgl2g=="
+					"uidString" : "9D8MQM2LDQCR9VOiBrlshQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtClass:WorkshopAI}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T12:57:20.399577+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T15:11:17.917724+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "EDYsB+yKDQCBf1vYDj349Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtClass:PerceptronTest}}"
+				"string" : "[[01 Perceptron]]"
 			},
 			{
 				"__type" : "pictureSnippet",
@@ -148,40 +111,6 @@
 					"uidString" : "TzuKe+2KDQCqEGdCDS1vJA=="
 				},
 				"url" : "attachments/25ngvq19h53k4jqhaa5z4og3r/AI-Bergel-1-neuron.png"
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:18:32.248092+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:46:11.08481+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aN/oKe2KDQCQEUjyA+wPpQ=="
-				},
-				"url" : "attachments/506kjcde5gn8pi87kzqm6e1a9/AI-Bergel-2-perceptron 1.png"
 			},
 			{
 				"__type" : "textSnippet",
@@ -256,43 +185,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "First an Example you can run: "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:58:50.365414+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T14:58:59.720883+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AQOjt+2KDQCy+3inBZ/G6g=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:PerceptronTest>>chapter02Example01SimpleNeuron}}"
 			},
 			{
 				"__type" : "textSnippet",
