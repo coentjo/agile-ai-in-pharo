@@ -183,13 +183,99 @@ g
 
 "
 Class {
-	#name : #WorkshopAIPerceptron,
+	#name : #WorkshopAIPerceptronGT,
 	#superclass : #Object,
 	#category : #'NeuralNetwork-NeuralNetwork'
 }
 
-{ #category : #accessing }
-WorkshopAIPerceptron >> example01 [
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 	<gtExample>
-	^ #(1 2 3) with: #(10 20 30) collect: [ :a :b | a + b ]
+	^ #(1 2 3) 
+		with: #(10 20 30) 
+		collect: [ :a :b | a + b ]
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron02 [
+	<gtExample>
+	| p |
+	p := Neuron new.
+	p weights: #(1 2).
+	p bias: -2.
+	p feed: #(5 2). 
+	^ p
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron03 [
+	<gtExample>
+	| p |
+	p := Neuron new.
+	p weights: #(-1 -1).
+	p bias: 2.
+	p feed: #(0 1).
+	^ p
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron04 [
+	<gtExample>
+	| p |
+	p := Neuron new.
+	p weights: #(-1 -1).
+	p bias: 2.
+	p train: #(0 1) desiredOutput: 0.
+	p feed: #(0 1).
+	^ p
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron05 [
+<gtExample>
+| p |
+p := Neuron new.
+p weights: #(-1 -1).
+p bias: 2.
+10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
+p feed: #(0 1).
+^ p
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron06 [
+<gtExample>
+| g d |
+g := 'RTGrapher new'.
+d := 'RTData new'.
+d connectColor: Color blue.
+d points: (1 to: 100).
+d y: [ :x | (x / 3.14) sin  ].
+g add: d.
+g
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron07 [
+	<gtExample>
+| somePoints f g d |
+somePoints := OrderedCollection new.
+500 timesRepeat: [ 
+	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
+].
+
+f := [ :x | (-2 * x) - 3 ].
+
+"We use the Roassal Grapher engine to plot our points"
+g := 'RTGrapher new'.
+d := 'RTData new'.
+d dotShape 
+	color: [ :p | (p second > (f value: p first)) 
+					ifTrue: [ Color red trans ] 
+					ifFalse: [ Color blue trans ] ].
+d points: somePoints.
+d x: #first.
+d y: #second.
+g add: d.
+g
 ]
