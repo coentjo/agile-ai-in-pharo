@@ -160,7 +160,7 @@ g
 Class {
 	#name : #WorkshopAIPerceptronGT,
 	#superclass : #Object,
-	#category : #'NeuralNetwork-NeuralNetwork'
+	#category : #'NeuralNetwork-GToolkit'
 }
 
 { #category : #example }
