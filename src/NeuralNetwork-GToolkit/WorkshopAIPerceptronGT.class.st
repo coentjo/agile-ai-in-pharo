@@ -243,27 +243,27 @@ WorkshopAIPerceptronGT >> chapter01Perceptron06 [
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron07 [
+
 	<gtExample>
-| somePoints f g d |
-somePoints := OrderedCollection new.
-500 timesRepeat: [
-	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
-].
-
-f := [ :x | (-2 * x) - 3 ].
-
-"We use the Roassal Grapher engine to plot our points"
-g := RTGrapher new.
-d := RTData new.
-d dotShape
-	color: [ :p | (p second > (f value: p first))
-					ifTrue: [ Color red trans ]
-					ifFalse: [ Color blue trans ] ].
-d points: somePoints.
-d x: #first.
-d y: #second.
+	| g somePoints d f |
+	"g := RTGrapher new.
 g add: d.
-^ g view
+^ g"
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add: { 
+				(50 atRandom - 25).
+				(50 atRandom - 25) } ].
+	f := [ :x | -2 * x - 3 ].
+	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (f value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	^ d
 ]
 
 { #category : #accessing }
@@ -426,4 +426,27 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 		noDecimal;
 		title: 'Training iteration'.
 	g
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> getRTDataForSomePoints [
+
+	| somePoints d f |
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add: { 
+				(50 atRandom - 25).
+				(50 atRandom - 25) } ].
+
+	f := [ :x | -2 * x - 3 ].
+
+	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (f value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	^ d
 ]
