@@ -30,7 +30,11 @@ Metacello new
     load.
 ```
 
-Load this fork programmatically in Pharo or GT:
+## How to load it in Glamorous Toolkit (GT)?
+
+Download GT from [https://gtoolkit.com/](https://gtoolkit.com/). 
+
+In a Playground execute 
 
 ```Smalltalk
 Metacello new
@@ -40,29 +44,13 @@ Metacello new
     load.
 ```
 
-and then in GT you can (a) load the Lepiter files by executing:
+and then in GT you can load the Lepiter files by executing:
 
 ```Smalltalk
-    LeDatabasesRegistry defaultLogicalDatabase properties
-    addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
-    LeDatabasesRegistry default defaultLogicalDatabase reload.
+LeDatabasesRegistry defaultLogicalDatabase properties
+addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
+LeDatabasesRegistry default defaultLogicalDatabase reload.
 ```
-
-### Alternative: How to load the code manually in Glamorous Toolkit?
-
-Download GT from [https://gtoolkit.com/](https://gtoolkit.com/) and open it.
-
-![GT.git](img/GT.git.png)
-
-
-In GT open the git component and 'clone' (via the '+') the git repository
-[https://github.com/coentjo/agile-ai-in-pharo.git](https://github.com/coentjo/agile-ai-in-pharo.git)
-
-Double click on the repo and then in the next window click 'Load'
-on every package:
-
-
-![Load from git](img/GT.git.load.png)
 
 
 ### Alternative: Loading the Lepiter files manually in GT
@@ -81,10 +69,9 @@ if you cloned the git it's in a subdir of the GT-dir:
 .../pharo-local/iceberg/https:/agile-ai-in-pharo/lepiter
 ```
 
-and after that click on page 'Workshop AI':
+## Open page 'Workshop AI':
 
 ![WorkshopAI](img/GT.lepiter.WorkshopAI.png)
-
 
 
 
@@ -107,4 +94,5 @@ Release v1.0 corresponds to the code in the published book, without corrections 
 
 ## Contributions
 
-See the file [Contributing.md](Contributing.md) for more information on how you can contribute to this repository.
+See the file [Contributing.md](Contributing.md) for more information on how you can contribute to this repository. 
+
