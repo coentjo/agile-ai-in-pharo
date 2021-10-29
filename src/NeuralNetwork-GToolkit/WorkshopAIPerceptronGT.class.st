@@ -253,8 +253,8 @@ somePoints := OrderedCollection new.
 f := [ :x | (-2 * x) - 3 ].
 
 "We use the Roassal Grapher engine to plot our points"
-g := 'RTGrapher new'.
-d := 'RTData new'.
+g := RTGrapher new.
+d := RTData new.
 d dotShape
 	color: [ :p | (p second > (f value: p first))
 					ifTrue: [ Color red trans ]
@@ -263,7 +263,7 @@ d points: somePoints.
 d x: #first.
 d y: #second.
 g add: d.
-g
+^ g view
 ]
 
 { #category : #accessing }

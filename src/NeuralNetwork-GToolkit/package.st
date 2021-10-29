@@ -1,1 +1,1 @@
-Package { #name : #NeuralNetwork-GToolkit }
+Package { #name : #'NeuralNetwork-GToolkit' }
