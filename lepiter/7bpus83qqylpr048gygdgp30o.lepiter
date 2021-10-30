@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:20:50.319781+02:00"
+						"dateAndTimeString" : "2021-10-30T21:31:03.022346+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T17:28:42.26106+02:00"
+						"dateAndTimeString" : "2021-10-30T21:51:24.661254+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "xsNzW+yKDQCbuR6pDNgl2g=="
+					"uidString" : "xFpstviLDQC9hHglCpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "WORK IN PROGRESS! "
+				"string" : "# Used Sources on AI, and the inspi for this workshop: "
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T17:41:36.831007+02:00"
+						"dateAndTimeString" : "2021-10-30T21:31:26.984773+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:50:46.875815+02:00"
+						"dateAndTimeString" : "2021-10-30T21:33:10.064786+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "9D8MQM2LDQCR9VOiBrlshQ=="
+					"uidString" : "XsmbufiLDQC9hjotCpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[01 Perceptron]]"
+				"string" : "+ [Book: Agile Artificial Intelligence in Pharo, by Alexandre Bergel, 2020](https://link.springer.com/book/10.1007/978-1-4842-5384-7)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:25.920588+02:00"
+						"dateAndTimeString" : "2021-10-30T21:34:25.66312+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:27.865036+02:00"
+						"dateAndTimeString" : "2021-10-30T21:36:08.774812+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "1dzJIs+LDQCzCgMfAa9F9w=="
+					"uidString" : "eC22xPiLDQC9jch9CpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[02 Neuron]]"
+				"string" : "+ [Video: Introduction to Neural Networks, genetic Algorithm, and neuroevolution](https://tube.switch.ch/videos/v6uqRi7Lfm)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:32.123099+02:00"
+						"dateAndTimeString" : "2021-10-30T21:34:48.770201+02:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:33.756363+02:00"
+						"dateAndTimeString" : "2021-10-30T21:34:48.770201+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mYO3I8+LDQCzDMbmAa9F9w=="
+					"uidString" : "uL0WxviLDQC9jyt7CpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[03 Neural Networks]]"
+				"string" : "+ [GitHub repository: https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:30:16.850659+02:00"
+						"dateAndTimeString" : "2021-10-30T21:33:32.485961+02:00"
 					}
 				},
 				"editEmail" : {
@@ -177,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:30:22.537946+02:00"
+						"dateAndTimeString" : "2021-10-30T21:47:07.83951+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "QRfDtfiLDQC9gP+NCpG8ew=="
+					"uidString" : "dJ3ZvPiLDQC9iIHICpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Sources]]"
+				"string" : "# Sources on GToolkit, Pharo and Smalltalk"
 			},
 			{
 				"__type" : "textSnippet",
@@ -203,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:30:23.005806+02:00"
+						"dateAndTimeString" : "2021-10-30T21:48:41.405006+02:00"
 					}
 				},
 				"editEmail" : {
@@ -214,12 +214,123 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:30:23.005806+02:00"
+						"dateAndTimeString" : "2021-10-30T21:48:56.725054+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mog/tviLDQC9glrSCpG8ew=="
+					"uidString" : "d6mr9/iLDQC9njQuCpG8ew=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "+ [Pharo site](https://pharo.org/)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:49:12.576806+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:49:32.867706+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kap8+fiLDQC9otS6CpG8ew=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "+ [GToolkit site](https://gtoolkit.com/)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:49:50.558515+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:50:08.26135+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CLvY+viLDQC9pPowCpG8ew=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "+ [Books on Pharo](https://books.pharo.org/)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:50:40.923927+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-10-30T21:50:40.923927+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Q33X/viLDQC9phZZCpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -240,7 +351,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:44.474713+02:00"
+						"dateAndTimeString" : "2021-10-30T21:48:58.152069+02:00"
 					}
 				},
 				"editEmail" : {
@@ -251,12 +362,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:54:44.474713+02:00"
+						"dateAndTimeString" : "2021-10-30T21:48:58.152069+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "fb+FJM+LDQCzDgxdAa9F9w=="
+					"uidString" : "qVC3+PiLDQC9oOE3CpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -277,7 +388,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:44:57.913813+02:00"
+						"dateAndTimeString" : "2021-10-30T21:47:10.891773+02:00"
 					}
 				},
 				"editEmail" : {
@@ -288,12 +399,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-17T13:44:57.913813+02:00"
+						"dateAndTimeString" : "2021-10-30T21:47:13.706049+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "/ZHYseyKDQCHrL34DZayog=="
+					"uidString" : "oso88viLDQC9mjEFCpG8ew=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -310,7 +421,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-10-17T12:57:14.491316+02:00"
+			"dateAndTimeString" : "2021-10-30T21:30:25.903592+02:00"
 		}
 	},
 	"editEmail" : {
@@ -321,15 +432,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-10-17T13:19:30.036435+02:00"
+			"dateAndTimeString" : "2021-10-30T21:30:25.903592+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Workshop AI"
+		"title" : "Sources"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "d9342c07-ec8a-0d00-817e-bb990e3df8f5"
+		"uuid" : "88bf6bb6-f88b-0d00-bd83-a9270a91bc7b"
 	}
 }
