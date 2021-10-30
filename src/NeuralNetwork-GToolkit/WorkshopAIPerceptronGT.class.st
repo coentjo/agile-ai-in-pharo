@@ -160,6 +160,9 @@ g
 Class {
 	#name : #WorkshopAIPerceptronGT,
 	#superclass : #Object,
+	#instVars : [
+		'random'
+	],
 	#category : #'NeuralNetwork-GToolkit'
 }
 
@@ -175,9 +178,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 WorkshopAIPerceptronGT >> chapter01Perceptron02 [
 	<gtExample>
 	| p |
-	p := Neuron new.
-	p weights: #(1 2).
-	p bias: -2.
+	p := self newPerceptronWithWeights: #(1 2) andBias: -2.
 	p feed: #(5 2).
 	^ p
 ]
@@ -186,9 +187,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron02 [
 WorkshopAIPerceptronGT >> chapter01Perceptron03 [
 	<gtExample>
 	| p |
-	p := Neuron new.
-	p weights: #(-1 -1).
-	p bias: 2.
+	p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
 	p feed: #(0 1).
 	^ p
 ]
@@ -197,9 +196,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron03 [
 WorkshopAIPerceptronGT >> chapter01Perceptron04 [
 	<gtExample>
 	| p |
-	p := Neuron new.
-	p weights: #(-1 -1).
-	p bias: 2.
+	p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
 	p train: #(0 1) desiredOutput: 0.
 	p feed: #(0 1).
 	^ p
@@ -209,9 +206,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron04 [
 WorkshopAIPerceptronGT >> chapter01Perceptron05 [
 <gtExample>
 | p |
-p := Neuron new.
-p weights: #(-1 -1).
-p bias: 2.
+p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
 10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
 p feed: #(0 1).
 ^ p
@@ -235,7 +230,6 @@ WorkshopAIPerceptronGT >> chapter01Perceptron06 [
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron07 [
-
 	<gtExample>
 	| g somePoints d f |
 	"g := RTGrapher new.
@@ -370,62 +364,42 @@ WorkshopAIPerceptronGT >> chapter01Perceptron12 [
 WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 
 	<gtExample>
-	| aScaleY aScaleX vertices f xValues contentLine learningCurve g d |
+	| function aScaleY aScaleX verticesScaled xValues contentLine learningCurve g d range vertices perceptron |
 	learningCurve := OrderedCollection new.
-	f := [ :x | -2 * x - 3 ].
+	function := [ :x | -2 * x - 3 ].
+	range := 0 to: 2000 by: 10.
 
-	0 to: 2000 by: 10 do: [ :nbOfTrained | 
-		| r p anX anY trainedOutput nbOfGood nbOfTries realOutput |
-		r := Random new seed: 42.
-		p := Neuron new.
-		p weights: #( 1 2 ).
-		p bias: -1.
+	range first to: range last by: range increment do: [ :nbOfTrained | 
+		| anX anY trainedOutput nbOfGood nbOfTries realOutput |
+		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
 
 		nbOfTrained timesRepeat: [ 
-			anX := (r nextInteger: 50) - 25.
-			anY := (r nextInteger: 50) - 25.
-			trainedOutput := (f value: anX) >= anY
+			anX := self randomIntegerBetween: -24 and: 25.
+			anY := self randomIntegerBetween: -24 and: 25.
+			trainedOutput := (function value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
-			p train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
+			perceptron train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
 
 		nbOfGood := 0.
 		nbOfTries := 1000.
 		nbOfTries timesRepeat: [ 
-			anX := (r nextInteger: 50) - 25.
-			anY := (r nextInteger: 50) - 25.
-			realOutput := (f value: anX) >= anY
+			anX := self randomIntegerBetween: -24 and: 25.
+			anY := self randomIntegerBetween: -24 and: 25.
+			realOutput := (function value: anX) >= anY
 				              ifTrue: [ 1 ]
 				              ifFalse: [ 0 ].
-			((p feed: { 
+			((perceptron feed: { 
 					  anX.
 					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
 				nbOfGood := nbOfGood + 1 ] ].
-		learningCurve add: (
-				nbOfTrained @
-				(nbOfGood / nbOfTries) ) ].
-"
-	g := 'RTGrapher new'.
-	d := 'RTData new'.
-	d noDot.
-	d connectColor: Color blue.
-	d points: learningCurve.
-	d x: #x.
-	d y: #y.
-	g add: d.
-	g axisY title: 'Precision'.
-	g axisX
-		noDecimal;
-		title: 'Training iteration'.
-	g"
-	
+		learningCurve add: nbOfTrained @ (nbOfGood / nbOfTries) ].
 
-	xValues := 1 to: 2000.
+	vertices := range collect: [ :x | x @ (function value: x) ].
 	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 2000.
 	aScaleY := GtPlotterLinearScale new domainFrom: -1000 to: 1.
-	vertices := xValues collect: [ :i |
-		               (aScaleX map: i) @ (1 - (aScaleY map: (f  value: i))) ].
-	^ self plot: vertices 
+	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
+	^ self plot: verticesScaled
 ]
 
 { #category : #example }
@@ -451,6 +425,16 @@ WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 	^ d
 ]
 
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [ 
+	"in fact an instance of Neuron is created, not of Perceptron"
+	^ Neuron new
+		weights: anArray;
+		bias: anInteger;
+		yourself
+
+]
+
 { #category : #example }
 WorkshopAIPerceptronGT >> plot: vertices [
 
@@ -465,6 +449,18 @@ WorkshopAIPerceptronGT >> plot: vertices [
 	^ BrFrame new
 		  matchParent;
 		  addChildren: { contentLine }
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> random [
+	^ random 
+		ifNil: 
+			[random := Random new seed: 42]
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> randomIntegerBetween: lowerbound and: upperbound [
+	^ self random nextIntegerBetween: lowerbound and: upperbound 
 ]
 
 { #category : #example }
