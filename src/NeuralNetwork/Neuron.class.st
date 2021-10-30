@@ -102,7 +102,7 @@ Neuron >> printString [
 	| cr tab |
 	cr := Character cr asString.
 	tab := Character tab asString .
-	^ 'Neutron '
+	^ 'Neuron '
 		, cr , tab , 'bias: ', self bias printString 
 		, cr , tab , ' learningRate: ', self learningRate printString
 		, cr, tab , ' weights: ', self weights printString

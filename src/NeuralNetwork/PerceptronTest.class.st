@@ -240,8 +240,9 @@ PerceptronTest >> testNOT [
 	self assert: (p feed: #(0)) equals: 1.
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 PerceptronTest >> testOR [
+	<gtExample>
 	| p |
 	p := self newNeuron.
 	p weights: #(1 1).
@@ -251,6 +252,7 @@ PerceptronTest >> testOR [
 	self assert: (p feed: #(0 1)) equals: 1.
 	self assert: (p feed: #(1 0)) equals: 1.
 	self assert: (p feed: #(1 1)) equals: 1.
+	^ p
 ]
 
 { #category : #'as yet unclassified' }

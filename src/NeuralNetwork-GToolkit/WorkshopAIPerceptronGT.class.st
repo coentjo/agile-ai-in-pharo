@@ -427,11 +427,18 @@ WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [ 
-	"in fact an instance of Neuron is created, not of Perceptron"
-	^ Neuron new
+	"in fact an instance of Neuron is created, not of Perceptron, but because of the 'step' it will behave like a Perceptron."
+	^ Neuron new step
 		weights: anArray;
 		bias: anInteger;
 		yourself
+
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> perceptronForANDGate [
+	<gtExample>
+	^ self newPerceptronWithWeights: #(1 1) andBias: -1.5 .
 
 ]
 
@@ -468,4 +475,17 @@ WorkshopAIPerceptronGT >> scale: vertices inX: aScaleX inY: aScaleY [
 
 	^ vertices collect: [ :p | 
 		  (aScaleX map: p x) @ (1 - (aScaleY map: p y)) ]
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> testANDGate [
+	<gtExample>
+	| p |
+	p := self perceptronForANDGate.
+	
+	self assert: (p feed: #(0 0)) equals: 0.
+	self assert: (p feed: #(0 1)) equals: 0.
+	self assert: (p feed: #(1 0)) equals: 0.
+	self assert: (p feed: #(1 1)) equals: 1.
+	^ p
 ]
