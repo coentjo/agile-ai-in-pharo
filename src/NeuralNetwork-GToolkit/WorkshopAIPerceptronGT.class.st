@@ -219,26 +219,18 @@ p feed: #(0 1).
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron06 [
-	<gtExample>
+
 	"started as copy of GtPlotterRawLineExamples>>content"
 
-	| aScaleY aScaleX vertices f xValues contentLine |
-	f := [ :x | (x / 3.14) sin ].
-	xValues := 1 to: 100.
-	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 100.
+	<gtExample>
+	| aScaleY aScaleX vertices xValues verticesScaled range function |
+	function := [ :x | (x / 3.14) sin ].
+	range := (1 to: 100).
+	vertices := range collect: [ :x | x @ (function value: x) ].
+	aScaleX := GtPlotterLinearScale new domainFrom: range first to: range last.
 	aScaleY := GtPlotterLinearScale new domainFrom: -1 to: 1.
-		vertices := xValues collect: [ :i |
-		               (aScaleX map: i) @ (1 - (aScaleY map: (f  value: i))) ].
-	contentLine := BlElement new
-		geometry: (BlNormalizedPolyline vertices: vertices);
-		border: (BlBorder paint: Color orange width: 2);
-		outskirts: BlOutskirts centered;
-		constraintsDo: [ :c |
-			c horizontal matchParent.
-			c vertical matchParent ].
-	^ BrFrame new
-		  matchParent;
-		  addChildren: { contentLine }
+	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
+	^ self plot: verticesScaled
 ]
 
 { #category : #example }
@@ -378,20 +370,20 @@ WorkshopAIPerceptronGT >> chapter01Perceptron12 [
 WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 
 	<gtExample>
-	| learningCurve f g d |
+	| aScaleY aScaleX vertices f xValues contentLine learningCurve g d |
 	learningCurve := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
 
-	0 to: 2000 by: 10 do: [ :nbOfTrained |
+	0 to: 2000 by: 10 do: [ :nbOfTrained | 
 		| r p anX anY trainedOutput nbOfGood nbOfTries realOutput |
 		r := Random new seed: 42.
 		p := Neuron new.
 		p weights: #( 1 2 ).
 		p bias: -1.
 
-		nbOfTrained timesRepeat: [
-			anX := (r nextInt: 50) - 25.
-			anY := (r nextInt: 50) - 25.
+		nbOfTrained timesRepeat: [ 
+			anX := (r nextInteger: 50) - 25.
+			anY := (r nextInteger: 50) - 25.
 			trainedOutput := (f value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
@@ -399,33 +391,41 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 
 		nbOfGood := 0.
 		nbOfTries := 1000.
-		nbOfTries timesRepeat: [
+		nbOfTries timesRepeat: [ 
 			anX := (r nextInteger: 50) - 25.
 			anY := (r nextInteger: 50) - 25.
 			realOutput := (f value: anX) >= anY
 				              ifTrue: [ 1 ]
 				              ifFalse: [ 0 ].
-			((p feed: {
+			((p feed: { 
 					  anX.
-					  anY }) - realOutput) abs < 0.2 ifTrue: [
+					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
 				nbOfGood := nbOfGood + 1 ] ].
-		learningCurve add: {
-				nbOfTrained.
-				(nbOfGood / nbOfTries) } ].
-
+		learningCurve add: (
+				nbOfTrained @
+				(nbOfGood / nbOfTries) ) ].
+"
 	g := 'RTGrapher new'.
 	d := 'RTData new'.
 	d noDot.
 	d connectColor: Color blue.
 	d points: learningCurve.
-	d x: #first.
-	d y: #second.
+	d x: #x.
+	d y: #y.
 	g add: d.
 	g axisY title: 'Precision'.
 	g axisX
 		noDecimal;
 		title: 'Training iteration'.
-	g
+	g"
+	
+
+	xValues := 1 to: 2000.
+	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 2000.
+	aScaleY := GtPlotterLinearScale new domainFrom: -1000 to: 1.
+	vertices := xValues collect: [ :i |
+		               (aScaleX map: i) @ (1 - (aScaleY map: (f  value: i))) ].
+	^ self plot: vertices 
 ]
 
 { #category : #example }
@@ -449,4 +449,27 @@ WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 	d x: #first.
 	d y: #second.
 	^ d
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> plot: vertices [
+
+	| contentLine |
+	contentLine := BlElement new
+		               geometry: (BlNormalizedPolyline vertices: vertices);
+		               border: (BlBorder paint: Color orange width: 2);
+		               outskirts: BlOutskirts centered;
+		               constraintsDo: [ :c | 
+			               c horizontal matchParent.
+			               c vertical matchParent ].
+	^ BrFrame new
+		  matchParent;
+		  addChildren: { contentLine }
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> scale: vertices inX: aScaleX inY: aScaleY [
+
+	^ vertices collect: [ :p | 
+		  (aScaleX map: p x) @ (1 - (aScaleY map: p y)) ]
 ]
