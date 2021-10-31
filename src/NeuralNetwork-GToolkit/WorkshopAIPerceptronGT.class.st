@@ -166,6 +166,12 @@ Class {
 	#category : #'NeuralNetwork-GToolkit'
 }
 
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> aRandomNumber [
+
+	^ 50 atRandom - 25
+]
+
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 	<gtExample>
@@ -214,10 +220,8 @@ p feed: #(0 1).
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron06 [
-
-	"started as copy of GtPlotterRawLineExamples>>content"
-
 	<gtExample>
+	"started as copy of GtPlotterRawLineExamples>>content"
 	| aScaleY aScaleX vertices xValues verticesScaled range function |
 	function := [ :x | (x / 3.14) sin ].
 	range := (1 to: 100).
@@ -231,16 +235,41 @@ WorkshopAIPerceptronGT >> chapter01Perceptron06 [
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron07 [
 	<gtExample>
-	| g somePoints d f |
-	"g := RTGrapher new.
-g add: d.
-^ g"
+	| g somePoints d function aScaleX aScaleY |
+	function := [ :x | -2 * x - 3 ].
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add:  
+				self aRandomNumber @ self aRandomNumber ].
+	aScaleX := GtPlotterLinearScale new domainFrom: -25 to: 25.
+	aScaleY := GtPlotterLinearScale new domainFrom: -25 to: 25 .
+"	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (function value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	^ d
+"
+	^ self plot: somePoints
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron08 [
+
+	<gtExample>
+	| somePoints f g d d2 |
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add: { 
-				(50 atRandom - 25).
-				(50 atRandom - 25) } ].
+				self aRandomNumber.
+				self aRandomNumber } ].
+
 	f := [ :x | -2 * x - 3 ].
+
+	g := RTGrapher new.
 	d := RTData new.
 	d dotShape color: [ :p | 
 		p second > (f value: p first)
@@ -249,40 +278,17 @@ g add: d.
 	d points: somePoints.
 	d x: #first.
 	d y: #second.
-	^ d
-]
+	g add: d.
 
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> chapter01Perceptron08 [
-	<gtExample>
-| somePoints f g d d2 |
-	somePoints := OrderedCollection new.
-500 timesRepeat: [
-	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
-].
-
-f := [ :x | (-2 * x) - 3 ].
-
-g := 'RTGrapher new'.
-d := 'RTData new'.
-d dotShape
-	color: [ :p | (p second > (f value: p first))
-					ifTrue: [ Color red trans ]
-					ifFalse: [ Color blue trans ] ].
-d points: somePoints.
-d x: #first.
-d y: #second.
-g add: d.
-
-"Added code below"
-d2 := 'RTData new'.
-d2 noDot.
-d2 connectColor: Color red.
-d2 points: (-15 to: 15 by: 0.1).
-d2 y: f.
-d2 x: #yourself.
-g add: d2.
-g
+	"Added code below"
+	d2 := RTData new.
+	d2 noDot.
+	d2 connectColor: Color red.
+	d2 points: (-15 to: 15 by: 0.1).
+	d2 y: f.
+	d2 x: #yourself.
+	g add: d2.
+	g
 ]
 
 { #category : #accessing }
@@ -316,8 +322,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 				((r nextInteger: 50) - 25).
 				((r nextInteger: 50) - 25) } ].
 
-	g := 'RTGrapher new'.
-	d := 'RTData new'.
+	g := RTGrapher new.
+	d := RTData new.
 	d dotShape color: [ :point |
 		(p feed: point) > 0.5
 			ifTrue: [ Color red trans ]
@@ -327,7 +333,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	d y: #second.
 	g add: d.
 
-	d2 := 'RTData new'.
+	d2 := RTData new.
 	d2 noDot.
 	d2 connectColor: Color red.
 	d2 points: (-15 to: 15 by: 0.1).
@@ -374,8 +380,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
 
 		nbOfTrained timesRepeat: [ 
-			anX := self randomIntegerBetween: -24 and: 25.
-			anY := self randomIntegerBetween: -24 and: 25.
+			anX := self aRandomNumber.
+			anY := self aRandomNumber.
 			trainedOutput := (function value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
