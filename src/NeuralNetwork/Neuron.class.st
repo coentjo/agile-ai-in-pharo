@@ -67,6 +67,7 @@ Neuron >> gtPrintFor: aView [
 { #category : #accessing }
 Neuron >> gtVisual: aView [
 	<gtView>
+	| weightsContainer |
 	^ aView explicit 
 		title: 'Visual' translated;
 		priority: 4;
@@ -75,8 +76,7 @@ Neuron >> gtVisual: aView [
 			details := String streamContents: [:aStream |
 				aStream 
 					nextPutAll: 'bias: ', self bias printString; cr;
-					nextPutAll: 'learningRate: ', self learningRate printString; cr;
-					nextPutAll: ' weights: ', self weights printString; cr.
+					nextPutAll: 'learningRate: ', self learningRate printString; cr
 ].
 			
 			container := BlElement new
@@ -87,7 +87,12 @@ Neuron >> gtVisual: aView [
 				constraintsDo: [ :c | 
 					c horizontal fitContent.
 					c vertical fitContent].
-			
+			weightsContainer := BrEditor new
+				aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
+				text: self weightsAsString;
+				constraintsDo: [ :c | 
+					c horizontal matchParent.
+					c vertical matchParent ].
 			nameTextContainer := BlTextElement new
 				constraintsDo: [ :c | 
 					c horizontal matchParent ];
@@ -109,6 +114,7 @@ Neuron >> gtVisual: aView [
 					c vertical matchParent].
 			verticalContainer addChild: nameTextContainer.
 			verticalContainer addChild: detailsTextContainer.
+			container addChild: weightsContainer.
 			container addChild: verticalContainer.
 			container ].
 ]
@@ -198,4 +204,14 @@ Neuron >> weights: someWeightsAsNumbers [
 	"Set the weights of the neuron. 
 	 Takes a collection of numbers as argument."
 	weights := someWeightsAsNumbers asOrderedCollection
+]
+
+{ #category : #accessing }
+Neuron >> weightsAsString [
+	^ String streamContents: [:aStream |
+		aStream cr;cr;cr.
+		self weights 
+			do: [ :aWeight | 
+				aStream nextPutAll: '--- ', aWeight asString,' -->'; cr ]
+			separatedBy: [ aStream cr ] ].
 ]
