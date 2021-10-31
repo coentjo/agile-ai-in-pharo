@@ -46,12 +46,21 @@ Neuron >> delta [
 	^ delta
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Neuron >> feed: inputs [
 	| z |
 	z := (inputs with: weights collect: [ :x :w | x * w ]) sum + bias.
 	output := activationFunction eval: z.
-	^ output    
+	^ output
+]
+
+{ #category : #accessing }
+Neuron >> fire: inputs [
+	<gtExample>
+	^ FiredNeuronShot
+		input: inputs
+		neuron: self
+		output: (self feed: inputs)
 ]
 
 { #category : #accessing }
@@ -67,7 +76,7 @@ Neuron >> gtPrintFor: aView [
 { #category : #accessing }
 Neuron >> gtVisual: aView [
 	<gtView>
-	| weightsContainer |
+	| weightsContainer inputsContainer |
 	^ aView explicit 
 		title: 'Visual' translated;
 		priority: 4;
