@@ -13,3 +13,8 @@ SigmoidAF >> derivative: output [
 SigmoidAF >> eval: z [
 	^ 1 / (1 + z negated exp)
 ]
+
+{ #category : #accessing }
+SigmoidAF >> sayType [
+	^ 'Neuron'
+]

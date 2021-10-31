@@ -249,8 +249,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron07 [
 			ifTrue: [ Color red trans ]
 			ifFalse: [ Color blue trans ] ].
 	d points: somePoints.
-	d x: #first.
-	d y: #second.
+	d x: #x.
+	d y: #y.
 	^ d
 "
 	^ self plot: somePoints

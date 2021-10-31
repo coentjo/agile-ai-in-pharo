@@ -13,3 +13,8 @@ StepAF >> derivative: output [
 StepAF >> eval: z [
 	^ (z > 0) ifTrue: [ 1 ] ifFalse: [ 0 ]
 ]
+
+{ #category : #accessing }
+StepAF >> sayType [
+	^ 'Perceptron'
+]
