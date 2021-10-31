@@ -1133,7 +1133,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T22:52:21.865755+02:00"
+						"dateAndTimeString" : "2021-10-31T09:23:18.949828+01:00"
 					}
 				},
 				"uid" : {
@@ -1143,7 +1143,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Well, programmers like to test automatically, so we write a method that checks the one before: "
+				"string" : "Well, programmers like to test automatically, so here you see a method that checks the one before, by first calling it and the"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1429,7 +1429,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T23:11:34.233445+02:00"
+						"dateAndTimeString" : "2021-10-31T09:15:48.104955+01:00"
 					}
 				},
 				"uid" : {
@@ -1439,7 +1439,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The same way we can tell a Perceptron to behave like an OR gate. See the code below: you can check the corresponding tests:  "
+				"string" : "The same way we can tell a Perceptron to behave like an OR gate. See the code below: you can check the corresponding tests, first by reading them, think what they do, then running the method:  "
 			},
 			{
 				"__type" : "textSnippet",
@@ -1503,7 +1503,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T23:13:47.652626+02:00"
+						"dateAndTimeString" : "2021-10-31T14:10:35.502496+01:00"
 					}
 				},
 				"uid" : {
@@ -1513,7 +1513,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Well, in the class Perceptron you can find more methods to create perceptrons with different functionality ( go to tab 'Examples'): "
+				"string" : "Well, in the class Perceptron (click on the linked class name below) you can find more methods to create perceptrons with different functionality ( go to tab 'Examples' after clicking on the link below): "
 			},
 			{
 				"__type" : "textSnippet",
