@@ -26,12 +26,10 @@ FiredNeuronShot >> gtVisual: aView [
 		title: 'Visual' translated;
 		priority: 4;
 		stencil: [
-			|container verticalContainer detailsTextContainer  nameTextContainer details|
+			|container verticalContainer detailsTextContainer details|
 			details := String streamContents: [:aStream |
 				aStream 
-					nextPutAll: 'bias: ', 'self bias' printString; cr;
-					nextPutAll: 'learningRate: ', 'self learningRate' printString; cr
-].
+					nextPutAll: 'PERCEPTRON-visualisation'  ].
 			container := BlElement new
 				layout: BlLinearLayout horizontal;
 				background: Color white;
@@ -40,19 +38,12 @@ FiredNeuronShot >> gtVisual: aView [
 				constraintsDo: [ :c | 
 					c horizontal fitContent.
 					c vertical fitContent].
-			weightsContainer := BrEditor new
+			inputsContainer := BrEditor new
 				aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
-				text: 'self weightsAsString';
+				text: self inputsAsString;
 				constraintsDo: [ :c | 
 					c horizontal matchParent.
 					c vertical matchParent ].
-			nameTextContainer := BlTextElement new
-				constraintsDo: [ :c | 
-					c horizontal matchParent ];
-				margin: (BlInsets top: 5 right: 0 bottom: 20 left: 5);
-				text: (neuron sayType asRopedText glamorousRegularFont
-					fontSize: 30;
-					foreground: Color black).
 			detailsTextContainer := BrEditor new
 				aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
 				text: details;
@@ -65,9 +56,8 @@ FiredNeuronShot >> gtVisual: aView [
 				constraintsDo: [ :c | 
 					c horizontal matchParent.
 					c vertical matchParent].
-			verticalContainer addChild: nameTextContainer.
 			verticalContainer addChild: detailsTextContainer.
-			container addChild: weightsContainer.
+			container addChild: inputsContainer.
 			container addChild: verticalContainer.
 			container ].
 ]
