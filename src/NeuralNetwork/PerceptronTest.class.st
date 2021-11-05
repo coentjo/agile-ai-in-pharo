@@ -25,6 +25,55 @@ PerceptronTest >> digitalComparator: inputs [
 ]
 
 { #category : #accessing }
+PerceptronTest >> neutronMap [
+"Started as copy of >>newMapWithNodes"
+	<gtExample>
+	| aWardleyMap aNodeA aNodeB aNodeC anEdgeAtoB |
+
+	aNodeA := GtWardleyMapNodeModelExamples new newNode.
+	aNodeA coordinate: (0.25@0.75).
+	aNodeA color: Color gray.
+	aNodeA label: 'Node A'.
+
+	aNodeB := GtWardleyMapNodeModelExamples new newNode.
+	aNodeB coordinate: (0.5@0.25).
+	aNodeB color: (Color black alpha: 0.2).
+	aNodeB label: 'Node B'.
+
+	aNodeC := GtWardleyMapNodeModelExamples new newNode.
+	aNodeC coordinate: (0.75@0.5).
+	aNodeC color: Color red darker.
+	aNodeC label: 'Node C'.
+
+	anEdgeAtoB := GtWardleyMapEdgeModel new
+		fromNode: aNodeA;
+		toNode: aNodeB;
+		arrow: true;
+		width: 2.
+
+	aWardleyMap := self newMap.
+	aWardleyMap addNode: aNodeA.
+	aWardleyMap addNode: aNodeB.
+	aWardleyMap addNode: aNodeC.
+	aWardleyMap addEdge: anEdgeAtoB.
+	
+	self assert: aWardleyMap nodes size equals: 3.
+	self assert: aWardleyMap edges size equals: 1.
+
+	^ aWardleyMap
+]
+
+{ #category : #accessing }
+PerceptronTest >> newMap [
+	<gtExample>
+	| aWardleyMap |
+	
+	aWardleyMap := GtWardleyMapModel new.
+	self assert: aWardleyMap nodes isEmpty.
+	^ aWardleyMap
+]
+
+{ #category : #accessing }
 PerceptronTest >> newNeuron [
 	<gtExample>
 	"Return a new neuron with the step activation function"

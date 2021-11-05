@@ -482,6 +482,36 @@ WorkshopAIPerceptronGT >> scale: vertices inX: aScaleX inY: aScaleY [
 		  (aScaleX map: p x) @ (1 - (aScaleY map: p y)) ]
 ]
 
+{ #category : #slides }
+WorkshopAIPerceptronGT >> slidePerceptron01For: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: 11;
+		titleWithFormat: ('Perceptron Slideshow' asRopedText
+			fontSize: 70;
+			glamorousRegularFont).
+]
+
+{ #category : #slides }
+WorkshopAIPerceptronGT >> slidePerceptron02For: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: 12;
+		titleWithFormat: ('Perceptron Slideshow' asRopedText
+			fontSize: 70;
+			glamorousRegularFont).
+]
+
+{ #category : #slides }
+WorkshopAIPerceptronGT >> slidePerceptron03For: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: 13;
+		titleWithFormat: ('Perceptron Slideshow' asRopedText
+			fontSize: 70;
+			glamorousRegularFont).
+]
+
 { #category : #accessing }
 WorkshopAIPerceptronGT >> testANDGate [
 	<gtExample>
@@ -493,4 +523,14 @@ WorkshopAIPerceptronGT >> testANDGate [
 	self assert: (p feed: #(1 0)) equals: 0.
 	self assert: (p feed: #(1 1)) equals: 1.
 	^ p
+]
+
+{ #category : #slides }
+WorkshopAIPerceptronGT >> titleSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide title
+		priority: 1;
+		titleWithFormat: ('Perceptron Slideshow' asRopedText
+			fontSize: 70;
+			glamorousRegularFont).
 ]
