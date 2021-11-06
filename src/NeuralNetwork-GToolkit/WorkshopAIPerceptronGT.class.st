@@ -185,7 +185,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron02 [
 	<gtExample>
 	| p |
 	p := self newPerceptronWithWeights: #(1 2) andBias: -2.
-	^ p fire: #(5 2)
+	p feed: #(5 2).
+	^ p
 ]
 
 { #category : #example }

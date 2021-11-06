@@ -13,3 +13,8 @@ ActivationFunction >> derivative: output [
 ActivationFunction >> eval: z [
 	^ self subclassResponsibility
 ]
+
+{ #category : #accessing }
+ActivationFunction >> sayType [
+	self subclassResponsibility
+]

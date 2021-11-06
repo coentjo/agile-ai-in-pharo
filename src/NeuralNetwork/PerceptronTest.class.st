@@ -143,7 +143,8 @@ PerceptronTest >> testOR [
 	self assert: (p feed: #(0 1)) equals: 1.
 	self assert: (p feed: #(1 0)) equals: 1.
 	self assert: (p feed: #(1 1)) equals: 1.
-	^ p fire: #(0 0)
+	p feed: #(0 0).
+	^ p
 
 ]
 
