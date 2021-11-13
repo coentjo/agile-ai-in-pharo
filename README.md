@@ -24,7 +24,7 @@ But if you haven't seen it yet look at this film:
 
 The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 8 and Pharo 9. Open a playground and execute the instructions:
 
-Original git repo (for Pharo):
+## Original git repo (for Pharo):
 
 ```Smalltalk
 Metacello new
