@@ -76,10 +76,10 @@ Neuron >> gtPrintFor: aView [
 { #category : #accessing }
 Neuron >> gtVisual2: aView [
 	<gtView>
-	
 	|  aWardleyMap inp1 inp2 neuron out edge1 edge2 edge3 central xRow1 xRow2 xRow3  |
 	"Started as copy of >>newMapWithNodes"
 	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
+
 	
 	xRow1 := 0.2 .
 	xRow2 := 0.5 .

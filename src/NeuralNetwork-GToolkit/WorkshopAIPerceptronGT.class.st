@@ -214,8 +214,9 @@ WorkshopAIPerceptronGT >> chapter01Perceptron05 [
 | p |
 p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
 10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
-p feed: #(0 1).
-^ p
+"p feed: #(0 1)."
+^ p fire: #(0 1)
+
 ]
 
 { #category : #example }
