@@ -241,6 +241,19 @@ WorkshopAIPerceptronGT >> chapter01Perceptron06 [
 	^ self plot: verticesScaled
 ]
 
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron06b [
+	<gtExample>
+	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d points: (1 to: 100).
+	d y: [ :x | (x / 3.14) sin  ].
+	g add: d.
+	^ self showGraphInMorph: g
+]
+
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron07 [
 	<gtExample>
@@ -263,6 +276,33 @@ WorkshopAIPerceptronGT >> chapter01Perceptron07 [
 	^ d
 "
 	^ self plot: somePoints
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01Perceptron07b [
+
+	<gtExample>
+	| somePoints f g d |
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add: { 
+				(50 atRandom - 25).
+				(50 atRandom - 25) } ].
+
+	f := [ :x | -2 * x - 3 ].
+
+	"We use the Roassal Grapher engine to plot our points"
+	g := RTGrapher new.
+	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (f value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	g add: d.
+	^ self showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -297,7 +337,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron08 [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^GTInspector openOn: g
+	^ self showGraphInMorph:  g
 ]
 
 { #category : #accessing }
@@ -490,6 +530,13 @@ WorkshopAIPerceptronGT >> scale: vertices inX: aScaleX inY: aScaleY [
 
 	^ vertices collect: [ :p | 
 		  (aScaleX map: p x) @ (1 - (aScaleY map: p y)) ]
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> showGraphInMorph: grapher [
+	"Probably deprecated on all sides ...  :-(   
+	 but does the job for this moment... "
+	^ GTInspector openOn: grapher
 ]
 
 { #category : #slides }
