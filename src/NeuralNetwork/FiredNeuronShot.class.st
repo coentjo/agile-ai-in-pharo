@@ -77,8 +77,10 @@ FiredNeuronShot >> inputsContainer [
 	cr := Character cr asString.
 	^ BrEditor new
 		  aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
-		  text: cr, 'inputs:' , cr , cr, self inputsAsString;
-		  matchParentHorizontalAndVertical
+		  text: cr , 'inputs:' , cr , cr , self inputsAsString;
+		  constraintsDo: [ :c | 
+			  c horizontal matchParent.
+			  c vertical matchParent ]
 ]
 
 { #category : #accessing }

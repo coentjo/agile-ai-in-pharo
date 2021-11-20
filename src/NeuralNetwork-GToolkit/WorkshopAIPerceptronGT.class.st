@@ -297,7 +297,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron08 [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	g
+	^GTInspector openOn: g
 ]
 
 { #category : #accessing }
