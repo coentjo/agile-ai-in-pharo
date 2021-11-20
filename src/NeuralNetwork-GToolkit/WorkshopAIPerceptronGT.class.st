@@ -351,7 +351,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	r := Random new seed: 42.
 
 	"We are training the perceptron"
-	500 timesRepeat: [
+	50 timesRepeat: [
 		| anX anY designedOutput |
 		anX := (r nextInteger: 50) - 25.
 		anY := (r nextInteger: 50) - 25.
@@ -366,7 +366,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 
 	"Test points"
 	testPoints := OrderedCollection new.
-	2000 timesRepeat: [
+	20 timesRepeat: [
 		testPoints add: {
 				((r nextInteger: 50) - 25).
 				((r nextInteger: 50) - 25) } ].
@@ -389,7 +389,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^ g
+	^ self showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -455,6 +455,56 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13 [
 	aScaleY := GtPlotterLinearScale new domainFrom: -1000 to: 1.
 	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
 	^ self plot: verticesScaled
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron13b [
+
+	<gtExample>
+	| learningCurve f r p anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
+	learningCurve := OrderedCollection new.
+	f := [ :x | -2 * x - 3 ].
+	0 to: 20 by: 10 do: [ :nbOfTrained | 
+		r := Random new seed: 42.
+		p := Neuron new.
+		p weights: #( 1 2 ).
+		p bias: -1.
+		nbOfTrained timesRepeat: [ 
+			anX := (r nextInteger: 50) - 25.
+			anY := (r nextInteger: 50) - 25.
+			trainedOutput := (f value: anX) >= anY
+				                 ifTrue: [ 1 ]
+				                 ifFalse: [ 0 ].
+			p train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
+
+		nbOfGood := 0.
+		nbOfTries := 10.
+		nbOfTries timesRepeat: [ 
+			anX := (r nextInteger: 50) - 25.
+			anY := (r nextInteger: 50) - 25.
+			realOutput := (f value: anX) >= anY
+				              ifTrue: [ 1 ]
+				              ifFalse: [ 0 ].
+			((p feed: { 
+					  anX.
+					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
+				nbOfGood := nbOfGood + 1 ] ].
+		learningCurve add: { 
+				nbOfTrained.
+				(nbOfGood / nbOfTries) } ].
+	g := RTGrapher new.
+	d := RTData new.
+	d noDot.
+	d connectColor: Color blue.
+	d points: learningCurve.
+	d x: #first.
+	d y: #second.
+	g add: d.
+	g axisY title: 'Precision'.
+	g axisX
+		noDecimal;
+		title: 'Training iteration'.
+	^ self showGraphInMorph: g
 ]
 
 { #category : #example }
