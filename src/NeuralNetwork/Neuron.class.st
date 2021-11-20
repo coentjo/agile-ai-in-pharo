@@ -148,7 +148,7 @@ Neuron >> gtVisual2: aView [
 			 width: 1). ].
 
 	^ aView explicit
-		title: 'VisualW';
+		title: 'Visual';
 		priority: 2;
 		stencil: [
 			GtWardleyMapElement new
@@ -162,7 +162,7 @@ Neuron >> gtVisual: aView [
 	<gtView>
 	| inputsContainer |
 	^ aView explicit
-		  title: 'Visual' translated;
+		  title: 'Schematic' translated;
 		  priority: 4;
 		  stencil: [ self visualStencil ]
 ]

@@ -36,7 +36,7 @@ FiredNeuronShot >> gtVisual: aView [
 	<gtView>
 	| weightsContainer inputsContainer |
 	^ aView explicit
-		title: 'VisualW' translated;
+		title: 'Schematic' translated;
 		priority: 4;
 		stencil: [ 
 			BlElement new

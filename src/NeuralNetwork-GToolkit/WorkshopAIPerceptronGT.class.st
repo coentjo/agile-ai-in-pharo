@@ -532,7 +532,9 @@ WorkshopAIPerceptronGT >> testANDGate [
 	self assert: (p feed: #(0 1)) equals: 0.
 	self assert: (p feed: #(1 0)) equals: 0.
 	self assert: (p feed: #(1 1)) equals: 1.
-	^ p
+	
+	"Let's show one"
+	^ p fire: #(0 0)
 ]
 
 { #category : #slides }
