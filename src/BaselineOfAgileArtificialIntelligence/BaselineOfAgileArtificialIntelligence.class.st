@@ -4,6 +4,22 @@ Class {
 	#category : #BaselineOfAgileArtificialIntelligence
 }
 
+{ #category : #accessing }
+BaselineOfAgileArtificialIntelligence class >> loadLepiter [
+	| currentProperties |
+	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
+	currentProperties
+		addRegisteredDirectory: FileLocator imageDirectory
+			/ 'pharo-local'
+			/ 'iceberg'
+			/ 'coentjo'
+			/ 'agile-ai-in-pharo'
+			/ 'lepiter'.
+	LeDatabasesRegistry default defaultLogicalDatabase reload.
+	
+
+]
+
 { #category : #baselines }
 BaselineOfAgileArtificialIntelligence >> baseline: spec [
 	<baseline>

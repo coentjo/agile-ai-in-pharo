@@ -4,12 +4,14 @@ The repository
 [https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)
 accompanies [*Agile Artificial Intelligence in Pharo*](https://www.apress.com/9781484253830) by Alexandre Bergel (Apress, 2020). 
 
-This fork 
-[https://github.com/coentjo/agile-ai-in-pharo](https://github.com/coentjo/agile-ai-in-pharo) is a (start of a) port to use the scripts in GToolkit. 
-
 
 [comment]: #cover
 ![Cover image](img/9781484253830.jpg)
+
+
+This fork 
+[https://github.com/coentjo/agile-ai-in-pharo](https://github.com/coentjo/agile-ai-in-pharo) is a (start of a) port to use the scripts in GToolkit. 
+
 
 First there was the book: 
 The book provides a complete implementation of a number of complex algorithms. Download the files as a zip using the green button, or clone the repository to your machine using Git.
@@ -17,11 +19,12 @@ The book provides a complete implementation of a number of complex algorithms. D
 But if you haven't seen it yet look at this film: 
 [https://tube.switch.ch/videos/v6uqRi7Lfm](https://tube.switch.ch/videos/v6uqRi7Lfm)
 
+
 ## How to load it in Pharo? (see below for Glamorous Toolkit)
 
 The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 8 and Pharo 9. Open a playground and execute the instructions:
 
-Original:
+## Original git repo (for Pharo):
 
 ```Smalltalk
 Metacello new
@@ -30,7 +33,7 @@ Metacello new
     load.
 ```
 
-## How to load it in Glamorous Toolkit (GT)?
+# How to load it in Glamorous Toolkit (GT)?
 
 Download GT from [https://gtoolkit.com/](https://gtoolkit.com/). 
 
@@ -47,23 +50,13 @@ Metacello new
 and then in GT you can load the Lepiter files by executing:
 
 ```Smalltalk
-LeDatabasesRegistry defaultLogicalDatabase properties
-addRegisteredDirectory: FileLocator imageDirectory/ 'pharo-local'/'iceberg'/'coentjo'/'agile-ai-in-pharo'/'lepiter'.
-LeDatabasesRegistry default defaultLogicalDatabase reload.
+BaselineOfAgileArtificialIntelligence loadLepiter
 ```
 
 
-### Alternative: Loading the Lepiter files manually in GT
+## Some more info
 
-Open Lepiter: 
-
-![lepiter](img/GT.lepiter.png)
-
-then add new database
-
-![lepiter.newDatabase](img/GT.lepiter.newDatabase.png)
-
-if you cloned the git it's in a subdir of the GT-dir:
+The cloned git is in a subdir of your GToolkit-dir:
 
 ```
 .../pharo-local/iceberg/https:/agile-ai-in-pharo/lepiter
