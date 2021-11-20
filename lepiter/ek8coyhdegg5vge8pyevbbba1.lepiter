@@ -251,7 +251,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-05T18:04:39.283436+01:00"
+						"dateAndTimeString" : "2021-11-20T14:27:00.777418+01:00"
 					}
 				},
 				"uid" : {
@@ -261,7 +261,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Perceptron-slides]]"
+				"string" : "[[Slides]]"
 			},
 			{
 				"__type" : "textSnippet",
