@@ -59,7 +59,8 @@ Neuron >> detailsContainer [
 						   nextPutAll: 'learningRate: ';
 						   nextPutAll: self learningRate printString;
 						   cr ]);
-		  matchParentHorizontalAndVertical
+		  constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ]
 ]
 
 { #category : #accessing }
@@ -147,7 +148,7 @@ Neuron >> gtVisual2: aView [
 			 width: 1). ].
 
 	^ aView explicit
-		title: 'VisualW';
+		title: 'Visual';
 		priority: 2;
 		stencil: [
 			GtWardleyMapElement new
@@ -161,7 +162,7 @@ Neuron >> gtVisual: aView [
 	<gtView>
 	| inputsContainer |
 	^ aView explicit
-		  title: 'Visual' translated;
+		  title: 'Schematic' translated;
 		  priority: 4;
 		  stencil: [ self visualStencil ]
 ]
@@ -257,7 +258,8 @@ Neuron >> visualStencil [
 			                    (BrGlamorousRegularEditorAptitude new 
 				                     fontSize: 16);
 		                    text: self weightsAsString;
-		                    matchParentHorizontalAndVertical.
+		                    constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ].
 	nameTextContainer := BlTextElement new
 		                     constraintsDo: [ :c | c horizontal matchParent ];
 		                     margin: (BlInsets
@@ -274,7 +276,8 @@ Neuron >> visualStencil [
 	verticalContainer := BlElement new
 		                     layout: BlLinearLayout vertical;
 		                     margin: (BlInsets all: 10);
-		                     matchParentHorizontalAndVertical.
+		                     constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ].
 	verticalContainer addChild: nameTextContainer.
 	verticalContainer addChild: self detailsContainer.
 	container addChild: weightsContainer.
