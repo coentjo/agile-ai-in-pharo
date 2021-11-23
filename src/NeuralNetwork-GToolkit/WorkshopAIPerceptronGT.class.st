@@ -161,7 +161,8 @@ Class {
 	#name : #WorkshopAIPerceptronGT,
 	#superclass : #Object,
 	#instVars : [
-		'random'
+		'random',
+		'currentSlide'
 	],
 	#category : #'NeuralNetwork-GToolkit'
 }
@@ -590,33 +591,71 @@ WorkshopAIPerceptronGT >> showGraphInMorph: grapher [
 ]
 
 { #category : #slides }
-WorkshopAIPerceptronGT >> slidePerceptron01For: aSlide [
+WorkshopAIPerceptronGT >> slidePercep0010: aSlide [
+
 	<gtSlide>
-	^ aSlide title
-		priority: 11;
-		titleWithFormat: ('Perceptron Slideshow' asRopedText
-			fontSize: 70;
-			glamorousRegularFont).
+	^ aSlide element
+		  priority: 1.1;
+		  element: [ 
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.001.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
-WorkshopAIPerceptronGT >> slidePerceptron02For: aSlide [
+WorkshopAIPerceptronGT >> slidePercep0020: aSlide [
+
 	<gtSlide>
-	^ aSlide title
-		priority: 12;
-		titleWithFormat: ('Perceptron Slideshow' asRopedText
-			fontSize: 70;
-			glamorousRegularFont).
+	^ aSlide element
+		  priority: 1.2;
+		  element: [ 
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.002.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
-WorkshopAIPerceptronGT >> slidePerceptron03For: aSlide [
+WorkshopAIPerceptronGT >> slidePercep0030: aSlide [
+
 	<gtSlide>
-	^ aSlide title
-		priority: 13;
-		titleWithFormat: ('Perceptron Slideshow' asRopedText
-			fontSize: 70;
-			glamorousRegularFont).
+	^ aSlide element
+		  priority: 1.3;
+		  element: [ 
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.003.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
+WorkshopAIPerceptronGT >> slidePercep0040: aSlide [
+
+	<gtSlide>
+	^ aSlide element
+		  priority: 1.4;
+		  element: [ 
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.004.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #accessing }
@@ -632,14 +671,4 @@ WorkshopAIPerceptronGT >> testANDGate [
 	
 	"Let's show one"
 	^ p fire: #(0 0)
-]
-
-{ #category : #slides }
-WorkshopAIPerceptronGT >> titleSlideFor: aSlide [
-	<gtSlide>
-	^ aSlide title
-		priority: 1;
-		titleWithFormat: ('Perceptron Slideshow' asRopedText
-			fontSize: 70;
-			glamorousRegularFont).
 ]
