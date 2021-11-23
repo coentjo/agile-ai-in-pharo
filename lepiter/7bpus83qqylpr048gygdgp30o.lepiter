@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:33:10.064786+02:00"
+						"dateAndTimeString" : "2021-11-23T08:51:11.40899+01:00"
 					}
 				},
 				"uid" : {
@@ -76,81 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "+ [Book: Agile Artificial Intelligence in Pharo, by Alexandre Bergel, 2020](https://link.springer.com/book/10.1007/978-1-4842-5384-7)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:34:25.66312+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:36:08.774812+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "eC22xPiLDQC9jch9CpG8ew=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "+ [Video: Introduction to Neural Networks, genetic Algorithm, and neuroevolution](https://tube.switch.ch/videos/v6uqRi7Lfm)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:34:48.770201+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:34:48.770201+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uL0WxviLDQC9jyt7CpG8ew=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "+ [GitHub repository: https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)"
+				"string" : "+ [Book: Agile Artificial Intelligence in Pharo, by Alexandre Bergel, 2020](https://link.springer.com/book/10.1007/978-1-4842-5384-7)\n+ [Video: Introduction to Neural Networks, genetic Algorithm, and neuroevolution](https://tube.switch.ch/videos/v6uqRi7Lfm)\n+ [GitHub repository: https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -214,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:48:56.725054+02:00"
+						"dateAndTimeString" : "2021-11-23T08:50:55.161939+01:00"
 					}
 				},
 				"uid" : {
@@ -224,81 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "+ [Pharo site](https://pharo.org/)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:49:12.576806+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:49:32.867706+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "kap8+fiLDQC9otS6CpG8ew=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "+ [GToolkit site](https://gtoolkit.com/)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:49:50.558515+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T21:50:08.26135+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CLvY+viLDQC9pPowCpG8ew=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "+ [Books on Pharo](https://books.pharo.org/)"
+				"string" : "+ [Pharo site](https://pharo.org/)\n+ [GToolkit site](https://gtoolkit.com/)\n+ [Books on Pharo](https://books.pharo.org/)"
 			},
 			{
 				"__type" : "textSnippet",

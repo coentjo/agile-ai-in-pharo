@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:25:49.162715+01:00"
+						"dateAndTimeString" : "2021-11-23T15:12:08.764678+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,73 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:25:49.162715+01:00"
+						"dateAndTimeString" : "2021-11-23T15:12:11.205977+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Ag0iEZqNDQCtG2XyA88scw=="
+					"uidString" : "LolVENeNDQC4fd2HDAe3xQ=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "slideshowSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:27:06.665187+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:28:11.063026+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CKXAFZqNDQCtIktvA88scw=="
-				},
-				"elementHeight" : 185,
-				"codeHeight" : 64,
-				"codeVisible" : false,
-				"slides" : [
-					{
-						"__type" : "slide",
-						"code" : "",
-						"slideIndex" : 1,
-						"isSlideSelected" : false
-					},
-					{
-						"__type" : "slide",
-						"code" : "",
-						"slideIndex" : 2,
-						"isSlideSelected" : true
-					},
-					{
-						"__type" : "slide",
-						"code" : "",
-						"slideIndex" : 3,
-						"isSlideSelected" : false
-					}
-				]
+				"code" : "GtLiveShow create: WorkshopAIPerceptronGT new"
 			}
 		]
 	},
