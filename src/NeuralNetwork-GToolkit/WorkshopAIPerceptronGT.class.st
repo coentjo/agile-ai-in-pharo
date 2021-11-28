@@ -159,7 +159,7 @@ g
 "
 Class {
 	#name : #WorkshopAIPerceptronGT,
-	#superclass : #Object,
+	#superclass : #WorkshopAI,
 	#instVars : [
 		'random',
 		'currentSlide'
@@ -581,13 +581,6 @@ WorkshopAIPerceptronGT >> scale: vertices inX: aScaleX inY: aScaleY [
 
 	^ vertices collect: [ :p | 
 		  (aScaleX map: p x) @ (1 - (aScaleY map: p y)) ]
-]
-
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> showGraphInMorph: grapher [
-	"Probably deprecated on all sides ...  :-(   
-	 but does the job for this moment... "
-	^ GTInspector openOn: grapher
 ]
 
 { #category : #slides }

@@ -1,5 +1,5 @@
 Class {
 	#name : #WorkshopAINeuralNetwork,
-	#superclass : #Object,
+	#superclass : #WorkshopAI,
 	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
 }
