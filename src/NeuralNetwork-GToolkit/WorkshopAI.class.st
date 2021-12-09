@@ -11,8 +11,8 @@ WorkshopAI >> showGraphInMorph: grapher [
 	^ GTInspector openOn: grapher
 ]
 
-{ #category : #slides }
-WorkshopAIPerceptronGT >> slidePercep0010: aSlide [
+{ #category : #accessing }
+WorkshopAI >> slidePercep0010: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -28,8 +28,8 @@ WorkshopAIPerceptronGT >> slidePercep0010: aSlide [
 					  c vertical matchParent ] ]
 ]
 
-{ #category : #slides }
-WorkshopAIPerceptronGT >> slidePercep0020: aSlide [
+{ #category : #accessing }
+WorkshopAI >> slidePercep0020: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -45,8 +45,8 @@ WorkshopAIPerceptronGT >> slidePercep0020: aSlide [
 					  c vertical matchParent ] ]
 ]
 
-{ #category : #slides }
-WorkshopAIPerceptronGT >> slidePercep0030: aSlide [
+{ #category : #accessing }
+WorkshopAI >> slidePercep0030: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -62,8 +62,8 @@ WorkshopAIPerceptronGT >> slidePercep0030: aSlide [
 					  c vertical matchParent ] ]
 ]
 
-{ #category : #slides }
-WorkshopAIPerceptronGT >> slidePercep0040: aSlide [
+{ #category : #accessing }
+WorkshopAI >> slidePercep0040: aSlide [
 
 	<gtSlide>
 	^ aSlide element
