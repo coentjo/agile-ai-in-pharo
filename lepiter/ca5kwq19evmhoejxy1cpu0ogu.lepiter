@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-23T15:12:11.205977+01:00"
+						"dateAndTimeString" : "2021-12-09T21:09:02.570777+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "LolVENeNDQC4fd2HDAe3xQ=="
 				},
-				"code" : "GtLiveShow create: WorkshopAIPerceptronGT new"
+				"code" : "GtLiveShow create: WorkshopAI new"
 			}
 		]
 	},
