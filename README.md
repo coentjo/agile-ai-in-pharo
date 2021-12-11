@@ -43,7 +43,7 @@ In a Playground execute
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://coentjo/agile-ai-in-pharo/src';
-    onConflictUseLoaded;
+    onConflictUseIncoming;
     load.
 ```
 
