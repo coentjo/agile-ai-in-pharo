@@ -70,3 +70,32 @@ filenumbers do: [ :filenr |
 
 	 ]])
 ]
+
+{ #category : #accessing }
+WsHelper >> staticSlides [
+	<gtExample>
+	<noTest>
+	^ (FileLocator gtResource / 'coentjo' / 'agile-ai-in-pharo' / 'slides' ) asFileReference
+]
+
+{ #category : #accessing }
+WsHelper >> workshopAiExamples [
+	<gtExample>
+	<noTest>
+	| examples text aPage aSnippet stream e2 exSorted |
+	examples := OrderedCollection  new.
+	WorkshopAI allSubclasses do: [ :aClass |
+		examples addAll: aClass gtExamplesAll  ] . 
+	e2 := examples collect: [ :x | x gtDisplayText ] . 
+	
+	stream := WriteStream on:  String new.
+	e2 do: [ :example | 
+		stream
+			nextPutAll: '{{gtExample:';
+			nextPutAll: example ;
+			nextPutAll:  '| noCode= false | previewHeight= 200 | previewExpanded= true}}'; cr; cr
+			 ]. 
+	^ stream contents. 
+
+
+]
