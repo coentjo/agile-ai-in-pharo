@@ -5,6 +5,33 @@ Class {
 }
 
 { #category : #slides }
+WASlidesNeuralNetwork >> coderWithComment [
+	<gtExample>
+	| aScripter |
+	aScripter := BlDevScripter new.
+	aScripter
+		substep: 'Initial Coder'
+		do: [ :aStep | 
+			aStep set
+				label: 'Coder';
+				element: [ (GtCoder forClass: GtCSPicture) createInPager maximized ] ].
+	aScripter
+		substep: 'Evaluate first snippet and inspect'
+		do: [ :aStep | 
+			aStep click
+				label: 'Click on evaluate and inspect button';
+				onBreadthFirstChildOfClass: GtPharoBehaviorCoderElement;
+				onBreadthFirstChildOfClass: BrTabGroup;
+				onChildNamed: #header;
+				onChildAt: 1;
+				onChildAt: 1;
+				onChildAt: 2.
+			aStep wait forEmptySpaceTaskQueue ].
+	aScripter syncContinue.
+	^ aScripter elementWithoutParent
+]
+
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0060: aSlide [
 
 	<gtSlide>
@@ -311,6 +338,16 @@ WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 ]
 
 { #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0232: aSlide [
+	<gtSlide>
+	
+	^ aSlide example
+		priority: 1.0232;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron01 .
+	
+]
+
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0240: aSlide [
 
 	<gtSlide>
@@ -325,6 +362,47 @@ WASlidesNeuralNetwork >> slidePercep0240: aSlide [
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0242: aSlide [
+	<gtSlide>
+	
+	^ aSlide example
+		priority: 1.0242;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron02 .
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0244: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0244;
+		method: WorkshopAIPerceptronGT>>#perceptronForANDGate
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0245: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0245;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron02b
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0247: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0247;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron08
+
 ]
 
 { #category : #slides }
@@ -818,4 +896,25 @@ WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0192;
+		method: WorkshopAIPerceptronGT>>#perceptronForANDGate
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slideXmplPercepForORGate: aSlide [
+	<gtSlide>
+
+	^ aSlide example
+		priority: 1.0202;
+		method: WorkshopAIPerceptronGT>>#testOR
+
 ]

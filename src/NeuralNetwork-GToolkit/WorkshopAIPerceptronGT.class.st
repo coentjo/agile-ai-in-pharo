@@ -184,7 +184,9 @@ WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron02 [
 	<gtExample>
-	^ self newPerceptronWithWeights: #(1 2) andBias: -2
+	^ self 
+		newPerceptronWithWeights: #(3 2) 
+		andBias: -2
 ]
 
 { #category : #example }
