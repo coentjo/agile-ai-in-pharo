@@ -1,11 +1,11 @@
 Class {
-	#name : #WorkshopAIGeneralIntro,
-	#superclass : #WorkshopAI,
+	#name : #WASlidesGeneralIntro,
+	#superclass : #Object,
 	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
 }
 
 { #category : #slides }
-WorkshopAIGeneralIntro >> slidePercep0010: aSlide [
+WASlidesGeneralIntro >> slidePercep0010: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -22,7 +22,7 @@ WorkshopAIGeneralIntro >> slidePercep0010: aSlide [
 ]
 
 { #category : #slides }
-WorkshopAIGeneralIntro >> slidePercep0020: aSlide [
+WASlidesGeneralIntro >> slidePercep0020: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -39,7 +39,7 @@ WorkshopAIGeneralIntro >> slidePercep0020: aSlide [
 ]
 
 { #category : #slides }
-WorkshopAIGeneralIntro >> slidePercep0030: aSlide [
+WASlidesGeneralIntro >> slidePercep0030: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -56,7 +56,7 @@ WorkshopAIGeneralIntro >> slidePercep0030: aSlide [
 ]
 
 { #category : #slides }
-WorkshopAIGeneralIntro >> slidePercep0040: aSlide [
+WASlidesGeneralIntro >> slidePercep0040: aSlide [
 
 	<gtSlide>
 	^ aSlide element
@@ -73,7 +73,7 @@ WorkshopAIGeneralIntro >> slidePercep0040: aSlide [
 ]
 
 { #category : #slides }
-WorkshopAIGeneralIntro >> slidePercep0050: aSlide [
+WASlidesGeneralIntro >> slidePercep0050: aSlide [
 
 	<gtSlide>
 	^ aSlide element
