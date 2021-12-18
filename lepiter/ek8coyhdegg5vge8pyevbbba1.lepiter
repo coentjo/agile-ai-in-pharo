@@ -103,14 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:04:55.225877+01:00"
+						"dateAndTimeString" : "2021-12-18T17:48:03.184699+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Lc7g3c2PDQC4fBJ2D1Dy1w=="
 				},
-				"code" : "\"Inspect to see General Slides\"\rGtLiveShow create: WASlidesGeneralIntro new"
+				"code" : "\"Inspect to see General Slides\"\r(GtLiveShow create: WASlidesGeneralIntro new) makeArrowsVisible"
 			},
 			{
 				"__type" : "textSnippet",
@@ -174,14 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:12:41.343294+01:00"
+						"dateAndTimeString" : "2021-12-18T17:48:24.226586+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "edwPdM6PDQCbqAN5DJ7LOw=="
 				},
-				"code" : "\"Inspect to see Slides\"\rGtLiveShow create: WASlidesNeuralNetwork new"
+				"code" : "\"Inspect to see Slides\"\r(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible"
 			},
 			{
 				"__type" : "textSnippet",
@@ -393,14 +393,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:20:53.926032+01:00"
+						"dateAndTimeString" : "2021-12-18T17:48:30.188658+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "X9zb7s6PDQCK+ijkC6iIWQ=="
 				},
-				"code" : "GtLiveShow create: WASlidesGeneticAlgo new"
+				"code" : "(GtLiveShow create: WASlidesGeneticAlgo new) makeArrowsVisible"
 			},
 			{
 				"__type" : "textSnippet",
@@ -464,14 +464,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:21:49.979098+01:00"
+						"dateAndTimeString" : "2021-12-18T17:48:36.244774+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "8FD08s6PDQCLBSGPC6iIWQ=="
 				},
-				"code" : "GtLiveShow create: WASlidesNeuroEvolution new"
+				"code" : "(GtLiveShow create: WASlidesNeuroEvolution new) makeArrowsVisible"
 			},
 			{
 				"__type" : "textSnippet",
@@ -535,14 +535,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:22:31.058118+01:00"
+						"dateAndTimeString" : "2021-12-18T17:48:42.677653+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "kJae9M6PDQCLBlzWC6iIWQ=="
 				},
-				"code" : "GtLiveShow create: WASlidesFinal new"
+				"code" : "(GtLiveShow create: WASlidesFinal new) makeArrowsVisible"
 			},
 			{
 				"__type" : "textSnippet",
