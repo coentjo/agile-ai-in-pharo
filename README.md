@@ -1,37 +1,9 @@
-# Apress Source Code
+# First a little about this fork 
 
-The repository 
-[https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)
-accompanies [*Agile Artificial Intelligence in Pharo*](https://www.apress.com/9781484253830) by Alexandre Bergel (Apress, 2020). 
-
-
-[comment]: #cover
-![Cover image](img/9781484253830.jpg)
-
-
-This fork 
-[https://github.com/coentjo/agile-ai-in-pharo](https://github.com/coentjo/agile-ai-in-pharo) is a (start of a) port to use the scripts in GToolkit. 
-
-
-First there was the book: 
-The book provides a complete implementation of a number of complex algorithms. Download the files as a zip using the green button, or clone the repository to your machine using Git.
-
-But if you haven't seen it yet look at this film: 
-[https://tube.switch.ch/videos/v6uqRi7Lfm](https://tube.switch.ch/videos/v6uqRi7Lfm)
-
-
-## How to load it in Pharo? (see below for Glamorous Toolkit)
-
-The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 8 and Pharo 9. Open a playground and execute the instructions:
-
-## Original git repo (for Pharo):
-
-```Smalltalk
-Metacello new
-    baseline: 'AgileArtificialIntelligence';
-    repository: 'github://Apress/agile-ai-in-pharo/src';
-    load.
-```
+See below for more info on the original git repo by Alexandre Bergel, accompanying the book mentioned there. 
+Alexandre created a number of scripts to visualize the story. Alexandre did it in Pharo, this fork is meant to do 'the same' but in 
+[Glamorous Toolkit](https://gtoolkit.com/), 
+using Live Slides and GtExamples. 
 
 # How to load it in Glamorous Toolkit (GT)?
 
@@ -66,6 +38,43 @@ The cloned git is in a subdir of your GToolkit-dir:
 
 ![WorkshopAI](img/GT.lepiter.WorkshopAI.png)
 
+
+Now the README from the original repo follows, with the info about how to use it in Pharo: 
+
+# Apress Source Code
+
+The repository 
+[https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo)
+accompanies [*Agile Artificial Intelligence in Pharo*](https://www.apress.com/9781484253830) by Alexandre Bergel (Apress, 2020). 
+
+
+[comment]: #cover
+![Cover image](img/9781484253830.jpg)
+
+
+This fork 
+[https://github.com/coentjo/agile-ai-in-pharo](https://github.com/coentjo/agile-ai-in-pharo) is a (start of a) port to use the scripts in GToolkit. 
+
+
+First there was the book: 
+The book provides a complete implementation of a number of complex algorithms. Download the files as a zip using the green button, or clone the repository to your machine using Git.
+
+But if you haven't seen it yet look at this film: 
+[https://tube.switch.ch/videos/v6uqRi7Lfm](https://tube.switch.ch/videos/v6uqRi7Lfm)
+
+
+## How to load it in Pharo? 
+
+The provided code was designed for [Pharo](http://pharo.org) and it works Pharo 8 and Pharo 9. Open a playground and execute the instructions:
+
+## Original git repo (for Pharo):
+
+```Smalltalk
+Metacello new
+    baseline: 'AgileArtificialIntelligence';
+    repository: 'github://Apress/agile-ai-in-pharo/src';
+    load.
+```
 
 
 ## Content
