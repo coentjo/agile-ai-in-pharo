@@ -1,7 +1,7 @@
 # First a little about this fork 
 
 See below for more info on the original git repo by Alexandre Bergel, accompanying the book mentioned there. 
-Alexandre created a number of scripts to visualize the story. Alexandre did it in Pharo, this fork is meant to do 'the same' but in 
+Alexandre created a number of scripts to visualize the story. He did it in Pharo, this fork is meant to do 'the same' but in 
 [Glamorous Toolkit](https://gtoolkit.com/), 
 using Live Slides and GtExamples. 
 
@@ -34,12 +34,13 @@ The cloned git is in a subdir of your GToolkit-dir:
 .../pharo-local/iceberg/https:/agile-ai-in-pharo/lepiter
 ```
 
-## Open page 'Workshop AI':
+## In 'Lepiter' open page 'Workshop AI':
 
 ![WorkshopAI](img/GT.lepiter.WorkshopAI.png)
 
+--------------------  
 
-Now the README from the original repo follows, with the info about how to use it in Pharo: 
+Now follows the README from the original repo follows, with the info about how to use it in Pharo: 
 
 # Apress Source Code
 
