@@ -338,51 +338,55 @@ WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0240: aSlide [
+WASlidesNeuralNetwork >> slidePercep0232: aSlide [
 
 	<gtSlide>
-	^ aSlide element
-		  priority: 1.0240;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.024.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0242: aSlide [
-	<gtSlide>
-	
 	^ aSlide example
-		priority: 1.0242;
-		method: WorkshopAIPerceptronGT>>#perceptronForANDGate .
-
+		  priority: 1.0232;
+		  method: WorkshopAIPerceptronGT >> #perceptronForANDGate
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0244: aSlide [
+WASlidesNeuralNetwork >> slidePercep0234: aSlide [
 	<gtSlide>
 	
 
 	^ aSlide example
-		priority: 1.0244;
-		method: WorkshopAIPerceptronGT>>#perceptronForANDGate
-
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0245: aSlide [
-	<gtSlide>
-	
-
-	^ aSlide example
-		priority: 1.0245;
+		priority: 1.0234;
 		method: WorkshopAIPerceptronGT>>#chapter01PerceptronAndGateWithInputs
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0236: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0236;
+		method: WorkshopAIPerceptronGT>>#perceptronForORGate
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0238: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0238;
+		method: WorkshopAIPerceptronGT>>#perceptronForNORGate
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0240: aSlide [
+	<gtSlide>
+	
+
+	^ aSlide example
+		priority: 1.0240;
+		method: WorkshopAIPerceptronGT>>#perceptronForNOTGate
 
 ]
 

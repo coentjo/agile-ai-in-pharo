@@ -182,25 +182,6 @@ WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 ]
 
 { #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron03 [
-	<gtExample>
-	| p |
-	p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
-	p feed: #(0 1).
-	^ p
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron04 [
-	<gtExample>
-	| p |
-	p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
-	p train: #(0 1) desiredOutput: 0.
-	p feed: #(0 1).
-	^ p
-]
-
-{ #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron05 [
 <gtExample>
 | p |
@@ -494,7 +475,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13b [
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
 
-	"Weights 1,1 with bias -1.5 makes it an AND gate"
+	"Weights 1, 1 with bias -1.5 makes it an AND gate"
 
 	<gtExample>
 	| andGate |
@@ -538,10 +519,47 @@ WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> perceptronForANDGate [
-	<gtExample>
-	"Weights 1,1 with bias -1.5 makes the Perceptron an AND gate"
 
-	^ self newPerceptronWithWeights: #(1 1) andBias: -1.5 .
+	"Weights 1, 1 with bias -1.5 makes the Perceptron an AND gate"
+
+	<gtExample>
+	<noTest>
+	^ self 
+		newPerceptronWithWeights: #( 1 1 ) 
+		andBias: -1.5
+
+	"Look at both the tabs 'Visual' as well as 'Schematic' "
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> perceptronForNORGate [
+	<gtExample>
+	<noTest>
+	"Weights -1, -1 with bias -0.5 makes the Perceptron an NOR gate"
+
+	^ self 
+		newPerceptronWithWeights: #(-1 -1) 
+		andBias: -0.5 .
+
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> perceptronForNOTGate [
+	<gtExample>
+	<noTest>
+	"Weight -1 with bias 0.5 makes the Perceptron a NOT gate"
+
+	^ self newPerceptronWithWeights: #( -1 ) andBias: 0.5
+
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> perceptronForORGate [
+	<gtExample>
+	<noTest>
+	"Weights 1, 1 with bias -0.5 makes the Perceptron an OR gate"
+
+	^ self newPerceptronWithWeights: #(1 1) andBias: -0.5 .
 
 ]
 
