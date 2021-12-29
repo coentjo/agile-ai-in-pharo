@@ -338,16 +338,6 @@ WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0232: aSlide [
-	<gtSlide>
-	
-	^ aSlide example
-		priority: 1.0232;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron01 .
-	
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0240: aSlide [
 
 	<gtSlide>
@@ -370,7 +360,7 @@ WASlidesNeuralNetwork >> slidePercep0242: aSlide [
 	
 	^ aSlide example
 		priority: 1.0242;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron02 .
+		method: WorkshopAIPerceptronGT>>#perceptronForANDGate .
 
 ]
 
@@ -392,7 +382,7 @@ WASlidesNeuralNetwork >> slidePercep0245: aSlide [
 
 	^ aSlide example
 		priority: 1.0245;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron02b
+		method: WorkshopAIPerceptronGT>>#chapter01PerceptronAndGateWithInputs
 
 ]
 

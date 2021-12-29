@@ -182,25 +182,6 @@ WorkshopAIPerceptronGT >> chapter01Perceptron01 [
 ]
 
 { #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron02 [
-	<gtExample>
-	^ self 
-		newPerceptronWithWeights: #(3 2) 
-		andBias: -2
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron02b [
-	<gtExample>
-	| p |
-	p := self 
-		newPerceptronWithWeights: #(1 1) 
-		andBias: -1.5.
-		
-	^ p fire: #(1 1)
-]
-
-{ #category : #example }
 WorkshopAIPerceptronGT >> chapter01Perceptron03 [
 	<gtExample>
 	| p |
@@ -511,6 +492,18 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13b [
 ]
 
 { #category : #example }
+WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
+
+	"Weights 1,1 with bias -1.5 makes it an AND gate"
+
+	<gtExample>
+	| andGate |
+	andGate := self perceptronForANDGate.
+	" Putting 1 and 1 in an AND Gate gives: "
+	^ andGate fire: #( 1 1 )
+]
+
+{ #category : #example }
 WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 
 	| somePoints d f |
@@ -546,6 +539,8 @@ WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> perceptronForANDGate [
 	<gtExample>
+	"Weights 1,1 with bias -1.5 makes the Perceptron an AND gate"
+
 	^ self newPerceptronWithWeights: #(1 1) andBias: -1.5 .
 
 ]

@@ -88,3 +88,13 @@ WASlidesGeneralIntro >> slidePercep0050: aSlide [
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
+
+{ #category : #accessing }
+WASlidesGeneralIntro >> slidePharo0100: aSlide [
+	<gtSlide>
+	
+	^ aSlide example
+		priority: 1.0100;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron01 .
+	
+]
