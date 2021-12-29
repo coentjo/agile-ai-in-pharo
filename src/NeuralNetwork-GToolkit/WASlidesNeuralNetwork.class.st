@@ -386,7 +386,25 @@ WASlidesNeuralNetwork >> slidePercep0240: aSlide [
 
 	^ aSlide example
 		priority: 1.0240;
-		method: WorkshopAIPerceptronGT>>#perceptronForNOTGate
+		method: WorkshopAIPerceptronGT>>#perceptronTrain
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0242: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0242;
+		method: WorkshopAIPerceptronGT>>#exampleGraphSinus
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0244: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0244;
+		method: WorkshopAIPerceptronGT>>#perceptronColoredDots
 
 ]
 
@@ -395,16 +413,61 @@ WASlidesNeuralNetwork >> slidePercep0247: aSlide [
 	<gtSlide>
 	^ aSlide example
 		priority: 1.0247;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron08
+		method: WorkshopAIPerceptronGT>>#perceptronColoredDotsWithLine
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0248: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0248;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron09
 
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0250: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0250;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron10
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0252: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0252;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron11
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0254: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0254;
+		method: WorkshopAIPerceptronGT>>#chapter01Perceptron12
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0256: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0256;
+		method: WorkshopAIPerceptronGT>>#exampleMeasuringPrecision
+
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0258: aSlide [
 
 	<gtSlide>
 	^ aSlide element
-		  priority: 1.0250;
+		  priority: 1.0258;
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:

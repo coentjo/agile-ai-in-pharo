@@ -173,138 +173,6 @@ WorkshopAIPerceptronGT >> aRandomNumber [
 	^ 50 atRandom - 25
 ]
 
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron01 [
-	<gtExample>
-	^ #(1 2 3)
-		with: #(10 20 30)
-		collect: [ :a :b | a + b ]
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron05 [
-<gtExample>
-| p |
-p := self newPerceptronWithWeights: #(-1 -1) andBias: 2.
-10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
-"p feed: #(0 1)."
-^ p fire: #(0 1)
-
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron06 [
-	<gtExample>
-	"started as copy of GtPlotterRawLineExamples>>content"
-	| aScaleY aScaleX vertices xValues verticesScaled range function |
-	function := [ :x | (x / 3.14) sin ].
-	range := (1 to: 100).
-	vertices := range collect: [ :x | x @ (function value: x) ].
-	aScaleX := GtPlotterLinearScale new domainFrom: range first to: range last.
-	aScaleY := GtPlotterLinearScale new domainFrom: -1 to: 1.
-	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
-	^ self plot: verticesScaled
-]
-
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> chapter01Perceptron06b [
-	<gtExample>
-	| g d |
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d points: (1 to: 100).
-	d y: [ :x | (x / 3.14) sin  ].
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron07 [
-	<gtExample>
-	| g somePoints d function aScaleX aScaleY |
-	function := [ :x | -2 * x - 3 ].
-	somePoints := OrderedCollection new.
-	500 timesRepeat: [ 
-		somePoints add:  
-				self aRandomNumber @ self aRandomNumber ].
-	aScaleX := GtPlotterLinearScale new domainFrom: -25 to: 25.
-	aScaleY := GtPlotterLinearScale new domainFrom: -25 to: 25 .
-"	d := RTData new.
-	d dotShape color: [ :p | 
-		p second > (function value: p first)
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: somePoints.
-	d x: #x.
-	d y: #y.
-	^ d
-"
-	^ self plot: somePoints
-]
-
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01Perceptron07b [
-
-	<gtExample>
-	| somePoints f g d |
-	somePoints := OrderedCollection new.
-	500 timesRepeat: [ 
-		somePoints add: { 
-				(50 atRandom - 25).
-				(50 atRandom - 25) } ].
-
-	f := [ :x | -2 * x - 3 ].
-
-	"We use the Roassal Grapher engine to plot our points"
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: [ :p | 
-		p second > (f value: p first)
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: somePoints.
-	d x: #first.
-	d y: #second.
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> chapter01Perceptron08 [
-
-	<gtExample>
-	| somePoints f g d d2 |
-	somePoints := OrderedCollection new.
-	500 timesRepeat: [ 
-		somePoints add: { 
-				self aRandomNumber.
-				self aRandomNumber } ].
-
-	f := [ :x | -2 * x - 3 ].
-
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: [ :p | 
-		p second > (f value: p first)
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: somePoints.
-	d x: #first.
-	d y: #second.
-	g add: d.
-
-	"Added code below"
-	d2 := RTData new.
-	d2 noDot.
-	d2 connectColor: Color red.
-	d2 points: (-15 to: 15 by: 0.1).
-	d2 y: f.
-	d2 x: #yourself.
-	g add: d2.
-	^ self showGraphInMorph:  g
-]
-
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	<gtExample>
@@ -360,6 +228,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron10 [
 	<gtExample>
+	"Example code to generate a random number"
+	"By using a known seed (the 42 below) it becomes repeatable!"
 	| r |
 	r := Random new seed: 42.
 	^ r nextInteger: 50
@@ -367,63 +237,82 @@ WorkshopAIPerceptronGT >> chapter01Perceptron10 [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron11 [
+
 	<gtExample>
-^ (1 to: 5)
-	collect: [ :i | 50 atRandom ]
+	"so this will generate different numbers every time you run it"
+	^ (1 to: 5) collect: [ :i | 50 atRandom ]
 ]
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron12 [
+
 	<gtExample>
+	"This will give the same numbers over and over again."
 	| r |
 	r := Random new seed: 42.
 	^ (1 to: 5) collect: [ :i | r nextInteger: 50 ]
 ]
 
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> chapter01Perceptron13 [
+{ #category : #example }
+WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
+
+	"Weights 1, 1 with bias -1.5 makes it an AND gate"
 
 	<gtExample>
-	| function aScaleY aScaleX verticesScaled xValues contentLine learningCurve g d range vertices perceptron |
-	learningCurve := OrderedCollection new.
-	function := [ :x | -2 * x - 3 ].
-	range := 0 to: 2000 by: 10.
+	| andGate |
+	andGate := self perceptronForANDGate.
+	" Putting 1 and 1 in an AND Gate gives: "
+	^ andGate fire: #( 1 1 )
+]
 
-	range first to: range last by: range increment do: [ :nbOfTrained | 
-		| anX anY trainedOutput nbOfGood nbOfTries realOutput |
-		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01PerceptronSinus [
+	<gtExample>
+	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d points: (1 to: 100).
+	d y: [ :x | (x / 3.14) sin  ].
+	g add: d.
+	^ self showGraphInMorph: g
+]
 
-		nbOfTrained timesRepeat: [ 
-			anX := self aRandomNumber.
-			anY := self aRandomNumber.
-			trainedOutput := (function value: anX) >= anY
-				                 ifTrue: [ 1 ]
-				                 ifFalse: [ 0 ].
-			perceptron train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> exampleGraphSinus [
 
-		nbOfGood := 0.
-		nbOfTries := 1000.
-		nbOfTries timesRepeat: [ 
-			anX := self randomIntegerBetween: -24 and: 25.
-			anY := self randomIntegerBetween: -24 and: 25.
-			realOutput := (function value: anX) >= anY
-				              ifTrue: [ 1 ]
-				              ifFalse: [ 0 ].
-			((perceptron feed: { 
-					  anX.
-					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
-				nbOfGood := nbOfGood + 1 ] ].
-		learningCurve add: nbOfTrained @ (nbOfGood / nbOfTries) ].
+	<gtExample>
+	"Example of how to create a graph"
+	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d points: (1 to: 100).
+	d y: [ :x | (x / 3.14) sin ].
+	g add: d.
+	^ self showGraphInMorph: g
+]
 
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> exampleGraphSinus_b [
+
+	"started as copy of GtPlotterRawLineExamples>>content"
+
+	<gtExample>
+	| aScaleY aScaleX vertices xValues verticesScaled range function |
+	function := [ :x | (x / 3.14) sin ].
+	range := 1 to: 100.
 	vertices := range collect: [ :x | x @ (function value: x) ].
-	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 2000.
-	aScaleY := GtPlotterLinearScale new domainFrom: -1000 to: 1.
+	aScaleX := GtPlotterLinearScale new
+		           domainFrom: range first
+		           to: range last.
+	aScaleY := GtPlotterLinearScale new domainFrom: -1 to: 1.
 	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
 	^ self plot: verticesScaled
 ]
 
 { #category : #accessing }
-WorkshopAIPerceptronGT >> chapter01Perceptron13b [
+WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 
 	<gtExample>
 	| learningCurve f r p anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
@@ -472,16 +361,54 @@ WorkshopAIPerceptronGT >> chapter01Perceptron13b [
 	^ self showGraphInMorph: g
 ]
 
-{ #category : #example }
-WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
-
-	"Weights 1, 1 with bias -1.5 makes it an AND gate"
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> exampleMeasuringPrecision_b [
 
 	<gtExample>
-	| andGate |
-	andGate := self perceptronForANDGate.
-	" Putting 1 and 1 in an AND Gate gives: "
-	^ andGate fire: #( 1 1 )
+	| function aScaleY aScaleX verticesScaled xValues contentLine learningCurve g d range vertices perceptron |
+	learningCurve := OrderedCollection new.
+	function := [ :x | -2 * x - 3 ].
+	range := 0 to: 2000 by: 10.
+
+	range first to: range last by: range increment do: [ :nbOfTrained | 
+		| anX anY trainedOutput nbOfGood nbOfTries realOutput |
+		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
+
+		nbOfTrained timesRepeat: [ 
+			anX := self aRandomNumber.
+			anY := self aRandomNumber.
+			trainedOutput := (function value: anX) >= anY
+				                 ifTrue: [ 1 ]
+				                 ifFalse: [ 0 ].
+			perceptron train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
+
+		nbOfGood := 0.
+		nbOfTries := 1000.
+		nbOfTries timesRepeat: [ 
+			anX := self randomIntegerBetween: -24 and: 25.
+			anY := self randomIntegerBetween: -24 and: 25.
+			realOutput := (function value: anX) >= anY
+				              ifTrue: [ 1 ]
+				              ifFalse: [ 0 ].
+			((perceptron feed: { 
+					  anX.
+					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
+				nbOfGood := nbOfGood + 1 ] ].
+		learningCurve add: nbOfTrained @ (nbOfGood / nbOfTries) ].
+
+	vertices := range collect: [ :x | x @ (function value: x) ].
+	aScaleX := GtPlotterLinearScale new domainFrom: 1 to: 2000.
+	aScaleY := GtPlotterLinearScale new domainFrom: -1000 to: 1.
+	verticesScaled := self scale: vertices inX: aScaleX inY: aScaleY.
+	^ self plot: verticesScaled
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> examplePharoArrays [
+	<gtExample>
+	^ #(1 2 3)
+		with: #(10 20 30)
+		collect: [ :a :b | a + b ]
 ]
 
 { #category : #example }
@@ -515,6 +442,94 @@ WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [
 		bias: anInteger;
 		yourself
 
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> perceptronColoredDots [
+
+	<gtExample>
+	| somePoints f g d |
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add: { 
+				self aRandomNumber .
+				self aRandomNumber } ].
+
+	f := [ :x | -2 * x - 3 ].
+
+	"We use the Roassal Grapher engine to plot our points"
+	g := RTGrapher new.
+	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (f value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	g add: d.
+	
+	^ self showGraphInMorph: g
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
+
+	<gtExample>
+	| somePoints f g d d2 |
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add: { 
+				self aRandomNumber.
+				self aRandomNumber } ].
+
+	f := [ :x | -2 * x - 3 ].
+
+	"We use the Roassal Grapher engine to plot our points"
+	g := RTGrapher new.
+	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (f value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #first.
+	d y: #second.
+	g add: d.
+
+	"Added line to graph"
+	d2 := RTData new.
+	d2 noDot.
+	d2 connectColor: Color red.
+	d2 points: (-15 to: 15 by: 0.1).
+	d2 y: f.
+	d2 x: #yourself.
+	g add: d2.
+	^ self showGraphInMorph: g
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> perceptronColoredDots_b [
+	<gtExample>
+	| g somePoints d function aScaleX aScaleY |
+	function := [ :x | -2 * x - 3 ].
+	somePoints := OrderedCollection new.
+	500 timesRepeat: [ 
+		somePoints add:  
+				self aRandomNumber @ self aRandomNumber ].
+	aScaleX := GtPlotterLinearScale new domainFrom: -25 to: 25.
+	aScaleY := GtPlotterLinearScale new domainFrom: -25 to: 25 .
+"	d := RTData new.
+	d dotShape color: [ :p | 
+		p second > (function value: p first)
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: somePoints.
+	d x: #x.
+	d y: #y.
+	^ d
+"
+	^ self plot: somePoints
 ]
 
 { #category : #accessing }
@@ -561,6 +576,18 @@ WorkshopAIPerceptronGT >> perceptronForORGate [
 
 	^ self newPerceptronWithWeights: #(1 1) andBias: -0.5 .
 
+]
+
+{ #category : #example }
+WorkshopAIPerceptronGT >> perceptronTrain [
+
+	<gtExample>
+	<npoTest>
+	| p |
+	p := self newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
+	10 timesRepeat: [ p train: #( 0 1 ) desiredOutput: 0 ].
+	"p feed: #(0 1)."
+	^ p fire: #( 0 1 )
 ]
 
 { #category : #example }

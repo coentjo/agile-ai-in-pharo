@@ -95,6 +95,6 @@ WASlidesGeneralIntro >> slidePharo0100: aSlide [
 	
 	^ aSlide example
 		priority: 1.0100;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron01 .
+		method: WorkshopAIPerceptronGT>>#examplePharoArrays .
 	
 ]
