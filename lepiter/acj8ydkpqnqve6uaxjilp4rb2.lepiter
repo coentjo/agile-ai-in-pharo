@@ -174,7 +174,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:51:22.681069+02:00"
+						"dateAndTimeString" : "2022-01-01T13:12:35.290723+01:00"
 					}
 				},
 				"uid" : {
@@ -184,7 +184,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron01}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>examplePharoArrays}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -211,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T14:01:38.287998+02:00"
+						"dateAndTimeString" : "2022-01-01T13:13:01.896201+01:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "This method, called `'chapter01Perceptron01'`, exists in `'class WorkshopAPPerceptronGT'`, which itself is in package `'NeuralNetwork-GToolkit'`.  The line after the `method name`  the content of the method starts. First line (gtExample) makes that this method is a gtExample, that you can run it by one press on a button. "
+				"string" : "This method, called `'examplePharoArrays'`, exists in `'class WorkshopAPPerceptronGT'`, which itself is in package `'NeuralNetwork-GToolkit'`.  The line after the `method name`  the content of the method starts. First line (gtExample) makes that this method is a gtExample, that you can run it by one press on a button. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -1130,7 +1130,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-13T23:03:03.729265+01:00"
+						"dateAndTimeString" : "2022-01-01T13:14:11.081507+01:00"
 					}
 				},
 				"uid" : {
@@ -1140,7 +1140,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron02b}}"
+				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01PerceptronAndGateWithInputs}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1711,265 +1711,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T17:46:25.707437+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:21:37.341928+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "gBWJWc2LDQC3tlNeCOiGlQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron02}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:19:47.555649+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:19:48.862813+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ourtZc2LDQCoOHB6C32nOw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "example3"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T17:49:58.288501+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:51:19.58266+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wj00Zs2LDQCoOnHsC32nOw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron03}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:20:00.101205+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:20:01.800202+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "MukIqM6LDQCvPJXrDS3x3w=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "example 4"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:20:04.796604+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:51:15.822898+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "WkFtqM6LDQCvPgydDS3x3w=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron04}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:22:39.351769+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:22:40.96936+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "JptQsc6LDQCvRIOiDS3x3w=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "example5"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:22:43.078214+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:51:11.92424+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "JIvnsc6LDQCvRmisDS3x3w=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron05}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2021-10-28T19:23:08.172479+02:00"
 					}
 				},
@@ -2018,7 +1759,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:16:53.57719+01:00"
+						"dateAndTimeString" : "2022-01-01T13:16:10.209567+01:00"
 					}
 				},
 				"uid" : {
@@ -2028,155 +1769,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "${{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron06b}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:23:44.116178+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:23:45.337981+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "NM6Ltc6LDQCvTje1DS3x3w=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "example7"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:21:50.244983+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T14:22:07.176819+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "BQLLApqNDQCtDBrbA88scw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron07b}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-07T21:44:44.623194+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-07T21:44:44.623194+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "XGXprpqMDQCcqmCvB3bcsw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "example 8"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-07T21:34:58.370219+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-07T21:44:44.625935+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cnDP1M+LDQC0qsqAAAvE7A=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:WorkshopAIPerceptronGT>>chapter01Perceptron08}}"
+				"string" : "${{gtExample:WorkshopAIPerceptronGT>>exampleGraphSinus}}"
 			},
 			{
 				"__type" : "exampleSnippet",
@@ -2331,46 +1924,6 @@
 					"uidString" : "N6xLOZuNDQCFyYJrCUF4/Q=="
 				},
 				"exampleSelector" : "chapter01Perceptron12",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "WorkshopAIPerceptronGT",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
-			},
-			{
-				"__type" : "exampleSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T15:49:07.125887+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T15:49:07.125887+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "oeoIO5uNDQCFywRRCUF4/Q=="
-				},
-				"exampleSelector" : "chapter01Perceptron13b",
 				"previewHeight" : 200,
 				"previewShowSelector" : "gtViewsFor:",
 				"exampleBehaviorName" : "WorkshopAIPerceptronGT",
