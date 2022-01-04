@@ -4,45 +4,8 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
 }
 
-{ #category : #examples }
-WorkshopAINeuronGT >> chapter02Neuron01 [
-
-	<gtExample>
-	<noTest>
-	| g d |
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d noDot.
-	d points: (-7.0 to: 7.0 by: 0.01).
-	d x: #yourself.
-	d y: [ :x | 
-		x > 0
-			ifTrue: [ 1 ]
-			ifFalse: [ 0 ] ].
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
-{ #category : #examples }
-WorkshopAINeuronGT >> chapter02Neuron02Sigmoid [
-
-	<gtExample>
-	<noTest>
-	| g d |
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d noDot.
-	d points: (-7.0 to: 7.0 by: 0.01).
-	d x: #yourself.
-	d y: [ :x | 1 / (1 + x negated exp) ].
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
 { #category : #accessing }
-WorkshopAINeuronGT >> chapter02Neuron03 [
+WorkshopAINeuronGT >> showLearningStepVsSigmoid [
 	<gtExample>
 	<noTest>
 
@@ -101,5 +64,42 @@ WorkshopAINeuronGT >> chapter02Neuron03 [
 		noDecimal;
 		title: 'Epoch'.
 	g legend addText: 'Perceptron vs Sigmoid neuron'.
+	^ self showGraphInMorph: g
+]
+
+{ #category : #examples }
+WorkshopAINeuronGT >> showSigmoidFunction [
+
+	<gtExample>
+	<noTest>
+	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d noDot.
+	d points: (-7.0 to: 7.0 by: 0.01).
+	d x: #yourself.
+	d y: [ :x | 1 / (1 + x negated exp) ].
+	g add: d.
+	^ self showGraphInMorph: g
+]
+
+{ #category : #examples }
+WorkshopAINeuronGT >> showStepFunction [
+
+	<gtExample>
+	<noTest>
+	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d noDot.
+	d points: (-7.0 to: 7.0 by: 0.01).
+	d x: #yourself.
+	d y: [ :x | 
+		x > 0
+			ifTrue: [ 1 ]
+			ifFalse: [ 0 ] ].
+	g add: d.
 	^ self showGraphInMorph: g
 ]

@@ -517,6 +517,11 @@ WASlidesNeuralNetwork >> slidePercep0270: aSlide [
 WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 
 	<gtSlide>
+	^ aSlide example
+		priority: 1.0280;
+		method: WorkshopAINeuronGT>>#showStepFunction
+
+" static slide:  
 	^ aSlide element
 		  priority: 1.0280;
 		  element: [
@@ -527,7 +532,7 @@ WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 							           / '2021-AI-General.028.png') fullName.
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+					  c vertical matchParent ] ] "
 ]
 
 { #category : #slides }
@@ -545,6 +550,15 @@ WASlidesNeuralNetwork >> slidePercep0290: aSlide [
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0298: aSlide [
+	<gtSlide>
+	^ aSlide example
+		priority: 1.0298;
+		method: WorkshopAINeuronGT>>#showSigmoidFunction
+
 ]
 
 { #category : #slides }
@@ -583,19 +597,11 @@ WASlidesNeuralNetwork >> slidePercep0310: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0320: aSlide [
-
 	<gtSlide>
-	^ aSlide element
-		  priority: 1.0320;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.032.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+	^ aSlide example
+		priority: 1.0320;
+		method: WorkshopAINeuronGT>>#showLearningStepVsSigmoid
+
 ]
 
 { #category : #slides }

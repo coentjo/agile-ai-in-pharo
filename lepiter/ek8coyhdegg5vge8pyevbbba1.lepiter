@@ -211,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T15:03:17.250335+01:00"
+						"dateAndTimeString" : "2022-01-04T10:46:52.259153+01:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Neural Networks"
+				"string" : "# 1. Neural Networks"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -430,7 +430,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:20:24.783609+01:00"
+						"dateAndTimeString" : "2022-01-04T10:47:01.442136+01:00"
 					}
 				},
 				"uid" : {
@@ -440,7 +440,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Genetic Algorithms"
+				"string" : "# 2. Genetic Algorithms"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -501,7 +501,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:21:32.171436+01:00"
+						"dateAndTimeString" : "2022-01-04T10:47:05.538158+01:00"
 					}
 				},
 				"uid" : {
@@ -511,7 +511,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# NeuroEvolution"
+				"string" : "# 3. NeuroEvolution"
 			},
 			{
 				"__type" : "pharoSnippet",
