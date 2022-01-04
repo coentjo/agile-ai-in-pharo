@@ -5,52 +5,9 @@ Class {
 }
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning01 [
+WorkshopAILearningGT >> addGraphForFunction: f [
 
-	<gtExample>
-	<noTest>
-	| points g d |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
-
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: Color red.
-	d points: points.
-	d
-		x: #x;
-		y: #y.
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
-{ #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning02 [
-
-	<gtExample>
-	<noTest>
-	| points a b f g d |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
-
-	a := 0.5.
-	b := 3.
-	f := [ :x | a * x + b ].
-
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: Color red.
-	d points: points.
-	d
-		x: #x;
-		y: #y.
-	g add: d.
+	| d |
 	d := RTData new.
 	d
 		noDot;
@@ -58,41 +15,98 @@ WorkshopAILearningGT >> chapter04Learning02 [
 	d points: (0 to: 5).
 	d x: #yourself.
 	d y: f.
+	^ d
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT >> dataForPoints: aPointCollection [ 
+	| d |
+	d := RTData new.
+	d dotShape color: Color red.
+	d points: aPointCollection.
+	d
+		x: #x;
+		y: #y.
+	^ d
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT >> graphWithPoints [
+
+	| g d |
+	g := RTGrapher new.
+	d := self dataForPoints: self somePoints.
+	g add: d.
+	^ g
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT >> learning01ShowSomePoints [
+
+	"Graph with points"
+
+	<gtExample>
+	<noTest>
+	| g |
+	g := self graphWithPoints.  
+	^ self showGraphInMorph: g
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT >> learning02PointsAndLine [
+
+	"Showing points in a graph and a line"
+	"We want to find the straight line that is the closest to the points."
+
+	<gtExample>
+	<noTest>
+	| a b f g d |
+	"line to be shown:   y = 0.5 * x + 3 "
+	a := 0.5.
+	b := 3.
+	f := [ :x | a * x + b ].
+	"Take same graph as before, add line f"
+	g := self graphWithPoints.
+	d := self addGraphForFunction: f.
 	g add: d.
 	^ self showGraphInMorph: g
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning03 [
+WorkshopAILearningGT >> learning03LossFunctionMSE [
+
+	"loss function: How different is the result we get away from the result we (ideally) expect?"
+
+	"A common loss function (used in this method) is the  
+		MSE : Mean Squared Error
+	"
+	"For given inputs a and b we can calculate the error: "
 
 	<gtExample>
 	<noTest>
-	| points a b f j |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
+	| a b f loss points |
+	points := self somePoints.
+	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
 	f := [ :x | a * x + b ].
-	j := (points collect: [ :p | (p y - (f value: p x)) squared ]) sum
-	     / points size.
-	^ j
+	"for every point 'p' calculate the error, which is 'y' minus the 'f(x)' "
+	"Then take the square of the error."
+	"Then sum those squares."
+	loss := (points collect: [ :p | 
+		         (p y - (f value: p x)) squared ]) sum
+	        / points size.
+	^ loss
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning04 [
+WorkshopAILearningGT >> learning04GradientDescent [
 
 	<gtExample>
 	<noTest>
-	| points a b f learningRate deriMSEa deriMSEb g d |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
-
+	|  a b f learningRate deriMSEa deriMSEb g d points |
+	points := self somePoints.
+	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
 	f := [ :x | x * a + b ].
@@ -129,16 +143,12 @@ WorkshopAILearningGT >> chapter04Learning04 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning05 [
+WorkshopAILearningGT >> learning05 [
 
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
+	points := self somePoints.
 
 	a := 0.5.
 	b := 3.
@@ -174,16 +184,12 @@ WorkshopAILearningGT >> chapter04Learning05 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning06 [
+WorkshopAILearningGT >> learning06 [
 
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
-	points := { 
-		          (1 @ 3.0).
-		          (3 @ 5.2).
-		          (2 @ 4.1).
-		          (4 @ 7.5) }.
+	points := self somePoints.
 
 	a := 0.5.
 	b := 3.
@@ -219,7 +225,7 @@ WorkshopAILearningGT >> chapter04Learning06 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning07 [
+WorkshopAILearningGT >> learning07 [
 
 	<gtExample>
 	<noTest>
@@ -280,7 +286,7 @@ WorkshopAILearningGT >> chapter04Learning07 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning08 [
+WorkshopAILearningGT >> learning08 [
 
 	<gtExample>
 	<noTest>
@@ -338,7 +344,7 @@ WorkshopAILearningGT >> chapter04Learning08 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning09 [
+WorkshopAILearningGT >> learning09 [
 
 	<gtExample>
 	<noTest>
@@ -372,7 +378,7 @@ WorkshopAILearningGT >> chapter04Learning09 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> chapter04Learning10 [
+WorkshopAILearningGT >> learning10 [
 
 	<gtExample>
 	<noTest>
@@ -418,4 +424,15 @@ WorkshopAILearningGT >> chapter04Learning10 [
 			         / points size.
 			  accumulatedMse := accumulatedMse + mse ].
 		  result add: accumulatedMse ] ] timeToRun
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT >> somePoints [
+	<gtExample>
+	<noTest>
+	^ { 
+		  (1 @ 3.0).
+		  (3 @ 5.2).
+		  (2 @ 4.1).
+		  (4 @ 7.5) }
 ]

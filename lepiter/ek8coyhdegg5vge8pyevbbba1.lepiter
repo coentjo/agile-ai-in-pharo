@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-01T13:19:40.899458+01:00"
+						"dateAndTimeString" : "2022-01-04T15:58:03.753805+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "`WASlidesNeuralNetwork` already contain static as well as dynamic slides (for now the Perceptron-examples). Next stop: add dynamic  "
+				"string" : "`WASlidesNeuralNetwork` already contain static as well as dynamic slides (for now the Perceptron-examples). Next stop: add dynamic  slides to all of chapter: 'Neural Networks'. "
 			},
 			{
 				"__type" : "textSnippet",
