@@ -143,16 +143,15 @@ WorkshopAILearningGT >> learning04GradientDescent [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> learning05 [
+WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
 	points := self somePoints.
-
+	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
-
 	f := [ :x | x * a + b ].
 
 	learningRate := 0.01.
@@ -184,7 +183,7 @@ WorkshopAILearningGT >> learning05 [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> learning06 [
+WorkshopAILearningGT >> learning06SameAs05Question [
 
 	<gtExample>
 	<noTest>
@@ -265,7 +264,7 @@ WorkshopAILearningGT >> learning07 [
 	d y: #yourself.
 	g add: d.
 	g.
-	" ...    <----??    @todo check this wityh script in git!"
+	" ...    <----??    @todo check this with script in git!"
 	g := RTGrapher new.
 	d := RTData new.
 	d dotShape color: Color red.
