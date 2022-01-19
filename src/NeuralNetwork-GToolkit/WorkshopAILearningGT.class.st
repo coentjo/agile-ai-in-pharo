@@ -145,6 +145,8 @@ WorkshopAILearningGT >> learning04GradientDescent [
 { #category : #accessing }
 WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 
+	"book fig 4.4"
+
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
@@ -183,48 +185,9 @@ WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> learning06SameAs05Question [
-
-	<gtExample>
-	<noTest>
-	| points a b f learningRate result deriMSEa deriMSEb mse g d |
-	points := self somePoints.
-
-	a := 0.5.
-	b := 3.
-
-	f := [ :x | x * a + b ].
-
-	learningRate := 0.01.
-
-	result := OrderedCollection new.
-	1000 timesRepeat: [ 
-		deriMSEa := 2 / points size * (points collect: [ :aPoint | 
-			             aPoint x * (aPoint y - (f value: aPoint x)) negated ])
-			            sum.
-		deriMSEb := 2 / points size * (points collect: [ :aPoint | 
-			             1 * (aPoint y - (f value: aPoint x)) negated ]) sum.
-		a := a - (learningRate * deriMSEa).
-		b := b - (learningRate * deriMSEb).
-
-		mse := (points collect: [ :aPoint | 
-			        (aPoint y - (f value: aPoint x)) squared ]) sum
-		       / points size.
-		result add: mse ].
-
-	g := RTGrapher new.
-	d := RTData new.
-	d
-		noDot;
-		connectColor: Color blue.
-	d points: result.
-	d y: #yourself.
-	g add: d.
-	^ self showGraphInMorph: g
-]
-
-{ #category : #accessing }
 WorkshopAILearningGT >> learning07 [
+
+	"book fig 4.6"
 
 	<gtExample>
 	<noTest>
@@ -287,6 +250,8 @@ WorkshopAILearningGT >> learning07 [
 { #category : #accessing }
 WorkshopAILearningGT >> learning08 [
 
+	"book fig 4.7"
+
 	<gtExample>
 	<noTest>
 	| nbOfPoints r points currentBatch miniBatches batchSize a b learningRate f result accumulatedMse deriMSEa deriMSEb mse g d |
@@ -344,6 +309,8 @@ WorkshopAILearningGT >> learning08 [
 
 { #category : #accessing }
 WorkshopAILearningGT >> learning09 [
+
+	"p.85"
 
 	<gtExample>
 	<noTest>
