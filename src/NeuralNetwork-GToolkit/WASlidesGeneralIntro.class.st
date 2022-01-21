@@ -93,8 +93,12 @@ WASlidesGeneralIntro >> slidePercep0050: aSlide [
 WASlidesGeneralIntro >> slidePharo0100: aSlide [
 	<gtSlide>
 	
-	^ aSlide example
+	^ aSlide labelAndElement
 		priority: 1.0100;
-		method: WorkshopAIPerceptronGT>>#examplePharoArrays .
+		newFadedText: 'Example with Pharo arrays' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippetFromMethod: WorkshopAIPerceptronGT>>#examplePharoArrays
+				]
 	
 ]
