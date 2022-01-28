@@ -50,8 +50,8 @@ Neuron >> aiVisual: aView [
 	xRow1 := 0.2 .
 	xRow2 := 0.5 .
 	xRow3 := 0.8 .
-	yMin := 0.2 .
-	yMax := 0.8 .
+	yMin := 0.2 min: (xRow2 - xRow1).  " 'min:' ensures maximum angel 45 degrees"
+	yMax := 0.8 min: (xRow2 - xRow1).
 	yCenter := (yMax + yMin) / 2 . 
 	
 	"Calculate y for n-th input"
