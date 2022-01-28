@@ -539,10 +539,11 @@ WorkshopAIPerceptronGT >> perceptronForANDGate [
 
 	<gtExample>
 	<noTest>
-	^ self 
-		newPerceptronWithWeights: #( 1 1 ) 
-		andBias: -1.5
-
+	| perceptron |
+	perceptron := Neuron new step. 
+	perceptron weights: #( 1 1 ) .
+	perceptron bias: -1.5 .
+	^ perceptron
 	"Look at both the tabs 'Visual' as well as 'Schematic' "
 ]
 

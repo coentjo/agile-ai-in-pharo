@@ -341,9 +341,13 @@ WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 WASlidesNeuralNetwork >> slidePercep0232: aSlide [
 
 	<gtSlide>
-	^ aSlide example
+	^ aSlide labelAndElement
 		  priority: 1.0232;
-		  method: WorkshopAIPerceptronGT >> #perceptronForANDGate
+		  newFadedText: 'Perceptron as an AND Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new
+			  	newSnippetFromMethod: 
+					  WorkshopAIPerceptronGT >> #perceptronForANDGate ]
 ]
 
 { #category : #slides }
@@ -673,11 +677,45 @@ WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 ]
 
 { #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0362: aSlide [
+
+	<gtSlide>
+	^ aSlide element
+		  priority: 1.0362;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.037.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 
 	<gtSlide>
 	^ aSlide element
 		  priority: 1.0370;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.037.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0378: aSlide [
+
+	<gtSlide>
+	^ aSlide element
+		  priority: 1.0378;
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
@@ -963,13 +1001,14 @@ WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
+
 	<gtSlide>
-	
-
-	^ aSlide example
-		priority: 1.0192;
-		method: WorkshopAIPerceptronGT>>#perceptronForANDGate
-
+	^ aSlide labelAndElement
+		  priority: 1.0192;
+		  newFadedText: 'Perceptron configured as an AND Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronForANDGate ]
 ]
 
 { #category : #slides }
