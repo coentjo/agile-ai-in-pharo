@@ -355,9 +355,14 @@ WASlidesNeuralNetwork >> slidePercep0234: aSlide [
 	<gtSlide>
 	
 
-	^ aSlide example
-		priority: 1.0234;
-		method: WorkshopAIPerceptronGT>>#chapter01PerceptronAndGateWithInputs
+	^ aSlide  labelAndElement
+		  priority: 1.0234;
+		  newFadedText: 'Perceptron configured as an AND Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT>>#chapter01PerceptronAndGateWithInputs ]
+	
+		
 
 ]
 

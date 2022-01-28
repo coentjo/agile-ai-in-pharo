@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:23:03.984294+01:00"
+						"dateAndTimeString" : "2022-01-28T16:18:10.705201+01:00"
 					}
 				},
 				"uid" : {
@@ -151,6 +151,80 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# General Intro"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:18:49.834954+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:19:08.712308+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5jAssAeTDQCmefkrAzL37A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "+ [[Slides General Intro]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:23:20.383713+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:23:20.383713+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DQV4wAeTDQCmkiUSAzL37A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -166,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T15:04:10.803711+01:00"
+						"dateAndTimeString" : "2022-01-28T16:23:26.189704+01:00"
 					}
 				},
 				"editEmail" : {
@@ -177,14 +251,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T17:48:03.184699+01:00"
+						"dateAndTimeString" : "2022-01-28T16:31:20.221332+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Lc7g3c2PDQC4fBJ2D1Dy1w=="
+					"uidString" : "sJzQwAeTDQCmk8UaAzL37A=="
 				},
-				"code" : "\"Inspect to see General Slides\"\r(GtLiveShow create: WASlidesGeneralIntro new) makeArrowsVisible"
+				"code" : "(GtLiveShow create: WASlidesGeneralIntro new) makeArrowsVisible\r\"Press play and inspect below to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -224,6 +298,43 @@
 				"string" : "# 1. Neural Networks"
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:20:48.200173+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:20:48.200173+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "H+JltweTDQCmh4/GAzL37A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -237,7 +348,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T15:46:10.46996+01:00"
+						"dateAndTimeString" : "2022-01-28T16:24:06.590987+01:00"
 					}
 				},
 				"editEmail" : {
@@ -248,14 +359,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T17:48:24.226586+01:00"
+						"dateAndTimeString" : "2022-01-28T16:31:26.420414+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "edwPdM6PDQCbqAN5DJ7LOw=="
+					"uidString" : "KhY5wweTDQCmlDi8AzL37A=="
 				},
-				"code" : "\"Inspect to see Slides\"\r(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible"
+				"code" : "(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible\r\"Press play and inspect below to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
