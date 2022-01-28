@@ -18,3 +18,10 @@ WorkshopAI >> slide1For: aSlide [
 	^ aSlide empty
 		priority: 1.
 ]
+
+{ #category : #accessing }
+WorkshopAI >> slidesDirectory [
+
+	^ GtResourceReference path:
+		  Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+]

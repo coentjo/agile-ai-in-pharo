@@ -1,6 +1,6 @@
 Class {
 	#name : #WASlidesGeneralIntro,
-	#superclass : #Object,
+	#superclass : #WorkshopAI,
 	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
 }
 
@@ -8,14 +8,17 @@ Class {
 WASlidesGeneralIntro >> slidePercep0010: aSlide [
 
 	<gtSlide>
+	| prio filename |
+	prio := 1.0010 .
+	filename := '2021-AI-General.001.png'. 
+	
 	^ aSlide element
-		  priority: 1.0010;
+		  priority: prio;
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.001.png') fullName.
+					          (self slidesDirectory
+							           / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
@@ -92,11 +95,4 @@ WASlidesGeneralIntro >> slidePharo0100: aSlide [
 				newSnippetFromMethod: WorkshopAIPerceptronGT>>#examplePharoArrays
 				]
 	
-]
-
-{ #category : #slides }
-WASlidesGeneralIntro >> slidesDirectory [
-
-	^ GtResourceReference path:
-		  Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
 ]
