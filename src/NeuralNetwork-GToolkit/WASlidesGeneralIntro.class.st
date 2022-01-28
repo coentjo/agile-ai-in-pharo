@@ -30,9 +30,7 @@ WASlidesGeneralIntro >> slidePercep0020: aSlide [
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.002.png') fullName.
+					          (self slidesDirectory / '2021-AI-General.002.png') fullName.
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
@@ -44,13 +42,10 @@ WASlidesGeneralIntro >> slidePercep0030: aSlide [
 	<gtSlide>
 	^ aSlide element
 		  priority: 1.0030;
-		  element: [
+		  element: [ 
 			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.003.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+			  form := PNGReadWriter formFromFileNamed: (self slidesDirectory / '2021-AI-General.003.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -64,9 +59,7 @@ WASlidesGeneralIntro >> slidePercep0040: aSlide [
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.004.png') fullName.
+					          (self slidesDirectory / '2021-AI-General.004.png') fullName.
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
@@ -81,9 +74,7 @@ WASlidesGeneralIntro >> slidePercep0050: aSlide [
 		  element: [
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.005.png') fullName.
+					          (self slidesDirectory / '2021-AI-General.005.png') fullName.
 			  form asElement asScalableElement constraintsDo: [ :c |
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
@@ -101,4 +92,11 @@ WASlidesGeneralIntro >> slidePharo0100: aSlide [
 				newSnippetFromMethod: WorkshopAIPerceptronGT>>#examplePharoArrays
 				]
 	
+]
+
+{ #category : #slides }
+WASlidesGeneralIntro >> slidesDirectory [
+
+	^ GtResourceReference path:
+		  Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
 ]
