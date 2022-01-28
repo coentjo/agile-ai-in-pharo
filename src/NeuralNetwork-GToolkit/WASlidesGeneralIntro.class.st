@@ -42,44 +42,31 @@ WASlidesGeneralIntro >> slidePercep0020: aSlide [
 WASlidesGeneralIntro >> slidePercep0030: aSlide [
 
 	<gtSlide>
-	^ aSlide element
-		  priority: 1.0030;
-		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed: (self slidesDirectory / '2021-AI-General.003.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+	^ self
+		  slide: aSlide
+		  prio: 1.0030
+		  fromPicture: '2021-AI-General.003.png'
 ]
 
 { #category : #slides }
 WASlidesGeneralIntro >> slidePercep0040: aSlide [
 
 	<gtSlide>
-	^ aSlide element
-		  priority: 1.0040;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / '2021-AI-General.004.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+	^ self
+		  slide: aSlide
+		  prio: 1.0040
+		  fromPicture: '2021-AI-General.004.png'
+
 ]
 
 { #category : #slides }
 WASlidesGeneralIntro >> slidePercep0050: aSlide [
 
 	<gtSlide>
-	^ aSlide element
-		  priority: 1.0050;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / '2021-AI-General.005.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+	^ self
+		  slide: aSlide
+		  prio: 1.0050
+		  fromPicture: '2021-AI-General.005.png'
 ]
 
 { #category : #accessing }
