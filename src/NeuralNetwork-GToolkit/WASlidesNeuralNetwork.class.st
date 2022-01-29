@@ -386,107 +386,134 @@ WASlidesNeuralNetwork >> slidePercep0234: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0236: aSlide [
+
 	<gtSlide>
-	
-
-	^ aSlide example
-		priority: 1.0236;
-		method: WorkshopAIPerceptronGT>>#perceptronForORGate
-
+	^ aSlide labelAndElement
+		  priority: 1.0236;
+		  newFadedText: 'Perceptron for OR Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronForORGate ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0238: aSlide [
+
 	<gtSlide>
-	
-
-	^ aSlide example
-		priority: 1.0238;
-		method: WorkshopAIPerceptronGT>>#perceptronForNORGate
-
+	^ aSlide labelAndElement
+		  priority: 1.0238;
+		  newFadedText: 'Perceptron NOR Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronForNORGate ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0240: aSlide [
+
 	<gtSlide>
-	
-
-	^ aSlide example
-		priority: 1.0240;
-		method: WorkshopAIPerceptronGT>>#perceptronTrain
-
+	^ aSlide labelAndElement
+		  priority: 1.0240;
+		  newFadedText: 'Training a perceptron';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronTrain ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0242: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0242;
-		method: WorkshopAIPerceptronGT>>#exampleGraphSinus
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0242;
+		  newFadedText: 'Example script for drawing a Graph';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #exampleGraphSinus ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0244: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0244;
-		method: WorkshopAIPerceptronGT>>#perceptronColoredDots
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0244;
+		  newFadedText: 'Graph colored dots';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronColoredDots ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0247: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0247;
-		method: WorkshopAIPerceptronGT>>#perceptronColoredDotsWithLine
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0247;
+		  newFadedText: 'Graoh colored dots with line';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronColoredDotsWithLine ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0248: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0248;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron09
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0248;
+		  newFadedText: ' ';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron09 ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0250: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0250;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron10
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0250;
+		  newFadedText: ' ';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron10 ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0252: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0252;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron11
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0252;
+		  newFadedText: ' ';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron11 ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0254: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0254;
-		method: WorkshopAIPerceptronGT>>#chapter01Perceptron12
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0254;
+		  newFadedText: ' ';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron12 ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0256: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0256;
-		method: WorkshopAIPerceptronGT>>#exampleMeasuringPrecision
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0256;
+		  newFadedText: ' ';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #exampleMeasuringPrecision ]
 ]
 
 { #category : #slides }
@@ -549,22 +576,12 @@ WASlidesNeuralNetwork >> slidePercep0270: aSlide [
 WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 
 	<gtSlide>
-	^ aSlide example
-		priority: 1.0280;
-		method: WorkshopAINeuronGT>>#showStepFunction
-
-" static slide:  
-	^ aSlide element
+	^ aSlide labelAndElement
 		  priority: 1.0280;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.028.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ] "
+		  newFadedText: 'Step function';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAINeuronGT >> #showStepFunction ]
 ]
 
 { #category : #slides }
@@ -587,11 +604,14 @@ WASlidesNeuralNetwork >> slidePercep0290: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0298: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0298;
-		method: WorkshopAINeuronGT>>#showSigmoidFunction
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0298;
+		  newFadedText: 'Sigmoid function';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAINeuronGT >> #showSigmoidFunction ]
 ]
 
 { #category : #slides }
@@ -632,26 +652,30 @@ WASlidesNeuralNetwork >> slidePercep0310: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0320: aSlide [
-	<gtSlide>
-	^ aSlide example
-		priority: 1.0320;
-		method: WorkshopAINeuronGT>>#showLearningStepVsSigmoid
 
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0320;
+		  newFadedText: 'Learning: Step vs Sigmoid';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAINeuronGT >> #showLearningStepVsSigmoid ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0330: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.033.png'.
+	prio := 1.0330.
 	^ aSlide element
-		  priority: 1.0330;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.033.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
