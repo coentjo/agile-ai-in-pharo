@@ -8,10 +8,17 @@ Class {
 WASlidesGeneticAlgo >> slidePercep0540: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0540
-		  fromPicture: '2021-AI-General.054.png'
+	^ aSlide element
+		  priority: 1.0540;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.054.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
