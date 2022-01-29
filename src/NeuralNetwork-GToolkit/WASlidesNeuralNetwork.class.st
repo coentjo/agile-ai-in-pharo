@@ -35,180 +35,306 @@ WASlidesNeuralNetwork >> coderWithComment [
 WASlidesNeuralNetwork >> slidePercep0060: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0060
-		  fromPicture: '2021-AI-General.006.png'
+	^ aSlide element
+		  priority: 1.0060;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.006.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0070: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0070
-		  fromPicture: '2021-AI-General.007.png'
+	^ aSlide element
+		  priority: 1.0070;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.007.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0080: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0080
-		  fromPicture: '2021-AI-General.008.png'
+	^ aSlide element
+		  priority: 1.0080;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.008.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0090: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0090
-		  fromPicture: '2021-AI-General.009.png'
+	^ aSlide element
+		  priority: 1.0090;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.009.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0100: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0100
-		  fromPicture: '2021-AI-General.010.png'
+	^ aSlide element
+		  priority: 1.0100;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.010.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0110: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0110
-		  fromPicture: '2021-AI-General.011.png'
+	^ aSlide element
+		  priority: 1.0110;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.011.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0120: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0120
-		  fromPicture: '2021-AI-General.012.png'
+	^ aSlide element
+		  priority: 1.0120;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.012.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0130: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0130
-		  fromPicture: '2021-AI-General.013.png'
+	^ aSlide element
+		  priority: 1.0130;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.013.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0140
-		  fromPicture: '2021-AI-General.014.png'
+	^ aSlide element
+		  priority: 1.0140;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.014.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0150
-		  fromPicture: '2021-AI-General.015.png'
+	^ aSlide element
+		  priority: 1.0150;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.015.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0160: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0160
-		  fromPicture: '2021-AI-General.016.png'
+	^ aSlide element
+		  priority: 1.0160;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.016.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0170: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0170
-		  fromPicture: '2021-AI-General.017.png'
+	^ aSlide element
+		  priority: 1.0170;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.017.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0180: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0180
-		  fromPicture: '2021-AI-General.018.png'
+	^ aSlide element
+		  priority: 1.0180;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.018.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0190: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0190
-		  fromPicture: '2021-AI-General.019.png'
+	^ aSlide element
+		  priority: 1.0190;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.019.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0200: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0200
-		  fromPicture: '2021-AI-General.020.png'
+	^ aSlide element
+		  priority: 1.0200;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.020.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0210: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0210
-		  fromPicture: '2021-AI-General.021.png'
+	^ aSlide element
+		  priority: 1.0210;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.021.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0220: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0220
-		  fromPicture: '2021-AI-General.022.png'
+	^ aSlide element
+		  priority: 1.0220;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.022.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0230
-		  fromPicture: '2021-AI-General.023.png'
+	^ aSlide element
+		  priority: 1.0230;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.023.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
@@ -349,30 +475,51 @@ WASlidesNeuralNetwork >> slidePercep0256: aSlide [
 WASlidesNeuralNetwork >> slidePercep0258: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0258
-		  fromPicture: '2021-AI-General.025.png'
+	^ aSlide element
+		  priority: 1.0258;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.025.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0260: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0260
-		  fromPicture: '2021-AI-General.026.png'
+	^ aSlide element
+		  priority: 1.0260;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.026.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0270: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0270
-		  fromPicture: '2021-AI-General.027.png'
+	^ aSlide element
+		  priority: 1.0270;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.027.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
@@ -382,16 +529,25 @@ WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 	^ aSlide example
 		priority: 1.0280;
 		method: WorkshopAINeuronGT>>#showStepFunction
+
+" static slide:  
+	^ aSlide element
+		  priority: 1.0280;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.028.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ] "
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0290: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0290;
 		  element: [
@@ -418,10 +574,6 @@ WASlidesNeuralNetwork >> slidePercep0298: aSlide [
 WASlidesNeuralNetwork >> slidePercep0300: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0300;
 		  element: [
@@ -439,10 +591,6 @@ WASlidesNeuralNetwork >> slidePercep0300: aSlide [
 WASlidesNeuralNetwork >> slidePercep0310: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0310;
 		  element: [
@@ -469,10 +617,6 @@ WASlidesNeuralNetwork >> slidePercep0320: aSlide [
 WASlidesNeuralNetwork >> slidePercep0330: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0330;
 		  element: [
@@ -490,10 +634,6 @@ WASlidesNeuralNetwork >> slidePercep0330: aSlide [
 WASlidesNeuralNetwork >> slidePercep0340: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0340;
 		  element: [
@@ -511,10 +651,6 @@ WASlidesNeuralNetwork >> slidePercep0340: aSlide [
 WASlidesNeuralNetwork >> slidePercep0350: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0350;
 		  element: [
@@ -532,10 +668,6 @@ WASlidesNeuralNetwork >> slidePercep0350: aSlide [
 WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0360;
 		  element: [
@@ -553,10 +685,6 @@ WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0362;
 		  element: [
@@ -574,10 +702,6 @@ WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0370;
 		  element: [
@@ -595,10 +719,6 @@ WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 WASlidesNeuralNetwork >> slidePercep0378: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0378;
 		  element: [
@@ -616,10 +736,6 @@ WASlidesNeuralNetwork >> slidePercep0378: aSlide [
 WASlidesNeuralNetwork >> slidePercep0380: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0380;
 		  element: [
@@ -637,10 +753,6 @@ WASlidesNeuralNetwork >> slidePercep0380: aSlide [
 WASlidesNeuralNetwork >> slidePercep0390: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0390;
 		  element: [
@@ -658,10 +770,6 @@ WASlidesNeuralNetwork >> slidePercep0390: aSlide [
 WASlidesNeuralNetwork >> slidePercep0400: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0400;
 		  element: [
@@ -679,10 +787,6 @@ WASlidesNeuralNetwork >> slidePercep0400: aSlide [
 WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0410;
 		  element: [
@@ -700,10 +804,6 @@ WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 WASlidesNeuralNetwork >> slidePercep0420: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0420;
 		  element: [
@@ -721,10 +821,6 @@ WASlidesNeuralNetwork >> slidePercep0420: aSlide [
 WASlidesNeuralNetwork >> slidePercep0430: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0430;
 		  element: [
@@ -742,10 +838,6 @@ WASlidesNeuralNetwork >> slidePercep0430: aSlide [
 WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0440;
 		  element: [
@@ -763,10 +855,6 @@ WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 WASlidesNeuralNetwork >> slidePercep0450: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0450;
 		  element: [
@@ -784,10 +872,6 @@ WASlidesNeuralNetwork >> slidePercep0450: aSlide [
 WASlidesNeuralNetwork >> slidePercep0460: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0460;
 		  element: [
@@ -805,10 +889,6 @@ WASlidesNeuralNetwork >> slidePercep0460: aSlide [
 WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0470;
 		  element: [
@@ -826,10 +906,6 @@ WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 WASlidesNeuralNetwork >> slidePercep0480: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0480;
 		  element: [
@@ -847,10 +923,6 @@ WASlidesNeuralNetwork >> slidePercep0480: aSlide [
 WASlidesNeuralNetwork >> slidePercep0490: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0490;
 		  element: [
@@ -868,10 +940,6 @@ WASlidesNeuralNetwork >> slidePercep0490: aSlide [
 WASlidesNeuralNetwork >> slidePercep0500: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0500;
 		  element: [
@@ -889,10 +957,6 @@ WASlidesNeuralNetwork >> slidePercep0500: aSlide [
 WASlidesNeuralNetwork >> slidePercep0510: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0510;
 		  element: [
@@ -910,10 +974,6 @@ WASlidesNeuralNetwork >> slidePercep0510: aSlide [
 WASlidesNeuralNetwork >> slidePercep0520: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0520;
 		  element: [
@@ -931,10 +991,6 @@ WASlidesNeuralNetwork >> slidePercep0520: aSlide [
 WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
 	^ aSlide element
 		  priority: 1.0530;
 		  element: [

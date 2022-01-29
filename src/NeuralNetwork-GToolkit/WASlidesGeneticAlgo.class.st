@@ -18,288 +18,491 @@ WASlidesGeneticAlgo >> slidePercep0540: aSlide [
 WASlidesGeneticAlgo >> slidePercep0550: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0550
-		  fromPicture: '2021-AI-General.055.png'
+	^ aSlide element
+		  priority: 1.0550;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.055.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0560: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0560
-		  fromPicture: '2021-AI-General.056.png'
+	^ aSlide element
+		  priority: 1.0560;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.056.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0570: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0570
-		  fromPicture: '2021-AI-General.057.png'
+	^ aSlide element
+		  priority: 1.0570;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.057.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0580: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0580
-		  fromPicture: '2021-AI-General.058.png'
+	^ aSlide element
+		  priority: 1.0580;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.058.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0590: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0590
-		  fromPicture: '2021-AI-General.059.png'
+	^ aSlide element
+		  priority: 1.0590;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.059.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0600: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0600
-		  fromPicture: '2021-AI-General.060.png'
+	^ aSlide element
+		  priority: 1.0600;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.060.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0610: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0610
-		  fromPicture: '2021-AI-General.061.png'
+	^ aSlide element
+		  priority: 1.0610;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.061.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0620: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0620
-		  fromPicture: '2021-AI-General.062.png'
+	^ aSlide element
+		  priority: 1.0620;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.062.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0630: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0630
-		  fromPicture: '2021-AI-General.063.png'
+	^ aSlide element
+		  priority: 1.0630;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.063.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0640: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0640
-		  fromPicture: '2021-AI-General.064.png'
+	^ aSlide element
+		  priority: 1.0640;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.064.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0650: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0650
-		  fromPicture: '2021-AI-General.065.png'
+	^ aSlide element
+		  priority: 1.0650;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.065.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0660: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0660
-		  fromPicture: '2021-AI-General.066.png'
+	^ aSlide element
+		  priority: 1.0660;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.066.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0670: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0670
-		  fromPicture: '2021-AI-General.067.png'
+	^ aSlide element
+		  priority: 1.0670;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.067.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0680: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0680
-		  fromPicture: '2021-AI-General.068.png'
+	^ aSlide element
+		  priority: 1.0680;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.068.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0690: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0690
-		  fromPicture: '2021-AI-General.069.png'
+	^ aSlide element
+		  priority: 1.0690;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.069.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0700: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0700
-		  fromPicture: '2021-AI-General.070.png'
+	^ aSlide element
+		  priority: 1.0700;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.070.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0710: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0710
-		  fromPicture: '2021-AI-General.071.png'
+	^ aSlide element
+		  priority: 1.0710;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.071.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0720: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0720
-		  fromPicture: '2021-AI-General.072.png'
+	^ aSlide element
+		  priority: 1.0720;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.072.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0730: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0730
-		  fromPicture: '2021-AI-General.073.png'
+	^ aSlide element
+		  priority: 1.0730;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.073.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0740: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0740
-		  fromPicture: '2021-AI-General.074.png'
+	^ aSlide element
+		  priority: 1.0740;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.074.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0750: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0750
-		  fromPicture: '2021-AI-General.075.png'
+	^ aSlide element
+		  priority: 1.0750;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.075.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0760: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0760
-		  fromPicture: '2021-AI-General.076.png'
+	^ aSlide element
+		  priority: 1.0760;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.076.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0770: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0770
-		  fromPicture: '2021-AI-General.077.png'
+	^ aSlide element
+		  priority: 1.0770;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.077.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0780: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0780
-		  fromPicture: '2021-AI-General.078.png'
+	^ aSlide element
+		  priority: 1.0780;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.078.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0790: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0790
-		  fromPicture: '2021-AI-General.079.png'
+	^ aSlide element
+		  priority: 1.0790;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.079.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0800: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0800
-		  fromPicture: '2021-AI-General.080.png'
+	^ aSlide element
+		  priority: 1.0800;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.080.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0810: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0810
-		  fromPicture: '2021-AI-General.081.png'
+	^ aSlide element
+		  priority: 1.0810;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.081.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0820: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0820
-		  fromPicture: '2021-AI-General.082.png'
+	^ aSlide element
+		  priority: 1.0820;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.082.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
 
 { #category : #slides }
 WASlidesGeneticAlgo >> slidePercep0830: aSlide [
 
 	<gtSlide>
-	^ self
-		  slide: aSlide
-		  prio: 1.0830
-		  fromPicture: '2021-AI-General.083.png'
+	^ aSlide element
+		  priority: 1.0830;
+		  element: [
+			  | container form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (GtResourceReference path:
+							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
+							           / '2021-AI-General.083.png') fullName.
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
 ]
