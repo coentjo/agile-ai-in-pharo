@@ -1,6 +1,6 @@
 Class {
 	#name : #WASlidesFinal,
-	#superclass : #Object,
+	#superclass : #WorkshopAI,
 	#category : #'NeuralNetwork-GToolkit'
 }
 

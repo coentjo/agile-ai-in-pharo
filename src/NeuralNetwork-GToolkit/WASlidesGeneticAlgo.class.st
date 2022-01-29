@@ -1,6 +1,6 @@
 Class {
 	#name : #WASlidesGeneticAlgo,
-	#superclass : #Object,
+	#superclass : #WorkshopAI,
 	#category : #'NeuralNetwork-GToolkit'
 }
 
