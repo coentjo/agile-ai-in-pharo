@@ -259,10 +259,12 @@ WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
 	"Weights 1, 1 with bias -1.5 makes it an AND gate"
 
 	<gtExample>
-	| andGate |
-	andGate := self perceptronForANDGate.
+	| perceptron |
+	perceptron := Neuron new step. 
+	perceptron weights: #( 1 1 ) .
+	perceptron bias: -1.5 .
 	" Putting 1 and 1 in an AND Gate gives: "
-	^ andGate fire: #( 1 1 )
+	^ perceptron fire: #( 1 1 )
 ]
 
 { #category : #accessing }
@@ -571,12 +573,17 @@ WorkshopAIPerceptronGT >> perceptronForNOTGate [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> perceptronForORGate [
-	<gtExample>
-	<noTest>
+
 	"Weights 1, 1 with bias -0.5 makes the Perceptron an OR gate"
 
-	^ self newPerceptronWithWeights: #(1 1) andBias: -0.5 .
+	<gtExample>
+	<noTest>
+	| perceptron |
+	perceptron := Neuron new step.
+	perceptron weights: #( 1 1 ).
+	perceptron bias: -0.5.
 
+	^ perceptron
 ]
 
 { #category : #example }
