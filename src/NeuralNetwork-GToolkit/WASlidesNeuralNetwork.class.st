@@ -35,15 +35,16 @@ WASlidesNeuralNetwork >> coderWithComment [
 WASlidesNeuralNetwork >> slidePercep0060: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.006.png'.
+	prio := 1.0060.
 	^ aSlide element
-		  priority: 1.0060;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.006.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -52,15 +53,16 @@ WASlidesNeuralNetwork >> slidePercep0060: aSlide [
 WASlidesNeuralNetwork >> slidePercep0070: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.007.png'.
+	prio := 1.0070.
 	^ aSlide element
-		  priority: 1.0070;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.007.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -69,15 +71,16 @@ WASlidesNeuralNetwork >> slidePercep0070: aSlide [
 WASlidesNeuralNetwork >> slidePercep0080: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.008.png'.
+	prio := 1.0080.
 	^ aSlide element
-		  priority: 1.0080;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.008.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -86,15 +89,16 @@ WASlidesNeuralNetwork >> slidePercep0080: aSlide [
 WASlidesNeuralNetwork >> slidePercep0090: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.009.png'.
+	prio := 1.0090.
 	^ aSlide element
-		  priority: 1.0090;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.009.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -103,15 +107,16 @@ WASlidesNeuralNetwork >> slidePercep0090: aSlide [
 WASlidesNeuralNetwork >> slidePercep0100: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.010.png'.
+	prio := 1.0100.
 	^ aSlide element
-		  priority: 1.0100;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.010.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -120,15 +125,16 @@ WASlidesNeuralNetwork >> slidePercep0100: aSlide [
 WASlidesNeuralNetwork >> slidePercep0110: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.011.png'.
+	prio := 1.0110.
 	^ aSlide element
-		  priority: 1.0110;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.011.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -137,15 +143,16 @@ WASlidesNeuralNetwork >> slidePercep0110: aSlide [
 WASlidesNeuralNetwork >> slidePercep0120: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.012.png'.
+	prio := 1.0120.
 	^ aSlide element
-		  priority: 1.0120;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.012.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -154,15 +161,16 @@ WASlidesNeuralNetwork >> slidePercep0120: aSlide [
 WASlidesNeuralNetwork >> slidePercep0130: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.013.png'.
+	prio := 1.0130.
 	^ aSlide element
-		  priority: 1.0130;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.013.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -171,15 +179,16 @@ WASlidesNeuralNetwork >> slidePercep0130: aSlide [
 WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.014.png'.
+	prio := 1.0140.
 	^ aSlide element
-		  priority: 1.0140;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.014.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -188,15 +197,16 @@ WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.015.png'.
+	prio := 1.0150.
 	^ aSlide element
-		  priority: 1.0150;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.015.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -205,15 +215,16 @@ WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 WASlidesNeuralNetwork >> slidePercep0160: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.016.png'.
+	prio := 1.0160.
 	^ aSlide element
-		  priority: 1.0160;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.016.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -222,15 +233,16 @@ WASlidesNeuralNetwork >> slidePercep0160: aSlide [
 WASlidesNeuralNetwork >> slidePercep0170: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.017.png'.
+	prio := 1.0170.
 	^ aSlide element
-		  priority: 1.0170;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.017.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -239,15 +251,16 @@ WASlidesNeuralNetwork >> slidePercep0170: aSlide [
 WASlidesNeuralNetwork >> slidePercep0180: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.018.png'.
+	prio := 1.0180.
 	^ aSlide element
-		  priority: 1.0180;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.018.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -256,15 +269,16 @@ WASlidesNeuralNetwork >> slidePercep0180: aSlide [
 WASlidesNeuralNetwork >> slidePercep0190: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.019.png'.
+	prio := 1.0190.
 	^ aSlide element
-		  priority: 1.0190;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.019.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -273,15 +287,16 @@ WASlidesNeuralNetwork >> slidePercep0190: aSlide [
 WASlidesNeuralNetwork >> slidePercep0200: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.020.png'.
+	prio := 1.0200.
 	^ aSlide element
-		  priority: 1.0200;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.020.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -290,15 +305,16 @@ WASlidesNeuralNetwork >> slidePercep0200: aSlide [
 WASlidesNeuralNetwork >> slidePercep0210: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.021.png'.
+	prio := 1.0210.
 	^ aSlide element
-		  priority: 1.0210;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.021.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -307,15 +323,16 @@ WASlidesNeuralNetwork >> slidePercep0210: aSlide [
 WASlidesNeuralNetwork >> slidePercep0220: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.022.png'.
+	prio := 1.0220.
 	^ aSlide element
-		  priority: 1.0220;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.022.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -324,15 +341,16 @@ WASlidesNeuralNetwork >> slidePercep0220: aSlide [
 WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.023.png'.
+	prio := 1.0230.
 	^ aSlide element
-		  priority: 1.0230;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.023.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -475,32 +493,35 @@ WASlidesNeuralNetwork >> slidePercep0256: aSlide [
 WASlidesNeuralNetwork >> slidePercep0258: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.025.png'.
+	prio := 1.0258.
 	^ aSlide element
-		  priority: 1.0258;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.025.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+
 ]
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0260: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.026.png'.
+	prio := 1.0260.
 	^ aSlide element
-		  priority: 1.0260;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.026.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -509,17 +530,19 @@ WASlidesNeuralNetwork >> slidePercep0260: aSlide [
 WASlidesNeuralNetwork >> slidePercep0270: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.027.png'.
+	prio := 1.0270.
 	^ aSlide element
-		  priority: 1.0270;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.027.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+
 ]
 
 { #category : #slides }
@@ -548,15 +571,16 @@ WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 WASlidesNeuralNetwork >> slidePercep0290: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.029.png'.
+	prio := 1.0290.
 	^ aSlide element
-		  priority: 1.0290;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.029.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -574,15 +598,16 @@ WASlidesNeuralNetwork >> slidePercep0298: aSlide [
 WASlidesNeuralNetwork >> slidePercep0300: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.030.png'.
+	prio := 1.0300.
 	^ aSlide element
-		  priority: 1.0300;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.030.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -591,15 +616,16 @@ WASlidesNeuralNetwork >> slidePercep0300: aSlide [
 WASlidesNeuralNetwork >> slidePercep0310: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.031.png'.
+	prio := 1.0310.
 	^ aSlide element
-		  priority: 1.0310;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.031.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -634,15 +660,16 @@ WASlidesNeuralNetwork >> slidePercep0330: aSlide [
 WASlidesNeuralNetwork >> slidePercep0340: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.034.png'.
+	prio := 1.0340.
 	^ aSlide element
-		  priority: 1.0340;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.034.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -651,15 +678,16 @@ WASlidesNeuralNetwork >> slidePercep0340: aSlide [
 WASlidesNeuralNetwork >> slidePercep0350: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.035.png'.
+	prio := 1.0350.
 	^ aSlide element
-		  priority: 1.0350;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.035.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -668,15 +696,16 @@ WASlidesNeuralNetwork >> slidePercep0350: aSlide [
 WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.036.png'.
+	prio := 1.0360.
 	^ aSlide element
-		  priority: 1.0360;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.036.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -685,15 +714,16 @@ WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.037.png'.
+	prio := 1.0362.
 	^ aSlide element
-		  priority: 1.0362;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.037.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -702,32 +732,16 @@ WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.037.png'.
+	prio := 1.0370.
 	^ aSlide element
-		  priority: 1.0370;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.037.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0378: aSlide [
-
-	<gtSlide>
-	^ aSlide element
-		  priority: 1.0378;
-		  element: [
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.037.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -736,15 +750,16 @@ WASlidesNeuralNetwork >> slidePercep0378: aSlide [
 WASlidesNeuralNetwork >> slidePercep0380: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.038.png'.
+	prio := 1.0380.
 	^ aSlide element
-		  priority: 1.0380;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.038.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -753,15 +768,16 @@ WASlidesNeuralNetwork >> slidePercep0380: aSlide [
 WASlidesNeuralNetwork >> slidePercep0390: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.039.png'.
+	prio := 1.0390.
 	^ aSlide element
-		  priority: 1.0390;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.039.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -770,15 +786,16 @@ WASlidesNeuralNetwork >> slidePercep0390: aSlide [
 WASlidesNeuralNetwork >> slidePercep0400: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.040.png'.
+	prio := 1.0400.
 	^ aSlide element
-		  priority: 1.0400;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.040.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -787,15 +804,16 @@ WASlidesNeuralNetwork >> slidePercep0400: aSlide [
 WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.041.png'.
+	prio := 1.0410.
 	^ aSlide element
-		  priority: 1.0410;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.041.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -804,15 +822,16 @@ WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 WASlidesNeuralNetwork >> slidePercep0420: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.042.png'.
+	prio := 1.0420.
 	^ aSlide element
-		  priority: 1.0420;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.042.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -821,15 +840,16 @@ WASlidesNeuralNetwork >> slidePercep0420: aSlide [
 WASlidesNeuralNetwork >> slidePercep0430: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.043.png'.
+	prio := 1.0430.
 	^ aSlide element
-		  priority: 1.0430;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.043.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -838,15 +858,16 @@ WASlidesNeuralNetwork >> slidePercep0430: aSlide [
 WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.044.png'.
+	prio := 1.0440.
 	^ aSlide element
-		  priority: 1.0440;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.044.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -855,15 +876,16 @@ WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 WASlidesNeuralNetwork >> slidePercep0450: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.045.png'.
+	prio := 1.0450.
 	^ aSlide element
-		  priority: 1.0450;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.045.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -872,15 +894,16 @@ WASlidesNeuralNetwork >> slidePercep0450: aSlide [
 WASlidesNeuralNetwork >> slidePercep0460: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.046.png'.
+	prio := 1.0460.
 	^ aSlide element
-		  priority: 1.0460;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.046.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -889,15 +912,16 @@ WASlidesNeuralNetwork >> slidePercep0460: aSlide [
 WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.047.png'.
+	prio := 1.0470.
 	^ aSlide element
-		  priority: 1.0470;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.047.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -906,15 +930,16 @@ WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 WASlidesNeuralNetwork >> slidePercep0480: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.048.png'.
+	prio := 1.0480.
 	^ aSlide element
-		  priority: 1.0480;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.048.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -923,15 +948,16 @@ WASlidesNeuralNetwork >> slidePercep0480: aSlide [
 WASlidesNeuralNetwork >> slidePercep0490: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.049.png'.
+	prio := 1.0490.
 	^ aSlide element
-		  priority: 1.0490;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.049.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -940,15 +966,16 @@ WASlidesNeuralNetwork >> slidePercep0490: aSlide [
 WASlidesNeuralNetwork >> slidePercep0500: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.050.png'.
+	prio := 1.0500.
 	^ aSlide element
-		  priority: 1.0500;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.050.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -957,15 +984,16 @@ WASlidesNeuralNetwork >> slidePercep0500: aSlide [
 WASlidesNeuralNetwork >> slidePercep0510: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.051.png'.
+	prio := 1.0510.
 	^ aSlide element
-		  priority: 1.0510;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.051.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -974,15 +1002,16 @@ WASlidesNeuralNetwork >> slidePercep0510: aSlide [
 WASlidesNeuralNetwork >> slidePercep0520: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.052.png'.
+	prio := 1.0520.
 	^ aSlide element
-		  priority: 1.0520;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.052.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
@@ -991,15 +1020,16 @@ WASlidesNeuralNetwork >> slidePercep0520: aSlide [
 WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 
 	<gtSlide>
+	| filename prio |
+	filename := '2021-AI-General.053.png'.
+	prio := 1.0530.
 	^ aSlide element
-		  priority: 1.0530;
-		  element: [
+		  priority: prio;
+		  element: [ 
 			  | container form |
 			  form := PNGReadWriter formFromFileNamed:
-					          (GtResourceReference path:
-							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
-							           / '2021-AI-General.053.png') fullName.
-			  form asElement asScalableElement constraintsDo: [ :c |
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]

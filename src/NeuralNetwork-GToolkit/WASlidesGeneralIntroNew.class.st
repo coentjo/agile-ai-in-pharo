@@ -5,20 +5,6 @@ Class {
 }
 
 { #category : #accessing }
-WASlidesGeneralIntroNew >> slide: aSlide prio: prio fromPicture: filename [
-
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #accessing }
 WASlidesGeneralIntroNew >> slidePercep0010: aSlide [
 
 	<gtSlide>
