@@ -18,6 +18,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-29T14:19:54.169147+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-29T14:19:54.169147+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "W4fdJBqTDQChRQKXAaHKBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-01-01T13:17:28.039486+01:00"
 					}
 				},
@@ -166,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:18:49.834954+01:00"
+						"dateAndTimeString" : "2022-01-29T14:16:55.332184+01:00"
 					}
 				},
 				"editEmail" : {
@@ -177,17 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:19:08.712308+01:00"
+						"dateAndTimeString" : "2022-01-29T14:17:42.36643+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5jAssAeTDQCmefkrAzL37A=="
+					"uidString" : "suwGGhqTDQChPybyAaHKBg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "+ [[Slides General Intro]]"
+				"string" : "These first slides don't seem to work... don't know yet why...  In Part 1 they do work! \nI will look into it later, first some other things. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -203,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:23:26.189704+01:00"
+						"dateAndTimeString" : "2022-01-29T13:51:22.706049+01:00"
 					}
 				},
 				"editEmail" : {
@@ -214,14 +251,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:31:20.221332+01:00"
+						"dateAndTimeString" : "2022-01-29T14:37:45.826038+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sJzQwAeTDQCmk8UaAzL37A=="
+					"uidString" : "n6zavhmTDQC0EbirBq26Pw=="
 				},
-				"code" : "(GtLiveShow create: WASlidesGeneralIntro new) makeArrowsVisible\r\"Press play and inspect below to view slides\""
+				"code" : "(GtLiveShow create: WASlidesGeneralIntroNew new) makeArrowsVisible\r\"Press play and inspect below to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -261,43 +298,6 @@
 				"string" : "# Part 1. Neural Networks"
 			},
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:20:48.200173+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:20:48.200173+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "H+JltweTDQCmh4/GAzL37A=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -322,7 +322,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:31:26.420414+01:00"
+						"dateAndTimeString" : "2022-01-29T14:01:19.306499+01:00"
 					}
 				},
 				"uid" : {
