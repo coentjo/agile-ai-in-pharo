@@ -168,6 +168,16 @@ Class {
 }
 
 { #category : #accessing }
+WorkshopAIPerceptronGT class >> newPerceptronWithWeights: anArray andBias: anInteger [ 
+	"in fact an instance of Neuron is created, not of Perceptron, but because of the 'step' it will behave like a Perceptron."
+	^ Neuron new step
+		weights: anArray;
+		bias: anInteger;
+		yourself
+
+]
+
+{ #category : #accessing }
 WorkshopAIPerceptronGT >> aRandomNumber [
 
 	^ 50 atRandom - 25
@@ -374,7 +384,7 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision_b [
 
 	range first to: range last by: range increment do: [ :nbOfTrained | 
 		| anX anY trainedOutput nbOfGood nbOfTries realOutput |
-		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
+		perceptron := WorkshopAIPerceptronGT newPerceptronWithWeights: { 1 . 2 } andBias: -1.
 
 		nbOfTrained timesRepeat: [ 
 			anX := self aRandomNumber.
@@ -434,16 +444,6 @@ WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 	d x: #first.
 	d y: #second.
 	^ d
-]
-
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [ 
-	"in fact an instance of Neuron is created, not of Perceptron, but because of the 'step' it will behave like a Perceptron."
-	^ Neuron new step
-		weights: anArray;
-		bias: anInteger;
-		yourself
-
 ]
 
 { #category : #example }
@@ -555,7 +555,7 @@ WorkshopAIPerceptronGT >> perceptronForNORGate [
 	<noTest>
 	"Weights -1, -1 with bias -0.5 makes the Perceptron an NOR gate"
 
-	^ self 
+	^ WorkshopAIPerceptronGT 
 		newPerceptronWithWeights: #(-1 -1) 
 		andBias: -0.5 .
 
@@ -567,7 +567,7 @@ WorkshopAIPerceptronGT >> perceptronForNOTGate [
 	<noTest>
 	"Weight -1 with bias 0.5 makes the Perceptron a NOT gate"
 
-	^ self newPerceptronWithWeights: #( -1 ) andBias: 0.5
+	^ WorkshopAIPerceptronGT newPerceptronWithWeights: #( -1 ) andBias: 0.5
 
 ]
 
@@ -592,7 +592,7 @@ WorkshopAIPerceptronGT >> perceptronTrain [
 	<gtExample>
 	<npoTest>
 	| p |
-	p := self newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
+	p := WorkshopAIPerceptronGT newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
 	10 timesRepeat: [ p train: #( 0 1 ) desiredOutput: 0 ].
 	"p feed: #(0 1)."
 	^ p fire: #( 0 1 )
