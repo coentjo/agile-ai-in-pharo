@@ -232,7 +232,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -287,7 +287,7 @@ WorkshopAIPerceptronGT >> chapter01PerceptronSinus [
 	d points: (1 to: 100).
 	d y: [ :x | (x / 3.14) sin  ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -302,7 +302,7 @@ WorkshopAIPerceptronGT >> exampleGraphSinus [
 	d points: (1 to: 100).
 	d y: [ :x | (x / 3.14) sin ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -370,7 +370,7 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 	g axisX
 		noDecimal;
 		title: 'Training iteration'.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -387,8 +387,8 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision_b [
 		perceptron := WorkshopAIPerceptronGT newPerceptronWithWeights: { 1 . 2 } andBias: -1.
 
 		nbOfTrained timesRepeat: [ 
-			anX := self aRandomNumber.
-			anY := self aRandomNumber.
+			anX := WorkshopAI aRandomNumber.
+			anY := WorkshopAI aRandomNumber.
 			trainedOutput := (function value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
@@ -454,8 +454,8 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add: { 
-				self aRandomNumber .
-				self aRandomNumber } ].
+				WorkshopAI aRandomNumber .
+				WorkshopAI aRandomNumber } ].
 
 	f := [ :x | -2 * x - 3 ].
 
@@ -471,7 +471,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 	d y: #second.
 	g add: d.
 	
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -482,8 +482,8 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add: { 
-				self aRandomNumber.
-				self aRandomNumber } ].
+				WorkshopAI aRandomNumber.
+				WorkshopAI aRandomNumber } ].
 
 	f := [ :x | -2 * x - 3 ].
 
@@ -507,7 +507,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #example }
@@ -518,7 +518,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDots_b [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add:  
-				self aRandomNumber @ self aRandomNumber ].
+				WorkshopAI aRandomNumber @ WorkshopAI aRandomNumber ].
 	aScaleX := GtPlotterLinearScale new domainFrom: -25 to: 25.
 	aScaleY := GtPlotterLinearScale new domainFrom: -25 to: 25 .
 "	d := RTData new.

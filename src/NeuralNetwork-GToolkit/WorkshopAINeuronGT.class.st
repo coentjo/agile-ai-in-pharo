@@ -64,7 +64,7 @@ WorkshopAINeuronGT >> showLearningStepVsSigmoid [
 		noDecimal;
 		title: 'Epoch'.
 	g legend addText: 'Perceptron vs Sigmoid neuron'.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #examples }
@@ -81,7 +81,7 @@ WorkshopAINeuronGT >> showSigmoidFunction [
 	d x: #yourself.
 	d y: [ :x | 1 / (1 + x negated exp) ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #examples }
@@ -101,5 +101,5 @@ WorkshopAINeuronGT >> showStepFunction [
 			ifTrue: [ 1 ]
 			ifFalse: [ 0 ] ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]

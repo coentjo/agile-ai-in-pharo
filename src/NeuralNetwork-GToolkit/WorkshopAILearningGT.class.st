@@ -49,7 +49,7 @@ WorkshopAILearningGT >> learning01ShowSomePoints [
 	<noTest>
 	| g |
 	g := self graphWithPoints.  
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -69,7 +69,7 @@ WorkshopAILearningGT >> learning02PointsAndLine [
 	g := self graphWithPoints.
 	d := self addGraphForFunction: f.
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -139,7 +139,7 @@ WorkshopAILearningGT >> learning04GradientDescent [
 	d x: #yourself.
 	d y: f.
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -181,7 +181,7 @@ WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 	d points: result.
 	d y: #yourself.
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -244,7 +244,7 @@ WorkshopAILearningGT >> learning07 [
 	d2 x: #yourself.
 	d2 y: f.
 	g add: d2.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -304,7 +304,7 @@ WorkshopAILearningGT >> learning08 [
 	d points: result.
 	d y: #yourself.
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
