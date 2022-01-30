@@ -1069,13 +1069,3 @@ WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #perceptronForANDGate ]
 ]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slideXmplPercepForORGate: aSlide [
-	<gtSlide>
-
-	^ aSlide example
-		priority: 1.0202;
-		method: WorkshopAIPerceptronGT>>#testOR
-
-]

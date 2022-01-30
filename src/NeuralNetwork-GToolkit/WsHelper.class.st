@@ -75,7 +75,8 @@ filenumbers do: [ :filenr |
 WsHelper >> staticSlides [
 	<gtExample>
 	<noTest>
-	^ (FileLocator gtResource / 'coentjo' / 'agile-ai-in-pharo' / 'slides' ) asFileReference
+	"well, bettrer make slidesDirectory a class method..."
+	^  WorkshopAI new slidesDirectory asFileReference. 
 ]
 
 { #category : #accessing }
