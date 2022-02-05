@@ -753,6 +753,17 @@ WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 ]
 
 { #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0364: aSlide [
+
+	^ aSlide labelAndElement
+		  priority: 1.0364;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning01ShowSomePoints ]
+]
+
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 
 	<gtSlide>

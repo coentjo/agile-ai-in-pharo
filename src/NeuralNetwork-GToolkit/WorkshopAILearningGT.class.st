@@ -5,6 +5,17 @@ Class {
 }
 
 { #category : #accessing }
+WorkshopAILearningGT class >> somePoints [
+	<gtExample>
+	<noTest>
+	^ { 
+		  (1 @ 3.0).
+		  (3 @ 5.2).
+		  (2 @ 4.1).
+		  (4 @ 7.5) }
+]
+
+{ #category : #accessing }
 WorkshopAILearningGT >> addGraphForFunction: f [
 
 	| d |
@@ -35,7 +46,7 @@ WorkshopAILearningGT >> graphWithPoints [
 
 	| g d |
 	g := RTGrapher new.
-	d := self dataForPoints: self somePoints.
+	d := self dataForPoints: WorkshopAILearningGT somePoints.
 	g add: d.
 	^ g
 ]
@@ -80,12 +91,13 @@ WorkshopAILearningGT >> learning03LossFunctionMSE [
 	"A common loss function (used in this method) is the  
 		MSE : Mean Squared Error
 	"
+
 	"For given inputs a and b we can calculate the error: "
 
 	<gtExample>
 	<noTest>
 	| a b f loss points |
-	points := self somePoints.
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -93,8 +105,7 @@ WorkshopAILearningGT >> learning03LossFunctionMSE [
 	"for every point 'p' calculate the error, which is 'y' minus the 'f(x)' "
 	"Then take the square of the error."
 	"Then sum those squares."
-	loss := (points collect: [ :p | 
-		         (p y - (f value: p x)) squared ]) sum
+	loss := (points collect: [ :p | (p y - (f value: p x)) squared ]) sum
 	        / points size.
 	^ loss
 ]
@@ -104,8 +115,8 @@ WorkshopAILearningGT >> learning04GradientDescent [
 
 	<gtExample>
 	<noTest>
-	|  a b f learningRate deriMSEa deriMSEb g d points |
-	points := self somePoints.
+	| a b f learningRate deriMSEa deriMSEb g d points |
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -150,7 +161,7 @@ WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
-	points := self somePoints.
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -390,15 +401,4 @@ WorkshopAILearningGT >> learning10 [
 			         / points size.
 			  accumulatedMse := accumulatedMse + mse ].
 		  result add: accumulatedMse ] ] timeToRun
-]
-
-{ #category : #accessing }
-WorkshopAILearningGT >> somePoints [
-	<gtExample>
-	<noTest>
-	^ { 
-		  (1 @ 3.0).
-		  (3 @ 5.2).
-		  (2 @ 4.1).
-		  (4 @ 7.5) }
 ]
