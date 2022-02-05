@@ -31,6 +31,398 @@ WASlidesNeuralNetwork >> coderWithComment [
 	^ aScripter elementWithoutParent
 ]
 
+{ #category : #'examples data' }
+WASlidesNeuralNetwork >> exampleChap05Data01 [
+<gtExample>
+| network |
+	network := NNetwork new.
+network configure: 2 hidden: 3 nbOfOutputs: 1.
+
+20000 timesRepeat: [ 
+	network train: #(0 0) desiredOutputs: #(0).	
+	network train: #(0 1) desiredOutputs: #(1).
+	network train: #(1 0) desiredOutputs: #(1).
+	network train: #(1 1) desiredOutputs: #(0).
+].
+^ network
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data02 [
+<gtExample>
+| n data |
+	n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+	#(0 1 1) .
+	#(1 0 1) .
+	#(1 1 0) }.
+n train: data nbEpochs: 20000
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data03 [
+<gtExample>
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data04 [
+<gtExample>
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+...
+n predict: #(0 1 1)
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data05 [
+<gtExample>
+| data d |
+	data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+	
+d := Dictionary new.
+data do: [ :anExample |
+	d at: anExample allButLast put: anExample last ].
+d at: #(0 1 1)
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data06 [
+<gtExample>
+
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+n predict: #(0.4 0.7 0.6)
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data07 [
+<gtExample>
+| n data |
+	n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+    #(0 1 1) .
+    #(1 0 1) .
+    #(1 1 0) }.
+n train: data nbEpochs: 10000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data08 [
+<gtExample>
+| n data |
+	n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+	#(0 0 1) }.
+n train: data nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data09 [
+<gtExample>
+
+| n data |
+	n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+	#(0 1 1) .
+	#(1 0 1) .
+	#(1 1 0) }.
+n train: data nbEpochs: 10000
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data10 [
+<gtExample>
+
+(ZnEasy get: 'https://agileartificialintelligence.github.io/Datasets/iris.csv') contents.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data11 [
+<gtExample>
+
+"The execution of this script initializes the variable irisData.
+This variable is used in the subsequent scripts of this chapter"
+| irisCSV lines tLines irisData |
+	irisCSV := (ZnEasy get: 'https://agileartificialintelligence.github.io/Datasets/iris.csv') contents.
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: ','.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = 'setosa' ifTrue: [ l := #( 0 ) ].
+		row last = 'versicolor' ifTrue: [ l := #( 1 ) ].
+		row last = 'virginica' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data12 [
+<gtExample>
+
+| n irisData |
+	n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n train: irisData nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data13 [
+<gtExample>
+
+| g learningCurveNeuron r p res d |
+	g := RTGrapher new.
+#(0.001 0.01 0.1 0.2 0.3)
+	doWithIndex: [ :lr :index | 
+		learningCurveNeuron := OrderedCollection new.
+		0 to: 1000 do: [ :nbOfTrained | 
+			r := Random new seed: 42.
+			p := Neuron new.
+			p weights: #(-1 -1).
+			p bias: 2.
+			p learningRate: lr.
+			nbOfTrained
+				timesRepeat: [ p train: #(0 0) desiredOutput: 0.
+					p train: #(0 1) desiredOutput: 0.
+					p train: #(1 0) desiredOutput: 0.
+					p train: #(1 1) desiredOutput: 1 ].
+			res := ((p feed: #(0 0)) - 0) abs + ((p feed: #(0 1)) - 0) abs
+				+ ((p feed: #(1 0)) - 0) abs + ((p feed: #(1 1)) - 1) abs.
+			learningCurveNeuron add: res / 4 ].
+		d := RTData new.
+		d label: 'Sigmoid neuron lr = ' , lr asString.
+		d noDot.
+		d connectColor: (RTPalette c1 at: index).
+		d points: learningCurveNeuron.
+		d y: #yourself.
+		g add: d ].
+g legend addText: 'Learning rate effect'.
+g
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data14 [
+<gtExample>
+
+| n irisData |
+	n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n learningRate: 0.3. " Repeat the script with a different value"
+n train: irisData nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data15 [
+<gtExample>
+
+| cut cutTraining irisData cutTest trainingData testData |
+	cut := 0.8.
+cutTraining := (irisData size * cut) rounded.
+cutTest := (irisData size * (1 - cut)) rounded.
+trainingData := irisData first: cutTraining.
+testData := irisData last: cutTest.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data16 [
+<gtExample>
+
+| cut cutTraining irisData cutTest trainingData testData n |
+	cut := 0.8.
+cutTraining := (irisData size * cut) rounded.
+cutTest := (irisData size * (1 - cut)) rounded.
+trainingData := irisData first: cutTraining.
+testData := irisData last: cutTest.
+...
+n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n train: trainingData nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data17 [
+<gtExample>
+
+| cut cutTraining irisData cutTest trainingData testData n |
+	cut := 0.8.
+cutTraining := (irisData size * cut) rounded.
+cutTest := (irisData size * (1 - cut)) rounded.
+trainingData := irisData first: cutTraining.
+testData := irisData last: cutTest.
+n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n train: trainingData nbEpochs: 1000.
+
+(((testData collect: [ :d |
+	(n predict: d allButLast) = d last
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data18 [
+<gtExample>
+
+| cut cutTraining irisData cutTest trainingData testData n |
+	cut := 0.7.
+cutTraining := (irisData size * cut) rounded.
+cutTest := (irisData size * (1 - cut)) rounded.
+trainingData := irisData first: cutTraining.
+testData := irisData last: cutTest.
+n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n train: trainingData nbEpochs: 1000.
+
+(((testData collect: [ :d |
+	(n predict: d allButLast) = d last
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data19 [
+<gtExample>
+
+| shuffledIrisData irisData cut cutTraining cutTest trainingData testData n |
+	shuffledIrisData := irisData shuffleBy: (Random seed: 42).
+cut := 0.8.
+cutTraining := (shuffledIrisData size * cut) rounded.
+cutTest := (shuffledIrisData size * (1 - cut)) rounded.
+trainingData := shuffledIrisData first: cutTraining.
+testData := shuffledIrisData last: cutTest.
+n := NNetwork new.
+n configure: 4 hidden: 6 nbOfOutputs: 3.
+n train: trainingData nbEpochs: 1000.
+
+(((testData collect: [ :d |
+	(n predict: d allButLast) = d last
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data20 [
+<gtExample>
+
+| max min irisData |
+	max := OrderedCollection new.
+min := OrderedCollection new.
+(1 to: 4) collect: [ :i |
+	max add: (irisData collect: [ :d | d at: i ]) max.
+	min add: (irisData collect: [ :d | d at: i ]) min.
+].
+{ max . min }
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data21 [
+<gtExample>
+
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+    #(0 0 1 1).
+    #(0 1 0 2).
+    #(0 1 1 3).
+    #(1 0 0 4).
+    #(1 0 1 5).
+    #(1 1 0 6).
+    #(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data22 [
+<gtExample>
+
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+    #(0 0 1 1).
+    #(0 1000 0 2).
+    #(0 1000 1 3).
+    #(0.1 0 0 4).
+    #(0.1 0 1 5).
+    #(0.1 1000 0 6).
+    #(0.1 1000 1 7) }.
+n train: data nbEpochs: 10000.
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> exampleChap05Data23 [
+<gtExample>
+
+| n data |
+	n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+    #(0 0 1 1).
+    #(0 1000 0 2).
+    #(0 1000 1 3).
+    #(0.1 0 0 4).
+    #(0.1 0 1 5).
+    #(0.1 1000 0 6).
+    #(0.1 1000 1 7) }.
+n train: data nbEpochs: 10000.
+]
+
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0060: aSlide [
 
