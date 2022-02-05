@@ -760,25 +760,84 @@ WASlidesNeuralNetwork >> slidePercep0364: aSlide [
 		  newFadedText: '>>';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAILearningGT >> #learning01ShowSomePoints ]
+					  WorkshopAILearningGT >> #learning02PointsAndLine ]
 ]
 
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0370: aSlide [
-
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0366: aSlide [
 	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.037.png'.
-	prio := 1.0370.
-	^ aSlide element
-		  priority: prio;
+	^ aSlide labelAndElement
+		  priority: 1.0366;
+		  newFadedText: '>>';
 		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning03LossFunctionMSE ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0368: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0368;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning04GradientDescent ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0370: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0370;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning05TrainingVsLossFunction ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0372: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0372;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning07 ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0374: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0374;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning08 ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0376: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0376;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning09 ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0378: aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0378;
+		  newFadedText: '>>';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+					  WorkshopAILearningGT >> #learning10 ]
 ]
 
 { #category : #slides }
