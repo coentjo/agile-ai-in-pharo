@@ -5,6 +5,29 @@ Class {
 }
 
 { #category : #accessing }
+WorkshopAILearningGT class >> dataForPoints: aPointCollection [ 
+	| d |
+	d := RTData new.
+	d dotShape color: Color red.
+	d points: aPointCollection.
+	d
+		x: #x;
+		y: #y.
+	^ d
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT class >> graphWithPoints [
+
+	| g d |
+	g := RTGrapher new.
+	d := WorkshopAILearningGT dataForPoints:
+		     WorkshopAILearningGT somePoints.
+	g add: d.
+	^ g
+]
+
+{ #category : #accessing }
 WorkshopAILearningGT class >> somePoints [
 	<gtExample>
 	<noTest>
@@ -30,28 +53,6 @@ WorkshopAILearningGT >> addGraphForFunction: f [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> dataForPoints: aPointCollection [ 
-	| d |
-	d := RTData new.
-	d dotShape color: Color red.
-	d points: aPointCollection.
-	d
-		x: #x;
-		y: #y.
-	^ d
-]
-
-{ #category : #accessing }
-WorkshopAILearningGT >> graphWithPoints [
-
-	| g d |
-	g := RTGrapher new.
-	d := self dataForPoints: WorkshopAILearningGT somePoints.
-	g add: d.
-	^ g
-]
-
-{ #category : #accessing }
 WorkshopAILearningGT >> learning01ShowSomePoints [
 
 	"Graph with points"
@@ -59,7 +60,7 @@ WorkshopAILearningGT >> learning01ShowSomePoints [
 	<gtExample>
 	<noTest>
 	| g |
-	g := self graphWithPoints.  
+	g := WorkshopAILearningGT graphWithPoints.  
 	^ WorkshopAI showGraphInMorph: g
 ]
 

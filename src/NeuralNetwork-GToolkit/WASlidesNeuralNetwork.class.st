@@ -754,7 +754,7 @@ WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0364: aSlide [
-
+	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0364;
 		  newFadedText: '>>';
