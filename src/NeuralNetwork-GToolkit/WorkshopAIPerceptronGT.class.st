@@ -168,6 +168,16 @@ Class {
 }
 
 { #category : #accessing }
+WorkshopAIPerceptronGT class >> newPerceptronWithWeights: anArray andBias: anInteger [ 
+	"in fact an instance of Neuron is created, not of Perceptron, but because of the 'step' it will behave like a Perceptron."
+	^ Neuron new step
+		weights: anArray;
+		bias: anInteger;
+		yourself
+
+]
+
+{ #category : #accessing }
 WorkshopAIPerceptronGT >> aRandomNumber [
 
 	^ 50 atRandom - 25
@@ -222,7 +232,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -259,10 +269,12 @@ WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
 	"Weights 1, 1 with bias -1.5 makes it an AND gate"
 
 	<gtExample>
-	| andGate |
-	andGate := self perceptronForANDGate.
+	| perceptron |
+	perceptron := Neuron new step. 
+	perceptron weights: #( 1 1 ) .
+	perceptron bias: -1.5 .
 	" Putting 1 and 1 in an AND Gate gives: "
-	^ andGate fire: #( 1 1 )
+	^ perceptron fire: #( 1 1 )
 ]
 
 { #category : #accessing }
@@ -275,7 +287,7 @@ WorkshopAIPerceptronGT >> chapter01PerceptronSinus [
 	d points: (1 to: 100).
 	d y: [ :x | (x / 3.14) sin  ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -290,7 +302,7 @@ WorkshopAIPerceptronGT >> exampleGraphSinus [
 	d points: (1 to: 100).
 	d y: [ :x | (x / 3.14) sin ].
 	g add: d.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -358,7 +370,7 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 	g axisX
 		noDecimal;
 		title: 'Training iteration'.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -372,11 +384,11 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision_b [
 
 	range first to: range last by: range increment do: [ :nbOfTrained | 
 		| anX anY trainedOutput nbOfGood nbOfTries realOutput |
-		perceptron := self newPerceptronWithWeights: { 1 . 2 } andBias: -1.
+		perceptron := WorkshopAIPerceptronGT newPerceptronWithWeights: { 1 . 2 } andBias: -1.
 
 		nbOfTrained timesRepeat: [ 
-			anX := self aRandomNumber.
-			anY := self aRandomNumber.
+			anX := WorkshopAI aRandomNumber.
+			anY := WorkshopAI aRandomNumber.
 			trainedOutput := (function value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
@@ -434,16 +446,6 @@ WorkshopAIPerceptronGT >> getRTDataForSomePoints [
 	^ d
 ]
 
-{ #category : #accessing }
-WorkshopAIPerceptronGT >> newPerceptronWithWeights: anArray andBias: anInteger [ 
-	"in fact an instance of Neuron is created, not of Perceptron, but because of the 'step' it will behave like a Perceptron."
-	^ Neuron new step
-		weights: anArray;
-		bias: anInteger;
-		yourself
-
-]
-
 { #category : #example }
 WorkshopAIPerceptronGT >> perceptronColoredDots [
 
@@ -452,8 +454,8 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add: { 
-				self aRandomNumber .
-				self aRandomNumber } ].
+				WorkshopAI aRandomNumber .
+				WorkshopAI aRandomNumber } ].
 
 	f := [ :x | -2 * x - 3 ].
 
@@ -469,7 +471,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 	d y: #second.
 	g add: d.
 	
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #accessing }
@@ -480,8 +482,8 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add: { 
-				self aRandomNumber.
-				self aRandomNumber } ].
+				WorkshopAI aRandomNumber.
+				WorkshopAI aRandomNumber } ].
 
 	f := [ :x | -2 * x - 3 ].
 
@@ -505,7 +507,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 	d2 y: f.
 	d2 x: #yourself.
 	g add: d2.
-	^ self showGraphInMorph: g
+	^ WorkshopAI showGraphInMorph: g
 ]
 
 { #category : #example }
@@ -516,7 +518,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDots_b [
 	somePoints := OrderedCollection new.
 	500 timesRepeat: [ 
 		somePoints add:  
-				self aRandomNumber @ self aRandomNumber ].
+				WorkshopAI aRandomNumber @ WorkshopAI aRandomNumber ].
 	aScaleX := GtPlotterLinearScale new domainFrom: -25 to: 25.
 	aScaleY := GtPlotterLinearScale new domainFrom: -25 to: 25 .
 "	d := RTData new.
@@ -553,7 +555,7 @@ WorkshopAIPerceptronGT >> perceptronForNORGate [
 	<noTest>
 	"Weights -1, -1 with bias -0.5 makes the Perceptron an NOR gate"
 
-	^ self 
+	^ WorkshopAIPerceptronGT 
 		newPerceptronWithWeights: #(-1 -1) 
 		andBias: -0.5 .
 
@@ -565,18 +567,23 @@ WorkshopAIPerceptronGT >> perceptronForNOTGate [
 	<noTest>
 	"Weight -1 with bias 0.5 makes the Perceptron a NOT gate"
 
-	^ self newPerceptronWithWeights: #( -1 ) andBias: 0.5
+	^ WorkshopAIPerceptronGT newPerceptronWithWeights: #( -1 ) andBias: 0.5
 
 ]
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> perceptronForORGate [
-	<gtExample>
-	<noTest>
+
 	"Weights 1, 1 with bias -0.5 makes the Perceptron an OR gate"
 
-	^ self newPerceptronWithWeights: #(1 1) andBias: -0.5 .
+	<gtExample>
+	<noTest>
+	| perceptron |
+	perceptron := Neuron new step.
+	perceptron weights: #( 1 1 ).
+	perceptron bias: -0.5.
 
+	^ perceptron
 ]
 
 { #category : #example }
@@ -585,7 +592,7 @@ WorkshopAIPerceptronGT >> perceptronTrain [
 	<gtExample>
 	<npoTest>
 	| p |
-	p := self newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
+	p := WorkshopAIPerceptronGT newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
 	10 timesRepeat: [ p train: #( 0 1 ) desiredOutput: 0 ].
 	"p feed: #(0 1)."
 	^ p fire: #( 0 1 )
