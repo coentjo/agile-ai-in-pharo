@@ -1,7 +1,7 @@
 Class {
 	#name : #WsHelper,
 	#superclass : #Object,
-	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
+	#category : #'NeuralNetwork-GToolkit-WsMetaHelper'
 }
 
 { #category : #accessing }

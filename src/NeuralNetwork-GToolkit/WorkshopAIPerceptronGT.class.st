@@ -164,7 +164,7 @@ Class {
 		'random',
 		'currentSlide'
 	],
-	#category : #'NeuralNetwork-GToolkit'
+	#category : #'NeuralNetwork-GToolkit-Workshop'
 }
 
 { #category : #accessing }

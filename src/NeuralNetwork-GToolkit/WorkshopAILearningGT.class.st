@@ -1,7 +1,7 @@
 Class {
 	#name : #WorkshopAILearningGT,
 	#superclass : #WorkshopAI,
-	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
+	#category : #'NeuralNetwork-GToolkit-Workshop'
 }
 
 { #category : #accessing }
