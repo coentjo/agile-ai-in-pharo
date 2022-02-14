@@ -72,11 +72,122 @@ filenumbers do: [ :filenr |
 ]
 
 { #category : #accessing }
+WsHelper >> ClassHeaderForClass: className [
+
+	^ 'Class {
+	#name : #' , className
+	  ,
+	  ',
+	#superclass : #Object,
+	#category : #''NeuralNetwork-GToolkit-Workshop''
+}
+
+'
+]
+
+{ #category : #accessing }
+WsHelper >> classNameFor: aName [
+	| name |
+	name := aName reject: [ : char | char = $- or: [char = $.]].
+	^ 'Scripts',name
+]
+
+{ #category : #accessing }
+WsHelper >> exampleParseScripts [
+
+	"Generate a class-file (as to put in git for every script-file) 
+	with every script as a separate method. "
+
+	<gtExample>
+	| contents inFile fromDir toDir classFileSrc outFile baseDir str |
+	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
+	           / 'coentjo' / 'agile-ai-in-pharo'.
+	fromDir :=  baseDir / 'scripts'.
+	toDir := baseDir / 'src'.
+
+	inFile := fromDir / '06-Data.txt'.
+	classFileSrc := self parseScriptFileToExample: inFile.
+	
+	outFile := toDir / 'bloeb.txt'.
+	outFile ensureCreateFile.
+	
+	
+	self write: classFileSrc toFile: inFile.
+	^ outFile asFileReference
+]
+
+{ #category : #accessing }
+WsHelper >> forClass: className script: exampleScript indexString: indexString [ 
+
+	^ '{ #category : #slides }
+',className,' >> script',indexString,': aSlide [
+
+	<gtExample>
+	^ aSlide element
+		  priority: 1.0980;
+		  element: [
+			  | container form |
+			  
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+'
+]
+
+{ #category : #accessing }
+WsHelper >> parseScriptFileToExample: aFileLocator [
+
+	| className examples indexLengthMin2String stream |
+	className := self classNameFor: aFileLocator basename.
+	examples := aFileLocator contents splitOn:
+		            '-----------------------------'.
+	
+	"^ aFileLocator asFileReference writeStreamDo: [ :aStream | "
+	^ String streamContents: [ :aStream | 
+		  aStream nextPutAll: (self ClassHeaderForClass: className).
+		  examples withIndexDo: [ :exampleScript :index | 
+			  indexLengthMin2String := index asString.
+			  indexLengthMin2String size > 1 ifFalse: [ 
+				  indexLengthMin2String := '0' , indexLengthMin2String ].
+
+			  aStream nextPutAll: 'asd' "
+				  (self forClass: className script: exampleScript indexString: indexLengthMin2String)" ] ]
+]
+
+{ #category : #accessing }
 WsHelper >> staticSlides [
 	<gtExample>
 	<noTest>
-	"well, bettrer make slidesDirectory a class method..."
+	"well, better make slidesDirectory a class method..."
 	^  WorkshopAI new slidesDirectory asFileReference. 
+]
+
+{ #category : #accessing }
+WsHelper >> test_forClass_script_indexString [
+	<gtExample>
+
+	| expectedOutcome realOutcome className |
+	className := 'AbcClass'.
+	expectedOutcome:= '{ #category : #slides }
+AbcClass >> script01: aSlide [
+
+	<gtExample>
+	^ aSlide element
+		  priority: 1.0980;
+		  element: [
+			  | container form |
+			  
+			  form asElement asScalableElement constraintsDo: [ :c |
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+'.
+	realOutcome := self forClass: className script: 'xyz' indexString: '01'.
+	self assert: realOutcome equals: expectedOutcome.
+	^ realOutcome
 ]
 
 { #category : #accessing }
@@ -99,4 +210,12 @@ WsHelper >> workshopAiExamples [
 	^ stream contents. 
 
 
+]
+
+{ #category : #accessing }
+WsHelper >> write: classFileSrc toFile: toFile [
+
+	| tab stream |
+	stream := WriteStream on: toFile.
+	[ stream nextPutAll: 'classFileSrc' ] ensure: [ stream close ]
 ]
