@@ -99,20 +99,19 @@ WsHelper >> exampleParseScripts [
 	with every script as a separate method. "
 
 	<gtExample>
-	| contents inFile fromDir toDir classFileSrc outFile baseDir str |
+	| contents inFile fromDir toDir classFileSrc outFile baseDir str fileName |
 	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
 	           / 'coentjo' / 'agile-ai-in-pharo'.
 	fromDir :=  baseDir / 'scripts'.
 	toDir := baseDir / 'src'.
 
-	inFile := fromDir / '06-Data.txt'.
+	fileName := '06-Data.txt'.
+	inFile := fromDir / fileName.
+	
+	outFile := toDir / (self classNameFor: fileName), 'st'.
 	classFileSrc := self parseScriptFileToExample: inFile.
 	
-	outFile := toDir / 'bloeb.txt'.
-	outFile ensureCreateFile.
-	
-	
-	self write: classFileSrc toFile: inFile.
+	self write: classFileSrc toFile: outFile.
 	^ outFile asFileReference
 ]
 
@@ -152,8 +151,8 @@ WsHelper >> parseScriptFileToExample: aFileLocator [
 			  indexLengthMin2String size > 1 ifFalse: [ 
 				  indexLengthMin2String := '0' , indexLengthMin2String ].
 
-			  aStream nextPutAll: 'asd' "
-				  (self forClass: className script: exampleScript indexString: indexLengthMin2String)" ] ]
+			  aStream nextPutAll: 
+				  (self forClass: className script: exampleScript indexString: indexLengthMin2String) ] ]
 ]
 
 { #category : #accessing }
@@ -216,6 +215,7 @@ WsHelper >> workshopAiExamples [
 WsHelper >> write: classFileSrc toFile: toFile [
 
 	| tab stream |
-	stream := WriteStream on: toFile.
-	[ stream nextPutAll: 'classFileSrc' ] ensure: [ stream close ]
+	toFile asFileReference writeStreamDo: [ : aStream | 
+		aStream nextPutAll: classFileSrc
+	]
 ]
