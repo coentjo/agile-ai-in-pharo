@@ -1,7 +1,7 @@
 Class {
 	#name : #Scripts06Datatxt2,
 	#superclass : #Object,
-	#category : #'NeuralNetwork-GToolkit-Workshop'
+	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
 { #category : #accessing }
