@@ -109,30 +109,39 @@ WsHelper >> exampleParseScripts [
 	inFile := fromDir / fileName.
 	
 	outFile := toDir / (self classNameFor: fileName), 'st'.
-	classFileSrc := self parseScriptFileToExample: inFile.
 	
+	classFileSrc := self parseScriptFileToExample: inFile.
 	self write: classFileSrc toFile: outFile.
 	^ outFile asFileReference
 ]
 
 { #category : #accessing }
-WsHelper >> forClass: className script: exampleScript indexString: indexString [ 
+WsHelper >> forClass: className script: exampleScript indexString: index [ 
 
 	^ '{ #category : #slides }
-',className,' >> script',indexString,': aSlide [
-
-	<gtExample>
-	^ aSlide element
-		  priority: 1.0980;
-		  element: [
-			  | container form |
-			  
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+',className,' >> script',( self indexLength2: index),': aSlide [
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: 1.0100;
+		newFadedText: ''Example with Pharo arrays'' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: ''WorkshopAIPerceptronGT browse''
+				]
 ]
 
 '
+]
+
+{ #category : #accessing }
+WsHelper >> indexLength2: index [
+
+	"if index is only 1 digit: add '0' in front "
+	| indexLengthMin2String |
+	indexLengthMin2String := index asString.
+	indexLengthMin2String size > 1 ifFalse: [ 
+		indexLengthMin2String := '0' , indexLengthMin2String ].
+	^ indexLengthMin2String
 ]
 
 { #category : #accessing }
@@ -142,17 +151,14 @@ WsHelper >> parseScriptFileToExample: aFileLocator [
 	className := self classNameFor: aFileLocator basename.
 	examples := aFileLocator contents splitOn:
 		            '-----------------------------'.
-	
-	"^ aFileLocator asFileReference writeStreamDo: [ :aStream | "
+
 	^ String streamContents: [ :aStream | 
 		  aStream nextPutAll: (self ClassHeaderForClass: className).
 		  examples withIndexDo: [ :exampleScript :index | 
-			  indexLengthMin2String := index asString.
-			  indexLengthMin2String size > 1 ifFalse: [ 
-				  indexLengthMin2String := '0' , indexLengthMin2String ].
-
-			  aStream nextPutAll: 
-				  (self forClass: className script: exampleScript indexString: indexLengthMin2String) ] ]
+			  aStream nextPutAll: (self
+					   forClass: className
+					   script: exampleScript
+					   indexString: index) ] ]
 ]
 
 { #category : #accessing }
@@ -171,16 +177,14 @@ WsHelper >> test_forClass_script_indexString [
 	className := 'AbcClass'.
 	expectedOutcome:= '{ #category : #slides }
 AbcClass >> script01: aSlide [
-
-	<gtExample>
-	^ aSlide element
-		  priority: 1.0980;
-		  element: [
-			  | container form |
-			  
-			  form asElement asScalableElement constraintsDo: [ :c |
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+	<gtSlide>
+	^ aSlide labelAndElement
+		priority: 1.0100;
+		newFadedText: ''Example with Pharo arrays'' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: ''WorkshopAIPerceptronGT browse''
+				]
 ]
 
 '.
