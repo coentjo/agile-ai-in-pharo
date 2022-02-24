@@ -7,9 +7,9 @@ using Live Slides and GtExamples.
 
 # How to load it in Glamorous Toolkit (GT)?
 
-Download GT from [https://gtoolkit.com/](https://gtoolkit.com/). 
+Download GT from [https://gtoolkit.com/](https://gtoolkit.com/). GT or Glamorous Toolkit is open source, free, and introduces the concept of moldable development! 
 
-In a Playground execute 
+In a Playground in GT execute 
 
 ```Smalltalk
 Metacello new
