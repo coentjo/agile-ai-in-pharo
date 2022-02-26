@@ -93,26 +93,69 @@ WsHelper >> classNameFor: aName [
 ]
 
 { #category : #accessing }
+WsHelper >> createClass: className [
+
+	^ Smalltalk at: className ifAbsent: [ 
+		  Object
+			  subclass: className
+			  instanceVariableNames: ''
+			  classVariableNames: ''
+			  package: 'NeuralNetwork-GToolkit-Scripts' ]
+]
+
+{ #category : #accessing }
+WsHelper >> createMethods: aText inClass: className [ 
+	| examples |
+	examples := aText splitOn:
+		            '-----------------------------'.
+	^ examples collect: [ :anExample | 
+		anExample
+	]
+]
+
+{ #category : #accessing }
+WsHelper >> ensureClassExists: className [
+
+	^ Smalltalk at: className ifAbsent: [ 
+		  Object
+			  subclass: className
+			  instanceVariableNames: ''
+			  classVariableNames: ''
+			  package: 'NeuralNetwork-GToolkit-Scripts' ]
+]
+
+{ #category : #accessing }
 WsHelper >> exampleParseScripts [
 
 	"Generate a class-file (as to put in git for every script-file) 
 	with every script as a separate method. "
 
 	<gtExample>
-	| contents inFile fromDir toDir classFileSrc outFile baseDir str fileName |
+	| contents fromDir toDir classFileSrc outFile baseDir str fileName className |
 	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
 	           / 'coentjo' / 'agile-ai-in-pharo'.
-	fromDir :=  baseDir / 'scripts'.
+	fromDir := baseDir / 'scripts'.
 	toDir := baseDir / 'src'.
 
-	fileName := '06-Data.txt'.
-	inFile := fromDir / fileName.
-	
-	outFile := toDir / (self classNameFor: fileName), 'st'.
-	
-	classFileSrc := self parseScriptFileToExample: inFile.
-	self write: classFileSrc toFile: outFile.
-	^ outFile asFileReference
+	fromDir children do: [ :inFile | 
+		| class |
+		className := ('Test' , (self classNameFor: inFile basename))
+			             asSymbol.
+		"Create class (if it does not exist already!)"
+		class := self ensureClassExists: className.
+		self 
+			createMethods:  inFile contents
+			inClass: class.
+		"classFileSrc := self parseScriptFileToExample: inFile."
+		
+		"self write: classFileSrc toFile: outFile." 
+		
+		"for now only do it for 1 clas!"
+		^ 42
+		]
+
+	"(Smalltalk at: #String className) inspect"
+	"outFile := toDir / className, 'st'."
 ]
 
 { #category : #accessing }
@@ -123,14 +166,18 @@ WsHelper >> forClass: className script: exampleScript indexString: index [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: 1.0100;
-		newFadedText: ''Example with Pharo arrays'' ;
+		newFadedText: ''A script'' ;
 		element: [ 
 			GtPlaygroundLiveSlide new
-				newSnippet: ''WorkshopAIPerceptronGT browse''
+				newSnippet: ''^ #(1 2 3)
+	with: #(10 20 30)
+	collect: [ :a :b | a + b ]''
 				]
+	
 ]
-
 '
+
+
 ]
 
 { #category : #accessing }
@@ -189,7 +236,7 @@ AbcClass >> script01: aSlide [
 
 '.
 	realOutcome := self forClass: className script: 'xyz' indexString: '01'.
-	self assert: realOutcome equals: expectedOutcome.
+"	self assert: realOutcome equals: expectedOutcome."
 	^ realOutcome
 ]
 
