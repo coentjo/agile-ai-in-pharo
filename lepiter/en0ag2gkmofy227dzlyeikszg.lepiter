@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-28T19:53:37.728429+02:00"
+						"dateAndTimeString" : "2022-02-28T15:02:07.84+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Chap2 from the book."
+				"string" : "Chap2 from the book. See slides above. "
 			},
 			{
 				"__type" : "textSnippet",

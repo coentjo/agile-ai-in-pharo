@@ -252,7 +252,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T12:19:03.796+01:00"
+						"dateAndTimeString" : "2022-02-28T14:32:42.085+01:00"
 					}
 				},
 				"uid" : {
@@ -262,7 +262,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "On the next line you see a Playground: Playgrounds give the opportunity to execute code and look at the result: When the playground has focus you can press the **'Inspect'** button to execute the code and look at the result: in this case the result are slides. Press the '**+**' at the top-left to maximise the slides and with the arrows on the right you can go through the slides. As you will find out soon a slide can have a Playground which allows you te execute the code and see the result. Time to **Inspect**: "
+				"string" : "On the next line you see a Playground: Playgrounds give the opportunity to execute code and look at the result: When the playground has focus you can press the **'Inspect'** button to execute the code and look at the result: in this case the result are slides. Press the '**+**' at the top-left to maximize the slides and with the arrows on the right you can go through the slides. As you will find out soon, a slide can have a Playground which allows you te execute the code and see the result. When done with this set of slides, use the '**-**'(left-up) to un-maximize to come back to this page. Time to **Inspect**: "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -312,6 +312,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:33:16.123+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:34:49.045+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+Onr0nWVDQCmCvphBIrLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "OK, in the next chapter we'll dive in: you now know how to look at the slides, and execute the code in playgrounds that can be in the slides. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2021-12-18T15:03:13.873443+01:00"
 					}
 				},
@@ -334,40 +371,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# Part 1. Neural Networks"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-28T16:24:06.590987+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-29T14:01:19.306499+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KhY5wweTDQCmlDi8AzL37A=="
-				},
-				"code" : "(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible\r\"Press play and inspect below to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -405,6 +408,114 @@
 					"__type" : "textStyle"
 				},
 				"string" : "This workshop is an introduction in Neural Networks. We start by looking at the concept of a Perceptron, and how it can learn. which is then extended to a(n artificial) Neuron. Neurons can be combined to a Neural Network. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:37:42.262+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:41:17.458+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ABGi43WVDQCmUYJLBIrLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "(the information on the slides is not always self-explaining, so some guidance from someone knowing about AI, or using into the Agile-AI-book, would be helpful). "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:55:33.633+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T15:01:36.348+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SAFwI3aVDQCmVxA7BIrLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "These slides start off with *Perceptrons*, which will be extended into *Neurons*, then combining neurons in *Neural Networks*. For the part about Perceptron text is also written below: '**01 Perceptron**'. "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-28T16:24:06.590987+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-28T14:35:45.564+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KhY5wweTDQCmlDi8AzL37A=="
+				},
+				"code" : "(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible\r\"Press Inspect to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
