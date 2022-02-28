@@ -1,11 +1,11 @@
 Class {
 	#name : #WorkshopAILearningGT,
 	#superclass : #WorkshopAI,
-	#category : #'NeuralNetwork-GToolkit-NeuralNetwork-GToolkit'
+	#category : #'NeuralNetwork-GToolkit-Workshop'
 }
 
 { #category : #accessing }
-WorkshopAILearningGT >> addGraphForFunction: f [
+WorkshopAILearningGT class >> addGraphForFunction: f [
 
 	| d |
 	d := RTData new.
@@ -19,7 +19,7 @@ WorkshopAILearningGT >> addGraphForFunction: f [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> dataForPoints: aPointCollection [ 
+WorkshopAILearningGT class >> dataForPoints: aPointCollection [ 
 	| d |
 	d := RTData new.
 	d dotShape color: Color red.
@@ -31,13 +31,25 @@ WorkshopAILearningGT >> dataForPoints: aPointCollection [
 ]
 
 { #category : #accessing }
-WorkshopAILearningGT >> graphWithPoints [
+WorkshopAILearningGT class >> graphWithPoints [
 
 	| g d |
 	g := RTGrapher new.
-	d := self dataForPoints: self somePoints.
+	d := WorkshopAILearningGT dataForPoints:
+		     WorkshopAILearningGT somePoints.
 	g add: d.
 	^ g
+]
+
+{ #category : #accessing }
+WorkshopAILearningGT class >> somePoints [
+	<gtExample>
+	<noTest>
+	^ { 
+		  (1 @ 3.0).
+		  (3 @ 5.2).
+		  (2 @ 4.1).
+		  (4 @ 7.5) }
 ]
 
 { #category : #accessing }
@@ -48,7 +60,7 @@ WorkshopAILearningGT >> learning01ShowSomePoints [
 	<gtExample>
 	<noTest>
 	| g |
-	g := self graphWithPoints.  
+	g := WorkshopAILearningGT graphWithPoints.  
 	^ WorkshopAI showGraphInMorph: g
 ]
 
@@ -66,8 +78,8 @@ WorkshopAILearningGT >> learning02PointsAndLine [
 	b := 3.
 	f := [ :x | a * x + b ].
 	"Take same graph as before, add line f"
-	g := self graphWithPoints.
-	d := self addGraphForFunction: f.
+	g := WorkshopAILearningGT graphWithPoints.
+	d := WorkshopAILearningGT addGraphForFunction: f.
 	g add: d.
 	^ WorkshopAI showGraphInMorph: g
 ]
@@ -80,12 +92,13 @@ WorkshopAILearningGT >> learning03LossFunctionMSE [
 	"A common loss function (used in this method) is the  
 		MSE : Mean Squared Error
 	"
+
 	"For given inputs a and b we can calculate the error: "
 
 	<gtExample>
 	<noTest>
 	| a b f loss points |
-	points := self somePoints.
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -93,8 +106,7 @@ WorkshopAILearningGT >> learning03LossFunctionMSE [
 	"for every point 'p' calculate the error, which is 'y' minus the 'f(x)' "
 	"Then take the square of the error."
 	"Then sum those squares."
-	loss := (points collect: [ :p | 
-		         (p y - (f value: p x)) squared ]) sum
+	loss := (points collect: [ :p | (p y - (f value: p x)) squared ]) sum
 	        / points size.
 	^ loss
 ]
@@ -104,8 +116,8 @@ WorkshopAILearningGT >> learning04GradientDescent [
 
 	<gtExample>
 	<noTest>
-	|  a b f learningRate deriMSEa deriMSEb g d points |
-	points := self somePoints.
+	| a b f learningRate deriMSEa deriMSEb g d points |
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -150,7 +162,7 @@ WorkshopAILearningGT >> learning05TrainingVsLossFunction [
 	<gtExample>
 	<noTest>
 	| points a b f learningRate result deriMSEa deriMSEb mse g d |
-	points := self somePoints.
+	points := WorkshopAILearningGT somePoints.
 	"line:   y = 0.5 * x + 3 "
 	a := 0.5.
 	b := 3.
@@ -390,15 +402,4 @@ WorkshopAILearningGT >> learning10 [
 			         / points size.
 			  accumulatedMse := accumulatedMse + mse ].
 		  result add: accumulatedMse ] ] timeToRun
-]
-
-{ #category : #accessing }
-WorkshopAILearningGT >> somePoints [
-	<gtExample>
-	<noTest>
-	^ { 
-		  (1 @ 3.0).
-		  (3 @ 5.2).
-		  (2 @ 4.1).
-		  (4 @ 7.5) }
 ]
