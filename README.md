@@ -14,7 +14,7 @@ In a Playground in GT execute
 ```Smalltalk
 Metacello new
     baseline: 'AgileArtificialIntelligence';
-    repository: 'github://coentjo/agile-ai-in-pharo:Master/src';
+    repository: 'github://coentjo/agile-ai-in-pharo:master/src';
     onConflictUseIncoming;
     load.
 ```
