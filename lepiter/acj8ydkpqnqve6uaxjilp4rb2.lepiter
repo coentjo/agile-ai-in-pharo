@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-05T20:14:33.754672+01:00"
+						"dateAndTimeString" : "2022-02-28T11:30:39.612+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "First an example in the Pharo language. The examples are created as gtExamples, so you can run them with the 'play i'-button. Below the method you find more explanation. "
+				"string" : "First an example in the Pharo language. The examples are created as gtExamples, so you can run them with the 'play i'-button (**'Play and Inspect Example Result'**). Below the method you find more explanation. "
 			},
 			{
 				"__type" : "pharoSnippet",
