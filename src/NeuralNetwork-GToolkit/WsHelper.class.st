@@ -104,13 +104,24 @@ WsHelper >> createClass: className [
 ]
 
 { #category : #accessing }
-WsHelper >> createMethods: aText inClass: className [ 
-	| examples |
-	examples := aText splitOn:
-		            '-----------------------------'.
-	^ examples collect: [ :anExample | 
-		anExample
-	]
+WsHelper >> createExample: methodName body: methodBody [ 
+
+	| cr method |
+	cr := Character cr asString.
+	method := methodName , cr , '	<gtExample>' , cr , methodBody.
+	^ (Smalltalk at: #ByteString) compile: method
+]
+
+{ #category : #accessing }
+WsHelper >> createMethods: aText inClass: className [
+
+	| examples methodBody |
+	examples := aText splitOn: '-----------------------------'.
+	^ { (examples at: 1) } withIndexDo: [ :anExample :anIindex | 
+		  | methodName |
+		  methodName := 'scriptExample'.
+		  methodBody := ' ^ 42'.
+	  self createExample: methodName body: methodBody ]
 ]
 
 { #category : #accessing }
@@ -181,6 +192,15 @@ WsHelper >> forClass: className script: exampleScript indexString: index [
 ]
 
 { #category : #accessing }
+WsHelper >> inClass: aClassName createExample: aMethodName body: aMethodBody [
+
+	| cr method |
+	cr := Character cr asString.
+	method := aMethodName , cr , '	<gtExample>' , cr , aMethodBody.
+	^ (Smalltalk at: #ByteString) compile: method
+]
+
+{ #category : #accessing }
 WsHelper >> indexLength2: index [
 
 	"if index is only 1 digit: add '0' in front "
@@ -214,6 +234,42 @@ WsHelper >> staticSlides [
 	<noTest>
 	"well, better make slidesDirectory a class method..."
 	^  WorkshopAI new slidesDirectory asFileReference. 
+]
+
+{ #category : #accessing }
+WsHelper >> testCreateExemple [
+
+"Glad I found out how to generate methods, 
+but does not work because not all variable are declared, 
+so methods don't compile"
+
+	<gtExample>
+	| className class methodName mth methodBody |
+	className := #ByteString. 
+	class := Smalltalk at: className. 
+	methodName := 'aaascriptExample01'.
+	methodBody := '
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0242;
+		  newFadedText: ''Example script'';
+		  element: [ 
+			  GtPlaygroundLiveSlide new newSnippet:
+					  ''	| g d |
+	g := RTGrapher new.
+	d := RTData new.
+	d connectColor: Color blue.
+	d points: (1 to: 100).
+	d y: [ :x | (x / 3.14) sin ].
+	g add: d.
+	^ WorkshopAI showGraphInMorph: g'' ]'	.
+	
+	self inClass: className createExample: methodName body: methodBody.
+	mth := (class methodDict at: methodName asSymbol).
+	self assert: mth class name equals: CompiledMethod name
+	
+	
 ]
 
 { #category : #accessing }
