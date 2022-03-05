@@ -9,7 +9,7 @@ WsHelper class >> generateSlideMethods [
 	<gtExample>
 	<noTest>
 "for git"
-"file: src/"
+"file: src/*.st"
 | s s1 s2 s3 s4 file  nr filenumbers | 
 s := '{ #category : #slides }
 WorkshopAI >> slidePercep0010: aSlide [
@@ -113,15 +113,21 @@ WsHelper >> createExample: methodName body: methodBody [
 ]
 
 { #category : #accessing }
-WsHelper >> createMethods: aText inClass: className [
+WsHelper >> createMethods: aText inClass: class [
 
 	| examples methodBody |
+	
 	examples := aText splitOn: '-----------------------------'.
-	^ { (examples at: 1) } withIndexDo: [ :anExample :anIindex | 
+	^ { (examples at: 2) } withIndexDo: [ :anExample :anIndex | 
 		  | methodName |
 		  methodName := 'scriptExample'.
-		  methodBody := ' ^ 42'.
-	  self createExample: methodName body: methodBody ]
+		  methodBody := anExample .
+		  "OLD: self createExample: methodName body: methodBody "
+		  self
+			  methodNumberAsString: anIndex asString
+			  class: class
+			  className: class name
+			  snippet: methodBody ]
 ]
 
 { #category : #accessing }
@@ -133,40 +139,6 @@ WsHelper >> ensureClassExists: className [
 			  instanceVariableNames: ''
 			  classVariableNames: ''
 			  package: 'NeuralNetwork-GToolkit-Scripts' ]
-]
-
-{ #category : #accessing }
-WsHelper >> exampleParseScripts [
-
-	"Generate a class-file (as to put in git for every script-file) 
-	with every script as a separate method. "
-
-	<gtExample>
-	| contents fromDir toDir classFileSrc outFile baseDir str fileName className |
-	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
-	           / 'coentjo' / 'agile-ai-in-pharo'.
-	fromDir := baseDir / 'scripts'.
-	toDir := baseDir / 'src'.
-
-	fromDir children do: [ :inFile | 
-		| class |
-		className := ('Test' , (self classNameFor: inFile basename))
-			             asSymbol.
-		"Create class (if it does not exist already!)"
-		class := self ensureClassExists: className.
-		self 
-			createMethods:  inFile contents
-			inClass: class.
-		"classFileSrc := self parseScriptFileToExample: inFile."
-		
-		"self write: classFileSrc toFile: outFile." 
-		
-		"for now only do it for 1 clas!"
-		^ 42
-		]
-
-	"(Smalltalk at: #String className) inspect"
-	"outFile := toDir / className, 'st'."
 ]
 
 { #category : #accessing }
@@ -192,12 +164,40 @@ WsHelper >> forClass: className script: exampleScript indexString: index [
 ]
 
 { #category : #accessing }
-WsHelper >> inClass: aClassName createExample: aMethodName body: aMethodBody [
+WsHelper >> generateSlidesForScripts [
+
+	"Generate a class-file (as to put in git for every script-file) 
+	with every script as a separate method. "
+
+	<gtExample>
+	| contents fromDir toDir classFileSrc outFile baseDir str fileName className |
+	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
+	           / 'coentjo' / 'agile-ai-in-pharo'.
+	fromDir := baseDir / 'scripts'.
+	toDir := baseDir / 'src'.
+
+	fromDir children do: [ :inFile | 
+		| class |
+		className := ('Test' , (self classNameFor: inFile basename))
+			             asSymbol.
+		"Create class (if it does not exist already!)"
+		class := self ensureClassExists: className.
+		self 
+			createMethods:  inFile contents
+			inClass: class.
+		]
+
+	"(Smalltalk at: #String className) inspect"
+	"outFile := toDir / className, 'st'."
+]
+
+{ #category : #accessing }
+WsHelper >> inClass: aClass createExample: aMethodName body: aMethodBody [
 
 	| cr method |
 	cr := Character cr asString.
 	method := aMethodName , ' aSlide', cr , '	<gtSlide>' , cr , aMethodBody.
-	^ (Smalltalk at: aClassName asSymbol) compile: method
+	^ aClass compile: method
 ]
 
 { #category : #accessing }
@@ -212,20 +212,23 @@ WsHelper >> indexLength2: index [
 ]
 
 { #category : #accessing }
-WsHelper >> parseScriptFileToExample: aFileLocator [
+WsHelper >> methodNumberAsString: methodNumberString class: class className: className snippet: snippet [
 
-	| className examples indexLengthMin2String stream |
-	className := self classNameFor: aFileLocator basename.
-	examples := aFileLocator contents splitOn:
-		            '-----------------------------'.
+	| methodName methodBody mth |
+	methodName := 'scriptSnippetSlide' , methodNumberString , ':'.
+	methodBody := '
+	^ aSlide labelAndElement
+		priority: ' , methodNumberString , ';
+		newFadedText: ''Example'' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	''' , snippet , '''
+				]'.
 
-	^ String streamContents: [ :aStream | 
-		  aStream nextPutAll: (self ClassHeaderForClass: className).
-		  examples withIndexDo: [ :exampleScript :index | 
-			  aStream nextPutAll: (self
-					   forClass: className
-					   script: exampleScript
-					   indexString: index) ] ]
+	self inClass: class createExample: methodName body: methodBody.
+	mth := class methodDict at: methodName asSymbol.
+	self assert: mth class name equals: CompiledMethod name
 ]
 
 { #category : #accessing }
@@ -239,38 +242,25 @@ WsHelper >> staticSlides [
 { #category : #accessing }
 WsHelper >> testCreateExemple [
 
-"Glad I found out how to generate methods, 
+	"Glad I found out how to generate methods, 
 but does not work because not all variable are declared, 
 so methods don't compile"
-"Wait, I can create slides with Playgrounds with the code in a Snippet!!  "
+
+	"Wait, I can create slides with Playgrounds with the code in a Snippet!!  "
 
 	<gtExample>
-	| className class methodName mth methodBody methodNumberString snippet |
-	className := #ByteString. 
-	class := Smalltalk at: className. 
-	
+	| className class methodNumberString snippet |
+	className := #ByteString.
+	class := Smalltalk at: className.
 	snippet := '^ #(1 2 3)
 	with: #(10 20 30)
 	collect: [ :a :b | a + b ]'.
-	
-	methodNumberString := '01'. 
-	
-	methodName := 'scriptSnippetSlide',methodNumberString,':'.
-	methodBody := '
-	^ aSlide labelAndElement
-		priority: ',methodNumberString,';
-		newFadedText: ''Example'' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	''',snippet,'''
-				]' .
-	
-	self inClass: className createExample: methodName body: methodBody.
-	mth := (class methodDict at: methodName asSymbol).
-	self assert: mth class name equals: CompiledMethod name
-	
-	
+	methodNumberString := '01'.
+	self
+		methodNumberAsString: methodNumberString
+		class: class
+		className: className
+		snippet: snippet
 ]
 
 { #category : #accessing }
