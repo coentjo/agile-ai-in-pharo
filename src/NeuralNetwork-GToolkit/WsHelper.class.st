@@ -196,8 +196,8 @@ WsHelper >> inClass: aClassName createExample: aMethodName body: aMethodBody [
 
 	| cr method |
 	cr := Character cr asString.
-	method := aMethodName , cr , '	<gtExample>' , cr , aMethodBody.
-	^ (Smalltalk at: #ByteString) compile: method
+	method := aMethodName , ' aSlide', cr , '	<gtSlide>' , cr , aMethodBody.
+	^ (Smalltalk at: aClassName asSymbol) compile: method
 ]
 
 { #category : #accessing }
@@ -242,28 +242,29 @@ WsHelper >> testCreateExemple [
 "Glad I found out how to generate methods, 
 but does not work because not all variable are declared, 
 so methods don't compile"
+"Wait, I can create slides with Playgrounds with the code in a Snippet!!  "
 
 	<gtExample>
-	| className class methodName mth methodBody |
+	| className class methodName mth methodBody methodNumberString snippet |
 	className := #ByteString. 
 	class := Smalltalk at: className. 
-	methodName := 'aaascriptExample01'.
+	
+	snippet := '^ #(1 2 3)
+	with: #(10 20 30)
+	collect: [ :a :b | a + b ]'.
+	
+	methodNumberString := '01'. 
+	
+	methodName := 'scriptSnippetSlide',methodNumberString,':'.
 	methodBody := '
-
-	<gtSlide>
 	^ aSlide labelAndElement
-		  priority: 1.0242;
-		  newFadedText: ''Example script'';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippet:
-					  ''	| g d |
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d points: (1 to: 100).
-	d y: [ :x | (x / 3.14) sin ].
-	g add: d.
-	^ WorkshopAI showGraphInMorph: g'' ]'	.
+		priority: ',methodNumberString,';
+		newFadedText: ''Example'' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	''',snippet,'''
+				]' .
 	
 	self inClass: className createExample: methodName body: methodBody.
 	mth := (class methodDict at: methodName asSymbol).
