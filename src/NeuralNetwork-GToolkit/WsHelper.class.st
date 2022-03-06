@@ -104,25 +104,14 @@ WsHelper >> createClass: className [
 ]
 
 { #category : #accessing }
-WsHelper >> createExample: methodName body: methodBody [ 
-
-	| cr method |
-	cr := Character cr asString.
-	method := methodName , cr , '	<gtExample>' , cr , methodBody.
-	^ (Smalltalk at: #ByteString) compile: method
-]
-
-{ #category : #accessing }
 WsHelper >> createMethods: aText inClass: class [
 
 	| examples methodBody |
-	
 	examples := aText splitOn: '-----------------------------'.
-	^ { (examples at: 2) } withIndexDo: [ :anExample :anIndex | 
+	^ examples withIndexDo: [ :anExample :anIndex | 
 		  | methodName |
-		  methodName := 'scriptExample'.
-		  methodBody := anExample .
-		  "OLD: self createExample: methodName body: methodBody "
+		  methodName := 'slideWithExample'.
+		  methodBody := anExample.
 		  self
 			  methodNumberAsString: anIndex asString
 			  class: class
@@ -177,9 +166,8 @@ WsHelper >> generateSlidesForScripts [
 
 	fromDir children do: [ :inFile | 
 		| class className |
-		className := ('Test' , (self classNameFor: inFile basename))
+		className := ('SlidesFor' , (self classNameFor: inFile basename))
 			             asSymbol.
-		"Create class (if it does not exist already!)"
 		class := self ensureClassExists: className.
 		self 
 			createMethods:  inFile contents
