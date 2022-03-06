@@ -167,21 +167,6 @@ g
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide1: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 1;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide2: aSlide [
 	<gtSlide>
 

@@ -85,21 +85,6 @@ result := OrderedCollection new.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts05Learningtxt >> scriptSnippetSlide1: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 1;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
 SlidesForScripts05Learningtxt >> scriptSnippetSlide2: aSlide [
 	<gtSlide>
 

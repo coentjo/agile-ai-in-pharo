@@ -5,21 +5,6 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide1: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 1;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
 SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide2: aSlide [
 	<gtSlide>
 

@@ -5,21 +5,6 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide1: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 1;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide2: aSlide [
 	<gtSlide>
 
