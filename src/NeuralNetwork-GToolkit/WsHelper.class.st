@@ -106,17 +106,16 @@ WsHelper >> createClass: className [
 { #category : #accessing }
 WsHelper >> createMethods: aText inClass: class [
 
-	| examples methodBody |
+	| examples  |
 	examples := aText splitOn: '-----------------------------'.
-	^ examples withIndexDo: [ :anExample :anIndex | 
+	^ examples withIndexDo: [ :methodBody :anIndex | 
 		  | methodName |
 		  methodName := 'slideWithExample'.
-		  methodBody := anExample.
 		  self
 			  methodNumberAsString: anIndex asString
 			  class: class
 			  className: class name
-			  snippet: methodBody ]
+			  snippet: (self quotesEscapedIn: methodBody) ]
 ]
 
 { #category : #accessing }
@@ -159,7 +158,7 @@ WsHelper >> generateSlidesForScripts [
 	with every script as a separate method. "
 
 	<gtExample>
-	|  fromDir  baseDir    |
+	| fromDir baseDir |
 	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
 	           / 'coentjo' / 'agile-ai-in-pharo'.
 	fromDir := baseDir / 'scripts'.
@@ -169,17 +168,14 @@ WsHelper >> generateSlidesForScripts [
 		className := ('SlidesFor' , (self classNameFor: inFile basename))
 			             asSymbol.
 		class := self ensureClassExists: className.
-		self 
-			createMethods:  inFile contents
-			inClass: class.
-		]
-
+		self createMethods: inFile contents inClass: class ]
 ]
 
 { #category : #accessing }
 WsHelper >> inClass: aClass createExample: aMethodName body: aMethodBody [
 
 	| cr method |
+
 	cr := Character cr asString.
 	method := aMethodName , ' aSlide', cr , '	<gtSlide>' , cr , aMethodBody.
 	^ aClass compile: method
@@ -201,7 +197,8 @@ WsHelper >> methodNumberAsString: methodNumberString class: class className: cla
 
 	| methodName methodBody mth |
 	methodName := 'scriptSnippetSlide' , methodNumberString , ':'.
-	methodBody := '
+	methodBody := 
+	'
 	^ aSlide labelAndElement
 		priority: ' , methodNumberString , ';
 		newFadedText: ''Example'' ;
@@ -214,6 +211,15 @@ WsHelper >> methodNumberAsString: methodNumberString class: class className: cla
 	self inClass: class createExample: methodName body: methodBody.
 	mth := class methodDict at: methodName asSymbol.
 	self assert: mth class name equals: CompiledMethod name
+]
+
+{ #category : #accessing }
+WsHelper >> quotesEscapedIn: aString [
+
+	^ String streamContents: [ :str | 
+		  aString do: [ :char | 
+			  str nextPut: char.
+			  char = $' ifTrue: [ str nextPut: $' ] ] ]
 ]
 
 { #category : #accessing }
