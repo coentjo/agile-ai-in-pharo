@@ -170,14 +170,13 @@ WsHelper >> generateSlidesForScripts [
 	with every script as a separate method. "
 
 	<gtExample>
-	| contents fromDir toDir classFileSrc outFile baseDir str fileName className |
+	|  fromDir  baseDir    |
 	baseDir := FileLocator imageDirectory / 'pharo-local' / 'iceberg'
 	           / 'coentjo' / 'agile-ai-in-pharo'.
 	fromDir := baseDir / 'scripts'.
-	toDir := baseDir / 'src'.
 
 	fromDir children do: [ :inFile | 
-		| class |
+		| class className |
 		className := ('Test' , (self classNameFor: inFile basename))
 			             asSymbol.
 		"Create class (if it does not exist already!)"
@@ -187,8 +186,6 @@ WsHelper >> generateSlidesForScripts [
 			inClass: class.
 		]
 
-	"(Smalltalk at: #String className) inspect"
-	"outFile := toDir / className, 'st'."
 ]
 
 { #category : #accessing }
