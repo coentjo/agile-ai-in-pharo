@@ -25,7 +25,7 @@ PerceptronTest >> digitalComparator: inputs [
 ]
 
 { #category : #accessing }
-PerceptronTest >> neutronMap [
+PerceptronTest >> neuronMap [
 "Started as copy of >>newMapWithNodes"
 	<gtExample>
 	| aWardleyMap aNodeA aNodeB aNodeC anEdgeAtoB |
