@@ -10,6 +10,7 @@ Class {
 
 { #category : #accessing }
 Perceptron >> bias [
+
 	^ bias
 ]
 
