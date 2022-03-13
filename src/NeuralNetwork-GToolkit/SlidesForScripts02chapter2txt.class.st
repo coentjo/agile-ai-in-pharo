@@ -10,13 +10,17 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide02: aSlide [
 
 	^ aSlide labelAndElement
 		priority: 2;
-		newFadedText: 'Example' ;
+		newFadedText: 'Example calculating (elements of) weighted sum:' ;
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-#(1 2 3) with: #(10 20 30) collect: [ :a :b | a + b ]
-
+'^   " <-- the caret (^) means: return. "
+	#(1 2 3)             " <-- array with 3 elements "
+	with: #(10 20 30)    " <-- combine with this second array "
+	collect: [ :a :b | a + b ]   
+		" a is a value from one array,
+		  b is a value from the other, 
+		  in result the sum is used.  "
 '
 				]
 ]
@@ -31,12 +35,11 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide03: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-p := Neuron new.
+'p := Neuron new.
 p weights: #(1 2).
 p bias: -2.
-p feed: #(5 2)
-
+p feed: #(5 2).
+^ p
 '
 				]
 ]
@@ -51,12 +54,11 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide04: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-p := Neuron new.
+'p := Neuron new.
 p weights: #(-1 -1).
 p bias: 2.
 p feed: #(0 1).
-
+^ p
 '
 				]
 ]
@@ -71,13 +73,12 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide05: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-p := Neuron new.
+'p := Neuron new.
 p weights: #(-1 -1).
 p bias: 2.
 p train: #(0 1) desiredOutput: 0.
 p feed: #(0 1).
-
+^ p
 '
 				]
 ]
@@ -92,13 +93,12 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide06: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-p := Neuron new.
+'p := Neuron new.
 p weights: #(-1 -1).
 p bias: 2.
 10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
 p feed: #(0 1).
-
+^ p
 '
 				]
 ]
@@ -113,15 +113,13 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide07: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-g := RTGrapher new.
+'g := RTGrapher new.
 d := RTData new.
 d connectColor: Color blue.
 d points: (1 to: 100).
 d y: [ :x | (x / 3.14) sin  ].
 g add: d.
-g
-
+^ WorkshopAI showGraphInMorph: g
 '
 				]
 ]
@@ -155,7 +153,7 @@ d points: somePoints.
 d x: #first.
 d y: #second.
 g add: d.
-g
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
@@ -198,13 +196,13 @@ d2 points: (-15 to: 15 by: 0.1).
 d2 y: f.
 d2 x: #yourself.
 g add: d2.
-g
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide10: aSlide [
 	<gtSlide>
 
@@ -254,13 +252,13 @@ d2 points: (-15 to: 15 by: 0.1).
 d2 y: f.
 d2 x: #yourself.
 g add: d2.
-g
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide11: aSlide [
 	<gtSlide>
 
@@ -270,15 +268,14 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide11: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-r := Random new seed: 42.
+'r := Random new seed: 42.
 r nextInt: 50.
-
+^ r
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide12: aSlide [
 	<gtSlide>
 
@@ -288,14 +285,14 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide12: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-(1 to: 5) collect: [ :i | 50 atRandom ]
+'^ (1 to: 5) 
+	collect: [ :i | 50 atRandom ]
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide13: aSlide [
 	<gtSlide>
 
@@ -305,15 +302,15 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide13: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-r := Random new seed: 42.
-(1 to: 5) collect: [ :i | r nextInt: 50 ]
+'r := Random new seed: 42.
+^ (1 to: 5) 
+	collect: [ :i | r nextInt: 50 ]
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide14: aSlide [
 	<gtSlide>
 
@@ -361,7 +358,7 @@ d y: #second.
 g add: d.
 g axisY title: ''Precision''.
 g axisX noDecimal; title: ''Training iteration''.
-g
+^ WorkshopAI showGraphInMorph: g
 '
 				]
 ]
