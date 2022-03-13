@@ -4,7 +4,7 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts03chapter3txt >> scriptSnippetSlide2: aSlide [
 	<gtSlide>
 
@@ -23,13 +23,13 @@ d points: (-7.0 to: 7.0 by: 0.01).
 d x: #yourself.
 d y: [ :x | x > 0 ifTrue: [ 1 ] ifFalse: [ 0 ] ].
 g add: d.
-g
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts03chapter3txt >> scriptSnippetSlide3: aSlide [
 	<gtSlide>
 
@@ -48,13 +48,13 @@ d points: (-7.0 to: 7.0 by: 0.01).
 d x: #yourself.
 d y: [ :x | 1 / (1 + (x negated exp)) ].
 g add: d.
-g
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts03chapter3txt >> scriptSnippetSlide4: aSlide [
 	<gtSlide>
 
@@ -64,8 +64,7 @@ SlidesForScripts03chapter3txt >> scriptSnippetSlide4: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-learningCurveNeuron := OrderedCollection new.
+'learningCurveNeuron := OrderedCollection new.
 0 to: 1000 do: [ :nbOfTrained |
     p := Neuron new.
     p weights: #(-1 -1).
@@ -125,7 +124,7 @@ g add: d.
 g axisY title: ''Error''.
 g axisX noDecimal; title: ''Epoch''.
 g legend addText: ''Perceptron vs Sigmoid neuron''.
-g
+^ WorkshopAI showGraphInMorph: g
 '
 				]
 ]
