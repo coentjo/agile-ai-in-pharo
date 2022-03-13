@@ -231,7 +231,116 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-02-28T12:14:07.32+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-02-28T14:32:42.085+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "oOT/4XOVDQCmGlBdCdZKLw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "On the next line you see a Playground: Playgrounds give the opportunity to execute code and look at the result: When the playground has focus you can press the **'Inspect'** button to execute the code and look at the result: in this case the result are slides. Press the '**+**' at the top-left to maximize the slides and with the arrows on the right you can go through the slides. As you will find out soon, a slide can have a Playground which allows you te execute the code and see the result. When done with this set of slides, use the '**-**'(left-up) to un-maximize to come back to this page. Time to **Inspect**: "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-29T13:51:22.706049+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-02-28T12:19:56.287+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "n6zavhmTDQC0EbirBq26Pw=="
+							},
+							"code" : "(GtLiveShow create: WASlidesGeneralIntroNew new) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-02-28T14:33:16.123+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-02-28T14:34:49.045+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "+Onr0nWVDQCmCvphBIrLvw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "OK, in the next chapter we'll dive in: you now know how to look at the slides, and execute the code in playgrounds that can be in the slides. "
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -263,114 +372,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# General Intro"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T12:14:07.32+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T14:32:42.085+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "oOT/4XOVDQCmGlBdCdZKLw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "On the next line you see a Playground: Playgrounds give the opportunity to execute code and look at the result: When the playground has focus you can press the **'Inspect'** button to execute the code and look at the result: in this case the result are slides. Press the '**+**' at the top-left to maximize the slides and with the arrows on the right you can go through the slides. As you will find out soon, a slide can have a Playground which allows you te execute the code and see the result. When done with this set of slides, use the '**-**'(left-up) to un-maximize to come back to this page. Time to **Inspect**: "
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-29T13:51:22.706049+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T12:19:56.287+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "n6zavhmTDQC0EbirBq26Pw=="
-				},
-				"code" : "(GtLiveShow create: WASlidesGeneralIntroNew new) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T14:33:16.123+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-02-28T14:34:49.045+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "+Onr0nWVDQCmCvphBIrLvw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "OK, in the next chapter we'll dive in: you now know how to look at the slides, and execute the code in playgrounds that can be in the slides. "
 			},
 			{
 				"__type" : "textSnippet",
