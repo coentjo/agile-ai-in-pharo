@@ -4,6 +4,206 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide02: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 2;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+#(1 2 3) with: #(10 20 30) collect: [ :a :b | a + b ]
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide03: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 3;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+p := Neuron new.
+p weights: #(1 2).
+p bias: -2.
+p feed: #(5 2)
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide04: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 4;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+p := Neuron new.
+p weights: #(-1 -1).
+p bias: 2.
+p feed: #(0 1).
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide05: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 5;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+p := Neuron new.
+p weights: #(-1 -1).
+p bias: 2.
+p train: #(0 1) desiredOutput: 0.
+p feed: #(0 1).
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide06: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 6;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+p := Neuron new.
+p weights: #(-1 -1).
+p bias: 2.
+10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
+p feed: #(0 1).
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide07: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 7;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+g := RTGrapher new.
+d := RTData new.
+d connectColor: Color blue.
+d points: (1 to: 100).
+d y: [ :x | (x / 3.14) sin  ].
+g add: d.
+g
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide08: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 8;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+somePoints := OrderedCollection new.
+500 timesRepeat: [ 
+	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
+].
+
+f := [ :x | (-2 * x) - 3 ].
+
+"We use the Roassal Grapher engine to plot our points"
+g := RTGrapher new.
+d := RTData new.
+d dotShape 
+	color: [ :p | (p second > (f value: p first)) 
+					ifTrue: [ Color red trans ] 
+					ifFalse: [ Color blue trans ] ].
+d points: somePoints.
+d x: #first.
+d y: #second.
+g add: d.
+g
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts02chapter2txt >> scriptSnippetSlide09: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 9;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+somePoints := OrderedCollection new.
+500 timesRepeat: [ 
+	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
+].
+
+f := [ :x | (-2 * x) - 3 ].
+
+g := RTGrapher new.
+d := RTData new.
+d dotShape 
+	color: [ :p | (p second > (f value: p first)) 
+					ifTrue: [ Color red trans ] 
+					ifFalse: [ Color blue trans ] ].
+d points: somePoints.
+d x: #first.
+d y: #second.
+g add: d.
+
+"Added code below"
+d2 := RTData new.
+d2 noDot.
+d2 connectColor: Color red.
+d2 points: (-15 to: 15 by: 0.1).
+d2 y: f.
+d2 x: #yourself.
+g add: d2.
+g
+
+'
+				]
+]
+
 { #category : #'as yet unclassified' }
 SlidesForScripts02chapter2txt >> scriptSnippetSlide10: aSlide [
 	<gtSlide>
@@ -162,206 +362,6 @@ g add: d.
 g axisY title: ''Precision''.
 g axisX noDecimal; title: ''Training iteration''.
 g
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide2: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 2;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-#(1 2 3) with: #(10 20 30) collect: [ :a :b | a + b ]
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide3: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 3;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-p := Neuron new.
-p weights: #(1 2).
-p bias: -2.
-p feed: #(5 2)
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide4: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 4;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-p := Neuron new.
-p weights: #(-1 -1).
-p bias: 2.
-p feed: #(0 1).
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide5: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 5;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-p := Neuron new.
-p weights: #(-1 -1).
-p bias: 2.
-p train: #(0 1) desiredOutput: 0.
-p feed: #(0 1).
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide6: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 6;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-p := Neuron new.
-p weights: #(-1 -1).
-p bias: 2.
-10 timesRepeat: [ p train: #(0 1) desiredOutput: 0 ].
-p feed: #(0 1).
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide7: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 7;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-g := RTGrapher new.
-d := RTData new.
-d connectColor: Color blue.
-d points: (1 to: 100).
-d y: [ :x | (x / 3.14) sin  ].
-g add: d.
-g
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide8: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 8;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-somePoints := OrderedCollection new.
-500 timesRepeat: [ 
-	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
-].
-
-f := [ :x | (-2 * x) - 3 ].
-
-"We use the Roassal Grapher engine to plot our points"
-g := RTGrapher new.
-d := RTData new.
-d dotShape 
-	color: [ :p | (p second > (f value: p first)) 
-					ifTrue: [ Color red trans ] 
-					ifFalse: [ Color blue trans ] ].
-d points: somePoints.
-d x: #first.
-d y: #second.
-g add: d.
-g
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts02chapter2txt >> scriptSnippetSlide9: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 9;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-somePoints := OrderedCollection new.
-500 timesRepeat: [ 
-	somePoints add: {(50 atRandom - 25) . (50 atRandom - 25)}
-].
-
-f := [ :x | (-2 * x) - 3 ].
-
-g := RTGrapher new.
-d := RTData new.
-d dotShape 
-	color: [ :p | (p second > (f value: p first)) 
-					ifTrue: [ Color red trans ] 
-					ifFalse: [ Color blue trans ] ].
-d points: somePoints.
-d x: #first.
-d y: #second.
-g add: d.
-
-"Added code below"
-d2 := RTData new.
-d2 noDot.
-d2 connectColor: Color red.
-d2 points: (-15 to: 15 by: 0.1).
-d2 y: f.
-d2 x: #yourself.
-g add: d2.
-g
-
 '
 				]
 ]
