@@ -269,8 +269,14 @@ SlidesForScripts02chapter2txt >> scriptSnippetSlide11: aSlide [
 			GtPlaygroundLiveSlide new
 				newSnippet: 
 'r := Random new seed: 42.
-r nextInt: 50.
-^ r
+^ r nextInt: 50
+
+" Pressing ''inspect'' gives the same value 
+  time after time. 
+  Select only the line starting with 
+  the ^ and inspect: 
+  now you get a random value each time. 
+"
 '
 				]
 ]
