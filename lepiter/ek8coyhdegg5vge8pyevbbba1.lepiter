@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-02-28T11:42:04.275+01:00"
+									"dateAndTimeString" : "2022-03-13T12:48:37.64926+01:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Be aware that this workshop is Work In Progress! "
+							"string" : "This workshop is Work In Progress. It is based on the book 'Agile Artificial Intelligence in Pharo' by Alexandre Bergel and the scripts from the book are  also in slides in this material. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-02-28T11:41:41.165+01:00"
+									"dateAndTimeString" : "2022-03-13T12:36:37.894762+01:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "I (Coen) use it to show my students about *neural networks*, because the interactive environment shows the basic ideas of *Perceptron*, *neuron*, *neural network* and gives students the opportunity to experiment with it (at the moment the guidance of someone knowing GT is needed to use this workshop). "
+							"string" : "Coen uses this material to give students an introduction to *neural networks*. The interactive environment (Glamorous Toolkit or GT) helps showing the basic ideas of *Perceptron*, *neuron*, *neural network* and going hands-on, experimenting with those concepts. In my introduction I show some slides about AI, but just as important is some understanding about how to use GT to experiment with all of it. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-03-13T12:43:47.860419+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-03-13T12:43:47.860419+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Q7pX0HmWDQCNBg8FDIbdgw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "This workshop is not about the whole book! The book by Alexandre also shows *genetic algorithms* and *NEAT*/*neuro-evolution*. Someone having enough time could add it.  Please feel invited  :-)"
 						},
 						{
 							"__type" : "textSnippet",
@@ -108,7 +145,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-02-28T11:43:59.05+01:00"
+									"dateAndTimeString" : "2022-03-13T12:48:09.845564+01:00"
 								}
 							},
 							"uid" : {
@@ -118,7 +155,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Beware furthermore that this workshop is not complete. The book by Alexandre also shows *genetic algorithms* and *NEAT*/*neuro-evolution*. Someone having enough time could add it. "
+							"string" : "In the video 'Introduction to neural networks, genetic, and neuroevolution' by Alexandre Bergel (as a guest to Oscar Nierstrasz, Universität Berlin) you will find a lot of information: \n[video 'Introduction to neural networks, genetic, and neuroevolution'](https://tube.switch.ch/videos/v6uqRi7Lfm). \nIn fact, you can look at the video in one screen and `execute/inspect` the `GtLiveShow`s you find below and you will be able to find the slides and the scripts that are used in the video also. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -516,6 +553,43 @@
 					"uidString" : "KhY5wweTDQCmlDi8AzL37A=="
 				},
 				"code" : "(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible\r\"Press Inspect to view slides\""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T12:49:44.067266+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T12:51:49.041456+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HeMq5XmWDQCNCu9CDIbdgw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can look at the next chapter ('01 perceptron') either by clicking on it (which will open it on the right side in GT) or unfolding the little triangle after the title (which will unfold the page ). "
 			},
 			{
 				"__type" : "textSnippet",
