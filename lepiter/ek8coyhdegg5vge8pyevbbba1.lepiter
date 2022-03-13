@@ -8,6 +8,77 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T14:23:31.241493+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T14:23:33.650305+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OqJ4NHuWDQCNU796DIbdgw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Appetizer"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T14:23:44.426853+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-13T15:09:14.892102+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
+				},
+				"code" : "neuron := Neuron new"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -294,14 +365,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-02-28T12:19:56.287+01:00"
+									"dateAndTimeString" : "2022-03-13T15:20:32.655775+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "n6zavhmTDQC0EbirBq26Pw=="
 							},
-							"code" : "(GtLiveShow create: WASlidesGeneralIntroNew new) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
+							"code" : "| slideShow |\rslideShow := WASlidesGeneralIntroNew new.\r\"Replace the string below (everything between the single quotes), \r by the name of the presenter: \"\rslideShow presenterName: 'Rumpelstiltskin'.\r(GtLiveShow create: slideShow) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
 						},
 						{
 							"__type" : "textSnippet",
