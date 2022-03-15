@@ -4,7 +4,7 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
@@ -24,12 +24,12 @@ n configure: 2 hidden: 3 nbOfOutputs: 1.
 	n train: #(1 0) desiredOutputs: #(1).
 	n train: #(1 1) desiredOutputs: #(0).
 ].
-
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
@@ -47,13 +47,13 @@ data := {#(0 0 0) .
 	#(0 1 1) .
 	#(1 0 1) .
 	#(1 1 0) }.
-n train: data nbEpochs: 20000
-
+n train: data nbEpochs: 20000.
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
@@ -76,12 +76,12 @@ data := {#(0 0 0 0).
 	#(1 1 0 6).
 	#(1 1 1 7) }.
 n train: data nbEpochs: 1000.
-
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
@@ -105,13 +105,13 @@ data := {#(0 0 0 0).
 	#(1 1 1 7) }.
 n train: data nbEpochs: 1000.
 ...
-n predict: #(0 1 1)
-
+n predict: #(0 1 1).
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide06: aSlide [
 	<gtSlide>
 
@@ -134,13 +134,13 @@ data := {#(0 0 0 0).
 d := Dictionary new.
 data do: [ :anExample |
 	d at: anExample allButLast put: anExample last ].
-d at: #(0 1 1)
-
+d at: #(0 1 1).
+^ n
 '
-				]
+]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide07: aSlide [
 	<gtSlide>
 
@@ -163,8 +163,7 @@ data := {#(0 0 0 0).
 	#(1 1 0 6).
 	#(1 1 1 7) }.
 n train: data nbEpochs: 1000.
-n predict: #(0.4 0.7 0.6)
-
+^ n predict: #(0.4 0.7 0.6)
 '
 				]
 ]
