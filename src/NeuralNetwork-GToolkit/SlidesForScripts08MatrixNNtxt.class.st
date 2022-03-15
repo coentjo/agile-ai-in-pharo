@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -29,7 +29,7 @@ n predict: (MMatrix newFromVector: #(1 0)).
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

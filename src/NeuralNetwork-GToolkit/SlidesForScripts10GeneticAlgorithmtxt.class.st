@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -24,7 +24,7 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide2: aSlide [
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -49,7 +49,7 @@ inds do: [ :i | i computeFitnessUsing: fitnessBlock ].
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -88,7 +88,7 @@ g
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide5: aSlide [
+SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -127,7 +127,7 @@ g
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide6: aSlide [
+SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide06: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

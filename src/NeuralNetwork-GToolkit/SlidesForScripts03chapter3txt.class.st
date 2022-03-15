@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #accessing }
-SlidesForScripts03chapter3txt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts03chapter3txt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -30,7 +30,7 @@ g add: d.
 ]
 
 { #category : #accessing }
-SlidesForScripts03chapter3txt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts03chapter3txt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -55,7 +55,7 @@ g add: d.
 ]
 
 { #category : #accessing }
-SlidesForScripts03chapter3txt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts03chapter3txt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

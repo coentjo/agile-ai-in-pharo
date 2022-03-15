@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -23,7 +23,7 @@ m + m
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

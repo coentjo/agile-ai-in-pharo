@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts17NEATtxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts17NEATtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -36,7 +36,7 @@ neat run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts17NEATtxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts17NEATtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

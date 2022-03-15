@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts14Zoomorphictxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts14Zoomorphictxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -25,7 +25,7 @@ c open
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts14Zoomorphictxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts14Zoomorphictxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

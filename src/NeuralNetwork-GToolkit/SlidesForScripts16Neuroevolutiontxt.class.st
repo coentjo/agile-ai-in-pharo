@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -46,7 +46,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -88,7 +88,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts16Neuroevolutiontxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

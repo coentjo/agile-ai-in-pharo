@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -35,7 +35,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -67,7 +67,7 @@ g logs last bestFitness.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -101,7 +101,7 @@ g result copyWithout: 1.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide5: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -139,7 +139,7 @@ g result copyWithout: #(0 0)
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide6: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide06: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -186,7 +186,7 @@ decodeToBoxes
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide7: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide07: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -233,7 +233,7 @@ g result asSet size
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts11GAExamplestxt >> scriptSnippetSlide8: aSlide [
+SlidesForScripts11GAExamplestxt >> scriptSnippetSlide08: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

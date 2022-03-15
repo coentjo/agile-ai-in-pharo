@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts13Robottxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts13Robottxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -44,7 +44,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts13Robottxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts13Robottxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -86,7 +86,7 @@ map open
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts13Robottxt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts13Robottxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

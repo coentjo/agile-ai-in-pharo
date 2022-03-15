@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts15ZoomorphicSimulationtxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts15ZoomorphicSimulationtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

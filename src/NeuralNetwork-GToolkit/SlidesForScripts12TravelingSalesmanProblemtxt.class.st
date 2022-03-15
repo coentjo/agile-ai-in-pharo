@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide2: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -40,7 +40,7 @@ g run
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide3: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -75,7 +75,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide4: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -108,7 +108,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide5: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -153,7 +153,7 @@ v
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide6: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide06: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement
@@ -191,7 +191,7 @@ g run.
 ]
 
 { #category : #'as yet unclassified' }
-SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide7: aSlide [
+SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide07: aSlide [
 	<gtSlide>
 
 	^ aSlide labelAndElement

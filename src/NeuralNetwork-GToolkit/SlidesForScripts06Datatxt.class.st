@@ -5,6 +5,217 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide02: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 2;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 1.
+
+20000 timesRepeat: [ 
+	n train: #(0 0) desiredOutputs: #(0).	
+	n train: #(0 1) desiredOutputs: #(1).
+	n train: #(1 0) desiredOutputs: #(1).
+	n train: #(1 1) desiredOutputs: #(0).
+].
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide03: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 3;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+	#(0 1 1) .
+	#(1 0 1) .
+	#(1 1 0) }.
+n train: data nbEpochs: 20000
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide04: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 4;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide05: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 5;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+...
+n predict: #(0 1 1)
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide06: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 6;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+	
+d := Dictionary new.
+data do: [ :anExample |
+	d at: anExample allButLast put: anExample last ].
+d at: #(0 1 1)
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
+SlidesForScripts06Datatxt >> scriptSnippetSlide07: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 7;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 3 hidden: 8 nbOfOutputs: 8.
+
+data := {#(0 0 0 0).
+	#(0 0 1 1).
+	#(0 1 0 2).
+	#(0 1 1 3).
+	#(1 0 0 4).
+	#(1 0 1 5).
+	#(1 1 0 6).
+	#(1 1 1 7) }.
+n train: data nbEpochs: 1000.
+n predict: #(0.4 0.7 0.6)
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts06Datatxt >> scriptSnippetSlide08: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 8;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+    #(0 1 1) .
+    #(1 0 1) .
+    #(1 1 0) }.
+n train: data nbEpochs: 10000.
+
+'
+				]
+]
+
+{ #category : #accessing }
+SlidesForScripts06Datatxt >> scriptSnippetSlide09: aSlide [
+	<gtSlide>
+
+	^ aSlide labelAndElement
+		priority: 9;
+		newFadedText: 'Example' ;
+		element: [ 
+			GtPlaygroundLiveSlide new
+				newSnippet: 
+	'
+n := NNetwork new.
+n configure: 2 hidden: 3 nbOfOutputs: 2.
+
+data := {#(0 0 0) .
+	#(0 0 1) }.
+n train: data nbEpochs: 1000.
+
+'
+				]
+]
+
+{ #category : #'as yet unclassified' }
 SlidesForScripts06Datatxt >> scriptSnippetSlide10: aSlide [
 	<gtSlide>
 
@@ -394,217 +605,6 @@ data := {#(0 0 0 0).
     #(0.1 1000 0 6).
     #(0.1 1000 1 7) }.
 n train: data nbEpochs: 10000.
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide2: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 2;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 2 hidden: 3 nbOfOutputs: 1.
-
-20000 timesRepeat: [ 
-	n train: #(0 0) desiredOutputs: #(0).	
-	n train: #(0 1) desiredOutputs: #(1).
-	n train: #(1 0) desiredOutputs: #(1).
-	n train: #(1 1) desiredOutputs: #(0).
-].
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide3: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 3;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 2 hidden: 3 nbOfOutputs: 2.
-
-data := {#(0 0 0) .
-	#(0 1 1) .
-	#(1 0 1) .
-	#(1 1 0) }.
-n train: data nbEpochs: 20000
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide4: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 4;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 3 hidden: 8 nbOfOutputs: 8.
-
-data := {#(0 0 0 0).
-	#(0 0 1 1).
-	#(0 1 0 2).
-	#(0 1 1 3).
-	#(1 0 0 4).
-	#(1 0 1 5).
-	#(1 1 0 6).
-	#(1 1 1 7) }.
-n train: data nbEpochs: 1000.
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide5: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 5;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 3 hidden: 8 nbOfOutputs: 8.
-
-data := {#(0 0 0 0).
-	#(0 0 1 1).
-	#(0 1 0 2).
-	#(0 1 1 3).
-	#(1 0 0 4).
-	#(1 0 1 5).
-	#(1 1 0 6).
-	#(1 1 1 7) }.
-n train: data nbEpochs: 1000.
-...
-n predict: #(0 1 1)
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide6: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 6;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-data := {#(0 0 0 0).
-	#(0 0 1 1).
-	#(0 1 0 2).
-	#(0 1 1 3).
-	#(1 0 0 4).
-	#(1 0 1 5).
-	#(1 1 0 6).
-	#(1 1 1 7) }.
-	
-d := Dictionary new.
-data do: [ :anExample |
-	d at: anExample allButLast put: anExample last ].
-d at: #(0 1 1)
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide7: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 7;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 3 hidden: 8 nbOfOutputs: 8.
-
-data := {#(0 0 0 0).
-	#(0 0 1 1).
-	#(0 1 0 2).
-	#(0 1 1 3).
-	#(1 0 0 4).
-	#(1 0 1 5).
-	#(1 1 0 6).
-	#(1 1 1 7) }.
-n train: data nbEpochs: 1000.
-n predict: #(0.4 0.7 0.6)
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide8: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 8;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 2 hidden: 3 nbOfOutputs: 2.
-
-data := {#(0 0 0) .
-    #(0 1 1) .
-    #(1 0 1) .
-    #(1 1 0) }.
-n train: data nbEpochs: 10000.
-
-'
-				]
-]
-
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide9: aSlide [
-	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 9;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
-n configure: 2 hidden: 3 nbOfOutputs: 2.
-
-data := {#(0 0 0) .
-	#(0 0 1) }.
-n train: data nbEpochs: 1000.
-
 '
 				]
 ]
