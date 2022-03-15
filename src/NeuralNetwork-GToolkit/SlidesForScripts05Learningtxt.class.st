@@ -76,7 +76,7 @@ a := 0.5.
 b := 3.
 f := [ :x | a * x + b ].
 j := (points collect: [ :p | (p y - (f value: p x)) squared ]) sum / points size.
-
+^ j
 '
 				]
 ]
