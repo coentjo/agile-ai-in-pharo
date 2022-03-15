@@ -585,6 +585,23 @@ WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 					  c vertical matchParent ] ]
 ]
 
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0142: aSlide [
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0142;
+		  newFadedText: 'Perceptron for Metal Concert';
+		  element: [ 
+			  GtPlaygroundLiveSlide new
+			  	newSnippet: 
+'perceptron := Neuron new step. 
+perceptron weights: #( 2 6 2 ) .
+perceptron bias: 5 .
+^ perceptron
+"Look at both the tabs ''Visual'' as well as ''Schematic'' "' ]
+]
+
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 
@@ -601,6 +618,23 @@ WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 			  form asElement asScalableElement constraintsDo: [ :c | 
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
+]
+
+{ #category : #accessing }
+WASlidesNeuralNetwork >> slidePercep0152: aSlide [
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0142;
+		  newFadedText: 'Perceptron for Metal Concert';
+		  element: [ 
+			  GtPlaygroundLiveSlide new
+			  	newSnippet: 
+'perceptron := Neuron new step. 
+perceptron weights: #( 1 1 8 ) .
+perceptron bias: 5 .
+^ perceptron
+"Look at both the tabs ''Visual'' as well as ''Schematic'' "' ]
 ]
 
 { #category : #slides }
