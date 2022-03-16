@@ -597,27 +597,47 @@ n train: trainingData nbEpochs: 1000.
 }
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide21: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 21;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-max := OrderedCollection new.
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.		
+
+'max := OrderedCollection new.
 min := OrderedCollection new.
 (1 to: 4) collect: [ :i |
 	max add: (irisData collect: [ :d | d at: i ]) max.
 	min add: (irisData collect: [ :d | d at: i ]) min.
 ].
-{ max . min }
-
-'
-				]
+{ max . min }'
+}
 ]
 
 { #category : #'as yet unclassified' }
