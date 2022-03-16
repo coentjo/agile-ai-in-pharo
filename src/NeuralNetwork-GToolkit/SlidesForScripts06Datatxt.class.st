@@ -239,21 +239,6 @@ n train: data nbEpochs: 10000.
 { #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide11: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 11;
-		newFadedText: 'How to download Iris csv from url' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'(ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
-'
-				]
-]
-
-{ #category : #accessing }
-SlidesForScripts06Datatxt >> scriptSnippetSlide11b: aSlide [
-	<gtSlide>
 	^ aSlide playground
 		priority: 11;
 		snippets: 
@@ -337,55 +322,123 @@ g legend addText: ''Learning rate effect''.
 { #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide15: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 15;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+
 'n := NNetwork new.
 n configure: 4 hidden: 6 nbOfOutputs: 3.
 n learningRate: 0.3. " Repeat the script with a different value"
 n train: irisData nbEpochs: 1000.
 ^ n
 '
-				]
+}				
 ]
 
 { #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide16: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 16;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-cut := 0.8.
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+
+
+'cut := 0.8.
 cutTraining := (irisData size * cut) rounded.
 cutTest := (irisData size * (1 - cut)) rounded.
 trainingData := irisData first: cutTraining.
-testData := irisData last: cutTest.
+testData := irisData last: cutTest.'
+}				
 
-'
-				]
+
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide17: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 17;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-cut := 0.8.
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+
+'cut := 0.8.
 cutTraining := (irisData size * cut) rounded.
 cutTest := (irisData size * (1 - cut)) rounded.
 trainingData := irisData first: cutTraining.
@@ -393,24 +446,44 @@ testData := irisData last: cutTest.
 ...
 n := NNetwork new.
 n configure: 4 hidden: 6 nbOfOutputs: 3.
-n train: trainingData nbEpochs: 1000.
-
-'
-				]
+n train: trainingData nbEpochs: 1000.'
+}
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide18: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 18;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-cut := 0.8.
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+				
+'cut := 0.8.
 cutTraining := (irisData size * cut) rounded.
 cutTest := (irisData size * (1 - cut)) rounded.
 trainingData := irisData first: cutTraining.
@@ -421,24 +494,44 @@ n train: trainingData nbEpochs: 1000.
 
 (((testData collect: [ :d |
 	(n predict: d allButLast) = d last
-]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
-
-'
-				]
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 '
+}				
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide19: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 19;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-cut := 0.7.
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+				
+'cut := 0.7.
 cutTraining := (irisData size * cut) rounded.
 cutTest := (irisData size * (1 - cut)) rounded.
 trainingData := irisData first: cutTraining.
@@ -449,24 +542,45 @@ n train: trainingData nbEpochs: 1000.
 
 (((testData collect: [ :d |
 	(n predict: d allButLast) = d last
-]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
-
-'
-				]
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 '
+}
+				
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide20: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
+	^ aSlide playground
 		priority: 20;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-shuffledIrisData := irisData shuffleBy: (Random seed: 42).
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :l | 
+		| ss |
+		ss := l substrings: '',''.
+		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+	
+irisData.
+'
+
+.
+								
+'shuffledIrisData := irisData shuffleBy: (Random seed: 42).
 cut := 0.8.
 cutTraining := (shuffledIrisData size * cut) rounded.
 cutTest := (shuffledIrisData size * (1 - cut)) rounded.
@@ -478,10 +592,9 @@ n train: trainingData nbEpochs: 1000.
 
 (((testData collect: [ :d |
 	(n predict: d allButLast) = d last
-]) select: [ :d | d = true]) size / testData size) asFloat round: 2 
+]) select: [ :d | d = true]) size / testData size) asFloat round: 2 '
 
-'
-				]
+}
 ]
 
 { #category : #'as yet unclassified' }
