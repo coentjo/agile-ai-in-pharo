@@ -4,7 +4,7 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
@@ -14,21 +14,19 @@ SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide02: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-xor := #(#(0 0 0)
+
+'xor := #(#(0 0 0)
 		 #(0 1 1)
 		 #(1 0 1)
 		 #(1 1 0)).
 n := NMNetwork new.
 n configure: 2 hidden: 3 nbOfOutputs: 2. 
 n train: xor nbEpochs: 5000. 
-n predict: (MMatrix newFromVector: #(1 0)).
-
-'
+n predict: (MMatrix newFromVector: #(1 0)).'
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
@@ -38,7 +36,7 @@ SlidesForScripts08MatrixNNtxt >> scriptSnippetSlide03: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
+'
 "The execution of this script initializes the variable irisData.
      This variable is used in the subsequent scripts of this chapter"
 irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
@@ -59,7 +57,6 @@ irisData.
 n := NMNetwork new.
 n configure: 4 hidden: 6 nbOfOutputs: 3. 
 n train: irisData nbEpochs: 3000. 
-n
-'
-				]
+n'
+]
 ]

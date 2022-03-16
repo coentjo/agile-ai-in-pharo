@@ -4,7 +4,7 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
@@ -14,15 +14,12 @@ SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide02: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-m := MMatrix newFromArrays: #(#(1 2 3) #(4 5 6)). 
-m + m
-
-'
+	'm := MMatrix newFromArrays: #(#(1 2 3) #(4 5 6)). 
+m + m'
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
@@ -32,8 +29,7 @@ SlidesForScripts07MatrixLibrarytxt >> scriptSnippetSlide03: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-n := 8.         "Number of examples"
+'n := 8.         "Number of examples"
 din := 10.      "Number of input values"
 h := 20.        "Size of the hidden layer"
 dout := 5.      "Number of output values"
@@ -74,7 +70,7 @@ d y: #yourself.
 g add: d.
 g axisX title: ''Epoch''.
 g axisY title: ''Error''.
-g
-'
-				]
+g'
+
+]
 ]
