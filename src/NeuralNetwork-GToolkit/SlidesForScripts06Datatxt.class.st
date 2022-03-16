@@ -150,8 +150,7 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide07: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-n := NNetwork new.
+'n := NNetwork new.
 n configure: 3 hidden: 8 nbOfOutputs: 8.
 
 data := {#(0 0 0 0).
@@ -178,8 +177,7 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide08: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-n := NNetwork new.
+'n := NNetwork new.
 n configure: 2 hidden: 3 nbOfOutputs: 2.
 
 data := {#(0 0 0) .
@@ -187,7 +185,7 @@ data := {#(0 0 0) .
     #(1 0 1) .
     #(1 1 0) }.
 n train: data nbEpochs: 10000.
-
+^ n
 '
 				]
 ]
@@ -209,12 +207,12 @@ n configure: 2 hidden: 3 nbOfOutputs: 2.
 data := {#(0 0 0) .
 	#(0 0 1) }.
 n train: data nbEpochs: 1000.
-
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide10: aSlide [
 	<gtSlide>
 
@@ -232,13 +230,13 @@ data := {#(0 0 0) .
 	#(0 1 1) .
 	#(1 0 1) .
 	#(1 1 0) }.
-n train: data nbEpochs: 10000
-
+n train: data nbEpochs: 10000. 
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide11: aSlide [
 	<gtSlide>
 
@@ -248,9 +246,7 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide11: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-(ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
-
+	'(ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
 '
 				]
 ]
