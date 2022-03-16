@@ -66,14 +66,48 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-13T19:30:23.123799+01:00"
+						"dateAndTimeString" : "2022-03-16T20:05:12.180903+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
 				},
-				"code" : "neuron := Neuron new.\rneuron weights: #( 1 1 ).\rneuron bias: 0.5 .\r^ neuron"
+				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ).\rneuron bias: 0.5 .\r^ neuron"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-16T20:03:38.336011+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-03-16T20:08:04.142512+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7rrcTryWDQCNg40+AHZ8bQ=="
+				},
+				"code" : "neuron fire: #( 2 3 )"
 			},
 			{
 				"__type" : "textSnippet",

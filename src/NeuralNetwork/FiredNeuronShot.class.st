@@ -19,6 +19,80 @@ FiredNeuronShot class >> input: inputs neuron: aNeuron output: outputValue [
 ]
 
 { #category : #accessing }
+FiredNeuronShot >> aiVisual: aView [
+	<gtView>
+	|  aWardleyMap inp1 inp2 out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
+	"Started as copy of >>newMapWithNodes"
+	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
+
+	
+	xRow1 := 0.2 .
+	xRow2 := 0.5 .
+	xRow3 := 0.8 .
+	yMin := 0.2 min: (xRow2 - xRow1).  " 'min:' ensures maximum angel 45 degrees"
+	yMax := 0.8 min: (xRow2 - xRow1).
+	yCenter := (yMax + yMin) / 2 . 
+	
+	"Calculate y for n-th input"
+	ySlope := (yMax - yMin) / (self neuron weights size - 1).
+	calcYForNthInput := [ :index | ((index - 1) * ySlope) + yMin ] . 
+	
+	central := xRow2 @ yCenter.
+	aWardleyMap := GtWardleyMapModel new.
+
+	neuron := GtWardleyMapNodeModel new.
+	neuron
+		coordinate: central;
+		size: 100 @ 100;
+		color: Color gray lighter lighter;
+		label: (String streamContents: [ :stream |
+			stream 
+				nextPutAll: 'bias: '; 
+				nextPutAll: self neuron bias printString; cr;
+				nextPutAll: 'learningRate: ';
+				nextPutAll: self neuron learningRate printString ] ).
+
+	out := GtWardleyMapNodeModel new.
+	out
+		coordinate: xRow3 @ yCenter;
+		color: Color gray;
+		label: 'output'.
+
+	aWardleyMap addNode: neuron.
+	aWardleyMap addNode: out.
+	aWardleyMap addEdge: (GtWardleyMapEdgeModel new
+		 fromNode: neuron;
+		 toNode: out;
+		 arrow: true;
+		 width: 1).
+
+	
+	self neuron weights withIndexDo: [ :aWeight :aIndex |  | input |
+		"node for every input"
+		input := GtWardleyMapNodeModel new.
+		input
+			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
+			color: Color gray;
+			label: 'w',aIndex asString,' = ', aWeight asString. 
+		aWardleyMap addNode: input. 
+		"add edge from this node to neuron"
+		aWardleyMap addEdge: (GtWardleyMapEdgeModel new
+			 fromNode: input;
+			 toNode: neuron;
+			 arrow: true;
+			 width: 1). ].
+
+	^ aView explicit
+		title: 'Visual';
+		priority: 2;
+		stencil: [
+			GtWardleyMapElement new
+				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
+				yourself ]
+	
+]
+
+{ #category : #accessing }
 FiredNeuronShot >> detailsText [
 
 	^ BrEditor new 
@@ -81,6 +155,11 @@ FiredNeuronShot >> inputsContainer [
 		  constraintsDo: [ :c | 
 			  c horizontal matchParent.
 			  c vertical matchParent ]
+]
+
+{ #category : #accessing }
+FiredNeuronShot >> neuron [
+^ neuron
 ]
 
 { #category : #accessing }
