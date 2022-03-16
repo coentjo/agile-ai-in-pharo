@@ -21,7 +21,7 @@ FiredNeuronShot class >> input: inputs neuron: aNeuron output: outputValue [
 { #category : #accessing }
 FiredNeuronShot >> aiVisual: aView [
 	<gtView>
-	|  aWardleyMap inp1 inp2 out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
+	|  aWardleyMap inp1 inp2 neuronModel out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
 	"Started as copy of >>newMapWithNodes"
 	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
 
@@ -40,8 +40,8 @@ FiredNeuronShot >> aiVisual: aView [
 	central := xRow2 @ yCenter.
 	aWardleyMap := GtWardleyMapModel new.
 
-	neuron := GtWardleyMapNodeModel new.
-	neuron
+	neuronModel := GtWardleyMapNodeModel new.
+	neuronModel
 		coordinate: central;
 		size: 100 @ 100;
 		color: Color gray lighter lighter;
@@ -56,29 +56,32 @@ FiredNeuronShot >> aiVisual: aView [
 	out
 		coordinate: xRow3 @ yCenter;
 		color: Color gray;
-		label: 'output'.
+		label: 'output = ', outputValue asString.
 
-	aWardleyMap addNode: neuron.
+	aWardleyMap addNode: neuronModel.
 	aWardleyMap addNode: out.
 	aWardleyMap addEdge: (GtWardleyMapEdgeModel new
-		 fromNode: neuron;
+		 fromNode: neuronModel;
 		 toNode: out;
 		 arrow: true;
 		 width: 1).
 
 	
-	self neuron weights withIndexDo: [ :aWeight :aIndex |  | input |
+	self neuron weights withIndexDo: [ :aWeight :aIndex |  | input inputLabelText |
 		"node for every input"
+		inputLabelText := 
+			'x',aIndex asString,' = ', (inputs at: aIndex) asString,
+			' , w',aIndex asString,' = ', aWeight asString.
 		input := GtWardleyMapNodeModel new.
 		input
 			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
 			color: Color gray;
-			label: 'w',aIndex asString,' = ', aWeight asString. 
+			label: inputLabelText. 
 		aWardleyMap addNode: input. 
 		"add edge from this node to neuron"
 		aWardleyMap addEdge: (GtWardleyMapEdgeModel new
 			 fromNode: input;
-			 toNode: neuron;
+			 toNode: neuronModel;
 			 arrow: true;
 			 width: 1). ].
 
@@ -89,7 +92,6 @@ FiredNeuronShot >> aiVisual: aView [
 			GtWardleyMapElement new
 				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
 				yourself ]
-	
 ]
 
 { #category : #accessing }

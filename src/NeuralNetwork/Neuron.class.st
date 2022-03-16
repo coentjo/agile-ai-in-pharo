@@ -42,7 +42,7 @@ Neuron >> aiSchematic: aView [
 { #category : #accessing }
 Neuron >> aiVisual: aView [
 	<gtView>
-	|  aWardleyMap inp1 inp2 neuron out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
+	|  aWardleyMap inp1 inp2 neuronModel out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
 	"Started as copy of >>newMapWithNodes"
 	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
 
@@ -61,8 +61,8 @@ Neuron >> aiVisual: aView [
 	central := xRow2 @ yCenter.
 	aWardleyMap := GtWardleyMapModel new.
 
-	neuron := GtWardleyMapNodeModel new.
-	neuron
+	neuronModel := GtWardleyMapNodeModel new.
+	neuronModel
 		coordinate: central;
 		size: 100 @ 100;
 		color: Color gray lighter lighter;
@@ -79,10 +79,10 @@ Neuron >> aiVisual: aView [
 		color: Color gray;
 		label: 'output'.
 
-	aWardleyMap addNode: neuron.
+	aWardleyMap addNode: neuronModel.
 	aWardleyMap addNode: out.
 	aWardleyMap addEdge: (GtWardleyMapEdgeModel new
-		 fromNode: neuron;
+		 fromNode: neuronModel;
 		 toNode: out;
 		 arrow: true;
 		 width: 1).
@@ -99,7 +99,7 @@ Neuron >> aiVisual: aView [
 		"add edge from this node to neuron"
 		aWardleyMap addEdge: (GtWardleyMapEdgeModel new
 			 fromNode: input;
-			 toNode: neuron;
+			 toNode: neuronModel;
 			 arrow: true;
 			 width: 1). ].
 
