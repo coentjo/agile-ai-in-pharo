@@ -242,7 +242,7 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide11: aSlide [
 
 	^ aSlide labelAndElement
 		priority: 11;
-		newFadedText: 'Example' ;
+		newFadedText: 'How to download Iris csv from url' ;
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
@@ -251,20 +251,20 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide11: aSlide [
 				]
 ]
 
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide12: aSlide [
+{ #category : #accessing }
+SlidesForScripts06Datatxt >> scriptSnippetSlide11b: aSlide [
 	<gtSlide>
-
-	^ aSlide labelAndElement
-		priority: 12;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-"The execution of this script initializes the variable irisData.
-This variable is used in the subsequent scripts of this chapter"
+	^ aSlide playground
+		priority: 11;
+		snippets: 
+{
+'"How to download Iris csv from url"
 irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
+'
+
+. 
+
+'"Initialize the variable irisData."
 lines := irisCSV lines. 
 lines := lines allButFirst.
 tLines := lines collect: [ :l | 
@@ -280,31 +280,20 @@ irisData := tLines collect: [ :row |
 		row allButLast, l ].
 	
 irisData.
-
 '
-				]
-]
 
-{ #category : #'as yet unclassified' }
-SlidesForScripts06Datatxt >> scriptSnippetSlide13: aSlide [
-	<gtSlide>
+.
 
-	^ aSlide labelAndElement
-		priority: 13;
-		newFadedText: 'Example' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippet: 
-	'
-n := NNetwork new.
+'n := NNetwork new.
 n configure: 4 hidden: 6 nbOfOutputs: 3.
 n train: irisData nbEpochs: 1000.
-
 '
-				]
+
+}.
+
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide14: aSlide [
 	<gtSlide>
 
@@ -314,8 +303,7 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide14: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-g := RTGrapher new.
+'g := RTGrapher new.
 #(0.001 0.01 0.1 0.2 0.3)
 	doWithIndex: [ :lr :index | 
 		learningCurveNeuron := OrderedCollection new.
@@ -341,13 +329,12 @@ g := RTGrapher new.
 		d y: #yourself.
 		g add: d ].
 g legend addText: ''Learning rate effect''.
-g
-
+^ WorkshopAI showGraphInMorph: g
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide15: aSlide [
 	<gtSlide>
 
@@ -357,17 +344,16 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide15: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-n := NNetwork new.
+'n := NNetwork new.
 n configure: 4 hidden: 6 nbOfOutputs: 3.
 n learningRate: 0.3. " Repeat the script with a different value"
 n train: irisData nbEpochs: 1000.
-
+^ n
 '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts06Datatxt >> scriptSnippetSlide16: aSlide [
 	<gtSlide>
 
