@@ -188,7 +188,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	<gtExample>
 	| f p r g d d2 testPoints |
 	f := [ :x | -2 * x - 3 ].
-	p := Neuron new.
+	p := Neuron new step.
 	p weights: { 1. 2 }.
 	p bias: -1.
 	r := Random new seed: 42.

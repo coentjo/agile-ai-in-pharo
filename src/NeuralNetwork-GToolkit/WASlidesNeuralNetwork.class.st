@@ -589,17 +589,25 @@ WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 WASlidesNeuralNetwork >> slidePercep0142: aSlide [
 
 	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0142;
-		  newFadedText: 'Perceptron for Metal Concert';
-		  element: [ 
-			  GtPlaygroundLiveSlide new
-			  	newSnippet: 
+	^ aSlide playground
+		priority: 1.0142;
+		snippets: 
+{
+"Perceptron for Metal Concert"
 'perceptron := Neuron new step. 
 perceptron weights: #( 2 6 2 ) .
 perceptron bias: 5 .
 ^ perceptron
-"Look at both the tabs ''Visual'' as well as ''Schematic'' "' ]
+"Look at both the tabs ''Visual'' as well as ''Schematic'' "' 
+
+. 
+
+'"Add input (feed/fire the Perceptron)"
+perceptron fire: #( 1 0 1 )
+'
+
+
+}
 ]
 
 { #category : #slides }
@@ -624,17 +632,26 @@ WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 WASlidesNeuralNetwork >> slidePercep0152: aSlide [
 
 	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0142;
-		  newFadedText: 'Perceptron for Metal Concert';
-		  element: [ 
-			  GtPlaygroundLiveSlide new
-			  	newSnippet: 
+	^ aSlide playground
+		priority: 1.0152;
+		snippets: 
+{
+"Perceptron for Metal Concert"
 'perceptron := Neuron new step. 
 perceptron weights: #( 1 1 8 ) .
 perceptron bias: 5 .
 ^ perceptron
-"Look at both the tabs ''Visual'' as well as ''Schematic'' "' ]
+"Look at both the tabs ''Visual'' as well as ''Schematic'' "' 
+
+. 
+
+'"Add input (feed/fire the Perceptron)"
+perceptron fire: #( 1 0 1 )
+'
+
+
+}
+
 ]
 
 { #category : #slides }
@@ -876,7 +893,7 @@ WASlidesNeuralNetwork >> slidePercep0247: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0247;
-		  newFadedText: 'Graoh colored dots with line';
+		  newFadedText: 'Graph:  colored dots with line';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #perceptronColoredDotsWithLine ]
