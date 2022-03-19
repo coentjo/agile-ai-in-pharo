@@ -4,7 +4,7 @@ Class {
 	#category : #'NeuralNetwork-GToolkit-Scripts'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide02: aSlide [
 	<gtSlide>
 
@@ -14,16 +14,13 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide02: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-[ :x :y | x + y ] cull: 10 cull: 20 cull: 30. "=> 20"
+'[ :x :y | x + y ] cull: 10 cull: 20 cull: 30. "=> 20"
 [ :x :y :z | x + y + z] cull: 10 cull: 20 cull: 30. "=> 60"
-[ 42 ] cull: 10 cull: 20 cull: 30. "=> 42"
-
-'
+[ 42 ] cull: 10 cull: 20 cull: 30. "=> 42" '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
@@ -33,8 +30,7 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide03: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-inds := GAIndividual 
+'inds := GAIndividual 
 			create: 1000 
 			individualsAndInitialize: 3 
 			genesWith: [ :r | ($a to: $z) atRandom: r ].
@@ -42,13 +38,11 @@ fitnessBlock := [ :genes |
 	(genes with: ''cat'' asArray collect: [ :a :b | (a == b) 
 		ifTrue: [ 1 ] 
 		ifFalse: [ 0 ] ]) sum ].
-inds do: [ :i | i computeFitnessUsing: fitnessBlock ].		
-
-'
+inds do: [ :i | i computeFitnessUsing: fitnessBlock ]. '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide04: aSlide [
 	<gtSlide>
 
@@ -58,8 +52,7 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide04: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-inds := GAIndividual 
+'inds := GAIndividual 
 			create: 1000 
 			individualsAndInitialize: 3 
 			genesWith: [ :r | ($a to: $z) atRandom: r ].
@@ -81,13 +74,11 @@ d yLog.
 g add: d.
 g axisY noDecimal.
 g axisX noTick.
-g
-
-'
+^ WorkshopAI showGraphInMorph: g '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
@@ -97,8 +88,7 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide05: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-inds := GAIndividual 
+'inds := GAIndividual 
 			create: 100000 
 			individualsAndInitialize: 3 
 			genesWith: [ :r | ($a to: $z) atRandom: r ].
@@ -120,13 +110,11 @@ d yLog.
 g add: d.
 g axisY noDecimal.
 g axisX noTick.
-g
-
-'
+^ WorkshopAI showGraphInMorph: g '
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide06: aSlide [
 	<gtSlide>
 
@@ -136,15 +124,13 @@ SlidesForScripts10GeneticAlgorithmtxt >> scriptSnippetSlide06: aSlide [
 		element: [ 
 			GtPlaygroundLiveSlide new
 				newSnippet: 
-	'
-g := GAEngine new.
+'g := GAEngine new.
 g populationSize: 1000.
 g numberOfGenes: 4.
 g createGeneBlock: [ :rand :index :ind | ($a to: $z) atRandom: rand ].
 g fitnessBlock: [ :genes | 
 	(#($g $a $t $o) with: genes collect: [ :a :b | a = b 
         ifTrue: [ 1 ] ifFalse: [ 0 ] ]) sum ].
-g run.
-'
+g run.'
 				]
 ]

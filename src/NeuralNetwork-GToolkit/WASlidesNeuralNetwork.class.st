@@ -602,16 +602,21 @@ x3 : Is the festival near a metro stop? (You do not like driving)
 
 perceptron := Neuron new step. 
 perceptron weights: #( 2 6 2 ) .
-perceptron bias: 5 .
+perceptron bias: -5 .
 ^ perceptron
 "Look at both the tabs ''Visual'' as well as ''Schematic'' "' 
 
 . 
 
-'"Add input (feed/fire the Perceptron)"
+'"When weather is good, noone to accompany you, festival near metro: Will you go?"
 perceptron fire: #( 1 0 1 )
-'
+"inspect: output 0 means you will not go, output 1 means you will go!"'
 
+. 
+
+'"When weather is nog good, someone to accompany you, festival not near metro: Will you go?"
+perceptron fire: #( 0 1 0 )
+"inspect: output 0 means you will not go, output 1 means you will go!"'
 
 }
 ]

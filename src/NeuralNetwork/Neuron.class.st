@@ -235,6 +235,11 @@ Neuron >> step [
 	activationFunction := StepAF new
 ]
 
+{ #category : #accessing }
+Neuron >> threshold: anInteger [ 
+	self bias: (0 - anInteger)
+]
+
 { #category : #'as yet unclassified' }
 Neuron >> train: inputs desiredOutput: desiredOutput [
     | diff output delta |

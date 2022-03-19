@@ -42,43 +42,6 @@
 				"string" : "# Appetizer"
 			},
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T13:58:08.633852+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T13:58:16.680135+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "MP1FjfOWDQCStHV8A5nnPA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Before I start introducing this workshop I put a visualization on the screen. Hereby an example: inspect the first Playground. After that you can inspect the second (to see input/output-values), but more appealing is when you slide up the 'bar' below the first visualization (revealing a new Playground) and inspect:   `self fire: #( 1 1 )`  \nin that new Playground (maybe you want to look at [[screenshot]])"
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -103,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T13:52:43.97639+01:00"
+						"dateAndTimeString" : "2022-03-16T20:05:12.180903+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
 				},
-				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ). \rneuron bias: -1.5 .\r^ neuron"
+				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ).\rneuron bias: 0.5 .\r^ neuron"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -137,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T13:29:35.807241+01:00"
+						"dateAndTimeString" : "2022-03-19T20:30:30.249386+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7rrcTryWDQCNg40+AHZ8bQ=="
 				},
-				"code" : "neuron fire: #( 1 1 )"
+				"code" : "neuron fire: #( 2 3 )"
 			},
 			{
 				"__type" : "textSnippet",
@@ -436,14 +399,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-19T13:28:04.046017+01:00"
+									"dateAndTimeString" : "2022-03-13T15:20:32.655775+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "n6zavhmTDQC0EbirBq26Pw=="
 							},
-							"code" : "| slideShow |\rslideShow := WASlidesGeneralIntroNew new.\r\"Replace the string below (everything between the single quotes), \r by the name of the presenter: \"\rslideShow presenterName: 'Coen'.\r(GtLiveShow create: slideShow) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
+							"code" : "| slideShow |\rslideShow := WASlidesGeneralIntroNew new.\r\"Replace the string below (everything between the single quotes), \r by the name of the presenter: \"\rslideShow presenterName: 'Rumpelstiltskin'.\r(GtLiveShow create: slideShow) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
 						},
 						{
 							"__type" : "textSnippet",
