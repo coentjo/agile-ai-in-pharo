@@ -232,7 +232,7 @@ g result asSet size
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts11GAExamplestxt >> scriptSnippetSlide08: aSlide [
 	<gtSlide>
 
@@ -284,7 +284,7 @@ label := RTLabel new.
 elements := label elementsOn: g result. 
 v addAll: elements.
 RTGridLayout on: elements.
-v 
+^ WorkshopAI showGraphInMorph: v
 '
 				]
 ]
