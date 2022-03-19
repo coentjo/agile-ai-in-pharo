@@ -107,7 +107,7 @@ g run.
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide05: aSlide [
 	<gtSlide>
 
@@ -146,7 +146,7 @@ elements do: [ :e | e translateTo: e model ].
     | l |
     l := RTArrowedLine new color: Color blue; headOffset: 0.8.
     v add: (l edgeFrom: (v elementFromModel: (result at: index - 1)) to: (v elementFromModel: (result at: index))) ].
-v
+^ WorkshopAI showGraphInMorph: g
 
 '
 				]
@@ -190,7 +190,7 @@ g run.
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts12TravelingSalesmanProblemtxt >> scriptSnippetSlide07: aSlide [
 	<gtSlide>
 
@@ -236,7 +236,7 @@ elements do: [ :e | e translateTo: e model ].
 	city1 := v elementFromModel: (result at: index - 1).
 	city2 := v elementFromModel: (result at: index).
 	v add: (l edgeFrom: city1 to: city2) ].
-v
+^ WorkshopAI showGraphInMorph: v
 '
 				]
 ]

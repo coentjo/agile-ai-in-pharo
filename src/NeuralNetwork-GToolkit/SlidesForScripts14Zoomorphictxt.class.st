@@ -24,7 +24,7 @@ c open
 				]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 SlidesForScripts14Zoomorphictxt >> scriptSnippetSlide03: aSlide [
 	<gtSlide>
 
@@ -46,6 +46,7 @@ c addCreature: yellowCreature.
 c open.
 blueCreature translateTo: 100 @ -50.
 yellowCreature translateTo: 200 @ -50.
+c open
 '
 				]
 ]
