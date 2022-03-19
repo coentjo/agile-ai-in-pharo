@@ -593,8 +593,14 @@ WASlidesNeuralNetwork >> slidePercep0142: aSlide [
 		priority: 1.0142;
 		snippets: 
 {
-"Perceptron for Metal Concert"
-'perceptron := Neuron new step. 
+'"Perceptron for Metal Concert"
+"
+x1 : is the weather good?
+x2 : Does your brother/sister/{boy,girl}friend want to accompany you? 
+x3 : Is the festival near a metro stop? (You do not like driving)
+"
+
+perceptron := Neuron new step. 
 perceptron weights: #( 2 6 2 ) .
 perceptron bias: 5 .
 ^ perceptron
