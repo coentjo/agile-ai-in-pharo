@@ -602,7 +602,7 @@ x3 : Is the festival near a metro stop? (You do not like driving)
 
 perceptron := Neuron new step. 
 perceptron weights: #( 2 6 2 ) .
-perceptron bias: -5 .
+perceptron threshold: 5 .
 ^ perceptron
 "Look at both the tabs ''Visual'' as well as ''Schematic'' "' 
 
