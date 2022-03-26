@@ -157,7 +157,6 @@ Neuron >> feed: inputs [
 
 { #category : #accessing }
 Neuron >> fire: inputs [
-	<gtExample>
 	^ FiredNeuronShot
 		input: inputs
 		neuron: self
