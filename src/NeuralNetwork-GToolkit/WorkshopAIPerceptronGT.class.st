@@ -239,9 +239,9 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 WorkshopAIPerceptronGT >> chapter01Perceptron10 [
 	<gtExample>
 	"Example code to generate a random number"
-	"By using a known seed (the 42 below) it becomes repeatable!"
 	| r |
 	r := Random new seed: 42.
+	"By using seed 42 the result becomes repeatable!"
 	^ r nextInteger: 50
 ]
 
@@ -249,7 +249,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron10 [
 WorkshopAIPerceptronGT >> chapter01Perceptron11 [
 
 	<gtExample>
-	"so this will generate different numbers every time you run it"
+	"This will generate different numbers every time you run it"
 	^ (1 to: 5) collect: [ :i | 50 atRandom ]
 ]
 

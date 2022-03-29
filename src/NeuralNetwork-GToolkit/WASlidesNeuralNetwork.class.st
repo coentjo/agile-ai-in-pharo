@@ -881,7 +881,7 @@ WASlidesNeuralNetwork >> slidePercep0244: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0244;
-		  newFadedText: 'Graph colored dots';
+		  newFadedText: 'Dots with color depending on side of a straight line';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #perceptronColoredDots ]
@@ -917,33 +917,15 @@ WASlidesNeuralNetwork >> slidePercep0250: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0250;
-		  newFadedText: ' ';
+		  newFadedText:
+			  'Seed 42 makes the result reproducable.';
 		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #chapter01Perceptron10 ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0252: aSlide [
-
-	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0252;
-		  newFadedText: ' ';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #chapter01Perceptron11 ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0254: aSlide [
-
-	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0254;
-		  newFadedText: ' ';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
+			  GtPlaygroundLiveSlide new
+				  newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron10;
+				  newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron11;
+				  newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #chapter01Perceptron12 ]
 ]
 
