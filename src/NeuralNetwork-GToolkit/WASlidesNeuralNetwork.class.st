@@ -820,56 +820,19 @@ WASlidesNeuralNetwork >> slidePercep0230: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0232: aSlide [
-
-	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0232;
-		  newFadedText: 'Perceptron as an AND Gate';
-		  element: [ 
-			  GtPlaygroundLiveSlide new
-			  	newSnippetFromMethod: 
-					  WorkshopAIPerceptronGT >> #perceptronForANDGate ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0234: aSlide [
-	<gtSlide>
-	
-
-	^ aSlide  labelAndElement
-		  priority: 1.0234;
-		  newFadedText: 'Perceptron configured as an AND Gate';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT>>#chapter01PerceptronAndGateWithInputs ]
-	
-		
-
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0236: aSlide [
-
-	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0236;
-		  newFadedText: 'Perceptron for OR Gate';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #perceptronForORGate ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0238: aSlide [
 
 	<gtSlide>
 	^ aSlide labelAndElement
-		  priority: 1.0238;
+		  priority: 1.0204;
 		  newFadedText: 'Perceptron NOR Gate';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #perceptronForNORGate ]
+					  WorkshopAIPerceptronGT >> #perceptronForNORGate;
+				  newSnippet: 'perceptron fire: #( 0 0 )';
+				  newSnippet: 'perceptron fire: #( 0 1 )';
+				  newSnippet: 'perceptron fire: #( 1 0 )';
+				  newSnippet: 'perceptron fire: #( 1 1 )' ]
 ]
 
 { #category : #slides }

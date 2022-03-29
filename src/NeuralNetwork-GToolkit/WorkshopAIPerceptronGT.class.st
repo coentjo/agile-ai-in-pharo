@@ -553,11 +553,14 @@ WorkshopAIPerceptronGT >> perceptronForANDGate [
 WorkshopAIPerceptronGT >> perceptronForNORGate [
 	<gtExample>
 	<noTest>
-	"Weights -1, -1 with bias -0.5 makes the Perceptron an NOR gate"
+	"Weights -1, -1 with bias 0.5 makes the Perceptron an NOR gate"
+		
+	| perceptron |
+	perceptron := Neuron new step.
+	perceptron weights: #( -1 -1 ).
+	perceptron bias: 0.5.
 
-	^ WorkshopAIPerceptronGT 
-		newPerceptronWithWeights: #(-1 -1) 
-		andBias: -0.5 .
+	^ perceptron
 
 ]
 
