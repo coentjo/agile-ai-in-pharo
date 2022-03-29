@@ -1600,6 +1600,13 @@ WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 		  priority: 1.0192;
 		  newFadedText: 'Perceptron configured as an AND Gate';
 		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #perceptronForANDGate ]
+			  GtPlaygroundLiveSlide new
+				  newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronForANDGate;
+				  newSnippet: 'perceptron fire: #( 0 0 )';
+				  newSnippet: 'perceptron fire: #( 0 1 )';
+				  newSnippet: 'perceptron fire: #( 1 0 )';
+				  newSnippet: 'perceptron fire: #( 1 1 )'
+					  
+]
 ]
