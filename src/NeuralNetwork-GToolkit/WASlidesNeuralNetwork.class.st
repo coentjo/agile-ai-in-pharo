@@ -843,8 +843,24 @@ WASlidesNeuralNetwork >> slidePercep0240: aSlide [
 		  priority: 1.0240;
 		  newFadedText: 'Training a perceptron';
 		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #perceptronTrain ]
+			  GtPlaygroundLiveSlide new 
+			  	newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronTrain;
+
+newSnippet: 
+'"Before training the input #(0 1) will give output 1"
+^ perceptron fire: #( 0 1 )'; 
+					  
+newSnippet: 
+'10 timesRepeat: [ perceptron train: #( 0 1 ) desiredOutput: 0 ].
+^ perceptron';
+
+newSnippet: 
+'"After training the input #(0 1) will give output 0"
+^ perceptron fire: #( 0 1 )
+"If you are curious as to what method ''train:desiredOutput:'' does: 
+click at the little triangle behind ''desiredOutput:'' in the third script.
+(the triangle does only appear AFTER you executed the first script)"' ]
 ]
 
 { #category : #slides }
@@ -853,7 +869,7 @@ WASlidesNeuralNetwork >> slidePercep0242: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0242;
-		  newFadedText: 'Example script for drawing a Graph';
+		  newFadedText: 'Example script for drawing a Graph of a given function';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #exampleGraphSinus ]

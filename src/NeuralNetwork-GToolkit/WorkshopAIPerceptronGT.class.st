@@ -295,12 +295,15 @@ WorkshopAIPerceptronGT >> exampleGraphSinus [
 
 	<gtExample>
 	"Example of how to create a graph"
-	| g d |
+	| g d f |
+	
+	f := [ :x | (x / 3.14) sin ]. "Are you able to read this function?"
+	
 	g := RTGrapher new.
 	d := RTData new.
 	d connectColor: Color blue.
 	d points: (1 to: 100).
-	d y: [ :x | (x / 3.14) sin ].
+	d y: f.
 	g add: d.
 	^ WorkshopAI showGraphInMorph: g
 ]
@@ -457,9 +460,9 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 				WorkshopAI aRandomNumber .
 				WorkshopAI aRandomNumber } ].
 
-	f := [ :x | -2 * x - 3 ].
+	f := [ :x | -2 * x - 3 ].  "function: straight line"
 
-	"We use the Roassal Grapher engine to plot our points"
+	"Use the Roassal Grapher engine to plot our points"
 	g := RTGrapher new.
 	d := RTData new.
 	d dotShape color: [ :p | 
@@ -593,12 +596,11 @@ WorkshopAIPerceptronGT >> perceptronForORGate [
 WorkshopAIPerceptronGT >> perceptronTrain [
 
 	<gtExample>
-	<npoTest>
-	| p |
-	p := WorkshopAIPerceptronGT newPerceptronWithWeights: #( -1 -1 ) andBias: 2.
-	10 timesRepeat: [ p train: #( 0 1 ) desiredOutput: 0 ].
-	"p feed: #(0 1)."
-	^ p fire: #( 0 1 )
+	| perceptron |
+	perceptron := Neuron new step. 
+	perceptron weights: #( -1 -1 ).
+	perceptron bias: 2.
+	^ perceptron
 ]
 
 { #category : #example }
