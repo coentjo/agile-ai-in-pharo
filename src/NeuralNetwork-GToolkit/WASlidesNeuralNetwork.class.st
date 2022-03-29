@@ -585,7 +585,7 @@ WASlidesNeuralNetwork >> slidePercep0140: aSlide [
 					  c vertical matchParent ] ]
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0142: aSlide [
 
 	<gtSlide>
@@ -639,7 +639,7 @@ WASlidesNeuralNetwork >> slidePercep0150: aSlide [
 					  c vertical matchParent ] ]
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0152: aSlide [
 
 	<gtSlide>
@@ -935,7 +935,7 @@ WASlidesNeuralNetwork >> slidePercep0256: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0256;
-		  newFadedText: ' ';
+		  newFadedText: 'Precision after number of training steps.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #exampleMeasuringPrecision ]
@@ -1003,7 +1003,7 @@ WASlidesNeuralNetwork >> slidePercep0280: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0280;
-		  newFadedText: 'Step function';
+		  newFadedText: 'Step function: output only 0 or 1, and change is abrupt. ';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAINeuronGT >> #showStepFunction ]
@@ -1033,7 +1033,7 @@ WASlidesNeuralNetwork >> slidePercep0298: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0298;
-		  newFadedText: 'Sigmoid function';
+		  newFadedText: 'Sigmoid function: smooth!';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAINeuronGT >> #showSigmoidFunction ]
@@ -1081,7 +1081,7 @@ WASlidesNeuralNetwork >> slidePercep0320: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0320;
-		  newFadedText: 'Learning: Step vs Sigmoid';
+		  newFadedText: 'Learning: Step vs Sigmoid (OR gate)';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAINeuronGT >> #showLearningStepVsSigmoid ]
@@ -1162,7 +1162,7 @@ WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0362: aSlide [
 
-	<gtSlide>
+	"<gtSlide>"
 	| filename prio |
 	filename := '2021-AI-General.037.png'.
 	prio := 1.0362.
