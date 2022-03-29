@@ -1610,3 +1610,22 @@ WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 					  
 ]
 ]
+
+{ #category : #slides }
+WASlidesNeuralNetwork >> slideXmplPercepForORGate: aSlide [
+
+	<gtSlide>
+	^ aSlide labelAndElement
+		  priority: 1.0202;
+		  newFadedText: 'Perceptron configured as an OR Gate';
+		  element: [ 
+			  GtPlaygroundLiveSlide new
+				  newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #perceptronForORGate;
+				  newSnippet: 'perceptron fire: #( 0 0 )';
+				  newSnippet: 'perceptron fire: #( 0 1 )';
+				  newSnippet: 'perceptron fire: #( 1 0 )';
+				  newSnippet: 'perceptron fire: #( 1 1 )'
+					  
+]
+]
