@@ -239,7 +239,7 @@ WorkshopAILearningGT >> learning07 [
 	d y: #yourself.
 	g add: d.
 	g.
-	" ...    <----??    @todo check this with script in git!"
+	...
 	g := RTGrapher new.
 	d := RTData new.
 	d dotShape color: Color red.

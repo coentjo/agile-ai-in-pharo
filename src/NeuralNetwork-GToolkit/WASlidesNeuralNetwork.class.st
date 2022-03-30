@@ -1182,7 +1182,7 @@ WASlidesNeuralNetwork >> slidePercep0364: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0364;
-		  newFadedText: '>>';
+		  newFadedText: 'Example points and line in graph';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAILearningGT >> #learning02PointsAndLine ]
@@ -1193,7 +1193,7 @@ WASlidesNeuralNetwork >> slidePercep0366: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0366;
-		  newFadedText: '>>';
+		  newFadedText: 'Loss function';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAILearningGT >> #learning03LossFunctionMSE ]
@@ -1215,7 +1215,7 @@ WASlidesNeuralNetwork >> slidePercep0370: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0370;
-		  newFadedText: '>>';
+		  newFadedText: 'Learning: Training vs Loss function';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAILearningGT >> #learning05TrainingVsLossFunction ]
@@ -1226,7 +1226,7 @@ WASlidesNeuralNetwork >> slidePercep0372: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0372;
-		  newFadedText: '>>';
+		  newFadedText: 'Approximating a line passing by 100 points.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAILearningGT >> #learning07 ]
@@ -1237,7 +1237,7 @@ WASlidesNeuralNetwork >> slidePercep0374: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0374;
-		  newFadedText: '>>';
+		  newFadedText: 'Result of thestochastic gradient descent.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAILearningGT >> #learning08 ]
