@@ -905,7 +905,7 @@ WASlidesNeuralNetwork >> slidePercep0248: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0248;
-		  newFadedText: ' ';
+		  newFadedText: 'Train then test ';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #chapter01Perceptron09 ]
@@ -918,7 +918,7 @@ WASlidesNeuralNetwork >> slidePercep0250: aSlide [
 	^ aSlide labelAndElement
 		  priority: 1.0250;
 		  newFadedText:
-			  'Seed 42 makes the result reproducable.';
+			  'Random: Seed 42 makes the result reproducable.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new
 				  newSnippetFromMethod:
@@ -1576,6 +1576,7 @@ WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 WASlidesNeuralNetwork >> slideXmplPercepForORGate: aSlide [
 
 	<gtSlide>
+	"p.14"
 	^ aSlide labelAndElement
 		  priority: 1.0202;
 		  newFadedText: 'Perceptron configured as an OR Gate';

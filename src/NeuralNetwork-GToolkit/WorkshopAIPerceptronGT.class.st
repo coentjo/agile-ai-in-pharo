@@ -186,11 +186,11 @@ WorkshopAIPerceptronGT >> aRandomNumber [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	<gtExample>
-	| f p r g d d2 testPoints |
+	| f perceptron r g d d2 testPoints |
 	f := [ :x | -2 * x - 3 ].
-	p := Neuron new step.
-	p weights: { 1. 2 }.
-	p bias: -1.
+	perceptron := Neuron new step.
+	perceptron weights: { 1. 2 }.
+	perceptron bias: -1.
 	r := Random new seed: 42.
 
 	"We are training the perceptron"
@@ -201,7 +201,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 		designedOutput := (f value: anX) >= anY
 			                  ifTrue: [ 1 ]
 			                  ifFalse: [ 0 ].
-		p
+		perceptron
 			train: {
 					anX.
 					anY }
@@ -217,7 +217,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	g := RTGrapher new.
 	d := RTData new.
 	d dotShape color: [ :point |
-		(p feed: point) > 0.5
+		(perceptron feed: point) > 0.5
 			ifTrue: [ Color red trans ]
 			ifFalse: [ Color blue trans ] ].
 	d points: testPoints.
@@ -330,21 +330,21 @@ WorkshopAIPerceptronGT >> exampleGraphSinus_b [
 WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 
 	<gtExample>
-	| learningCurve f r p anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
+	| learningCurve f r perceptron anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
 	learningCurve := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
 	0 to: 20 by: 10 do: [ :nbOfTrained | 
 		r := Random new seed: 42.
-		p := Neuron new.
-		p weights: #( 1 2 ).
-		p bias: -1.
+		perceptron := Neuron new.
+		perceptron weights: #( 1 2 ).
+		perceptron bias: -1.
 		nbOfTrained timesRepeat: [ 
 			anX := (r nextInteger: 50) - 25.
 			anY := (r nextInteger: 50) - 25.
 			trainedOutput := (f value: anX) >= anY
 				                 ifTrue: [ 1 ]
 				                 ifFalse: [ 0 ].
-			p train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
+			perceptron train: (Array with: anX with: anY) desiredOutput: trainedOutput ].
 
 		nbOfGood := 0.
 		nbOfTries := 10.
@@ -354,7 +354,7 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 			realOutput := (f value: anX) >= anY
 				              ifTrue: [ 1 ]
 				              ifFalse: [ 0 ].
-			((p feed: { 
+			((perceptron feed: { 
 					  anX.
 					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
 				nbOfGood := nbOfGood + 1 ] ].
