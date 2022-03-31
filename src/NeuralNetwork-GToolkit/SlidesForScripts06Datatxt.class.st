@@ -15,16 +15,16 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide02: aSlide [
 			GtPlaygroundLiveSlide new
 				newSnippet: 
 	'
-n := NNetwork new.
-n configure: 2 hidden: 3 nbOfOutputs: 1.
+network := NNetwork new.
+network configure: 2 hidden: 3 nbOfOutputs: 1.
 
 20000 timesRepeat: [ 
-	n train: #(0 0) desiredOutputs: #(0).	
-	n train: #(0 1) desiredOutputs: #(1).
-	n train: #(1 0) desiredOutputs: #(1).
-	n train: #(1 1) desiredOutputs: #(0).
+	network train: #(0 0) desiredOutputs: #(0).	
+	network train: #(0 1) desiredOutputs: #(1).
+	network train: #(1 0) desiredOutputs: #(1).
+	network train: #(1 1) desiredOutputs: #(0).
 ].
-^ n
+^ network
 '
 				]
 ]
