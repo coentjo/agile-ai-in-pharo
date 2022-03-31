@@ -212,9 +212,9 @@ Neuron >> printString [
 	cr := Character cr asString.
 	tab := Character tab asString .
 	^ self sayType
-		, cr , tab , 'bias: ', self bias printString 
-		, cr , tab , ' learningRate: ', self learningRate printString
-		, cr, tab , ' weights: ', self weights printString
+		, cr , 'bias: ', self bias printString 
+		, cr , 'learningRate: ', self learningRate printString
+		, cr, 'weights: ', self weights printString
 ]
 
 { #category : #accessing }

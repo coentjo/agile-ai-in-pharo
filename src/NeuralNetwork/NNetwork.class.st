@@ -18,6 +18,90 @@ NNetwork >> addLayer: aNeuronLayer [
 	layers add: aNeuronLayer.
 ]
 
+{ #category : #accessing }
+NNetwork >> aiSchematic: aView [
+
+	<gtView>
+	| inputsContainer |
+	^ aView explicit
+		  title: 'Schematic' translated;
+		  priority: 4;
+		  stencil: [ self visualStencil ]
+]
+
+{ #category : #accessing }
+NNetwork >> aiVisual: aView [
+	<gtView>
+	|  aWardleyMap inp1 inp2 neuronModel  edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope selfWeights selfLearningRate selfBias |
+	"Started as copy of >>newMapWithNodes"
+	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
+
+	selfWeights := #(1 1 ).
+	selfLearningRate := 0.1 .
+	selfBias := -2 .
+	
+	xRow1 := 0.2 .
+	xRow2 := 0.5 .
+	xRow3 := 0.8 .
+	yMin := 0.2 min: (xRow2 - xRow1).  " 'min:' ensures maximum angel 45 degrees"
+	yMax := 0.8 min: (xRow2 - xRow1).
+	yCenter := (yMax + yMin) / 2 . 
+	
+	"Calculate y for n-th input"
+	ySlope := (yMax - yMin) / (selfWeights size - 1).
+	calcYForNthInput := [ :index | ((index - 1) * ySlope) + yMin ] . 
+	
+	central := xRow2 @ yCenter.
+	aWardleyMap := GtWardleyMapModel new.
+
+	neuronModel := GtWardleyMapNodeModel new.
+	neuronModel
+		coordinate: central;
+		size: 10 @ 10;
+		color: Color gray lighter lighter;
+		label: (String streamContents: [ :stream |
+			stream 
+				nextPutAll: 'work in progress' ] ).
+
+	"out := GtWardleyMapNodeModel new.
+	out
+		coordinate: xRow3 @ yCenter;
+		color: Color gray;
+		label: 'output'."
+
+	aWardleyMap addNode: neuronModel.
+	"aWardleyMap addNode: out.
+	aWardleyMap addEdge: (GtWardleyMapEdgeModel new
+		 fromNode: neuronModel;
+		 toNode: out;
+		 arrow: true;
+		 width: 1)."
+
+	
+	selfWeights withIndexDo: [ :aWeight :aIndex |  | input |
+		"node for every input"
+		input := GtWardleyMapNodeModel new.
+		input
+			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
+			color: Color gray;
+			label: 'w',aIndex asString,' = ', aWeight asString. 
+		"aWardleyMap addNode: input. "
+		"add edge from this node to neuron"
+		"aWardleyMap addEdge: (GtWardleyMapEdgeModel new
+			 fromNode: input;
+			 toNode: neuronModel;
+			 arrow: true;
+			 width: 1). "].
+
+	^ aView explicit
+		title: 'Visual';
+		priority: 2;
+		stencil: [
+			GtWardleyMapElement new
+				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
+				yourself ]
+]
+
 { #category : #'as yet unclassified' }
 NNetwork >> backwardPropagateError: expectedOutputs [
 	"expectedOutputs corresponds to the outputs we are training the network against"
@@ -252,4 +336,79 @@ NNetwork >> viewNetworkIn: composite [
 	composite roassal2
 		title: 'Network';
 		initializeView: [ self viewNetwork ]
+]
+
+{ #category : #accessing }
+NNetwork >> visualStencil [
+
+	| weightsContainer nameTextContainer containerTotal verticalContainer containerLayerLabel containerForNeuron |
+	containerTotal := BlElement new
+		             layout: BlLinearLayout horizontal;
+		             background: Color white;
+		             aptitude: BrShadowAptitude;
+		             margin: (BlInsets all: 20);
+		             constraintsDo: [ :c | 
+			             c horizontal fitContent.
+			             c vertical fitContent ].
+			             
+	" --- inputs --- "
+	layers withIndexDo: [ :layer :index | 
+			| containerForALayer containerSeparator |
+			containerForALayer := BlElement new
+				layout: BlLinearLayout vertical;
+				background: Color yellow lighter.
+			containerLayerLabel := ( BrEditor new
+		                    aptitude:
+			                    (BrGlamorousRegularEditorAptitude new 
+				                     fontSize: 16);
+		                    text: 'layer ',index asString , '         ';
+		                    constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ]).
+			containerForALayer addChild: containerLayerLabel.
+			
+			layer neurons withIndexDo: [ :neuron :neuronIndex | 
+				containerForNeuron := (BrEditor new 
+					aptitude: (BrGlamorousRegularEditorAptitude new fontSize: 16);
+					text: 'neuron').
+				containerForALayer addChild: containerForNeuron
+			].
+			containerTotal addChild: containerForALayer.
+			
+			"sep"
+			containerSeparator := (BlElement new background: Color white).
+			containerTotal addChild: containerSeparator
+	]. 
+
+	
+	"	containerTotal addChild: ( BrEditor new
+		                    aptitude:
+			                    (BrGlamorousRegularEditorAptitude new 
+				                     fontSize: 16);
+		                    text: 'inputs';
+		                    constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ]).
+	"				
+	" --- hidden --- "
+	" --- output layer --- "
+
+	nameTextContainer := BlTextElement new
+		                     constraintsDo: [ :c | c horizontal matchParent ];
+		                     margin: (BlInsets
+				                      top: 5
+				                      right: 0
+				                      bottom: 20
+				                      left: 5);
+		                     text:
+			                     ('output' asRopedText glamorousRegularFont
+				                      fontSize: 16;
+				                      foreground: Color black).
+	verticalContainer := BlElement new
+		                     layout: BlLinearLayout vertical;
+		                     margin: (BlInsets all: 10);
+		                     constraintsDo: [ :c | c horizontal fitContent. 
+					c vertical fitContent ].
+	verticalContainer addChild: nameTextContainer.
+	containerTotal addChild: verticalContainer.
+
+	^ containerTotal
 ]
