@@ -40,8 +40,7 @@ WASlidesGeneralIntroNew >> slidePercep0010: aSlide [
 WASlidesGeneralIntroNew >> slidePercep0020: aSlide [
 <gtExample>
 	<gtSlide>
-	| filename prio cr tab |
-	filename := '2021-AI-General.002.png'.
+	| prio cr tab |
 	cr := Character cr asString.
 	tab := Character tab asString .
 	prio := 1.0020.
