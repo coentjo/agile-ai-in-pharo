@@ -1008,7 +1008,7 @@ WASlidesNeuralNetwork >> slidePercep0298: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0298;
-		  newFadedText: 'Sigmoid function: smooth!';
+		  newFadedText: 'Solution: Instead of Step use Sigmoid function: smooth!';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAINeuronGT >> #showSigmoidFunction ]
@@ -1056,7 +1056,7 @@ WASlidesNeuralNetwork >> slidePercep0320: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0320;
-		  newFadedText: 'Learning: Step vs Sigmoid (OR gate)';
+		  newFadedText: 'Learning: Step vs Sigmoid (training them as an OR gate)';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAINeuronGT >> #showLearningStepVsSigmoid ]
