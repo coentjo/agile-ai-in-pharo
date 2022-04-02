@@ -910,7 +910,7 @@ WASlidesNeuralNetwork >> slidePercep0256: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0256;
-		  newFadedText: 'Precision after number of training steps.';
+		  newFadedText: 'Graph: Precision after number of training steps.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #exampleMeasuringPrecision ]

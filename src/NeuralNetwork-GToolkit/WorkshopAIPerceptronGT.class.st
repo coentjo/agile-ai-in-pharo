@@ -243,8 +243,8 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09a [
 	f := [ :x | -2 * x - 3 ].  
 	randomizer := Random new seed: 42.
 	perceptron := Neuron new step.
-	perceptron weights: #( 1 2 ).
-	perceptron bias: -1 .
+	perceptron weights: #( 10 10  ).
+	perceptron bias: -10 .
 	^ perceptron
 ]
 
@@ -254,7 +254,7 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09b [
 	| f perceptron randomizer g d d2 testPoints |
 	
 	testPoints := OrderedCollection new.
-	20 timesRepeat: [
+	100 timesRepeat: [
 		testPoints add: {
 				((randomizer nextInteger: 50) - 25).
 				((randomizer nextInteger: 50) - 25) } ].
@@ -299,7 +299,9 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09c [
 			train: {  anX. anY }
 			desiredOutput: designedOutput ].
 		^ perceptron
-"Execute this script (which trains the Perceptron) and then the previous one "
+"Execute this script (which trains the Perceptron) and then the previous one, 
+ which takes random points to classify. "
+"Every time you execute the training script the Perceptron will classify the points better."
 
 ]
 
@@ -401,12 +403,13 @@ WorkshopAIPerceptronGT >> exampleGraphSinus_b [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
+"p32"
 
 	<gtExample>
 	| learningCurve f r perceptron anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
 	learningCurve := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
-	0 to: 20 by: 10 do: [ :nbOfTrained | 
+	0 to: 2000 by: 10 do: [ :nbOfTrained | 
 		r := Random new seed: 42.
 		perceptron := Neuron new.
 		perceptron weights: #( 1 2 ).
