@@ -73,10 +73,10 @@ Neuron >> aiVisual: aView [
 				nextPutAll: 'learningRate: ';
 				nextPutAll: self learningRate printString ] ).
 
-	out := GtWardleyMapNodeModel new.
+	out := GtWardleyMapNodeModel new size: 1 @ 1; yourself.
 	out
 		coordinate: xRow3 @ yCenter;
-		color: Color gray;
+		color: Color gray; 
 		label: 'output'.
 
 	aWardleyMap addNode: neuronModel.
@@ -85,12 +85,12 @@ Neuron >> aiVisual: aView [
 		 fromNode: neuronModel;
 		 toNode: out;
 		 arrow: true;
-		 width: 1).
+		 width: 2).
 
 	
 	self weights withIndexDo: [ :aWeight :aIndex |  | input |
 		"node for every input"
-		input := GtWardleyMapNodeModel new.
+		input := GtWardleyMapNodeModel new size: 1 @ 1; yourself.
 		input
 			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
 			color: Color gray;

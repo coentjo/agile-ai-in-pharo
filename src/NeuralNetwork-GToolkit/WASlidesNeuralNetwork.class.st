@@ -877,8 +877,11 @@ WASlidesNeuralNetwork >> slidePercep0248: aSlide [
 		  priority: 1.0248;
 		  newFadedText: 'Train then test ';
 		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #chapter01Perceptron09 ]
+			  GtPlaygroundLiveSlide new 
+			  	newSnippetFromMethod:
+					  WorkshopAIPerceptronGT >> #chapter01Perceptron09a;
+					newSnippetFromMethod: 
+						WorkshopAIPerceptronGT >>  #chapter01Perceptron09b]
 ]
 
 { #category : #slides }

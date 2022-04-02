@@ -236,6 +236,68 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 ]
 
 { #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron09a [
+	<gtExample>
+	| f perceptron r g d d2 testPoints |
+	"Define a line and create perceptron"
+	f := [ :x | -2 * x - 3 ].  
+	perceptron := Neuron new step.
+	perceptron weights: #( 1 2 ).
+	perceptron bias: -1 .
+	^ perceptron
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron09b [
+	<gtExample>
+	| f perceptron r g d d2 testPoints |
+	"function for a line"
+	
+	r := Random new seed: 42.
+
+	"We are training the perceptron"
+	50 timesRepeat: [
+		| anX anY designedOutput |
+		anX := (r nextInteger: 50) - 25.
+		anY := (r nextInteger: 50) - 25.
+		designedOutput := (f value: anX) >= anY
+			                  ifTrue: [ 1 ]
+			                  ifFalse: [ 0 ].
+		perceptron
+			train: {
+					anX.
+					anY }
+			desiredOutput: designedOutput ].
+
+	"Test points"
+	testPoints := OrderedCollection new.
+	20 timesRepeat: [
+		testPoints add: {
+				((r nextInteger: 50) - 25).
+				((r nextInteger: 50) - 25) } ].
+
+	g := RTGrapher new.
+	d := RTData new.
+	d dotShape color: [ :point |
+		(perceptron feed: point) > 0.5
+			ifTrue: [ Color red trans ]
+			ifFalse: [ Color blue trans ] ].
+	d points: testPoints.
+	d x: #first.
+	d y: #second.
+	g add: d.
+
+	d2 := RTData new.
+	d2 noDot.
+	d2 connectColor: Color red.
+	d2 points: (-15 to: 15 by: 0.1).
+	d2 y: f.
+	d2 x: #yourself.
+	g add: d2.
+	^ WorkshopAI showGraphInMorph: g
+]
+
+{ #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron10 [
 	<gtExample>
 	"Example code to generate a random number"
