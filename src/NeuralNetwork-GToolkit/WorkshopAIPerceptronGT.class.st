@@ -299,6 +299,11 @@ WorkshopAIPerceptronGT >> exampleGraphSinus [
 	
 	f := [ :x | (x / 3.14) sin ]. "Are you able to read this function?"
 	
+	"After trying this function you can try 
+	a different function, for example: 
+	f := [ :x | 3*x - 5 ]
+	"
+	
 	g := RTGrapher new.
 	d := RTData new.
 	d connectColor: Color blue.

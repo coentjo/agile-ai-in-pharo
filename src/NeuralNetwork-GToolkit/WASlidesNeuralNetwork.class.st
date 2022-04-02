@@ -714,28 +714,10 @@ WASlidesNeuralNetwork >> slidePercep0170: aSlide [
 { #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0180: aSlide [
 
-	<gtSlide>
+
 	| filename prio |
 	filename := '2021-AI-General.018.png'.
 	prio := 1.0180.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0190: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.019.png'.
-	prio := 1.0190.
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
@@ -876,24 +858,12 @@ WASlidesNeuralNetwork >> slidePercep0242: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0244: aSlide [
-
-	<gtSlide>
-	^ aSlide labelAndElement
-		  priority: 1.0244;
-		  newFadedText: 'Dots with color depending on side of a straight line';
-		  element: [ 
-			  GtPlaygroundLiveSlide new newSnippetFromMethod:
-					  WorkshopAIPerceptronGT >> #perceptronColoredDots ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0247: aSlide [
 
 	<gtSlide>
 	^ aSlide labelAndElement
 		  priority: 1.0247;
-		  newFadedText: 'Graph:  colored dots with line';
+		  newFadedText: 'Graph: Classifying dots depending on their side of a line.';
 		  element: [ 
 			  GtPlaygroundLiveSlide new newSnippetFromMethod:
 					  WorkshopAIPerceptronGT >> #perceptronColoredDotsWithLine ]
@@ -1558,7 +1528,7 @@ WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 
 	<gtSlide>
 	^ aSlide labelAndElement
-		  priority: 1.0192;
+		  priority: 1.0201;
 		  newFadedText: 'Perceptron configured as an AND Gate';
 		  element: [ 
 			  GtPlaygroundLiveSlide new
