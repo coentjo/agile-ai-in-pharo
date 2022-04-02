@@ -238,9 +238,10 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09a [
 	<gtExample>
-	| f perceptron r g d d2 testPoints |
-	"Define a line and create perceptron"
+	| f perceptron randomizer |
+	"Define a line, create randomizer object, create perceptron"
 	f := [ :x | -2 * x - 3 ].  
+	randomizer := Random new seed: 42.
 	perceptron := Neuron new step.
 	perceptron weights: #( 1 2 ).
 	perceptron bias: -1 .
@@ -250,31 +251,13 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09a [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09b [
 	<gtExample>
-	| f perceptron r g d d2 testPoints |
-	"function for a line"
+	| f perceptron randomizer g d d2 testPoints |
 	
-	r := Random new seed: 42.
-
-	"We are training the perceptron"
-	50 timesRepeat: [
-		| anX anY designedOutput |
-		anX := (r nextInteger: 50) - 25.
-		anY := (r nextInteger: 50) - 25.
-		designedOutput := (f value: anX) >= anY
-			                  ifTrue: [ 1 ]
-			                  ifFalse: [ 0 ].
-		perceptron
-			train: {
-					anX.
-					anY }
-			desiredOutput: designedOutput ].
-
-	"Test points"
 	testPoints := OrderedCollection new.
 	20 timesRepeat: [
 		testPoints add: {
-				((r nextInteger: 50) - 25).
-				((r nextInteger: 50) - 25) } ].
+				((randomizer nextInteger: 50) - 25).
+				((randomizer nextInteger: 50) - 25) } ].
 
 	g := RTGrapher new.
 	d := RTData new.
@@ -295,6 +278,29 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09b [
 	d2 x: #yourself.
 	g add: d2.
 	^ WorkshopAI showGraphInMorph: g
+	"Create test points and let Perceptron classify them"
+
+]
+
+{ #category : #accessing }
+WorkshopAIPerceptronGT >> chapter01Perceptron09c [
+	<gtExample>
+	| f perceptron randomizer g d d2 testPoints |
+	
+	"Train the perceptron"
+	10 timesRepeat: [
+		| anX anY designedOutput |
+		anX := (randomizer nextInteger: 50) - 25.
+		anY := (randomizer nextInteger: 50) - 25.
+		designedOutput := (f value: anX) >= anY
+			                  ifTrue: [ 1 ]
+			                  ifFalse: [ 0 ].
+		perceptron
+			train: {  anX. anY }
+			desiredOutput: designedOutput ].
+		^ perceptron
+"Execute this script (which trains the Perceptron) and then the previous one "
+
 ]
 
 { #category : #accessing }
