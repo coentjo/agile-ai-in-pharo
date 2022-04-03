@@ -351,7 +351,7 @@ NNetwork >> visualStencil [
 			                  c horizontal fitContent.
 			                  c vertical fitContent ].
 
-	" --- inputs --- "
+	" --- hidden layers --- "
 	layers withIndexDo: [ :layer :index | 
 		| containerForALayer containerSeparator |
 		containerForALayer := BlElement new
@@ -383,24 +383,10 @@ NNetwork >> visualStencil [
 					                      c horizontal fitContent.
 					                      c vertical fitContent ].
 			containerForALayer addChild: containerForNeuron ].
-		containerTotal addChild: containerForALayer.
-
-		"sep"
-		"containerSeparator := BlElement new background: Color white.
-		containerTotal addChild: containerSeparator" ].
+		containerTotal addChild: containerForALayer].
 
 
-	"	containerTotal addChild: ( BrEditor new
-		                    aptitude:
-			                    (BrGlamorousRegularEditorAptitude new 
-				                     fontSize: 16);
-		                    text: 'inputs';
-		                    constraintsDo: [ :c | c horizontal fitContent. 
-					c vertical fitContent ]).
-	"
-	" --- hidden --- "
 	" --- output layer --- "
-
 	nameTextContainer := BlTextElement new
 		                     constraintsDo: [ :c | c horizontal matchParent ];
 		                     margin: (BlInsets
