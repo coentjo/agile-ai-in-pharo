@@ -386,8 +386,8 @@ NNetwork >> visualStencil [
 		containerTotal addChild: containerForALayer.
 
 		"sep"
-		containerSeparator := BlElement new background: Color white.
-		containerTotal addChild: containerSeparator ].
+		"containerSeparator := BlElement new background: Color white.
+		containerTotal addChild: containerSeparator" ].
 
 
 	"	containerTotal addChild: ( BrEditor new

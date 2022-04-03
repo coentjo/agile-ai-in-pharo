@@ -214,7 +214,7 @@ Neuron >> printString [
 	^ self sayType
 		, cr , 'bias: ', self bias printString 
 		, cr , 'learningRate: ', self learningRate printString
-		, cr, 'weights: ', self weights printString
+		, cr, 'weights: ', cr, self weightsPrintString
 ]
 
 { #category : #accessing }
@@ -317,4 +317,14 @@ Neuron >> weightsAsString [
 			do: [ :aWeight | 
 				aStream nextPutAll: '---  ', aWeight asString,'  -->'; cr ]
 			separatedBy: [ aStream cr ] ].
+]
+
+{ #category : #accessing }
+Neuron >> weightsPrintString [
+	^ String streamContents: [ :stream | 
+		self weights do: [ :w | 
+			stream nextPutAll: w asString; cr
+		] 
+
+	]
 ]
