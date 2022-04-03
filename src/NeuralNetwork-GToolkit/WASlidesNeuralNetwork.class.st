@@ -1228,18 +1228,24 @@ WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 WASlidesNeuralNetwork >> slidePercep0420: aSlide [
 
 	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.042.png'.
-	prio := 1.0420.
-	^ aSlide element
+	| prio |
+	prio := 1.0420 .
+		^ aSlide labelAndElement
 		  priority: prio;
+		  newFadedText: 'Neural Network';
 		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+			  GtPlaygroundLiveSlide new
+newSnippet: 
+'network := NNetwork new.
+network configure: 2 hidden: 3 nbOfOutputs: 1.
+
+20000 timesRepeat: [ 
+	network train: #(0 0) desiredOutputs: #(0).	
+	network train: #(0 1) desiredOutputs: #(1).
+	network train: #(1 0) desiredOutputs: #(1).
+	network train: #(1 1) desiredOutputs: #(0).
+].
+^ network']
 ]
 
 { #category : #slides }

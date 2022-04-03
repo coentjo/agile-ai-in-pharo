@@ -764,14 +764,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:02.217139+01:00"
+									"dateAndTimeString" : "2022-04-03T20:13:37.112636+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "HC6WqvKVDQChxloOCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
 						}
 					]
 				},
@@ -836,14 +836,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:23.040219+01:00"
+									"dateAndTimeString" : "2022-04-03T20:13:44.036662+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "J6B09vKVDQCALDwjAH4rrQ=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
 						}
 					]
 				},
@@ -945,14 +945,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:32.55668+01:00"
+									"dateAndTimeString" : "2022-04-03T20:13:49.796817+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "GolFsfKVDQChzMhTCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts05Learningtxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts05Learningtxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -979,14 +979,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:37.766568+01:00"
+									"dateAndTimeString" : "2022-04-03T20:13:52.5875+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "iEOxsvKVDQChzfoQCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts06Datatxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts06Datatxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1013,14 +1013,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:41.15199+01:00"
+									"dateAndTimeString" : "2022-04-03T20:13:57.076423+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "eCy4s/KVDQChzjg2CSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts07MatrixLibrarytxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts07MatrixLibrarytxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1047,14 +1047,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:44.789508+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:00.346757+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "McYttfKVDQChz2YiCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts08MatrixNNtxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts08MatrixNNtxt new) makeArrowsVisible"
 						}
 					]
 				},
@@ -1119,14 +1119,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:52.786976+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:04.330314+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "X9zb7s6PDQCK+ijkC6iIWQ=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesGeneticAlgo new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesGeneticAlgo new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1153,14 +1153,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:56.34062+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:06.976661+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "glXktvKVDQCh0HK7CSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts10GeneticAlgorithmtxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts10GeneticAlgorithmtxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1187,14 +1187,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:34:58.937587+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:10.101595+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "0GcAufKVDQCh0VPnCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts11GAExamplestxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts11GAExamplestxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1226,14 +1226,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-03-13T19:35:02.403419+01:00"
+												"dateAndTimeString" : "2022-04-03T20:14:17.826395+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "FchTuvKVDQCh0owACSDhbg=="
 										},
-										"code" : "(GtLiveShow create: SlidesForScripts12TravelingSalesmanProblemtxt new) makeArrowsVisible\"These slides contain the example scripts for a chapter from the book\"\r"
+										"code" : "(GtLiveShow create: SlidesForScripts12TravelingSalesmanProblemtxt new) makeArrowsVisible\"These slides contain all the example scripts for a chapter from the book\"\r"
 									}
 								]
 							},
@@ -1298,14 +1298,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-03-13T19:35:05.223228+01:00"
+												"dateAndTimeString" : "2022-04-03T20:14:22.835482+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "m4TOvPKVDQCh04r7CSDhbg=="
 										},
-										"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts13Robottxt new) makeArrowsVisible"
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts13Robottxt new) makeArrowsVisible"
 									}
 								]
 							},
@@ -1370,14 +1370,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-03-13T19:35:10.966179+01:00"
+												"dateAndTimeString" : "2022-04-03T20:14:29.743375+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "70vGxPKVDQCh1w0FCSDhbg=="
 										},
-										"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts14Zoomorphictxt new) makeArrowsVisible"
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts14Zoomorphictxt new) makeArrowsVisible"
 									},
 									{
 										"__type" : "pharoSnippet",
@@ -1404,14 +1404,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-03-13T19:35:15.754697+01:00"
+												"dateAndTimeString" : "2022-04-03T20:14:40.132438+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "AaPFvfKVDQCh1GWyCSDhbg=="
 										},
-										"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts15ZoomorphicSimulationtxt new) makeArrowsVisible"
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts15ZoomorphicSimulationtxt new) makeArrowsVisible"
 									}
 								]
 							},
@@ -1509,14 +1509,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:35:22.289194+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:44.949281+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "8FD08s6PDQCLBSGPC6iIWQ=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesNeuroEvolution new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesNeuroEvolution new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1543,14 +1543,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:35:24.617327+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:47.539107+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "QArpvvKVDQCh1aaXCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts16Neuroevolutiontxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts16Neuroevolutiontxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1577,14 +1577,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:35:26.186701+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:51.627384+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "Cv0JwPKVDQCh1gmwCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts17NEATtxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts17NEATtxt new) makeArrowsVisible"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1611,14 +1611,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T19:35:27.335676+01:00"
+									"dateAndTimeString" : "2022-04-03T20:14:54.616022+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "FCDcx/KVDQCh2PQqCSDhbg=="
 							},
-							"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts18MarioGametxt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts18MarioGametxt new) makeArrowsVisible"
 						}
 					]
 				},
@@ -1715,14 +1715,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-13T19:35:31.451382+01:00"
+						"dateAndTimeString" : "2022-04-03T20:14:57.93463+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "kJae9M6PDQCLBlzWC6iIWQ=="
 				},
-				"code" : "\"These slides contain the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesFinal new) makeArrowsVisible "
+				"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: WASlidesFinal new) makeArrowsVisible "
 			},
 			{
 				"__type" : "textSnippet",
