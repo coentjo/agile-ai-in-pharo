@@ -38,6 +38,22 @@ The cloned git is in a subdir of your GToolkit-dir:
 
 ![WorkshopAI](img/GT.lepiter.WorkshopAI.png)
 
+
+## Some screenshots
+
+![](img/GT.Classifying-dots-line.png)
+
+
+![](img/GT.Fed.Neuron.png)
+
+
+![](img/GT.NeuralNetwork.png)
+
+
+![](img/GT.Sigmoid.png)
+
+
+
 --------------------  
 
 Now follows the README from the original repo follows, with the info about how to use it in Pharo: 
