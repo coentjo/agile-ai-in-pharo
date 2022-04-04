@@ -95,7 +95,7 @@ NNetwork >> aiVisual: aView [
 
 	^ aView explicit
 		title: 'Visual';
-		priority: 2;
+		priority: 6;
 		stencil: [
 			GtWardleyMapElement new
 				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
@@ -305,7 +305,7 @@ NNetwork >> viewLearningCurveIn: composite [
 		initializeView: [ self viewLearningCurve ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 NNetwork >> viewNetwork [
 	| b lb |
 	b := RTMondrian new.
@@ -341,7 +341,7 @@ NNetwork >> viewNetworkIn: composite [
 { #category : #accessing }
 NNetwork >> visualStencil [
 
-	| weightsContainer nameTextContainer containerTotal verticalContainer containerLayerLabel containerForNeuron |
+	| weightsContainer inputsContainer containerTotal verticalContainer containerLayerLabel containerForNeuron |
 	containerTotal := BlElement new
 		                  layout: BlLinearLayout horizontal;
 		                  background: Color white;
@@ -350,10 +350,32 @@ NNetwork >> visualStencil [
 		                  constraintsDo: [ :c | 
 			                  c horizontal fitContent.
 			                  c vertical fitContent ].
+	" --- inputs --- "
+	inputsContainer := BlTextElement new
+		                   constraintsDo: [ :c | c horizontal matchParent ];
+		                   margin: (BlInsets
+				                    top: 5
+				                    right: 0
+				                    bottom: 20
+				                    left: 5);
+		                   text:
+			                   (('Inputs: ' , self numberOfInputs asString)
+				                    asRopedText glamorousRegularFont
+				                    fontSize: 16;
+				                    foreground: Color black).
+	verticalContainer := BlElement new
+		                     layout: BlLinearLayout vertical;
+		                     margin: (BlInsets all: 10);
+		                     constraintsDo: [ :c | 
+			                     c horizontal fitContent.
+			                     c vertical fitContent ].
+	verticalContainer addChild: inputsContainer.
+	containerTotal addChild: verticalContainer.
+
 
 	" --- hidden layers --- "
 	layers withIndexDo: [ :layer :index | 
-		| containerForALayer containerSeparator |
+		| containerForALayer containerSeparator layerLabel |
 		containerForALayer := BlElement new
 			                      layout: BlLinearLayout vertical;
 			                      background: Color white;
@@ -362,12 +384,14 @@ NNetwork >> visualStencil [
 			                      constraintsDo: [ :c | 
 				                      c horizontal fitContent.
 				                      c vertical fitContent ].
+		layerLabel := layer isOutputLayer
+			              ifTrue: [ 'Output layer' ]
+			              ifFalse: [ 'Layer ' , index asString ].
 		containerLayerLabel := BrEditor new
 			                       aptitude:
 				                       (BrGlamorousRegularEditorAptitude new 
 					                        fontSize: 26);
-			                       text:
-				                       'layer ' , index asString , '         ';
+			                       text: layerLabel;
 			                       constraintsDo: [ :c | 
 				                       c horizontal fitContent.
 				                       c vertical fitContent ].
@@ -383,29 +407,9 @@ NNetwork >> visualStencil [
 					                      c horizontal fitContent.
 					                      c vertical fitContent ].
 			containerForALayer addChild: containerForNeuron ].
-		containerTotal addChild: containerForALayer].
+		containerTotal addChild: containerForALayer ].
 
 
-	" --- output layer --- "
-	nameTextContainer := BlTextElement new
-		                     constraintsDo: [ :c | c horizontal matchParent ];
-		                     margin: (BlInsets
-				                      top: 5
-				                      right: 0
-				                      bottom: 20
-				                      left: 5);
-		                     text:
-			                     ('output' asRopedText glamorousRegularFont
-				                      fontSize: 16;
-				                      foreground: Color black).
-	verticalContainer := BlElement new
-		                     layout: BlLinearLayout vertical;
-		                     margin: (BlInsets all: 10);
-		                     constraintsDo: [ :c | 
-			                     c horizontal fitContent.
-			                     c vertical fitContent ].
-	verticalContainer addChild: nameTextContainer.
-	containerTotal addChild: verticalContainer.
 
 	^ containerTotal
 ]
