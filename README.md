@@ -41,16 +41,16 @@ The cloned git is in a subdir of your GToolkit-dir:
 
 ## Some screenshots
 
-![](img/GT.Classifying-dots-line.png)
-
-
 ![](img/GT.Fed.Neuron.png)
 
 
-![](img/GT.NeuralNetwork.png)
-
-
 ![](img/GT.Sigmoid.png)
+
+
+![](img/GT.Classifying-dots-line.png)
+
+
+![](img/GT.NeuralNetwork.png)
 
 
 
