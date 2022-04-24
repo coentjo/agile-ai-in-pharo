@@ -90,7 +90,7 @@ Neuron >> aiVisual: aView [
 	
 	self weights withIndexDo: [ :aWeight :aIndex |  | input |
 		"node for every input"
-		input := GtWardleyMapNodeModel new size: 1 @ 1; yourself.
+		input := GtWardleyMapNodeModel new size: 5 @ 5; yourself.
 		input
 			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
 			color: Color gray;

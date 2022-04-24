@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-13T14:23:33.650305+01:00"
+						"dateAndTimeString" : "2022-04-24T10:41:31.118412+02:00"
 					}
 				},
 				"uid" : {
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T10:00:30.819324+02:00"
+						"dateAndTimeString" : "2022-04-24T10:19:18.22428+02:00"
 					}
 				},
 				"uid" : {
@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T10:05:13.380972+02:00"
+						"dateAndTimeString" : "2022-04-24T10:19:18.22454+02:00"
 					}
 				},
 				"uid" : {
@@ -399,7 +399,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-13T15:20:32.655775+01:00"
+									"dateAndTimeString" : "2022-04-24T13:30:43.294405+02:00"
 								}
 							},
 							"uid" : {
@@ -764,14 +764,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:13:37.112636+02:00"
+									"dateAndTimeString" : "2022-04-24T13:30:28.792698+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "HC6WqvKVDQChxloOCSDhbg=="
 							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
 						}
 					]
 				},
@@ -836,14 +836,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:13:44.036662+02:00"
+									"dateAndTimeString" : "2022-04-24T13:30:20.940377+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "J6B09vKVDQCALDwjAH4rrQ=="
 							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
+							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
 						}
 					]
 				},
