@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-16T20:05:12.180903+01:00"
+						"dateAndTimeString" : "2022-04-24T10:00:30.819324+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
 				},
-				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ).\rneuron bias: 0.5 .\r^ neuron"
+				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ).\rneuron bias: -0.5 .\r^ neuron"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -100,14 +100,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T20:30:30.249386+01:00"
+						"dateAndTimeString" : "2022-04-24T10:05:13.380972+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7rrcTryWDQCNg40+AHZ8bQ=="
 				},
-				"code" : "neuron fire: #( 2 3 )"
+				"code" : "neuron fire: #( 1 0 )"
 			},
 			{
 				"__type" : "textSnippet",
