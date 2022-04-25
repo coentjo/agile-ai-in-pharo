@@ -327,18 +327,17 @@ SlidesForScripts06Datatxt >> scriptSnippetSlide15: aSlide [
 		snippets: 
 {
 '"Download Iris csv from url"
-irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.
-'
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.'
 
 . 
 
 '"Initialize the variable irisData."
 lines := irisCSV lines. 
 lines := lines allButFirst.
-tLines := lines collect: [ :l | 
-		| ss |
-		ss := l substrings: '',''.
-		(ss allButLast collect: [ :w | w asNumber ]), (Array with: ss last) ].
+tLines := lines collect: [ :line | 
+		| valuesOnThisLine |
+		valuesOnThisLine := line substrings: '',''.
+		(valuesOnThisLine allButLast collect: [ :w | w asNumber ]), (Array with: valuesOnThisLine last) ].
 
 irisData := tLines collect: [ :row | 
 		| l |
@@ -346,18 +345,20 @@ irisData := tLines collect: [ :row |
 		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
 		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
 		row allButLast, l ].
-	
-irisData.
-'
+^ irisData'
 
 .
 
-'n := NNetwork new.
-n configure: 4 hidden: 6 nbOfOutputs: 3.
-n learningRate: 0.3. " Repeat the script with a different value"
-n train: irisData nbEpochs: 1000.
-^ n
-'
+'network := NNetwork new.
+network configure: 4 hidden: 6 nbOfOutputs: 3.
+network learningRate: 0.3 .
+^ network'
+.
+' " Repeat the script "
+network train: irisData nbEpochs: 1000.
+^ network'
+.
+'network feed: #(  5.6  2.9  3.6  1.3 )'
 }				
 ]
 

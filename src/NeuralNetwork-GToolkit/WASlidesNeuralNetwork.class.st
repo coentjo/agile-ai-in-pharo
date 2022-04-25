@@ -1326,34 +1326,45 @@ WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 	<gtSlide>
 	| filename prio |
 	filename := '2021-AI-General.047.png'.
-	prio := 1.0470.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
+	prio := 1.0470.				  
+	^ aSlide playground
+		priority: prio;
+		snippets: 
+{
+'"Download Iris csv from url"
+irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.'
 
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0480: aSlide [
+. 
 
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.048.png'.
-	prio := 1.0480.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | container form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
+'"Initialize the variable irisData."
+lines := irisCSV lines. 
+lines := lines allButFirst.
+tLines := lines collect: [ :line | 
+		| valuesOnThisLine |
+		valuesOnThisLine := line substrings: '',''.
+		(valuesOnThisLine allButLast collect: [ :w | w asNumber ]), (Array with: valuesOnThisLine last) ].
+
+irisData := tLines collect: [ :row | 
+		| l |
+		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
+		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
+		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
+		row allButLast, l ].
+^ irisData'
+
+.
+
+'network := NNetwork new.
+network configure: 4 hidden: 6 nbOfOutputs: 3.
+network learningRate: 0.3 .
+^ network'
+.
+' " Repeat the script "
+network train: irisData nbEpochs: 1000.
+^ network'
+.
+'network feed: #(  5.6  2.9  3.6  1.3 )'
+}				
 ]
 
 { #category : #slides }
