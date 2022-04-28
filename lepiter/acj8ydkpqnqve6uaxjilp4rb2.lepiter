@@ -1019,14 +1019,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-22T17:20:26.346252+01:00"
+						"dateAndTimeString" : "2022-04-28T20:40:20.776176+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "FLRDoo+SDQCxo8jyCPL5Jw=="
 				},
-				"code" : "\"Perceptron simulating an AND Gate\"\r\t\"Weights 1, 1 with bias -1.5 makes the Perceptron an AND gate\"\r\t| perceptron |\r\tperceptron := Neuron new step. \r\tperceptron weights: #( 1 1 ) . \r\tperceptron bias: -1.5 .\r\t^ perceptron"
+				"code" : "\"Perceptron simulating an AND Gate\"\r\t\"Weights 1, 1 with bias -1.5 makes the Perceptron an AND gate\"\r\t| perceptron |\r\tperceptron := Neuron new step. \r\tperceptron weights: #( 1 1  1) . \r\tperceptron bias: -1.5 .\r\t^ perceptron"
 			},
 			{
 				"__type" : "textSnippet",
