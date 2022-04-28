@@ -50,7 +50,8 @@ FiredNeuronShot >> aiVisual: aView [
 				nextPutAll: 'bias: '; 
 				nextPutAll: self neuron bias printString; cr;
 				nextPutAll: 'learningRate: ';
-				nextPutAll: self neuron learningRate printString ] ).
+				nextPutAll: self neuron learningRate printString; cr;
+				nextPutAll: self computation ] ).
 
 	out := GtWardleyMapNodeModel new.
 	out
@@ -92,6 +93,20 @@ FiredNeuronShot >> aiVisual: aView [
 			GtWardleyMapElement new
 				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
 				yourself ]
+]
+
+{ #category : #accessing }
+FiredNeuronShot >> computation [
+
+	| weights |
+	weights := self neuron weights.
+	^ String streamContents: [ :stream | 
+		  1 to: self inputs size do: [ :i | 
+		  	i = 1 ifFalse: [stream nextPutAll: ' + '].
+			  stream
+				  nextPutAll: (inputs at: i) asString;
+				  nextPutAll: '*';
+				  nextPutAll: (weights at: i) asString ] ]
 ]
 
 { #category : #accessing }
