@@ -65,7 +65,7 @@ Neuron >> aiVisual: aView [
 	neuronModel
 		coordinate: central;
 		size: 100 @ 100;
-		color: Color gray lighter lighter;
+		color: Color green;
 		label: (String streamContents: [ :stream |
 			stream 
 				nextPutAll: 'bias: '; 

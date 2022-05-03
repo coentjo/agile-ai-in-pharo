@@ -25,7 +25,7 @@ NNetwork >> aiSchematic: aView [
 	| inputsContainer |
 	^ aView explicit
 		  title: 'Schematic' translated;
-		  priority: 4;
+		  priority: 5;
 		  stencil: [ self visualStencil ]
 ]
 
@@ -37,7 +37,7 @@ NNetwork >> aiVisual: aView [
 	incomingLinks := OrderedCollection new.
 	^ aView mondrian
 		  title: 'Visual';
-		  priority: 5;
+		  priority: 4;
 		  painting: [ :m | 
 			  | all |
 			  all := self neurons asSet.
