@@ -45,15 +45,19 @@ NNetwork >> aiVisual: aView [
 				  stencil: [ :layer | 
 					  | layerElement |
 					  layerElement := BlElement new
-						                  border: (BlBorder paint: Color black);
+						                  "border: (BlBorder paint: Color black);"
 						                  layout:
 							                  (BlLinearLayout vertical cellSpacing: 10);
+							              size: 50@500 ;
 						                  constraintsDo: [ :c | 
 							                  c vertical fitContent.
 							                  c horizontal fitContent ].
+					  layerElement addChild:
+						  (BlTextElement new text: (layer descriptiveLabel, ' - - - - - - ') asRopedText).
 					  layer children do: [ :neuron | 
 						  layerElement addChild: (BlElement new
 								   geometry: BlCircleGeometry new;
+								   size: layer elementSize;
 								   border: (BlBorder paint: Color black);
 								   when: BlClickEvent
 								   do: [ :e | e target phlow spawnObject: neuron ];
@@ -154,7 +158,7 @@ NNetwork >> inputPseudoLayer [
 	"For visualizing: create 'pseudoLayer' for inputs"
 	| numberOfInputs inputs |
 	numberOfInputs:= self numberOfInputs.
-	inputs := layers first neurons first weights.
+	inputs := (layers first neurons first weights) collect: [:i | 1].
 	^ InputPseudoLayer new children: inputs
 ]
 

@@ -20,7 +20,17 @@ InputPseudoLayer >> children: aChildrenCollection [
 ]
 
 { #category : #accessing }
+InputPseudoLayer >> descriptiveLabel [
+	^ 'Inputs'
+]
+
+{ #category : #accessing }
 InputPseudoLayer >> elementColor [
 
 	^ Color darkGray
+]
+
+{ #category : #accessing }
+InputPseudoLayer >> elementSize [
+	^ 10 @ 10
 ]

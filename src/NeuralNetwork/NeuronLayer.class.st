@@ -49,9 +49,22 @@ NeuronLayer >> children [
 ]
 
 { #category : #accessing }
+NeuronLayer >> descriptiveLabel [
+
+	^ self isOutputLayer
+		  ifTrue: 'Output Layer'
+		  ifFalse: 'Hidden Layer'
+]
+
+{ #category : #accessing }
 NeuronLayer >> elementColor [
 
 	^ Color green
+]
+
+{ #category : #accessing }
+NeuronLayer >> elementSize [
+	^ 50 @ 50
 ]
 
 { #category : #'as yet unclassified' }
