@@ -31,75 +31,73 @@ NNetwork >> aiSchematic: aView [
 
 { #category : #accessing }
 NNetwork >> aiVisual: aView [
+
 	<gtView>
-	|  aWardleyMap inp1 inp2 neuronModel  edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope selfWeights selfLearningRate selfBias |
-	"Started as copy of >>newMapWithNodes"
-	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
+	| incomingLinks  element |
+	incomingLinks := OrderedCollection new.
+	^ aView mondrian
+		  title: 'Visual';
+		  priority: 5;
+		  painting: [ :m | 
+			  | all |
+			  all := self neurons asSet.
+			  m nodes
+				  stencil: [ :layer | 
+					  | layerElement |
+					  layerElement := BlElement new"
+						                  size: 50 @ 250;"
+						                  border: (BlBorder paint: Color black);
+						                  "when: BlClickEvent
+						                  do: [ :e | e target phlow spawnObject: layer ];"
+						                  layout:
+							                  (BlLinearLayout vertical cellSpacing: 10);
+						                  constraintsDo: [ :c | 
+							                  c vertical fitContent.
+							                  c horizontal fitContent ].
+					  layer neurons do: [ :neuron | 
+						  layerElement addChild: (BlElement new
+								   geometry: BlCircleGeometry new;
+								   border: (BlBorder paint: Color black);
+								   when: BlClickEvent
+						                  do: [ :e | e target phlow spawnObject: neuron ];
+						                  aptitude:
+							             ((BrGlamorousWithTooltipAptitude content: [ 
+									               | aContainer |
+									               aContainer := BlElement new
+										                             layout: BlFrameLayout new;
+										                             constraintsDo: [ :c | 
+											                             c horizontal fitContent.
+											                             c vertical fitContent ];
+										                             when: GtPhlowObjectToSpawn
+										                             do: [ :anEvent | 
+											                             element fireEvent:
+													                             (GtPhlowObjectToSpawn new
+														                              object: anEvent object;
+														                              sourceElement:
+															                              anEvent target) ].
+									               (neuron gtViewsFor: GtPhlowEmptyView new) 
+										               asElementDo: [ :anInspectorElement | 
+											               aContainer addChild:
+												               ((anInspectorElement exact: 400 @ 400)
+													                asScalableElement size: 800 @ 800) ] ]) 
+								              showDelay: 100 milliSeconds);
+								   background: Color green) ].
 
-	selfWeights := #(1 1 ).
-	selfLearningRate := 0.1 .
-	selfBias := -2 .
-	
-	xRow1 := 0.2 .
-	xRow2 := 0.5 .
-	xRow3 := 0.8 .
-	yMin := 0.2 min: (xRow2 - xRow1).  " 'min:' ensures maximum angel 45 degrees"
-	yMax := 0.8 min: (xRow2 - xRow1).
-	yCenter := (yMax + yMin) / 2 . 
-	
-	"Calculate y for n-th input"
-	ySlope := (yMax - yMin) / (selfWeights size - 1).
-	calcYForNthInput := [ :index | ((index - 1) * ySlope) + yMin ] . 
-	
-	central := xRow2 @ yCenter.
-	aWardleyMap := GtWardleyMapModel new.
+					  layerElement ];
+				  with: layers.
+			  m edges
+				  fromNearestTightCircle;
+				  toNearestTightCircle;
+				  stencil: [ :each | 
+					  BlLineElement new
+						  zIndex: -1;
+						  border:
+							  (BlBorder paint: (Color lightGray alpha: 0.5) width: 1);
+						  toHead: (BlArrowheadSimpleArrow new border:
+									   (BlBorder paint: Color lightGray width: 1)) ];
+				  connect: all toAll: [ :each | #() asSet].
 
-	neuronModel := GtWardleyMapNodeModel new.
-	neuronModel
-		coordinate: central;
-		size: 10 @ 10;
-		color: Color gray lighter lighter;
-		label: (String streamContents: [ :stream |
-			stream 
-				nextPutAll: 'work in progress' ] ).
-
-	"out := GtWardleyMapNodeModel new.
-	out
-		coordinate: xRow3 @ yCenter;
-		color: Color gray;
-		label: 'output'."
-
-	aWardleyMap addNode: neuronModel.
-	"aWardleyMap addNode: out.
-	aWardleyMap addEdge: (GtWardleyMapEdgeModel new
-		 fromNode: neuronModel;
-		 toNode: out;
-		 arrow: true;
-		 width: 1)."
-
-	
-	selfWeights withIndexDo: [ :aWeight :aIndex |  | input |
-		"node for every input"
-		input := GtWardleyMapNodeModel new.
-		input
-			coordinate: xRow1 @ (calcYForNthInput value: aIndex);
-			color: Color gray;
-			label: 'w',aIndex asString,' = ', aWeight asString. 
-		"aWardleyMap addNode: input. "
-		"add edge from this node to neuron"
-		"aWardleyMap addEdge: (GtWardleyMapEdgeModel new
-			 fromNode: input;
-			 toNode: neuronModel;
-			 arrow: true;
-			 width: 1). "].
-
-	^ aView explicit
-		title: 'Visual';
-		priority: 6;
-		stencil: [
-			GtWardleyMapElement new
-				wardleyMapViewModel: (GtWardleyMapViewModel new wardleyMapModel: aWardleyMap);
-				yourself ]
+			  m ]
 ]
 
 { #category : #'as yet unclassified' }
