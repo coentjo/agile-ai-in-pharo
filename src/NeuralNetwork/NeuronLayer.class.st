@@ -43,6 +43,17 @@ NeuronLayer >> backwardPropagateError: expected [
 			 self previousLayer backwardPropagateError ].
 ]
 
+{ #category : #accessing }
+NeuronLayer >> children [
+	^ neurons
+]
+
+{ #category : #accessing }
+NeuronLayer >> elementColor [
+
+	^ Color green
+]
+
 { #category : #'as yet unclassified' }
 NeuronLayer >> feed: someInputValues [
 	"Feed the neuron layer with some inputs"

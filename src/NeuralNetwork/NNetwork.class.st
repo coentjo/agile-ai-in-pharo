@@ -33,7 +33,7 @@ NNetwork >> aiSchematic: aView [
 NNetwork >> aiVisual: aView [
 
 	<gtView>
-	| incomingLinks  element |
+	| incomingLinks element |
 	incomingLinks := OrderedCollection new.
 	^ aView mondrian
 		  title: 'Visual';
@@ -44,47 +44,42 @@ NNetwork >> aiVisual: aView [
 			  m nodes
 				  stencil: [ :layer | 
 					  | layerElement |
-					  layerElement := BlElement new"
-						                  size: 50 @ 250;"
+					  layerElement := BlElement new
 						                  border: (BlBorder paint: Color black);
-						                  "when: BlClickEvent
-						                  do: [ :e | e target phlow spawnObject: layer ];"
 						                  layout:
 							                  (BlLinearLayout vertical cellSpacing: 10);
 						                  constraintsDo: [ :c | 
 							                  c vertical fitContent.
 							                  c horizontal fitContent ].
-					  layer neurons do: [ :neuron | 
+					  layer children do: [ :neuron | 
 						  layerElement addChild: (BlElement new
 								   geometry: BlCircleGeometry new;
 								   border: (BlBorder paint: Color black);
 								   when: BlClickEvent
-						                  do: [ :e | e target phlow spawnObject: neuron ];
-						                  aptitude:
-							             ((BrGlamorousWithTooltipAptitude content: [ 
-									               | aContainer |
-									               aContainer := BlElement new
-										                             layout: BlFrameLayout new;
-										                             constraintsDo: [ :c | 
-											                             c horizontal fitContent.
-											                             c vertical fitContent ];
-										                             when: GtPhlowObjectToSpawn
-										                             do: [ :anEvent | 
-											                             element fireEvent:
-													                             (GtPhlowObjectToSpawn new
-														                              object: anEvent object;
-														                              sourceElement:
-															                              anEvent target) ].
-									               (neuron gtViewsFor: GtPhlowEmptyView new) 
-										               asElementDo: [ :anInspectorElement | 
-											               aContainer addChild:
-												               ((anInspectorElement exact: 400 @ 400)
-													                asScalableElement size: 800 @ 800) ] ]) 
-								              showDelay: 100 milliSeconds);
-								   background: Color green) ].
+								   do: [ :e | e target phlow spawnObject: neuron ];
+								   aptitude: ((BrGlamorousWithTooltipAptitude content: [ 
+											     | aContainer |
+											     aContainer := BlElement new
+												                   layout: BlFrameLayout new;
+												                   constraintsDo: [ :c | 
+													                   c horizontal fitContent.
+													                   c vertical fitContent ];
+												                   when: GtPhlowObjectToSpawn
+												                   do: [ :anEvent | 
+													                   element fireEvent:
+															                   (GtPhlowObjectToSpawn new
+																                    object: anEvent object;
+																                    sourceElement: anEvent target) ].
+											     (neuron gtViewsFor: GtPhlowEmptyView new) 
+												     asElementDo: [ :anInspectorElement | 
+													     aContainer addChild:
+														     ((anInspectorElement exact: 400 @ 400)
+															      asScalableElement size: 800 @ 800) ] ]) 
+										    showDelay: 100 milliSeconds);
+								   background: layer elementColor) ].
 
 					  layerElement ];
-				  with: layers.
+				  with: { self inputPseudoLayer } , layers.
 			  m edges
 				  fromNearestTightCircle;
 				  toNearestTightCircle;
@@ -95,7 +90,7 @@ NNetwork >> aiVisual: aView [
 							  (BlBorder paint: (Color lightGray alpha: 0.5) width: 1);
 						  toHead: (BlArrowheadSimpleArrow new border:
 									   (BlBorder paint: Color lightGray width: 1)) ];
-				  connect: all toAll: [ :each | #() asSet].
+				  connect: all toAll: [ :each | #(  ) asSet ].
 
 			  m ]
 ]
@@ -152,6 +147,15 @@ NNetwork >> initialize [
 	layers := OrderedCollection new.
 	errors := OrderedCollection new.
 	precisions := OrderedCollection new.
+]
+
+{ #category : #accessing }
+NNetwork >> inputPseudoLayer [
+	"For visualizing: create 'pseudoLayer' for inputs"
+	| numberOfInputs inputs |
+	numberOfInputs:= self numberOfInputs.
+	inputs := layers first neurons first weights.
+	^ InputPseudoLayer new children: inputs
 ]
 
 { #category : #'as yet unclassified' }
