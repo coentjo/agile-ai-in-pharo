@@ -30,6 +30,117 @@ NNetwork >> aiSchematic: aView [
 ]
 
 { #category : #accessing }
+NNetwork >> aiVisual2: aView [
+
+	<gtView>
+	| incomingLinks element mondrian |
+	incomingLinks := OrderedCollection new.
+	mondrian := aView mondrian.
+	^ mondrian
+		  title: 'Visual2';
+		  priority: 5;
+		  painting: [ :m | 
+			  | all |
+			  all := self neurons asSet.
+			  m nodes
+				  stencil: [ :layer | 
+					  | layerElement |
+					  layerElement := BlElement new
+						                  "border: (BlBorder paint: Color black);"
+						                  layout:
+							                  (BlLinearLayout vertical cellSpacing: 10);
+							              size: 50@500 ;
+						                  constraintsDo: [ :c | 
+							                  c vertical fitContent.
+							                  c horizontal fitContent ].
+					  layerElement addChild:
+						  (BlTextElement new text: (layer descriptiveLabel, ' - - - - - - ') asRopedText).
+					  layer children do: [ :neuron | 
+						  layerElement addChild: (BlElement new
+								   geometry: BlCircleGeometry new;
+								   size: layer elementSize;
+								   border: (BlBorder paint: Color black);
+								   when: BlClickEvent
+								   do: [ :e | e target phlow spawnObject: neuron ];
+								   aptitude: ((BrGlamorousWithTooltipAptitude content: [ 
+											     | aContainer |
+											     aContainer := BlElement new
+												                   layout: BlFrameLayout new;
+												                   constraintsDo: [ :c | 
+													                   c horizontal fitContent.
+													                   c vertical fitContent ];
+												                   when: GtPhlowObjectToSpawn
+												                   do: [ :anEvent | 
+													                   element fireEvent:
+															                   (GtPhlowObjectToSpawn new
+																                    object: anEvent object;
+																                    sourceElement: anEvent target) ].
+											     (neuron gtViewsFor: GtPhlowEmptyView new) 
+												     asElementDo: [ :anInspectorElement | 
+													     aContainer addChild:
+														     ((anInspectorElement exact: 400 @ 400)
+															      asScalableElement size: 800 @ 800) ] ]) 
+										    showDelay: 100 milliSeconds);
+								   background: layer elementColor) ].
+
+					  layerElement ];
+				  with: { self inputPseudoLayer } , layers
+				  "forEach: [ :collection | 
+				m nodes
+				shape: [ :x | BlElement new
+								   geometry: BlCircleGeometry new ;
+								   size: 10@10;
+								   border: (BlBorder paint: Color black) ];
+				with: collection.
+			m layout horizontalTree ]".
+			  m edges
+				  fromNearestTightCircle;
+				  toNearestTightCircle;
+				  stencil: [ :each | 
+					  BlLineElement new
+						  zIndex: -1;
+						  border:
+							  (BlBorder paint: (Color lightGray alpha: 0.5) width: 1);
+						  toHead: (BlArrowheadSimpleArrow new border:
+									   (BlBorder paint: Color lightGray width: 1)) ];
+				  connect: all toAll: [ :each | #(  ) asSet ].
+
+			  m ]
+]
+
+{ #category : #accessing }
+NNetwork >> aiVisual3: aView [
+	<gtView>
+	
+	| incomingLinks element mondrian |
+	incomingLinks := OrderedCollection new.
+	mondrian := aView mondrian.
+	^ mondrian
+		title: 'Visual3';
+		priority: 6;
+		painting: [ :m | 
+			m nodes
+				stencil: [ :each | GtMondrianUMLClassElement withDefaultContainer label: each asString ];
+				with: {1 to: 4.
+							5 to: 8}
+					forEach: [ :collection | 
+						m nodes
+							shape: [ :x | 
+								BlElement new
+									geometry: BlCircleGeometry new;
+									size: 20 @ 50;
+									border: (BlBorder paint: Color black) ];
+							with: collection.
+						m layout horizontalTree ].
+			m edges
+				connect: {1 -> 5.
+						2 -> 8}
+				from: [ :x | x key ]
+				to: [ :x | x value ].
+			m ]
+]
+
+{ #category : #accessing }
 NNetwork >> aiVisual: aView [
 
 	<gtView>

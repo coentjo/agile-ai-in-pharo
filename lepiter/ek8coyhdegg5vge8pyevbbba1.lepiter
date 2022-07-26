@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T10:19:18.22428+02:00"
+						"dateAndTimeString" : "2022-06-03T10:53:50.739+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
 				},
-				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 ).\rneuron bias: -0.5 .\r^ neuron"
+				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 1 ).\rneuron bias: -0.5 .\r^ neuron"
 			},
 			{
 				"__type" : "pharoSnippet",
