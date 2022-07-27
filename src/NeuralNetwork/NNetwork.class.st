@@ -25,7 +25,7 @@ NNetwork >> aiSchematic: aView [
 	| inputsContainer |
 	^ aView explicit
 		  title: 'Schematic' translated;
-		  priority: 5;
+		  priority: 50;
 		  stencil: [ self visualStencil ]
 ]
 
@@ -84,15 +84,7 @@ NNetwork >> aiVisual2: aView [
 								   background: layer elementColor) ].
 
 					  layerElement ];
-				  with: { self inputPseudoLayer } , layers
-				  "forEach: [ :collection | 
-				m nodes
-				shape: [ :x | BlElement new
-								   geometry: BlCircleGeometry new ;
-								   size: 10@10;
-								   border: (BlBorder paint: Color black) ];
-				with: collection.
-			m layout horizontalTree ]".
+				  with: { self inputPseudoLayer } , layers.
 			  m edges
 				  fromNearestTightCircle;
 				  toNearestTightCircle;
@@ -115,30 +107,33 @@ NNetwork >> aiVisual3: aView [
 	| incomingLinks element mondrian connections |
 	incomingLinks := OrderedCollection new.
 	mondrian := aView mondrian.
-	"old : layers := {1 to: 4. 5 to: 8}"
-	connections :=  OrderedCollection new.
-		layers do: [:oneLayer |
-			oneLayer neurons do: [ :aNeuronInThatOneLayer| 
-				"connect it to all neurons in next layer"
-				oneLayer nextLayer ifNotNil: [:nextL | nextL neurons do: [:neuronInNextLayer |
-					connections add: aNeuronInThatOneLayer -> neuronInNextLayer] ] ] ]
-		"was : {1 -> 5. 2 -> 8}"
-	.
+	connections := OrderedCollection new.
+	layers
+		do: [ :oneLayer | 
+			oneLayer neurons
+				do: [ :aNeuronInThatOneLayer "connect it to all neurons in next layer" | 
+					oneLayer nextLayer
+						ifNotNil: [ :nextL | 
+							nextL neurons
+								do: [ :neuronInNextLayer | connections add: aNeuronInThatOneLayer -> neuronInNextLayer ] ] ] ].
 
 	^ mondrian
 		title: 'Visual3';
 		priority: 6;
 		painting: [ :m | 
 			m nodes
-				stencil: [ :each | GtMondrianUMLClassElement withDefaultContainer label: each asString ];
+				stencil: [ :each | GtMondrianUMLClassElement withDefaultContainer label: each descriptiveLabel ];
 				with: layers
 					forEach: [ :layer | 
 						m nodes
-							shape: [ :x | 
+							shape: [ :neuron | 
 								BlElement new
 									geometry: BlCircleGeometry new;
-									size: 20 @ 50;
-									border: (BlBorder paint: Color black) ];
+									size: layer elementSize;
+								   border: (BlBorder paint: Color black);
+								   when: BlClickEvent
+								   do: [ :e | e target phlow spawnObject: neuron ]
+									 ];
 							with: layer neurons.
 						m layout horizontalTree ].
 			m edges
