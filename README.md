@@ -53,6 +53,9 @@ The cloned git is in a subdir of your GToolkit-dir:
 ![](img/GT.NeuralNetwork.png)
 
 
+![](img/GT.NeuralNetwork-neural.png)
+
+
 
 --------------------  
 
