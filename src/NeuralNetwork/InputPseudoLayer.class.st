@@ -34,3 +34,8 @@ InputPseudoLayer >> elementColor [
 InputPseudoLayer >> elementSize [
 	^ 10 @ 10
 ]
+
+{ #category : #accessing }
+InputPseudoLayer >> neurons [
+	^ self children
+]
