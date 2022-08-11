@@ -18,17 +18,6 @@ NNetwork >> addLayer: aNeuronLayer [
 	layers add: aNeuronLayer.
 ]
 
-{ #category : #accessing }
-NNetwork >> aiSchematic: aView [
-
-	<gtView>
-	| inputsContainer |
-	^ aView explicit
-		  title: 'Schematic' translated;
-		  priority: 50;
-		  stencil: [ self visualStencil ]
-]
-
 { #category : #'as yet unclassified' }
 NNetwork >> backwardPropagateError: expectedOutputs [
 	"expectedOutputs corresponds to the outputs we are training the network against"

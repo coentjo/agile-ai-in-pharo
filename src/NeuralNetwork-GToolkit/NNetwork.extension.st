@@ -68,6 +68,17 @@ NNetwork >> aiLayers: aView [
 ]
 
 { #category : #'*NeuralNetwork-GToolkit' }
+NNetwork >> aiSchematic: aView [
+
+	<gtView>
+	| inputsContainer |
+	^ aView explicit
+		  title: 'Schematic' translated;
+		  priority: 50;
+		  stencil: [ self visualStencil ]
+]
+
+{ #category : #'*NeuralNetwork-GToolkit' }
 NNetwork >> aiVisual: aView [
 	<gtView>
 	
