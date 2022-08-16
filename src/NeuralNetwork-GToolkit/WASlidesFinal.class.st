@@ -11,7 +11,7 @@ WASlidesFinal >> slidePercep0980: aSlide [
 	^ aSlide element
 		  priority: 1.0980;
 		  element: [
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (GtResourceReference path:
 							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
@@ -28,7 +28,7 @@ WASlidesFinal >> slidePercep0990: aSlide [
 	^ aSlide element
 		  priority: 1.0990;
 		  element: [
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (GtResourceReference path:
 							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'
@@ -45,7 +45,7 @@ WASlidesFinal >> slidePercep1000: aSlide [
 	^ aSlide element
 		  priority: 1.1000;
 		  element: [
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (GtResourceReference path:
 							           Path * 'coentjo' / 'agile-ai-in-pharo' / 'slides'

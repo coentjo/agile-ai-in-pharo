@@ -134,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T10:19:18.22454+02:00"
+						"dateAndTimeString" : "2022-08-16T15:49:30.336+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "7rrcTryWDQCNg40+AHZ8bQ=="
 				},
-				"code" : "neuron fire: #( 1 0 )"
+				"code" : "neuron fire: #( 1 0 0)"
 			},
 			{
 				"__type" : "textSnippet",
