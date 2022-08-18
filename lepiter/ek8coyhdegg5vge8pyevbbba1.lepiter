@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T10:41:31.118412+02:00"
+						"dateAndTimeString" : "2022-08-18T17:44:59.761+02:00"
 					}
 				},
 				"uid" : {
@@ -39,10 +39,10 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Appetizer"
+				"string" : "[[Appetizer]]"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T15:43:35.139+02:00"
+						"dateAndTimeString" : "2022-08-18T19:21:11.867+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T17:49:19.805+02:00"
+						"dateAndTimeString" : "2022-08-18T19:22:39.569+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sJn7q72iDQCiADREAXOanQ=="
+					"uidString" : "wLO18eiiDQCok3c9BE637A=="
 				},
-				"code" : "network := NNetwork new\r\t\tconfigure: 4\r\t\thidden: 4\r\t\tnbOfOutputs: 3"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Onboarding in the Glamorous Toolkit]]"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -89,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-13T14:23:44.426853+01:00"
+						"dateAndTimeString" : "2022-08-18T19:21:58.53+02:00"
 					}
 				},
 				"editEmail" : {
@@ -100,82 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-06-03T10:53:50.739+02:00"
+						"dateAndTimeString" : "2022-08-18T19:21:58.53+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "jBvENXuWDQCNVfofDIbdgw=="
+					"uidString" : "0A+w9OiiDQColbBRBE637A=="
 				},
-				"code" : "neuron := Neuron new step.\rneuron weights: #( 1 1 1 ).\rneuron bias: -0.5 .\r^ neuron"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
+				"paragraphStyle" : {
+					"__type" : "textStyle"
 				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T17:44:09.786+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T17:46:28.025+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "kGIzW7+iDQCxYERkDVsT0A=="
-				},
-				"code" : "\"Now we have Neuron, we can 'fire' it with input values \"\rneuron fire: #( 1 0 )\r\"Inspect this, and you will get an exception: Can you guess why? Read the message. \""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-16T20:03:38.336011+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-16T17:48:12.691+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "7rrcTryWDQCNg40+AHZ8bQ=="
-				},
-				"code" : "neuron fire: #( 1 0 0)\r\"Indeed: settings the weights to an array with 3 values makes it \ra neuron that has 3 inputs\""
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -848,7 +786,249 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:52:01.695119+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-24T13:39:40.262089+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "HeXJ+vKVDQCALUSGAH4rrQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Here you find a lot of scripts for neural networks. You can use them for experimenting, or looking at code. The scripts that are interesting for this workshop are also in the slides from the workshops. "
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:29:33.823528+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-24T13:30:28.792698+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "HC6WqvKVDQChxloOCSDhbg=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:50:46.701056+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-24T13:30:20.940377+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "J6B09vKVDQCALDwjAH4rrQ=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:31:25.987051+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T20:13:49.796817+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "GolFsfKVDQChzMhTCSDhbg=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts05Learningtxt new) makeArrowsVisible"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:31:49.824357+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T20:13:52.5875+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "iEOxsvKVDQChzfoQCSDhbg=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts06Datatxt new) makeArrowsVisible"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:32:07.054425+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T20:13:57.076423+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "eCy4s/KVDQChzjg2CSDhbg=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts07MatrixLibrarytxt new) makeArrowsVisible"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-03-06T19:32:31.538707+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T20:14:00.346757+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "McYttfKVDQChz2YiCSDhbg=="
+										},
+										"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts08MatrixNNtxt new) makeArrowsVisible"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -858,7 +1038,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:52:01.695119+01:00"
+									"dateAndTimeString" : "2022-03-06T19:50:11.780824+01:00"
 								}
 							},
 							"editEmail" : {
@@ -869,260 +1049,18 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-24T13:39:40.262089+02:00"
+									"dateAndTimeString" : "2022-04-24T13:41:42.058528+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "HeXJ+vKVDQCALUSGAH4rrQ=="
+								"uidString" : "NOJC9PKVDQCAKiGQAH4rrQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Here you find a lot of scripts for neural networks. You can use them for experimenting, or looking at code. The scripts that are interesting for this workshop are also in the slides from the workshops. "
+							"string" : "## Neural Networks - all scripts - for experimenting"
 						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:29:33.823528+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-24T13:30:28.792698+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "HC6WqvKVDQChxloOCSDhbg=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts02chapter2txt new) makeArrowsVisible"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:50:46.701056+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-24T13:30:20.940377+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "J6B09vKVDQCALDwjAH4rrQ=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r\"Most of these scripts are included also in 'WASlidesNeuralNetwork' \"\r(GtLiveShow create: SlidesForScripts03chapter3txt new) makeArrowsVisible"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:31:25.987051+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:13:49.796817+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "GolFsfKVDQChzMhTCSDhbg=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts05Learningtxt new) makeArrowsVisible"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:31:49.824357+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:13:52.5875+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "iEOxsvKVDQChzfoQCSDhbg=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts06Datatxt new) makeArrowsVisible"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:32:07.054425+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:13:57.076423+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "eCy4s/KVDQChzjg2CSDhbg=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts07MatrixLibrarytxt new) makeArrowsVisible"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-03-06T19:32:31.538707+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T20:14:00.346757+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "McYttfKVDQChz2YiCSDhbg=="
-							},
-							"code" : "\"These slides contain all the example scripts for a chapter from the book\"\r(GtLiveShow create: SlidesForScripts08MatrixNNtxt new) makeArrowsVisible"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-06T19:50:11.780824+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-24T13:41:42.058528+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "NOJC9PKVDQCAKiGQAH4rrQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "## Neural Networks - all scripts - for experimenting"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -1181,7 +1119,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-12-18T16:22:01.243274+01:00"
+						"dateAndTimeString" : "2022-08-18T17:31:51.827+02:00"
 					}
 				},
 				"uid" : {
@@ -1191,7 +1129,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# References"
+				"string" : "# References and some more scripts"
 			},
 			{
 				"__type" : "textSnippet",
