@@ -117,17 +117,3 @@ WASlidesGeneralIntroNew >> slidePercep0050: aSlide [
 					  c horizontal matchParent.
 					  c vertical matchParent ] ]
 ]
-
-{ #category : #accessing }
-WASlidesGeneralIntroNew >> slidePharo0100: aSlide [
-	<gtSlide>
-	
-	^ aSlide labelAndElement
-		priority: 1.0100;
-		newFadedText: 'Example with Pharo arrays' ;
-		element: [ 
-			GtPlaygroundLiveSlide new
-				newSnippetFromMethod: WorkshopAIPerceptronGT>>#examplePharoArrays
-				]
-	
-]
