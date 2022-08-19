@@ -163,6 +163,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T11:46:36.863+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T11:49:36.385+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SNoHtvaiDQCeVJwGB/lAqw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When you **Inspect** you see an **Inspector** appearing that lets you look right into the **object** that is the result of the code. In the **Title** bar you see a description of the object (including the **class**)."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-08-18T20:06:51.755+02:00"
 					}
 				},
@@ -174,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:29:09.656+02:00"
+						"dateAndTimeString" : "2022-08-19T11:46:44.489+02:00"
 					}
 				},
 				"uid" : {
@@ -184,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "When you **Inspect** you see an **Inspector** appearing that lets you look right into the **object** that is the result of the code. In the **Title** you a description of the object followed by the **class** (inside parenthesis). Click on the tabs: some will already make sense. The leftmost tab shows a more or less intuitive view on the object. The rightmost tab **Meta** shows more info about the **class**, like the **Methods**, and documentation about the class in **Comment**. "
+				"string" : "Click on the tabs: some will already make sense. The leftmost tab shows a more or less intuitive view on the object. The rightmost tab **Meta** shows more info about the **class**, like the **Methods**, and documentation about the class in **Comment**. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -822,7 +859,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T21:15:07.18+02:00"
+						"dateAndTimeString" : "2022-08-19T11:50:24.513+02:00"
 					}
 				},
 				"uid" : {
@@ -832,7 +869,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Congratulations: you just got your **first exception** (well, maybe...). **Read** what it says: 'SizeMismatch: Collections sizes do not match'. Maybe you can guess what it means?  If yes: fix it! If not: read on. "
+				"string" : "Congratulations: you just got your **first exception** (well, maybe...). **Read** what it says: \r\n'**SizeMismatch: Collections sizes do not match**'. Maybe you can guess what it means?  If yes: fix it! If not: read on. "
 			},
 			{
 				"__type" : "textSnippet",
