@@ -1112,7 +1112,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:17:30.515+02:00"
+						"dateAndTimeString" : "2022-08-19T17:30:40.075+02:00"
 					}
 				},
 				"uid" : {
@@ -1122,7 +1122,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "So we have an array with 3 elements: **7, 5 and 4**. \r\nTo that array the message '**with:collect:**' is sent: Yes, the message name is the full 2 words including the colons\r\n**with:collect:** \r\nthe 2 parameters are\r\n1. the array #(10 20 30)\r\n2. the blockclosure **[ :a :b | a + b ]**, which is an anonymous function that has 2 input parameters (**a** and **b**, marked by a colon), and outputs the result of evaluation of the code after the vertical bar, which in this case takes the sum of a and b. Look at the result: understand what happens? "
+				"string" : "So we have an array with 3 elements: **7, 5 and 4**. \r\nTo that array the message '**with:collect:**' is sent: Yes, the message name is the full 2 words including the colons\r\n**with:collect:** \r\nthe 2 parameters are\r\n1. the array **#(10 20 30)**\r\n2. the blockclosure **[ :a :b | a + b ]**, which is an anonymous function that has 2 input parameters (**a** and **b**, marked by a colon), and outputs the result of evaluation of the code after the vertical bar, which in this case takes the sum of a and b. Look at the result: understand what happens? "
 			},
 			{
 				"__type" : "textSnippet",
