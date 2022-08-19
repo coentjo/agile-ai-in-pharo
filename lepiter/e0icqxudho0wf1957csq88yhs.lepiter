@@ -359,7 +359,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:52:48.565+02:00"
+						"dateAndTimeString" : "2022-08-19T12:23:13.371+02:00"
 					}
 				},
 				"uid" : {
@@ -369,7 +369,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Play around with the playgrounds below a little until you feel somewhat comfortable with Evaluating pieces of code"
+				"string" : "Play around with the playgrounds below a little until you feel somewhat comfortable with Evaluating pieces of code. "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -498,7 +498,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:58:48.423+02:00"
+						"dateAndTimeString" : "2022-08-19T12:37:57.63+02:00"
 					}
 				},
 				"uid" : {
@@ -508,7 +508,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Reason for the needed parenthesis is that there are **no operators** in GToolkit: \rthe '+' and '*' are messages, just like the 'not' we saw earlier. \rA difference is that the '*' expects a parameter ('3' in the code above), \rwhile 'not' is a so-called unary message. "
+				"string" : "Reason for the needed parenthesis is that there are **no operators** in GToolkit: \rthe '+' and '*' are messages, just like the 'not' we saw earlier. \rA difference is that the '*' expects a parameter ('3' in the code above), it is a ***binary** message\rwhile 'not' is a so-called **unary** message. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -535,7 +535,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T21:07:07.237+02:00"
+						"dateAndTimeString" : "2022-08-19T12:38:24.12+02:00"
 					}
 				},
 				"uid" : {
@@ -545,7 +545,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "You can also create an **array** of values by putting the values between **'#('** and **')'**: "
+				"string" : "You can create an **array** of values by putting the values between **'#('** and **')'**: "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -606,7 +606,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T21:08:13.857+02:00"
+						"dateAndTimeString" : "2022-08-19T12:33:16.926+02:00"
 					}
 				},
 				"uid" : {
@@ -616,7 +616,152 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "You see that every item has an index: the first element has index 1. "
+				"string" : "In the inspector you can see that every item has an index: the first element has index 1. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:41:18.788+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:41:25.611+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yAlBXveiDQCScjluByOLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Another example: "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:29:39.103+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:30:10.676+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GL3xT/eiDQCScc/uByOLvw=="
+				},
+				"code" : "#(7 5 4) \r\twith: #(10 20 30) \r\tcollect: [ :a :b | a + b ]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:42:18.832+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:55:00.882+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gPChfPeiDQCSdbYCByOLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "So we have an array with 3 elements: **7, 5 and 4**. \r\nTo that array the message '**with:collect:**' is sent: Yes, the message name is the full 2 words including the colons\r\n**with:collect:** \r\nthe 2 parameters are\r\n1. the array #(10 20 30)\r\n2. the blockclosure **[ :a :b | a + b ]**, which is an anonymous function that has 2 input parameters (**a** and **b**, marked by a colon), and outputs the result of evaluation of the code after the vertical bar, which in this case takes the sum of a and b. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:55:18.929+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-19T12:55:18.929+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aJ65q/eiDQCSeEOIByOLvw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -1041,7 +1186,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T21:47:43.478+02:00"
+						"dateAndTimeString" : "2022-08-19T12:23:49.647+02:00"
 					}
 				},
 				"uid" : {
@@ -1051,7 +1196,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "If you want to know more about the Glamorous Toolkit a good place to start is the Glamorous Toolkit Book that you can find IN this environment!  Open 'Lepiter' (from the Hamburger menu above right) and find that one of the 'lepiter databases' is the toolkit book.  "
+				"string" : "If you want to know more about the Glamorous Toolkit a good place to start is the Glamorous Toolkit Book that you can find IN the Toolkit itself!  Open 'Lepiter' (from the Hamburger menu above right) and find that one of the 'lepiter databases' is the toolkit book.  "
 			}
 		]
 	},
