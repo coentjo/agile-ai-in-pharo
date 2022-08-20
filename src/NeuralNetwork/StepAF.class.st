@@ -9,9 +9,11 @@ StepAF >> derivative: output [
 	^ 1
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 StepAF >> eval: z [
-	^ (z > 0) ifTrue: [ 1 ] ifFalse: [ 0 ]
+	^ z > 0 
+		ifTrue: [ 1 ] 
+		ifFalse: [ 0 ]
 ]
 
 { #category : #accessing }

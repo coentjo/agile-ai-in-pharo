@@ -150,7 +150,11 @@ Neuron >> detailsContainer [
 { #category : #accessing }
 Neuron >> feed: inputs [
 	| z |
-	z := (inputs with: weights collect: [ :x :w | x * w ]) sum + bias.
+	z := (inputs 
+		with: weights 
+		collect: [ :x :w | x * w ]) 
+			sum 
+			+ bias.
 	output := activationFunction eval: z.
 	^ output
 ]

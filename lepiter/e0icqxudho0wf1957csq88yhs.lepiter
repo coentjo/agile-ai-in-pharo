@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T19:23:36.733+02:00"
+						"dateAndTimeString" : "2022-08-20T11:52:19.903+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Some things to know about how to use the Glamorous Toolkit.  "
+				"string" : "Some things to know about how to use the Glamorous Toolkit and use code in it.  "
 			},
 			{
 				"__type" : "textSnippet",
