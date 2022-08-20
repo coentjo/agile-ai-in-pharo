@@ -396,14 +396,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:51:57.77+02:00"
+						"dateAndTimeString" : "2022-08-20T17:46:23.222+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "eO76NeqiDQCepyX1A4T3Nw=="
 				},
-				"code" : "2 + 5 "
+				"code" : "\"You can add comment in code by typing it between double quotes. \"\r2 + 5 "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -430,14 +430,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:53:01.927+02:00"
+						"dateAndTimeString" : "2022-08-20T17:49:26.49+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GG0POuqiDQCeqas/A4T3Nw=="
 				},
-				"code" : "2 / 5"
+				"code" : "\"Will this one surprise you?\"\r2 / 3\r\"In the title bar you see the class of the resulting object\""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -464,14 +464,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:57:58.681+02:00"
+						"dateAndTimeString" : "2022-08-20T17:44:33.153+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "eJn5O+qiDQCerU/xA4T3Nw=="
 				},
-				"code" : "\"These parenthesis are needed!\"\r2 + (5 * 3)\r"
+				"code" : "\"These parenthesis are needed!\"\r2 + (5 * 3)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -572,7 +572,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:21:38.554+02:00"
+						"dateAndTimeString" : "2022-08-20T17:51:35.078+02:00"
 					}
 				},
 				"uid" : {
@@ -582,7 +582,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We can use variables to store an object. This way we can refer back to it: "
+				"string" : "We can use variables to store an object. This way we can refer back to it in a next line: "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -617,6 +617,148 @@
 					"uidString" : "4M4+CviiDQClRvVNCFDPIg=="
 				},
 				"code" : "a := 1001. \rb := 999.\rc := a * b\r\"Is the result what you expected? \" "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:36:24.195+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:51:57.837+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0IPQtg+jDQC3bJMcDjStPw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "or even in another playground: "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:36:35.554+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:37:25.107+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uN59tw+jDQC3bUKYDjStPw=="
+				},
+				"code" : "c + 1"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:28:47.895+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:44:15.322+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IBstmw+jDQC3a3UEDjStPw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When programming more sustainable (not in a playground, for example when creating methods in classes) we typically **declare** variables: do that by enumerating the names between **vertical bars** at the beginning of the code, like: "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:28:31.37+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-20T17:35:48.021+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EMuhmg+jDQC3atx0DjStPw=="
+				},
+				"code" : "| k l mult |\rk := 42.\rl := 38. \rmult := k * l  \"Again: is the result what you expected?\" "
 			},
 			{
 				"__type" : "textSnippet",
@@ -751,7 +893,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:00:48.453+02:00"
+						"dateAndTimeString" : "2022-08-20T17:52:43.718+02:00"
 					}
 				},
 				"uid" : {
@@ -761,7 +903,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A mathematical function like the linear"
+				"string" : "A mathematical function like the linear function"
 			},
 			{
 				"__type" : "textSnippet",
@@ -936,14 +1078,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:08:15.888+02:00"
+						"dateAndTimeString" : "2022-08-20T17:53:42.43+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "wFtcy/eiDQClOubECFDPIg=="
 				},
-				"code" : "f := [ :x | 2 * x + 4 ].  \rf value: 5   \"calculates the value of f(5)\""
+				"code" : "| f |\rf := [ :x | 2 * x + 4 ].  \rf value: 5   \"calculates the value of f(5)\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -1007,14 +1149,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:16:15.145+02:00"
+						"dateAndTimeString" : "2022-08-20T17:54:17.081+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "2Pav2PeiDQClO41DCFDPIg=="
 				},
-				"code" : "f := [ :x | 2 * x + 4 ].  \rinputs := 1 to: 10. \routputs := OrderedCollection new.\rinputs do: [ :i |\r\toutputs add:   i -> (f value: i ). \r]. \r^ outputs"
+				"code" : "| f inputs outputs |\rf := [ :x | 2 * x + 4 ].  \rinputs := 1 to: 10. \routputs := OrderedCollection new.\rinputs do: [ :i |\r\toutputs add:   i -> (f value: i ). \r]. \r^ outputs"
 			},
 			{
 				"__type" : "textSnippet",
