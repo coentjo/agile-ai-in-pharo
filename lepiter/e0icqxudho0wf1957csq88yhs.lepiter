@@ -1939,7 +1939,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T20:50:00.527+02:00"
+						"dateAndTimeString" : "2022-08-21T15:58:54.724+02:00"
 					}
 				},
 				"uid" : {
@@ -1949,7 +1949,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "As you see an **RSCanvas** is created, to which an **RSLinePlot** is added. "
+				"string" : "As you see, an **RSCanvas** is created, to which an **RSLinePlot** is added. "
 			},
 			{
 				"__type" : "textSnippet",
