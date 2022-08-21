@@ -5,6 +5,20 @@ Class {
 }
 
 { #category : #accessing }
+WorkshopAINeuronGT >> exampleGraphSine [
+	<gtExample>
+	| domain f yValues |
+	domain := 0 to: 2 * 3.14 by: 0.1.
+	f := [ :x | x sin ].
+	yValues := domain collect: [ :i | f value: i ].
+	^ RSCanvas new
+		add: (RSChart new
+				addPlot: (RSLinePlot new x: domain y: yValues);
+				build) canvas asShape;
+		open
+]
+
+{ #category : #accessing }
 WorkshopAINeuronGT >> showLearningStepVsSigmoid [
 	<gtExample>
 	<noTest>

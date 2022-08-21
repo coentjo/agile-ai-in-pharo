@@ -1965,6 +1965,117 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:10:28.542+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:18:50.112+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2OgBoSKjDQCHpdi+AmzhNQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The script above is sort of ad hoc  hoc script, that belongs in this lepiter page. If you show code that's in a class it will look slightly different in a lepiter page: "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:18:56.769+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:19:30.763+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0MmKqCKjDQCHpqx8AmzhNQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtMethod:WorkshopAINeuronGT>>exampleGraphSine|expanded=true}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:20:02.481+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-08-21T16:42:17.127+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CGQvwyKjDQCHsG6qAmzhNQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This is the same script, as you can see if you look close. It will show a similar sine-ish graph. However, the first lines show that the method is called 'exampleGraphSine' and that it is in class 'WorkshopAINeuronGT', which is in package 'NeuralNetwork-GToolkit'. Furthermore you have some extra buttons on the bottom. Fact is that this is a code editor that shows you code from the system, and in which you could change the code and store your changes. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-08-18T21:43:18.047+02:00"
 					}
 				},
@@ -2013,7 +2124,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T12:23:49.647+02:00"
+						"dateAndTimeString" : "2022-08-21T16:45:16.462+02:00"
 					}
 				},
 				"uid" : {
@@ -2023,7 +2134,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "If you want to know more about the Glamorous Toolkit a good place to start is the Glamorous Toolkit Book that you can find IN the Toolkit itself!  Open 'Lepiter' (from the Hamburger menu above right) and find that one of the 'lepiter databases' is the toolkit book.  "
+				"string" : "If you want to know more about the Glamorous Toolkit a good place to start is the Glamorous Toolkit Book that you can find IN the Toolkit itself!  Open 'Lepiter' (from the Hamburger menu above right) and find that the toolkit book is one of the 'lepiter databases'.  "
 			}
 		]
 	},
