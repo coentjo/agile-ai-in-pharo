@@ -187,7 +187,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-19T21:25:36.43+02:00"
+												"dateAndTimeString" : "2022-08-21T16:47:47.006+02:00"
 											}
 										},
 										"uid" : {
@@ -197,7 +197,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "In AI, programs are **trained** and as a reault they become better!? How can that be?  "
+										"string" : "In AI, programs are **trained** and as a result they become 'smarter'!? How can that be?  "
 									},
 									{
 										"__type" : "textSnippet",

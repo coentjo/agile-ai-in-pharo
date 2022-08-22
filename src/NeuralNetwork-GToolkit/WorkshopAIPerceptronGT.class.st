@@ -335,16 +335,14 @@ WorkshopAIPerceptronGT >> chapter01Perceptron12 [
 
 { #category : #example }
 WorkshopAIPerceptronGT >> chapter01PerceptronAndGateWithInputs [
-
 	"Weights 1, 1 with bias -1.5 makes it an AND gate"
 
 	<gtExample>
 	| perceptron |
-	perceptron := Neuron new step. 
-	perceptron weights: #( 1 1 ) .
-	perceptron bias: -1.5 .
-	" Putting 1 and 1 in an AND Gate gives: "
-	^ perceptron fire: #( 1 1 )
+	perceptron := Neuron new step.
+	perceptron weights: #(1 1).
+	perceptron bias: -1.5.	" Putting 1 and 1 in an AND Gate gives: "
+	^ perceptron fire: #(1 1)
 ]
 
 { #category : #accessing }
@@ -785,14 +783,15 @@ WorkshopAIPerceptronGT >> slidePercep0040: aSlide [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> testANDGate [
 	<gtExample>
-	| p |
-	p := self perceptronForANDGate.
-	
-	self assert: (p feed: #(0 0)) equals: 0.
-	self assert: (p feed: #(0 1)) equals: 0.
-	self assert: (p feed: #(1 0)) equals: 0.
-	self assert: (p feed: #(1 1)) equals: 1.
-	
-	"Let's show one"
-	^ p fire: #(0 0)
+	| perceptron |
+	perceptron := Neuron new
+			step;
+			weights: #(1 1);
+			bias: -1.5.
+
+	self assert: (perceptron feed: #(0 0)) equals: 0.
+	self assert: (perceptron feed: #(0 1)) equals: 0.
+	self assert: (perceptron feed: #(1 0)) equals: 0.
+	self assert: (perceptron feed: #(1 1)) equals: 1.	"Let's show one"
+	^ perceptron fire: #(0 0)
 ]

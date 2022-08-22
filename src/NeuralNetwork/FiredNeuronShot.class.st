@@ -44,7 +44,7 @@ FiredNeuronShot >> aiVisual: aView [
 	neuronModel
 		coordinate: central;
 		size: 100 @ 100;
-		color: Color green darker;
+		color: Color blue lighter;
 		label: (String streamContents: [ :stream |
 			stream 
 				nextPutAll: 'bias: '; 

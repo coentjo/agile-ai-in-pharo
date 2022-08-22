@@ -42,7 +42,7 @@ Neuron >> aiSchematic: aView [
 { #category : #accessing }
 Neuron >> aiVisual: aView [
 	<gtView>
-	|  aWardleyMap inp1 inp2 neuronModel out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
+	|  aWardleyMap neuronModel out central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
 	"Started as copy of >>newMapWithNodes"
 	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
 
