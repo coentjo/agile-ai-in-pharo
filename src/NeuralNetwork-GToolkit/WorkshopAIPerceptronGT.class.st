@@ -360,25 +360,22 @@ WorkshopAIPerceptronGT >> chapter01PerceptronSinus [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> exampleGraphSinus [
+	"Example of how to create a graph"
 
 	<gtExample>
-	"Example of how to create a graph"
-	| g d f |
-	
-	f := [ :x | (x / 3.14) sin ]. "Are you able to read this function?"
-	
-	"After trying this function you can try 
+	| f domain yValues |
+	domain := 0 to: 2 * 3.14 by: 0.1.
+	f := [ :x | x sin ].	"Are you able to read this function?"	"After trying this function you can try 
 	a different function, for example: 
 	f := [ :x | 3*x - 5 ]
 	"
-	
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d points: (1 to: 100).
-	d y: f.
-	g add: d.
-	^ WorkshopAI showGraphInMorph: g
+
+	yValues := domain collect: [ :i | f value: i ].
+	^RSCanvas new
+		add: (RSChart new
+				addPlot: (RSLinePlot new x: domain y: yValues);
+				build) canvas asShape;
+		open
 ]
 
 { #category : #accessing }
