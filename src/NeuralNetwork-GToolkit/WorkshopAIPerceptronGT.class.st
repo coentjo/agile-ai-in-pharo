@@ -552,36 +552,47 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 
 	<gtExample>
-	| somePoints f g d d2 |
+	| somePoints f xValues yValues randomXValuesRed randomYValuesRed randomX randomY randomXValuesBlue randomYValuesBlue |
 	somePoints := OrderedCollection new.
-	500 timesRepeat: [ 
-		somePoints add: { 
-				WorkshopAI aRandomNumber.
-				WorkshopAI aRandomNumber } ].
-
+	randomXValuesRed := OrderedCollection new.
+	randomYValuesRed := OrderedCollection new .
+	randomXValuesBlue := OrderedCollection new.
+	randomYValuesBlue := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
+	500 timesRepeat: [ 
+		randomX := WorkshopAI aRandomNumber.
+		randomY := WorkshopAI aRandomNumber.
+		randomY > (f value: randomX) 
+			ifTrue: [		
+				randomXValuesRed add: randomX.
+				randomYValuesRed add: randomY ]
+			ifFalse: [		
+				randomXValuesBlue add: randomX.
+				randomYValuesBlue add: randomY]].
+	
+	xValues := -25 to: 25 .
+				
 
 	"We use the Roassal Grapher engine to plot our points"
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: [ :p | 
-		p second > (f value: p first)
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: somePoints.
-	d x: #first.
-	d y: #second.
-	g add: d.
 
-	"Added line to graph"
-	d2 := RTData new.
-	d2 noDot.
-	d2 connectColor: Color red.
-	d2 points: (-15 to: 15 by: 0.1).
-	d2 y: f.
-	d2 x: #yourself.
-	g add: d2.
-	^ WorkshopAI showGraphInMorph: g
+	
+	yValues := xValues collect: [ :i | f value: i ].
+	^RSCanvas new
+		add: (RSChart new
+				addPlot: (RSLinePlot new x: xValues y: yValues);
+				build) canvas asShape;
+		add: (RSChart new
+				addPlot: ((RSScatterPlot new 
+					x: randomXValuesRed y: randomYValuesRed;
+					color: Color red));
+				build) canvas asShape;
+		add: (RSChart new
+				addPlot: ((RSScatterPlot new 
+					x: randomXValuesBlue y: randomYValuesBlue;
+					color: Color blue));
+				build) canvas asShape;
+		open
+
 ]
 
 { #category : #example }
