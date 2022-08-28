@@ -591,6 +591,7 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 					x: randomXValuesBlue y: randomYValuesBlue;
 					color: Color blue));
 				build) canvas asShape;
+		zoomToFit;
 		open
 
 ]
