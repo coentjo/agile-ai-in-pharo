@@ -186,15 +186,13 @@ WorkshopAIPerceptronGT >> aRandomNumber [
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 	<gtExample>
-	| f perceptron r g d d2 testPoints |
+	| f perceptron r somePoints randomXValuesRed randomYValuesRed randomXValuesBlue randomYValuesBlue randomX randomY xValues yValues |
 	f := [ :x | -2 * x - 3 ].
-	perceptron := Neuron new step.
-	perceptron weights: { 1. 2 }.
-	perceptron bias: -1.
+	perceptron := Neuron new step; weights: { 1. 2 }; bias: -1.
 	r := Random new seed: 42.
 
-	"We are training the perceptron"
-	50 timesRepeat: [
+	"Train the perceptron"
+	10 timesRepeat: [
 		| anX anY designedOutput |
 		anX := (r nextInteger: 50) - 25.
 		anY := (r nextInteger: 50) - 25.
@@ -207,32 +205,46 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09 [
 					anY }
 			desiredOutput: designedOutput ].
 
-	"Test points"
-	testPoints := OrderedCollection new.
-	20 timesRepeat: [
-		testPoints add: {
-				((r nextInteger: 50) - 25).
-				((r nextInteger: 50) - 25) } ].
+	"Generate random test points and let Perceptron decide the color"
+	somePoints := OrderedCollection new.
+	randomXValuesRed := OrderedCollection new.
+	randomYValuesRed := OrderedCollection new.
+	randomXValuesBlue := OrderedCollection new.
+	randomYValuesBlue := OrderedCollection new.
+	50
+		timesRepeat: [ randomX := WorkshopAI aRandomNumber.
+			randomY := WorkshopAI aRandomNumber.
+			(perceptron feed: {randomX . randomY}) > 0.5
+				ifTrue: [ randomXValuesRed add: randomX.
+					randomYValuesRed add: randomY ]
+				ifFalse: [ randomXValuesBlue add: randomX.
+					randomYValuesBlue add: randomY ] ].
 
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: [ :point |
-		(perceptron feed: point) > 0.5
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: testPoints.
-	d x: #first.
-	d y: #second.
-	g add: d.
+	xValues := -25 to: 25.	"We use the Roassal Grapher engine to plot our points"
 
-	d2 := RTData new.
-	d2 noDot.
-	d2 connectColor: Color red.
-	d2 points: (-15 to: 15 by: 0.1).
-	d2 y: f.
-	d2 x: #yourself.
-	g add: d2.
-	^ WorkshopAI showGraphInMorph: g
+	yValues := xValues collect: [ :i | f value: i ].
+	^ RSCanvas new
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSLinePlot new x: xValues y: yValues);
+				build) canvas asShape;
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSScatterPlot new
+						x: randomXValuesRed y: randomYValuesRed;
+						color: Color red);
+				build) canvas asShape;
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSScatterPlot new
+						x: randomXValuesBlue y: randomYValuesBlue;
+						color: Color blue);
+				build) canvas asShape;
+		zoomToFit;
+		open
 ]
 
 { #category : #accessing }
@@ -242,50 +254,66 @@ WorkshopAIPerceptronGT >> chapter01Perceptron09a [
 	"Define a line, create randomizer object, create perceptron"
 	f := [ :x | -2 * x - 3 ].  
 	randomizer := Random new seed: 42.
-	perceptron := Neuron new step.
-	perceptron weights: #( 10 10  ).
-	perceptron bias: -10 .
+	perceptron := 
+		Neuron new 
+			step;
+			weights: #( 10 10  );	
+			bias: -10.
 	^ perceptron
 ]
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09b [
 	<gtExample>
-	| f perceptron randomizer g d d2 testPoints |
-	
-	testPoints := OrderedCollection new.
-	100 timesRepeat: [
-		testPoints add: {
-				((randomizer nextInteger: 50) - 25).
-				((randomizer nextInteger: 50) - 25) } ].
+	| f perceptron somePoints randomXValuesRed randomYValuesRed randomXValuesBlue randomYValuesBlue randomX randomY xValues yValues |
 
-	g := RTGrapher new.
-	d := RTData new.
-	d dotShape color: [ :point |
-		(perceptron feed: point) > 0.5
-			ifTrue: [ Color red trans ]
-			ifFalse: [ Color blue trans ] ].
-	d points: testPoints.
-	d x: #first.
-	d y: #second.
-	g add: d.
+		"Generate random test points and let Perceptron decide the color"
+	somePoints := OrderedCollection new.
+	randomXValuesRed := OrderedCollection new.
+	randomYValuesRed := OrderedCollection new.
+	randomXValuesBlue := OrderedCollection new.
+	randomYValuesBlue := OrderedCollection new.
+	50
+		timesRepeat: [ randomX := WorkshopAI aRandomNumber.
+			randomY := WorkshopAI aRandomNumber.
+			(perceptron feed: {randomX . randomY}) > 0.5
+				ifTrue: [ randomXValuesRed add: randomX.
+					randomYValuesRed add: randomY ]
+				ifFalse: [ randomXValuesBlue add: randomX.
+					randomYValuesBlue add: randomY ] ].
 
-	d2 := RTData new.
-	d2 noDot.
-	d2 connectColor: Color red.
-	d2 points: (-15 to: 15 by: 0.1).
-	d2 y: f.
-	d2 x: #yourself.
-	g add: d2.
-	^ WorkshopAI showGraphInMorph: g
-	"Create test points and let Perceptron classify them"
+	xValues := -25 to: 25.	"We use the Roassal Grapher engine to plot our points"
+
+	yValues := xValues collect: [ :i | f value: i ].
+	^ RSCanvas new
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSLinePlot new x: xValues y: yValues);
+				build) canvas asShape;
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSScatterPlot new
+						x: randomXValuesRed y: randomYValuesRed;
+						color: Color red);
+				build) canvas asShape;
+		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
+				addPlot: (RSScatterPlot new
+						x: randomXValuesBlue y: randomYValuesBlue;
+						color: Color blue);
+				build) canvas asShape;
+		zoomToFit;
+		open
 
 ]
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> chapter01Perceptron09c [
 	<gtExample>
-	| f perceptron randomizer g d d2 testPoints |
+	| f perceptron randomizer |
 	
 	"Train the perceptron"
 	10 timesRepeat: [
