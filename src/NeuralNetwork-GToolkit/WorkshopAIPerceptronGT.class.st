@@ -551,50 +551,43 @@ WorkshopAIPerceptronGT >> perceptronColoredDots [
 
 { #category : #accessing }
 WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
-
 	<gtExample>
 	| somePoints f xValues yValues randomXValuesRed randomYValuesRed randomX randomY randomXValuesBlue randomYValuesBlue |
 	somePoints := OrderedCollection new.
 	randomXValuesRed := OrderedCollection new.
-	randomYValuesRed := OrderedCollection new .
+	randomYValuesRed := OrderedCollection new.
 	randomXValuesBlue := OrderedCollection new.
 	randomYValuesBlue := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
-	500 timesRepeat: [ 
-		randomX := WorkshopAI aRandomNumber.
-		randomY := WorkshopAI aRandomNumber.
-		randomY > (f value: randomX) 
-			ifTrue: [		
-				randomXValuesRed add: randomX.
-				randomYValuesRed add: randomY ]
-			ifFalse: [		
-				randomXValuesBlue add: randomX.
-				randomYValuesBlue add: randomY]].
-	
-	xValues := -25 to: 25 .
-				
+	500
+		timesRepeat: [ randomX := WorkshopAI aRandomNumber.
+			randomY := WorkshopAI aRandomNumber.
+			randomY > (f value: randomX)
+				ifTrue: [ randomXValuesRed add: randomX.
+					randomYValuesRed add: randomY ]
+				ifFalse: [ randomXValuesBlue add: randomX.
+					randomYValuesBlue add: randomY ] ].
 
-	"We use the Roassal Grapher engine to plot our points"
+	xValues := -25 to: 25.	"We use the Roassal Grapher engine to plot our points"
 
-	
+
 	yValues := xValues collect: [ :i | f value: i ].
-	^RSCanvas new
+	^ RSCanvas new
 		add: (RSChart new
 				addPlot: (RSLinePlot new x: xValues y: yValues);
 				build) canvas asShape;
 		add: (RSChart new
-				addPlot: ((RSScatterPlot new 
-					x: randomXValuesRed y: randomYValuesRed;
-					color: Color red));
+				addPlot: (RSScatterPlot new
+						x: randomXValuesRed y: randomYValuesRed;
+						color: Color red);
 				build) canvas asShape;
 		add: (RSChart new
-				addPlot: ((RSScatterPlot new 
-					x: randomXValuesBlue y: randomYValuesBlue;
-					color: Color blue));
+				addPlot: (RSScatterPlot new
+						x: randomXValuesBlue y: randomYValuesBlue;
+						color: Color blue);
 				build) canvas asShape;
 		zoomToFit;
 		open
-
 ]
 
 { #category : #example }
