@@ -375,6 +375,7 @@ WorkshopAIPerceptronGT >> exampleGraphSinus [
 		add: (RSChart new
 				addPlot: (RSLinePlot new x: domain y: yValues);
 				build) canvas asShape;
+		zoomToFit;
 		open
 ]
 
