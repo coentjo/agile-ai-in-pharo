@@ -574,14 +574,20 @@ WorkshopAIPerceptronGT >> perceptronColoredDotsWithLine [
 	yValues := xValues collect: [ :i | f value: i ].
 	^ RSCanvas new
 		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
 				addPlot: (RSLinePlot new x: xValues y: yValues);
 				build) canvas asShape;
 		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
 				addPlot: (RSScatterPlot new
 						x: randomXValuesRed y: randomYValuesRed;
 						color: Color red);
 				build) canvas asShape;
 		add: (RSChart new
+				minValueX: -26 ; maxValueX: 26;
+				minValueY: -26; maxValueY: 26;
 				addPlot: (RSScatterPlot new
 						x: randomXValuesBlue y: randomYValuesBlue;
 						color: Color blue);
