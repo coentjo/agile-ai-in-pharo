@@ -15,6 +15,7 @@ WorkshopAINeuronGT >> exampleGraphSine [
 		add: (RSChart new
 				addPlot: (RSLinePlot new x: domain y: yValues);
 				build) canvas asShape;
+		zoomToFit;
 		open
 ]
 
@@ -85,17 +86,17 @@ WorkshopAINeuronGT >> showLearningStepVsSigmoid [
 WorkshopAINeuronGT >> showSigmoidFunction [
 
 	<gtExample>
-	<noTest>
-	| g d |
-	g := RTGrapher new.
-	d := RTData new.
-	d connectColor: Color blue.
-	d noDot.
-	d points: (-7.0 to: 7.0 by: 0.01).
-	d x: #yourself.
-	d y: [ :x | 1 / (1 + x negated exp) ].
-	g add: d.
-	^ WorkshopAI showGraphInMorph: g
+	| domain f yValues |
+	domain := -7.0 to: 7.0 by: 0.01 .
+	f := [ :x | 1 / (1 + x negated exp) ].
+	
+	yValues := domain collect: [ :i | f value: i ].
+	^ RSCanvas new
+		add: (RSChart new
+				addPlot: (RSLinePlot new x: domain y: yValues);
+				build) canvas asShape;
+		zoomToFit;
+		open
 ]
 
 { #category : #examples }
