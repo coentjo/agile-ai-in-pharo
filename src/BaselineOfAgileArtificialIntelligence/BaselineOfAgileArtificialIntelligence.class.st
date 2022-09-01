@@ -26,7 +26,7 @@ BaselineOfAgileArtificialIntelligence >> baseline: spec [
 	spec
 		for: #common
 		do: [
-			spec baseline: 'Roassal2' with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ].
+			"spec baseline: 'Roassal2' with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ]."
 			
 			spec package: 'NeuralNetwork' with: [ spec requires: 'Roassal2' ].
 			spec package: 'Matrix'.
