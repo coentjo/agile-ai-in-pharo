@@ -28,7 +28,7 @@ BaselineOfAgileArtificialIntelligence >> baseline: spec [
 		do: [
 			"spec baseline: 'Roassal2' with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ]."
 			
-			spec package: 'NeuralNetwork' with: [ spec requires: 'Roassal2' ].
+			spec package: 'NeuralNetwork' with: [ "spec requires: 'Roassal2' " ].
 			spec package: 'Matrix'.
 			spec package: 'NeuralNetwork-Matrix' with: [ spec requires: #('Matrix' 'NeuralNetwork') ].
 			
@@ -37,7 +37,7 @@ BaselineOfAgileArtificialIntelligence >> baseline: spec [
 			spec package: 'Robot' with: [ spec requires: 'GeneticAlgorithm-Core' ].
 			spec package: 'Creature' with: [ spec requires: 'GeneticAlgorithm-Core' ].
 			
-			spec package: 'NEAT' with: [ spec requires: 'Roassal2' ].
+			spec package: 'NEAT' with: [ "spec requires: 'Roassal2' " ].
 			spec package: 'MiniMario' with: [ spec requires: 'NEAT' ].
 			
 			spec group: 'Core' with: #('NeuralNetwork' 'Matrix' 'NeuralNetwork-Matrix' 'GeneticAlgorithm-Core' 'GeneticAlgorithm-Tests' 'Robot' 'Creature' 'NEAT' 'MiniMario')
