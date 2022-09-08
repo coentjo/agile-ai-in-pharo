@@ -1072,7 +1072,7 @@ WASlidesNeuralNetwork >> slidePercep0330: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1090,7 +1090,7 @@ WASlidesNeuralNetwork >> slidePercep0340: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1108,7 +1108,7 @@ WASlidesNeuralNetwork >> slidePercep0350: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1126,7 +1126,7 @@ WASlidesNeuralNetwork >> slidePercep0360: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1162,7 +1162,7 @@ WASlidesNeuralNetwork >> slidePercep0380: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1180,7 +1180,7 @@ WASlidesNeuralNetwork >> slidePercep0390: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1198,7 +1198,7 @@ WASlidesNeuralNetwork >> slidePercep0400: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1216,7 +1216,7 @@ WASlidesNeuralNetwork >> slidePercep0410: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1258,7 +1258,7 @@ WASlidesNeuralNetwork >> slidePercep0430: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1276,7 +1276,7 @@ WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1294,7 +1294,7 @@ WASlidesNeuralNetwork >> slidePercep0450: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  |  form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1312,7 +1312,7 @@ WASlidesNeuralNetwork >> slidePercep0460: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1331,39 +1331,45 @@ WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 		priority: prio;
 		snippets: 
 {
-'"Download Iris csv from url"
+'"Step 1."
+"Download Iris csv from url"
 irisCSV := (ZnEasy get: ''https://agileartificialintelligence.github.io/Datasets/iris.csv'') contents.'
 
 . 
 
-'"Initialize the variable irisData."
-lines := irisCSV lines. 
-lines := lines allButFirst.
-tLines := lines collect: [ :line | 
-		| valuesOnThisLine |
-		valuesOnThisLine := line substrings: '',''.
-		(valuesOnThisLine allButLast collect: [ :w | w asNumber ]), (Array with: valuesOnThisLine last) ].
+'"Step 2."
+lines := irisCSV lines allButFirst.	"Initialize the variable irisData."
+tLines := lines
+		collect: [ :line | 
+			| valuesOnThisLine |
+			valuesOnThisLine := line substrings: '',''.
+			(valuesOnThisLine allButLast collect: [ :w | w asNumber ])
+				, (Array with: valuesOnThisLine last) ].
 
-irisData := tLines collect: [ :row | 
-		| l |
-		row last = ''setosa'' ifTrue: [ l := #( 0 ) ].
-		row last = ''versicolor'' ifTrue: [ l := #( 1 ) ].
-		row last = ''virginica'' ifTrue: [ l := #( 2 ) ].
-		row allButLast, l ].
+irisData := tLines
+		collect: [ :row | 
+			| l |
+			row last = ''setosa'' ifTrue: [ l := #(0) ].
+			row last = ''versicolor'' ifTrue: [ l := #(1) ].
+			row last = ''virginica'' ifTrue: [ l := #(2) ].
+			row allButLast , l ].
 ^ irisData'
 
 .
 
-'network := NNetwork new.
+'"Step 3."
+network := NNetwork new.
 network configure: 4 hidden: 6 nbOfOutputs: 3.
 network learningRate: 0.3 .
 ^ network'
 .
-' " Repeat the script "
+'"Step 4."
+ " Repeat the script "
 network train: irisData nbEpochs: 1000.
 ^ network'
 .
-'network feed: #(  5.6  2.9  3.6  1.3 )'
+'"Step 5."
+network feed: #(  5.6  2.9  3.6  1.3 )'
 }				
 ]
 
@@ -1377,7 +1383,7 @@ WASlidesNeuralNetwork >> slidePercep0490: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1395,7 +1401,7 @@ WASlidesNeuralNetwork >> slidePercep0500: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
@@ -1449,7 +1455,7 @@ WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 	^ aSlide element
 		  priority: prio;
 		  element: [ 
-			  | container form |
+			  | form |
 			  form := PNGReadWriter formFromFileNamed:
 					          (self slidesDirectory / filename) fullName.
 			  form asElement asScalableElement constraintsDo: [ :c | 
