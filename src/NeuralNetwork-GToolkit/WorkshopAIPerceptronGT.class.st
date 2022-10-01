@@ -413,7 +413,7 @@ WorkshopAIPerceptronGT >> exampleGraphSinus_b [
 	"started as copy of GtPlotterRawLineExamples>>content"
 
 	<gtExample>
-	| aScaleY aScaleX vertices xValues verticesScaled range function |
+	| aScaleY aScaleX vertices verticesScaled range function |
 	function := [ :x | (x / 3.14) sin ].
 	range := 1 to: 100.
 	vertices := range collect: [ :x | x @ (function value: x) ].
@@ -430,8 +430,10 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 "p32"
 
 	<gtExample>
-	| learningCurve f r perceptron anX anY trainedOutput nbOfGood nbOfTries realOutput g d |
+	| learningCurve f r perceptron anX anY trainedOutput nbOfGood nbOfTries realOutput xValues yValues |
 	learningCurve := OrderedCollection new.
+	xValues := OrderedCollection new.
+	yValues := OrderedCollection new.
 	f := [ :x | -2 * x - 3 ].
 	0 to: 2000 by: 10 do: [ :nbOfTrained | 
 		r := Random new seed: 42.
@@ -458,22 +460,40 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 					  anX.
 					  anY }) - realOutput) abs < 0.2 ifTrue: [ 
 				nbOfGood := nbOfGood + 1 ] ].
-		learningCurve add: { 
-				nbOfTrained.
-				(nbOfGood / nbOfTries) } ].
-	g := RTGrapher new.
+		xValues add: nbOfTrained.
+		yValues add: (nbOfGood / nbOfTries). ].
+"	g := RTGrapher new.
 	d := RTData new.
 	d noDot.
 	d connectColor: Color blue.
 	d points: learningCurve.
 	d x: #first.
 	d y: #second.
-	g add: d.
-	g axisY title: 'Precision'.
-	g axisX
-		noDecimal;
-		title: 'Training iteration'.
-	^ WorkshopAI showGraphInMorph: g
+	g add: d."
+	"g axisY title: 'Precision'."
+	"g axisX 'Training iteration'."
+	^ RSCanvas new
+	add: (RSChart new
+			minValueX: 0 ; maxValueX: 2000;
+			minValueY: -2; maxValueY: 2;
+			addPlot: (RSLinePlot new x: xValues y: yValues);
+			build) canvas asShape;
+	"add: (RSChart new
+			minValueX: -26 ; maxValueX: 26;
+			minValueY: -26; maxValueY: 26;
+			addPlot: (RSScatterPlot new
+					x: randomXValuesRed y: randomYValuesRed;
+					color: Color red);
+			build) canvas asShape;
+	add: (RSChart new
+			minValueX: -26 ; maxValueX: 26;
+			minValueY: -26; maxValueY: 26;
+			addPlot: (RSScatterPlot new
+					x: randomXValuesBlue y: randomYValuesBlue;
+					color: Color blue);
+			build) canvas asShape;"
+	zoomToFit;
+	open
 ]
 
 { #category : #accessing }

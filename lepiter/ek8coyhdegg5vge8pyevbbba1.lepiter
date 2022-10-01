@@ -485,7 +485,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-08-20T11:50:39.517+02:00"
+												"dateAndTimeString" : "2022-10-01T16:20:19.854728+02:00"
 											}
 										},
 										"uid" : {
@@ -495,7 +495,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "The slides are not always self-explaining, so for the slides some guidance from someone knowing about AI, or using into the Agile-AI-book, would be helpful. "
+										"string" : "The slides are not always self-explaining, so for the slides some guidance from someone knowing about AI, or using the Agile-AI-book, would be helpful. "
 									},
 									{
 										"__type" : "textSnippet",
