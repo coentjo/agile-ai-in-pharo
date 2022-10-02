@@ -514,29 +514,11 @@ WASlidesNeuralNetwork >> slidePercep0100: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0110: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.011.png'.
-	prio := 1.0110.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0112: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
 		priority: 1.0112;
-		newFadedText: 'The output is calculated in method >>feed:';
+		newFadedText: 'Look in method >>feed: to see how the output is calculated';
 		element: [ GtClassCoderLiveSlide new
 				class: Neuron ;
 				expandMethodAt: 10]
