@@ -462,36 +462,19 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 				nbOfGood := nbOfGood + 1 ] ].
 		xValues add: nbOfTrained.
 		yValues add: (nbOfGood / nbOfTries). ].
-"	g := RTGrapher new.
-	d := RTData new.
-	d noDot.
-	d connectColor: Color blue.
-	d points: learningCurve.
-	d x: #first.
-	d y: #second.
-	g add: d."
 	"g axisY title: 'Precision'."
-	"g axisX 'Training iteration'."
+	"g axisX title: 'Training iteration'."
+
 	^ RSCanvas new
 	add: (RSChart new
 			minValueX: 0 ; maxValueX: 2000;
-			minValueY: -2; maxValueY: 2;
+			minValueY: 0; maxValueY: 1.1;
 			addPlot: (RSLinePlot new x: xValues y: yValues);
+			xlabel: 'Training iteration';
+			addDecoration: RSHorizontalTick new;
+			ylabel: 'precision';
+			addDecoration: RSVerticalTick new;
 			build) canvas asShape;
-	"add: (RSChart new
-			minValueX: -26 ; maxValueX: 26;
-			minValueY: -26; maxValueY: 26;
-			addPlot: (RSScatterPlot new
-					x: randomXValuesRed y: randomYValuesRed;
-					color: Color red);
-			build) canvas asShape;
-	add: (RSChart new
-			minValueX: -26 ; maxValueX: 26;
-			minValueY: -26; maxValueY: 26;
-			addPlot: (RSScatterPlot new
-					x: randomXValuesBlue y: randomYValuesBlue;
-					color: Color blue);
-			build) canvas asShape;"
 	zoomToFit;
 	open
 ]
