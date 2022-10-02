@@ -535,7 +535,7 @@ WASlidesNeuralNetwork >> slidePercep0110: aSlide [
 WASlidesNeuralNetwork >> slidePercep0112: aSlide [
 	<gtSlide>
 	^ aSlide labelAndElement
-		priority: 1.0201;
+		priority: 1.0112;
 		newFadedText: 'The output is calculated in method >>feed:';
 		element: [ GtClassCoderLiveSlide new
 				class: Neuron ;
