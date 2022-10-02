@@ -94,9 +94,13 @@ WorkshopAINeuronGT >> showSigmoidFunction [
 		add: (RSChart new
 				minValueX: -7;
 				maxValueX: 7;
-				minValueY: -0.1 ;
-				maxValueY: 1.1;
+				minValueY: -0 ;
+				maxValueY: 1;
 				addPlot: (RSLinePlot new x: domain y: yValues);
+				xlabel: 'input';
+				addDecoration: RSHorizontalTick new;
+				ylabel: 'output';
+				addDecoration: RSVerticalTick new;
 				build) canvas asShape;
 		zoomToFit;
 		open
@@ -119,6 +123,9 @@ WorkshopAINeuronGT >> showStepFunction [
 				minValueY: -0.1;
 				maxValueY: 1.1;
 				addPlot: (RSLinePlot new x: domain y: yValues);
+				xlabel: 'input';
+				addDecoration: RSVerticalTick new;
+				ylabel: 'output';
 				build) canvas asShape;
 		zoomToFit;
 		open
