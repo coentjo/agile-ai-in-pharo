@@ -462,17 +462,15 @@ WorkshopAIPerceptronGT >> exampleMeasuringPrecision [
 				nbOfGood := nbOfGood + 1 ] ].
 		xValues add: nbOfTrained.
 		yValues add: (nbOfGood / nbOfTries). ].
-	"g axisY title: 'Precision'."
-	"g axisX title: 'Training iteration'."
 
 	^ RSCanvas new
 	add: (RSChart new
 			minValueX: 0 ; maxValueX: 2000;
-			minValueY: 0; maxValueY: 1.1;
+			minValueY: 0; maxValueY: 1;
 			addPlot: (RSLinePlot new x: xValues y: yValues);
 			xlabel: 'Training iteration';
 			addDecoration: RSHorizontalTick new;
-			ylabel: 'precision';
+			ylabel: 'Precision';
 			addDecoration: RSVerticalTick new;
 			build) canvas asShape;
 	zoomToFit;
