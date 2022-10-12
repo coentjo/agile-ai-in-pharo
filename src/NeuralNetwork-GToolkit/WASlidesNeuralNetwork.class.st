@@ -1439,6 +1439,24 @@ WASlidesNeuralNetwork >> slidePercep0530: aSlide [
 ]
 
 { #category : #slides }
+WASlidesNeuralNetwork >> slidePercep0540: aSlide [
+
+	<gtSlide>
+	| filename prio |
+	filename := 'NeuralNetworks.Mobile-apps.png'.
+	prio := 1.0540.
+	^ aSlide element
+		  priority: prio;
+		  element: [ 
+			  | form |
+			  form := PNGReadWriter formFromFileNamed:
+					          (self slidesDirectory / filename) fullName.
+			  form asElement asScalableElement constraintsDo: [ :c | 
+					  c horizontal matchParent.
+					  c vertical matchParent ] ]
+]
+
+{ #category : #slides }
 WASlidesNeuralNetwork >> slideXmplPercepForANDGate: aSlide [
 
 	<gtSlide>
