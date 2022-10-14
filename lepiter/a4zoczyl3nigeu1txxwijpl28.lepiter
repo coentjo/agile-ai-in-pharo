@@ -219,7 +219,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-31T17:29:23.407924+02:00"
+									"dateAndTimeString" : "2022-10-14T09:16:48.142121+02:00"
 								}
 							},
 							"uid" : {
@@ -229,7 +229,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The 'old' way of making graphs (Roassal2) does not work any more, the code is to be converted to Roassal3-code (partly done). "
+							"string" : "The 'old' way of making graphs (Roassal2) does not work any more, the code is to be converted to Roassal3-code (mostly done). "
 						}
 					]
 				},
