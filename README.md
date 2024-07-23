@@ -9,18 +9,21 @@ using Live Slides and GtExamples.
 
 Download GT from [https://gtoolkit.com/](https://gtoolkit.com/). GT or Glamorous Toolkit is open source, free, and introduces the concept of moldable development! 
 
-In a Playground in GT execute 
+In a Playground in GT execute (second button, with the `i` (Inspect), makes it clear when the script is ready). 
 
 ```Smalltalk
 Metacello new
     baseline: 'AgileArtificialIntelligence';
     repository: 'github://coentjo/agile-ai-in-pharo:master/src';
     onConflictUseIncoming;
-    load..
+    load.
 #BaselineOfAgileArtificialIntelligence asClass loadLepiter
 ```
 
-## Some more info
+After that via the Hamburger menu you can open 'Knowledge bases': open one of the pages in the Agile-AI-knowledge Base and click around in the workshop. Have Fun! 
+
+
+## Some extra info
 
 The cloned git is in a subdir of your GToolkit-dir:
 
