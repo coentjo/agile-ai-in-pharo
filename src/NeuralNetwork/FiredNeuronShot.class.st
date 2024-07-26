@@ -51,7 +51,7 @@ FiredNeuronShot >> aiVisual: aView [
 				nextPutAll: 'bias: '; 
 				nextPutAll: self neuron bias printString; cr;
 				nextPutAll: 'learningRate: ';
-				nextPutAll: self neuron learningRate printString; cr;
+				nextPutAll: self neuron learningRate printString; cr; cr;
 				nextPutAll: self computation ] ).
 
 	out := GtWardleyMapNodeModel new.
@@ -107,7 +107,7 @@ FiredNeuronShot >> computation [
 			  stream
 				  nextPutAll: (inputs at: i) asString;
 				  nextPutAll: '*';
-				  nextPutAll: (weights at: i) asString ] ]
+				  nextPutAll: (weights at: i) asString ; cr] ]
 ]
 
 { #category : #accessing }
