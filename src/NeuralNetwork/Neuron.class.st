@@ -60,6 +60,7 @@ Neuron >> aiVisual: aView [
 	
 	central := xRow2 @ yCenter.
 	aWardleyMap := GtWardleyMapModel new.
+	aWardleyMap isEvolutionAxisVisible: false.
 
 	neuronModel := GtWardleyMapNodeModel new.
 	neuronModel
