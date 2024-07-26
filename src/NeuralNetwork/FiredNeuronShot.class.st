@@ -21,7 +21,7 @@ FiredNeuronShot class >> input: inputs neuron: aNeuron output: outputValue [
 { #category : #accessing }
 FiredNeuronShot >> aiVisual: aView [
 	<gtView>
-	|  aWardleyMap inp1 inp2 neuronModel out edge1 edge2 edge3 central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
+	|  aWardleyMap neuronModel out central xRow1 xRow2 xRow3  yMax yMin yCenter calcYForNthInput ySlope |
 	"Started as copy of >>newMapWithNodes"
 	"Probably a misuse of a WardleyMap, but well, it does the job for now. "
 
@@ -39,6 +39,7 @@ FiredNeuronShot >> aiVisual: aView [
 	
 	central := xRow2 @ yCenter.
 	aWardleyMap := GtWardleyMapModel new.
+	aWardleyMap isEvolutionAxisVisible: false.
 
 	neuronModel := GtWardleyMapNodeModel new.
 	neuronModel
