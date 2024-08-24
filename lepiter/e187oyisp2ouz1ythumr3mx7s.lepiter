@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T21:15:49.094+02:00"
+						"dateAndTimeString" : "2024-08-24T15:56:27.826329+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The next paragraph shows a Playground: **Inspect** to see the result of evaluation: in this case the result are slides. Press the '**+**' at the top-left to maximize the slides and with the triangle on the right you can navigate through the slides. When done with this set of slides, use the '**-**'(left-up) to un-maximize to come back to this page. Time to **Inspect**: "
+				"string" : "The next paragraph shows a Playground: **Inspect** to see the result of evaluation: in this case the result is a collection of slides. Press the '**+**' at the top-left to maximize the slides and with the triangle on the right you can navigate through the slides. When done with this set of slides, use the '**-**'(left-up) to un-maximize to come back to this page. Time to **Inspect**: "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-24T15:53:38.455127+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-24T15:53:38.455127+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Fmqr9M/cDQC8XRUNAvhvRg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -96,12 +133,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-08-19T21:11:58.329+02:00"
+			"dateAndTimeString" : "2024-08-24T15:56:17.515194+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "General Intro about the workshop"
+		"title" : "How Slides work in this workshop"
 	},
 	"uid" : {
 		"__type" : "uuid",

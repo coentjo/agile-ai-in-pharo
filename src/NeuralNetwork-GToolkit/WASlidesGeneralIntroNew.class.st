@@ -9,7 +9,7 @@ Class {
 
 { #category : #accessing }
 WASlidesGeneralIntroNew >> presenterName [
-	^ presenterName ifNil: [ '<<Dear presenter, your own name could have been shown here>>']
+	^ presenterName ifNil: [ '<<Dear presenter, your own name could have been shown here. To see this, place your name in the script that started these slides.>>']
 ]
 
 { #category : #accessing }

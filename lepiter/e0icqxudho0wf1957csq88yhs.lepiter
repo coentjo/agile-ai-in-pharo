@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T20:12:59.587+02:00"
+						"dateAndTimeString" : "2024-08-24T15:42:40.417732+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In a Playground (like the one after this paragraph) we can type *code* that can be   *Evaluated*. Evaluating is done by pressing the **Evaluate**-button (hover the mouse above the playground to see the buttons, and above a button to see the meaning of the button). To evaluate AND see the *result*: use **(Evaluate and) Inspect** (this is what we will use most of the time). "
+				"string" : "In a Playground (like the one after this paragraph) we can type *code* that can be   *Evaluated*. Evaluating is done by pressing the **Evaluate**-button (hover the mouse above the playground to see the buttons, and above a button to see the meaning of the button). To evaluate AND see the *result*: use **(Evaluate and) Inspect** (this is what we will use all of the time in this workshop). "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -893,7 +893,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-20T17:52:43.718+02:00"
+						"dateAndTimeString" : "2024-08-24T15:46:07.98425+02:00"
 					}
 				},
 				"uid" : {
@@ -903,81 +903,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A mathematical function like the linear function"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:00:56.602+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:00:56.602+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "8Anav/eiDQClNdGoCFDPIg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "**f(x) = 2*x + 4**"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:02:00.374+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:02:00.374+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4Aenw/eiDQClN52QCFDPIg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "can be encoded as: "
+				"string" : "A mathematical function like the linear function:   **`f(x) = 2*x + 4`**   can be encoded as: "
 			},
 			{
 				"__type" : "textSnippet",
@@ -1041,7 +967,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T13:06:48.97+02:00"
+						"dateAndTimeString" : "2024-08-24T15:46:49.393899+02:00"
 					}
 				},
 				"uid" : {
@@ -1051,7 +977,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "where is an ordinary variable that gets assigned the so-called **BlockClosure** (maybe you have lambdas before? Or anonymous functions). Because this block has 1 parameter, sending the message 'value:' with 1 value will evaluate the code within the brackets, returning the result of that. Play around a little with this one: "
+				"string" : "where is an ordinary variable that gets assigned the so-called **BlockClosure** (maybe you have seen lambdas before? Or anonymous functions). Because this block has 1 parameter, sending the message 'value:' with 1 value will evaluate the code within the brackets, returning the result of that. Play around a little with this one: "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -1328,7 +1254,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-18T21:03:48.084+02:00"
+						"dateAndTimeString" : "2024-08-24T15:50:04.683888+02:00"
 					}
 				},
 				"uid" : {
@@ -1470,7 +1396,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T11:50:24.513+02:00"
+						"dateAndTimeString" : "2024-08-24T15:49:22.234128+02:00"
 					}
 				},
 				"uid" : {
@@ -1480,7 +1406,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Congratulations: you just got your **first exception** (well, maybe...). **Read** what it says: \r\n'**SizeMismatch: Collections sizes do not match**'. Maybe you can guess what it means?  If yes: fix it! If not: read on. "
+				"string" : "Congratulations: you just got your **first exception** (well, maybe...). **Read** what it says: \r\n'**SizeMismatch: Collections sizes do not match**'. Maybe you can guess what it means?  If yes: fix it in the code above and inspect again! If not: read on. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -1760,14 +1686,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T20:57:55.382+02:00"
+						"dateAndTimeString" : "2024-08-24T15:50:30.642122+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "SCdZZf6iDQC9wF+7AO1V3A=="
 				},
-				"code" : "neuron := Neuron new\r\t\tstep;\r\t\tweights: #(1 1 1);\r\t\tbias: -0.5;\r\t\tyourself"
+				"code" : "neuron := Neuron new\r\tstep;\r\tweights: #(1 1 1);\r\tbias: -0.5;\r\tyourself"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1905,7 +1831,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T20:45:43.643+02:00"
+						"dateAndTimeString" : "2024-08-24T15:51:24.122652+02:00"
 					}
 				},
 				"uid" : {

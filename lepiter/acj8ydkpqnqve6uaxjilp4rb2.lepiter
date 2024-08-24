@@ -86,7 +86,590 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T21:56:53.764005+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:06:15.971429+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "aBkBFfmLDQCsC6MeCRNLqg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "The idea behind a Perceptron is that it has a number of `inputs`, each input having its own `weight`, furthermore it has a `bias`. Every input channel accepts a numerical value, and the weight determines the importance of that input. "
+									},
+									{
+										"__type" : "pictureSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:07:34.337998+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T15:11:58.24376+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "9fU+O/mLDQCsDxrCCRNLqg=="
+										},
+										"url" : "attachments/a2xz7efdiumd2tb2rell119o8/Perceptron01.png",
+										"caption" : "",
+										"previewHeight" : 300
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:09:14.38608+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:13:33.365911+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "0oe5PvmLDQCsEdBgCRNLqg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "This example has 3 inputs: the `feeds` into the inputs are called `x1`, `x2` and `x3`. The corresponding weights are called `w1`, `w2` and `w3`.  To calculate the output of the Perceptron first the `'weighted sum'` is calculated, then the bias is added to that sum: "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:12:02.436432+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2021-10-30T22:15:13.375742+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "o/IlS/mLDQCsEwKCCRNLqg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "`z := w1*x1 + w2*x2 + w3*x3 + bias`"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:14.922916+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:14.922916+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6C2BotDcDQCu8z+jAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "After that it is **`activated`** (or: **`the activation function`** is calculated), for which in this example we take the formula: "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:40:00.998566+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:14.930538+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6aKFmtDcDQCtgrACAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "if value of z is above 0, output will be 1,\notherwise output will be 0"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:43:01.735874+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:43:09.399715+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "c/ieUNDcDQCXE7d0AvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "In code the 'z' can be calculated by: "
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:19:15.587461+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:35.236443+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "2S1KUNDcDQCXDzPWAvhvRg=="
+										},
+										"code" : "| x1 x2 x3 w1 w2 w3 bias |\r\"When a neuron is `fired` that means there are `input` values. \rThe input values are called x1 until x3 here:\"\rx1 := 0.35 .\rx2 := 1.2 .\rx3 := 0.54 .\r\"The weights w1 to w3 are properties of the neuron, as is the bias:\"\rw1 := 0.234 .\rw2 := 0.32 .\rw3 := 0.58 .\rbias := 5 .\rz := (w1 * x1) + (w2 * x2) + (w3 * x3) + bias. "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:46.657599+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:43:36.737413+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "kWllpNDcDQCvFqUQAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "after which the **`activation`** gives: "
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:42:39.269091+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:44:03.155255+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "nK30o9DcDQCvEmi/AvhvRg=="
+										},
+										"code" : "z > 0 \r\tifTrue: [1]\r\tifFalse: [0]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:38:48.93429+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:45:39.663937+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "KQo6ltDcDQCrub1YAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Well, that  was an example with 3 inputs. Maybe play around a bit with the input values (x1, x2, x3) to get output 0.:  (inspect the playgrounds again after changing the values)"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-20T12:01:06.967+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:48:31.472553+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "+DdsBwujDQCExQ97DbaRTA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Now we will take a look at some more generic code that is being executed in this system: \n(why is this more generic?)"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:18:11.77185+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:54:42.535372+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "JW98TNDcDQCWwIFXAvhvRg=="
+										},
+										"code" : "| inputs_x weights_w |\rinputs_x :=  #(0.35  1.2  0.54).\rweights_w := #(0.234 0.32 0.58).\rz := (inputs_x \r\t\twith: weights_w \r\t\tcollect: [ :x :w | x * w ]) \r\t\t\tsum \r\t\t\t\t+ bias"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:53:03.014606+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:56:00.087352+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "9D4iydDcDQC3ptjNAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "*Answer*: This is more generic because you can add a fourth (and fifth, and...) value to `inputs_x` and `weights_w`: the code will still work, as long as the number of input values is equal to the number of weights. "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:17:25.13358+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:52:17.202141+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "2Mu0SdDcDQCU13EJAvhvRg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "The code used by your machine (your laptop running GToolkit with this workshop) is like this: "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-08-20T12:03:04.888+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-08-24T16:15:57.597705+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "CD4nCQujDQCExn2PDbaRTA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtMethod:Neuron>>feed:|expanded=true}}"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -96,7 +679,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T21:56:53.764005+02:00"
+									"dateAndTimeString" : "2024-08-24T16:13:04.226285+02:00"
 								}
 							},
 							"editEmail" : {
@@ -107,201 +690,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:06:15.971429+02:00"
+									"dateAndTimeString" : "2024-08-24T16:14:57.439143+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "aBkBFfmLDQCsC6MeCRNLqg=="
+								"uidString" : "5aonOtDcDQCRdNYdAvhvRg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The idea behind a Perceptron is that it has a number of `inputs`, each input having its own `weight`, furthermore it has a `bias`. Every input channel accepts a numerical value, and the weight determines the importance of that input. "
-						},
-						{
-							"__type" : "pictureSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:07:34.337998+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-08-24T15:11:58.24376+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "9fU+O/mLDQCsDxrCCRNLqg=="
-							},
-							"url" : "attachments/a2xz7efdiumd2tb2rell119o8/Perceptron01.png",
-							"caption" : "",
-							"previewHeight" : 300
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:09:14.38608+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:13:33.365911+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "0oe5PvmLDQCsEdBgCRNLqg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "This example has 3 inputs: the `feeds` into the inputs are called `x1`, `x2` and `x3`. The corresponding weights are called `w1`, `w2` and `w3`.  To calculate the output of the Perceptron first the `'weighted sum'` is calculated, then the bias is added to that sum: "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:12:02.436432+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:15:13.375742+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "o/IlS/mLDQCsEwKCCRNLqg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "`z := w1*x1 + w2*x2 + w3*x3 + bias`"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-20T12:01:06.967+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-21T16:59:59.848+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "+DdsBwujDQCExQ97DbaRTA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Well, this  is an example with 3 inputs. You can look at the real (and more generic) code that is being executed in this system: "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-20T12:03:04.888+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-20T12:16:15.019+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "CD4nCQujDQCExn2PDbaRTA=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtMethod:Neuron>>feed:|expanded=true}}"
+							"string" : "# Implementing this in a machine"
 						},
 						{
 							"__type" : "textSnippet",
@@ -328,7 +727,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-21T17:01:03.472+02:00"
+									"dateAndTimeString" : "2024-08-24T16:11:37.939406+02:00"
 								}
 							},
 							"uid" : {
@@ -338,7 +737,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "As explained in the Onboarding chapter, this shows the method 'feed:' with parameter 'inputs' (an array), in class Neuron, which is in package NeuralNetwork. The value in the array 'inputs' is taken with corresponding elements of 'weights' (which is stored in that Neuron), the elements are pair-wise multiplied, of the results the 'sum' is taken, and then the bias is added.  The result of this is assigned to local variable 'z', which was explicitly declared in the line '**| z |**'.  The activationFunction evaluates the resulting value in 'z'. "
+							"string" : "**Explanation**: As also explained in the Onboarding chapter, this shows the method 'feed:' with parameter 'inputs' (an array), in class Neuron, which is in package NeuralNetwork. The value in the array 'inputs' is taken with corresponding elements of 'weights' (which is stored in that Neuron), the elements are pair-wise multiplied, of the results the 'sum' is taken, and then the bias is added.  The result of this is assigned to local variable 'z', which was explicitly declared in the line '**| z |**'.  The activationFunction evaluates the resulting value in 'z'. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -365,7 +764,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-21T16:56:09.75+02:00"
+									"dateAndTimeString" : "2024-08-24T16:58:29.663798+02:00"
 								}
 							},
 							"uid" : {
@@ -375,7 +774,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "For a Neuron the so-called evaluation function is a 'step' function: If `z>0` the output of the Perceptron will be `1`, otherwise `0`, which you can see coded in method 'eval:' in class 'StepAF': "
+							"string" : "For a Neuron the so-called activationFunction is a 'step' function: If `z>0` the output of the Perceptron will be `1`, otherwise `0`, which you can see coded in method 'eval:' in class 'StepAF': "
 						},
 						{
 							"__type" : "textSnippet",
@@ -472,7 +871,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-10-30T22:18:17.42516+02:00"
+						"dateAndTimeString" : "2024-08-24T16:13:33.258873+02:00"
 					}
 				},
 				"uid" : {
@@ -482,7 +881,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## The idea behind a Perceptron"
+				"string" : "## The idea behind a Perceptron comes from a neuron in a brain"
 			},
 			{
 				"__type" : "textSnippet",

@@ -145,7 +145,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-19T21:18:43.028+02:00"
+									"dateAndTimeString" : "2024-08-24T15:56:17.526572+02:00"
 								}
 							},
 							"uid" : {
@@ -155,7 +155,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[General Intro about the workshop]]"
+							"string" : "[[How Slides work in this workshop]]"
 						},
 						{
 							"__type" : "textSnippet",

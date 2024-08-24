@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-20T12:06:59.433+02:00"
+						"dateAndTimeString" : "2024-08-24T15:41:02.253646+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Show something at the start of the workshop: **Inspect** the code below. "
+				"string" : "Show something at the start of the workshop: **Inspect** (2nd button from the left) the code below. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -71,14 +71,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-08-18T17:51:49.394+02:00"
+									"dateAndTimeString" : "2024-08-24T15:41:34.415905+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "oBEIrueiDQCf8k3RCh9XUw=="
 							},
-							"code" : "\"Press the *inspect* button with 'play'-symbol + 'i' on it \runderneath this playground to see  \"\rnetwork := NNetwork new\r\t\tconfigure: 7\r\t\thidden: 4\r\t\tnbOfOutputs: 3"
+							"code" : "\"Press the *inspect* button with 'play'-symbol + 'i' on it \runderneath this playground to see the result of running this code.\"\rnetwork := NNetwork new\r\t\tconfigure: 7\r\t\thidden: 4\r\t\tnbOfOutputs: 3"
 						}
 					]
 				},

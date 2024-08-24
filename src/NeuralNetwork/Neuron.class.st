@@ -153,10 +153,10 @@ Neuron >> feed: inputs [
 	| z |
 	z := (inputs 
 		with: weights 
-		collect: [ :x :w | x * w ])           " calculate: x1*w1 , x2*w2 , x3*w3 , ..."
-			sum                               " add:       x1*w1 + x2*w2 + x3*w3 + ..."
-			+ bias.                           " add bias:  x1*w1 + x2*w2 + x3*w3 + ... + bias"
-	output := activationFunction eval: z.     "for Perceptron: if positive fire 1, otherwise 0"
+		collect: [ :x :w | x * w ])
+			sum                    
+			+ bias.                
+	output := activationFunction eval: z.
 	^ output
 ]
 
