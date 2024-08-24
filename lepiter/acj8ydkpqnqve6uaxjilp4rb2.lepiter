@@ -71,14 +71,16 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:02:05.547164+02:00"
+									"dateAndTimeString" : "2024-08-24T15:11:58.208199+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "YhKwJfmLDQCsDc4ECRNLqg=="
 							},
-							"url" : "attachments/a2xz7edye9ovbir79lq915yby/TypicalNeuron.png"
+							"url" : "attachments/a2xz7edye9ovbir79lq915yby/TypicalNeuron.png",
+							"caption" : "",
+							"previewHeight" : 300
 						},
 						{
 							"__type" : "textSnippet",
@@ -142,14 +144,16 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-10-30T22:10:05.939655+02:00"
+									"dateAndTimeString" : "2024-08-24T15:11:58.24376+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "9fU+O/mLDQCsDxrCCRNLqg=="
 							},
-							"url" : "attachments/a2xz7efdiumd2tb2rell119o8/Perceptron01.png"
+							"url" : "attachments/a2xz7efdiumd2tb2rell119o8/Perceptron01.png",
+							"caption" : "",
+							"previewHeight" : 300
 						},
 						{
 							"__type" : "textSnippet",
