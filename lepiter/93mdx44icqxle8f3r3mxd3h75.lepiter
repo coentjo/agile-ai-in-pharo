@@ -177,7 +177,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:49:10.228093+02:00"
+						"dateAndTimeString" : "2024-08-31T20:21:46.189393+02:00"
 					}
 				},
 				"uid" : {
@@ -187,7 +187,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "First the file is read: "
+				"string" : "# Step 1 - Read data "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -248,7 +248,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:24.371853+02:00"
+						"dateAndTimeString" : "2024-08-31T20:22:10.710426+02:00"
 					}
 				},
 				"uid" : {
@@ -258,7 +258,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "# Step 2 - Convert iris types names to numbers"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -295,6 +295,43 @@
 				"code" : "\"Step 2.\"\rlines := irisCSV lines allButFirst.\t\"Initialize the variable irisData.\"\rtLines := lines\r\t\tcollect: [ :line | \r\t\t\t| valuesOnThisLine |\r\t\t\tvaluesOnThisLine := line substrings: '',''.\r\t\t\t(valuesOnThisLine allButLast collect: [ :w | w asNumber ])\r\t\t\t\t, (Array with: valuesOnThisLine last) ].\r\ririsData := tLines\r\t\tcollect: [ :row | \r\t\t\t| l |\r\t\t\trow last = 'setosa' ifTrue: [ l := #(0) ].\r\t\t\trow last = 'versicolor' ifTrue: [ l := #(1) ].\r\t\t\trow last = 'virginica' ifTrue: [ l := #(2) ].\r\t\t\trow allButLast , l ].\r^ irisData"
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:21:00.711859+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:22:21.878065+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AmzAgWDdDQCQzkBnCV5qkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Step 3 - Create Neural Network"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -329,6 +366,43 @@
 				"code" : "\"Step 3.\"\rnetwork := NNetwork new.\rnetwork configure: 4 hidden: 6 nbOfOutputs: 3.\rnetwork learningRate: 0.3 .\r^ network"
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:21:18.828725+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:22:28.403604+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oN3UgmDdDQCQ6TABCV5qkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Step 4 - Train the network"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -361,6 +435,43 @@
 					"uidString" : "XT1yQ17dDQCZx/g2DF64mQ=="
 				},
 				"code" : "\"Step 4.\"\r \" Repeat the script \"\rnetwork train: irisData nbEpochs: 1000.\r^ network"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:21:26.297727+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:22:33.845156+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OdtGg2DdDQCQ/4oGCV5qkA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Step 5 - Try"
 			},
 			{
 				"__type" : "pharoSnippet",

@@ -1260,45 +1260,9 @@ WASlidesNeuralNetwork >> slidePercep0440: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0450: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.045.png'.
-	prio := 1.0450.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  |  form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0460: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.046.png'.
-	prio := 1.0460.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0470: aSlide [
 
-	<gtSlide>
+	"<gtSlide>"
 	| filename prio |
 	filename := '2021-AI-General.047.png'.
 	prio := 1.0470.				  
