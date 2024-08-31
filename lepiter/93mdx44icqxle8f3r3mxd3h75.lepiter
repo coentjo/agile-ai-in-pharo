@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:37:55.160597+02:00"
+						"dateAndTimeString" : "2024-08-31T20:48:05.094381+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,43 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "A famous example: The Iris dataset case"
+			},
+			{
+				"__type" : "pictureSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:44:15.5638+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-31T20:45:57.139134+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GjTk1GDdDQCkEsh6BnES0g=="
+				},
+				"url" : "attachments/cfq22ybf8bqck0thc6dzv2szj/2021-AI-General.044.png",
+				"caption" : "",
+				"previewHeight" : 541.8984375
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +102,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:19.961488+02:00"
+						"dateAndTimeString" : "2024-08-31T20:47:34.732593+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +112,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Using a *machine* to classify what type of iris we have data from. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -103,7 +139,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:20.110361+02:00"
+						"dateAndTimeString" : "2024-08-31T20:51:02.330407+02:00"
 					}
 				},
 				"uid" : {
@@ -113,50 +149,85 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Dataset came from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data).  Some more [info](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names). "
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:24.515679+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:49:04.929892+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Nj3QP17dDQCZmqGHDF64mQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "In the 'iris.csv' file there is data about 150 flowers of three types. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:39:24.515679+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:49:04.929892+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Nj3QP17dDQCZmqGHDF64mQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "In the 'iris.csv' file there is data about 150 flowers of three types. "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:39:27.404492+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:46:41.365609+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "91D8P17dDQCZnylVDF64mQ=="
+							},
+							"code" : "\"Step 1.\"\r\"Download Iris csv from url\"\ririsCSV := (ZnEasy get: 'https://agileartificialintelligence.github.io/Datasets/iris.csv') contents.\r"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -190,44 +261,45 @@
 				"string" : "# Step 1 - Read data "
 			},
 			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:27.404492+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:46:41.365609+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "91D8P17dDQCZnylVDF64mQ=="
-				},
-				"code" : "\"Step 1.\"\r\"Download Iris csv from url\"\ririsCSV := (ZnEasy get: 'https://agileartificialintelligence.github.io/Datasets/iris.csv') contents.\r"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:39:32.649407+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:47:27.882454+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "z1pMQF7dDQCZqTDSDF64mQ=="
+							},
+							"code" : "\"Step 2.\"\rlines := irisCSV lines allButFirst.\t\"Initialize the variable irisData.\"\rtLines := lines\r\t\tcollect: [ :line | \r\t\t\t| valuesOnThisLine |\r\t\t\tvaluesOnThisLine := line substrings: '',''.\r\t\t\t(valuesOnThisLine allButLast collect: [ :w | w asNumber ])\r\t\t\t\t, (Array with: valuesOnThisLine last) ].\r\ririsData := tLines\r\t\tcollect: [ :row | \r\t\t\t| l |\r\t\t\trow last = 'setosa' ifTrue: [ l := #(0) ].\r\t\t\trow last = 'versicolor' ifTrue: [ l := #(1) ].\r\t\t\trow last = 'virginica' ifTrue: [ l := #(2) ].\r\t\t\trow allButLast , l ].\r^ irisData"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -261,44 +333,45 @@
 				"string" : "# Step 2 - Convert iris types names to numbers"
 			},
 			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:39:32.649407+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:47:27.882454+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "z1pMQF7dDQCZqTDSDF64mQ=="
-				},
-				"code" : "\"Step 2.\"\rlines := irisCSV lines allButFirst.\t\"Initialize the variable irisData.\"\rtLines := lines\r\t\tcollect: [ :line | \r\t\t\t| valuesOnThisLine |\r\t\t\tvaluesOnThisLine := line substrings: '',''.\r\t\t\t(valuesOnThisLine allButLast collect: [ :w | w asNumber ])\r\t\t\t\t, (Array with: valuesOnThisLine last) ].\r\ririsData := tLines\r\t\tcollect: [ :row | \r\t\t\t| l |\r\t\t\trow last = 'setosa' ifTrue: [ l := #(0) ].\r\t\t\trow last = 'versicolor' ifTrue: [ l := #(1) ].\r\t\t\trow last = 'virginica' ifTrue: [ l := #(2) ].\r\t\t\trow allButLast , l ].\r^ irisData"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:40:21.481998+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:45:50.579486+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KHs1Q17dDQCZszQbDF64mQ=="
+							},
+							"code" : "\"Step 3.\"\rnetwork := NNetwork new.\rnetwork configure: 4 hidden: 6 nbOfOutputs: 3.\rnetwork learningRate: 0.3 .\r^ network"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -332,44 +405,45 @@
 				"string" : "# Step 3 - Create Neural Network"
 			},
 			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:40:21.481998+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:45:50.579486+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KHs1Q17dDQCZszQbDF64mQ=="
-				},
-				"code" : "\"Step 3.\"\rnetwork := NNetwork new.\rnetwork configure: 4 hidden: 6 nbOfOutputs: 3.\rnetwork learningRate: 0.3 .\r^ network"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:40:25.463859+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:45:39.249353+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "XT1yQ17dDQCZx/g2DF64mQ=="
+							},
+							"code" : "\"Step 4.\"\r \" Repeat the script \"\rnetwork train: irisData nbEpochs: 1000.\r^ network"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -403,44 +477,45 @@
 				"string" : "# Step 4 - Train the network"
 			},
 			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:40:25.463859+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:45:39.249353+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "XT1yQ17dDQCZx/g2DF64mQ=="
-				},
-				"code" : "\"Step 4.\"\r \" Repeat the script \"\rnetwork train: irisData nbEpochs: 1000.\r^ network"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:45:09.526444+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-31T17:45:26.386451+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "DrFgVF7dDQCZ4KU/DF64mQ=="
+							},
+							"code" : "\"Step 5.\"\rnetwork feed: #(  5.6  2.9  3.6  1.3 )"
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -472,40 +547,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# Step 5 - Try"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:45:09.526444+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-31T17:45:26.386451+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "DrFgVF7dDQCZ4KU/DF64mQ=="
-				},
-				"code" : "\"Step 5.\"\rnetwork feed: #(  5.6  2.9  3.6  1.3 )"
 			}
 		]
 	},
