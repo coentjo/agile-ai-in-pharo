@@ -471,12 +471,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-10-30T21:30:25.903592+02:00"
+			"dateAndTimeString" : "2024-08-31T16:40:59.338109+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Sources"
+		"title" : "References"
 	},
 	"uid" : {
 		"__type" : "uuid",

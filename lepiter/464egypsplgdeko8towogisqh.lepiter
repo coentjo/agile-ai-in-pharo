@@ -24,12 +24,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-24T15:36:54.99362+02:00"
+			"dateAndTimeString" : "2024-08-31T16:41:45.75757+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "References and some more scripts"
+		"title" : "Some References"
 	},
 	"uid" : {
 		"__type" : "uuid",
