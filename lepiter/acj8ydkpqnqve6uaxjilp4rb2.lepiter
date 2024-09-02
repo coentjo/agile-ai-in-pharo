@@ -549,14 +549,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-08-24T16:54:42.535372+02:00"
+												"dateAndTimeString" : "2024-09-02T20:14:22.342086+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "JW98TNDcDQCWwIFXAvhvRg=="
 										},
-										"code" : "| inputs_x weights_w |\rinputs_x :=  #(0.35  1.2  0.54).\rweights_w := #(0.234 0.32 0.58).\rz := (inputs_x \r\t\twith: weights_w \r\t\tcollect: [ :x :w | x * w ]) \r\t\t\tsum \r\t\t\t\t+ bias"
+										"code" : "| inputs_x weights_w bias |\rinputs_x :=  #(0.35  1.2  0.54).\rweights_w := #(0.234 0.32 0.58).\rbias := 5.\rz := (inputs_x \r\t\twith: weights_w \r\t\tcollect: [ :x :w | x * w ]) \r\t\t\tsum \r\t\t\t\t+ bias"
 									},
 									{
 										"__type" : "textSnippet",
