@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:45:58.80455+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:43.482833+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,53 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:45:58.80455+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:51.942783+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XKgmQIjdDQCKI4NxDw/wrg=="
+					"uidString" : "MXhyjJPdDQCvKMAbC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:27.02177+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:43.609422+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "TzbVQYjdDQCKJhBlDw/wrg=="
-				},
-				"url" : "attachments/acubx5tw8s9pg69gxywngcd0d/2021-AI-General.034.png",
-				"caption" : "",
-				"previewHeight" : 699.5546875
+				"string" : "A perceptron can be used in decision making. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -91,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:49:10.283385+02:00"
+						"dateAndTimeString" : "2024-09-03T09:11:38.99976+02:00"
 					}
 				},
 				"editEmail" : {
@@ -102,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:49:10.283385+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:39.087739+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "s1+QS4jdDQCPBAgNDw/wrg=="
+					"uidString" : "6H9zgZPdDQCuS2tZC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "So the Perceptron was able to learn to classify on which side of a straight line dots were, only by training it with a lot of points and telling them which side of the line they should be. "
+				"string" : "Suppose there is a Metal concert and you may want to go, but it depends on 3 parameters/inputs: "
 			},
 			{
 				"__type" : "textSnippet",
@@ -128,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:49:14.482519+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:08.595395+02:00"
 					}
 				},
 				"editEmail" : {
@@ -139,53 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:55:01.383544+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:29.389466+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "3z5FQ4jdDQCKLO2/Dw/wrg=="
+					"uidString" : "XyFeipPdDQCu8X6EC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Looking back at a different example: a Perceptron as a AND and OR port: "
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:55:09.024593+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:55:56.878171+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "l1fyYIjdDQCROx5eDw/wrg=="
-				},
-				"url" : "attachments/acubx5uloavw5osr26p7x3b60/2021-AI-General.038.png",
-				"caption" : "",
-				"previewHeight" : 482.1796875
+				"string" : "- x1: Is the weather good? "
 			},
 			{
 				"__type" : "textSnippet",
@@ -201,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:56:40.577081+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:08.772756+02:00"
 					}
 				},
 				"editEmail" : {
@@ -212,53 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:57:19.567028+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:24.496651+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "v09nZojdDQCRRbcLDw/wrg=="
+					"uidString" : "wNdgipPdDQCu9jbOC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Wait!? This picture also shows a straight line! "
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:56:04.140505+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:56:26.988462+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "HVY7ZIjdDQCRQMkVDw/wrg=="
-				},
-				"url" : "attachments/acubx5qhgc7mewm9oe9ipmju5/2021-AI-General.039.png",
-				"caption" : "",
-				"previewHeight" : 769.5976562500001
+				"string" : "- x2: Do you have company to go with you? "
 			},
 			{
 				"__type" : "textSnippet",
@@ -274,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:57:27.829548+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:08.917323+02:00"
 					}
 				},
 				"editEmail" : {
@@ -285,53 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:57:50.632055+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:18.396247+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5FI4aYjdDQCSawbFDw/wrg=="
+					"uidString" : "/wpjipPdDQCu+xXtC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Instead of 2 colors we see 2 different values (T and F). "
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:58:30.658791+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:58:50.660907+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Pwn3bIjdDQCTofIEDw/wrg=="
-				},
-				"url" : "attachments/acubx5res3wwqqsoqpln3973l/2021-AI-General.040.png",
-				"caption" : "",
-				"previewHeight" : 717.8945312499998
+				"string" : "- x3: Can you get there easy using public transport?   "
 			},
 			{
 				"__type" : "textSnippet",
@@ -347,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T20:01:00.931473+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:00.19402+02:00"
 					}
 				},
 				"editEmail" : {
@@ -358,17 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-03T09:04:03.315258+02:00"
+						"dateAndTimeString" : "2024-09-03T09:14:06.606093+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5wriUIjdDQCP8ognDw/wrg=="
+					"uidString" : "SuG2gpPdDQCuUvyUC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Only 1 Perceptron can not act as an XOR-Gate. For that we need to create a network of Perceptrons. "
+				"string" : "Using 0 for false, 1 for true. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -384,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-03T09:04:12.414404+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:00.347651+02:00"
 					}
 				},
 				"editEmail" : {
@@ -395,17 +251,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-03T09:05:10.724754+02:00"
+						"dateAndTimeString" : "2024-09-03T09:13:23.584585+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "fSHVZpPdDQCreho2C2Nzkg=="
+					"uidString" : "uTu5gpPdDQCuV7JYC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "As you may imagine a lot of 'contexts' are more complex than linear. "
+				"string" : "When you prioritize going together you give a heigh weight to the company, w2 := 6 for example: "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:12:03.856825+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:13:18.602633+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0cTugpPdDQCua0C/C2Nzkg=="
+				},
+				"code" : "perceptron := Neuron new step;\r\tweights: #( 3 5 2 );\r\tbias: -4.5"
 			},
 			{
 				"__type" : "textSnippet",
@@ -421,7 +311,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-03T09:05:13.399027+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:00.506173+02:00"
 					}
 				},
 				"editEmail" : {
@@ -432,17 +322,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-03T09:05:13.399027+02:00"
+						"dateAndTimeString" : "2024-09-03T09:13:09.037823+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ra93apPdDQCtfHPTC2Nzkg=="
+					"uidString" : "faO7gpPdDQCuXD+8C2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Good weather, no company, difficult by public transport: would I go?  "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:12:05.256835+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:12:50.742463+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1SMEg5PdDQCucBlbC2Nzkg=="
+				},
+				"code" : "perceptron fire: #(1 0 0)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -458,7 +382,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:50:39.619347+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:00.69738+02:00"
 					}
 				},
 				"editEmail" : {
@@ -469,17 +393,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:50:39.619347+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:39.921942+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "7YjjUIjdDQCP9tsJDw/wrg=="
+					"uidString" : "65C+gpPdDQCuYSoPC2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Bad weather, good company, difficult by public transport: would I go?  "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:12:05.425208+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-03T09:12:32.797071+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "A7cGg5PdDQCudTHEC2Nzkg=="
+				},
+				"code" : "perceptron fire: #(0 1 0)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -495,7 +453,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:54.401336+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:00.854954+02:00"
 					}
 				},
 				"editEmail" : {
@@ -506,20 +464,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:54.401336+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:22.348177+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Y/p2Q4jdDQCKNYCJDw/wrg=="
+					"uidString" : "8/jAgpPdDQCuZqh2C2Nzkg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Good weather, no company, easy by public transport? "
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -532,7 +490,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:54.545412+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:05.580824+02:00"
 					}
 				},
 				"editEmail" : {
@@ -543,17 +501,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:46:54.545412+02:00"
+						"dateAndTimeString" : "2024-09-03T09:12:07.265094+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "by15Q4jdDQCKOr3QDw/wrg=="
+					"uidString" : "2BYJg5PdDQCuepz2C2Nzkg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "perceptron fire: #(1 0 1)"
 			}
 		]
 	},
@@ -565,7 +520,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-02T19:45:58.759736+02:00"
+			"dateAndTimeString" : "2024-09-03T09:11:38.967499+02:00"
 		}
 	},
 	"editEmail" : {
@@ -576,15 +531,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-02T19:45:58.759736+02:00"
+			"dateAndTimeString" : "2024-09-03T09:11:38.967499+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "The problem with the Perceptron"
+		"title" : "Decision making: Metal Concert"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "42f82540-88dd-0d00-8a22-3cc80f0ff0ae"
+		"uuid" : "51fe7281-93dd-0d00-ae4a-006a0b637392"
 	}
 }
