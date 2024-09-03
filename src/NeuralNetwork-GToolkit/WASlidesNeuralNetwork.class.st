@@ -478,24 +478,6 @@ WASlidesNeuralNetwork >> slidePercep0080: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0090: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.009.png'.
-	prio := 1.0090.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0100: aSlide [
 
 	<gtSlide>
@@ -532,24 +514,6 @@ WASlidesNeuralNetwork >> slidePercep0130: aSlide [
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0140: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.014.png'.
-	prio := 1.0140.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0142: aSlide [
 
 	<gtSlide>
@@ -567,20 +531,16 @@ x3 : Is the festival near a metro stop? (You do not like driving)
 perceptron := Neuron new step. 
 perceptron weights: #( 2 6 2 ) .
 perceptron threshold: 5 .
-^ perceptron
-"Look at both the tabs ''Visual'' as well as ''Schematic'' "' 
+^ perceptron' 
 
 . 
 
 '"When weather is good, noone to accompany you, festival near metro: Will you go?"
 perceptron fire: #( 1 0 1 )
-"inspect: output 0 means you will not go, output 1 means you will go!"'
+"inspect: output 0 means you will not go, output 1 means you will go!"
 
-. 
+"After that, adjust the values for this case: When weather is not good, someone to accompany you, festival not near metro: Will you go?"'
 
-'"When weather is not good, someone to accompany you, festival not near metro: Will you go?"
-perceptron fire: #( 0 1 0 )
-"inspect: output 0 means you will not go, output 1 means you will go!"'
 
 }
 ]
