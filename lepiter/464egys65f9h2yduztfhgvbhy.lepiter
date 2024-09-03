@@ -103,14 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-24T15:35:04.955859+02:00"
+						"dateAndTimeString" : "2024-09-03T12:06:36.95342+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "Ne85ss/cDQCzKnRWAvhvRg=="
 				},
-				"code" : "(GtLiveShow create: WASlidesNeuralNetwork new) makeArrowsVisible\r\"Press Inspect to view slides\""
+				"code" : "GtPresenterSlideShow create: WASlidesNeuralNetwork new\r\"Press Inspect to view slides\""
 			},
 			{
 				"__type" : "textSnippet",
