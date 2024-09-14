@@ -702,7 +702,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-09-05T13:33:34.446089+02:00"
+									"dateAndTimeString" : "2024-09-14T15:39:39.773158+02:00"
 								}
 							},
 							"uid" : {
@@ -713,6 +713,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[The 'magic' behind a Neural Network]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:32:09.467193+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:40:08.380802+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "K+WBGnbeDQCFZlLNBIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[More on Training and Learning]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -825,6 +862,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Teaching apps]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T14:50:08.520838+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T14:50:16.437463+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "3E0/hHXeDQC2W6PmBIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Learning Python]]"
 						}
 					]
 				},

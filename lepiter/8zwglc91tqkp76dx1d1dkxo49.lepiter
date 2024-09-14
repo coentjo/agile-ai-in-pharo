@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:19.064698+02:00"
+						"dateAndTimeString" : "2024-09-14T15:32:20.926088+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:21.856052+02:00"
+						"dateAndTimeString" : "2024-09-14T15:38:58.666676+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "oegPpXXeDQCAAP4BBIX5lw=="
+					"uidString" : "ncIwG3beDQCF6ALoBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# What is a Neural Network?"
+				"string" : "There is a lot to learn about the algorhithms involved in making a NNetwork able to ***learn***. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:26.465974+02:00"
+						"dateAndTimeString" : "2024-09-14T15:42:57.038582+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:09:59.900811+02:00"
+						"dateAndTimeString" : "2024-09-14T15:42:57.038582+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "492ApXXeDQCADAu0BIX5lw=="
+					"uidString" : "2gobQXbeDQCL1ThEBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***Neural Networks***, also called ***Artificial Neural Networks (ANNs)*** are computational systems modeled after the biological neural networks found in human and animal brains. Typically, an ANN is composed of multiple layers of neurons, with each neuron in one layer being connected to every neuron in the following layer. This type of structure is often referred to as a ***multilayer perceptron*** or ***MLP***."
+				"string" : "We learned that the number of input neurons corresponds to the dataset being used (in this case, 28 x 28 = 784), while the number of output neurons matches the number of classes (in this case, 10). Additionally, two hidden layers, each containing 16 neurons, were chosen. The number of hidden layers and neurons per layer were selected arbitrarily."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:30.26757+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:01.22445+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,53 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:30.26757+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:01.22445+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Cty6pXXeDQCAGCm+BIX5lw=="
+					"uidString" : "C+paQXbeDQCL3NfhBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A neuron represents a single unit that can be either active (firing) or inactive, depending on the activity of neurons in the previous layer, the strength (or weight) of the connections, and a bias factor."
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:38:30.912722+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:03:58.36605+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cl10JYjdDQCCX9KeDw/wrg=="
-				},
-				"url" : "attachments/acubx5u98dal5skto751e2ub7/2021-AI-General.041.png",
-				"caption" : "",
-				"previewHeight" : 445.46093750000006
+				"string" : "Once the structure of the neural network and the activation function for each neuron (e.g., sigmoid or ReLU) are determined, the next step is to assign values to the weights of the connections between neurons and the biases of each neuron. This results in a large number of parameters to assign (about 13,000 in this case). This process happens automatically during training."
 			},
 			{
 				"__type" : "textSnippet",
@@ -165,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:38:17.797982+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:05.793953+02:00"
 					}
 				},
 				"editEmail" : {
@@ -176,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:41:04.981855+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:05.793953+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8zusJIjdDQCCUBxODw/wrg=="
+					"uidString" : "+6SgQXbeDQCL7YJWBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Back to a case that was impossible with a Perceptron"
+				"string" : "The goal of training a neural network is to adjust the weights and biases so that, when a specific input is provided, the expected output neuron will activate (while the others remain inactive). Training involves feeding the network with many examples from the dataset, along with their corresponding expected outputs. As the network processes each example, the weights and biases are updated based on a learning rule."
 			},
 			{
 				"__type" : "textSnippet",
@@ -202,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:37:19.52921+02:00"
+						"dateAndTimeString" : "2024-09-14T15:41:22.399182+02:00"
 					}
 				},
 				"editEmail" : {
@@ -213,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:39:46.508291+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:05.796725+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "DyUzIYjdDQCCFTevDw/wrg=="
+					"uidString" : "Afd2O3beDQCLtnysBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Example network and training it on getting this behavior: "
+				"string" : "In the next video, the concept of gradient descent is introduced, which is the algorithm used to train neural networks. It also discusses the importance of splitting the dataset into a training set and a test set. The training set is used to train the network, while the test set is used to evaluate how well the network has learned by using a cost function. A preview of the next module on Convolutional Neural Networks is also provided."
 			},
 			{
 				"__type" : "textSnippet",
@@ -239,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:40:11.213427+02:00"
+						"dateAndTimeString" : "2024-09-14T15:39:59.21633+02:00"
 					}
 				},
 				"editEmail" : {
@@ -250,335 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:40:31.960763+02:00"
+						"dateAndTimeString" : "2024-09-14T15:39:59.21633+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "EtUGKojdDQCD0jJjDw/wrg=="
+					"uidString" : "QLKBNnbeDQCLrCK2BIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Inputs 0 and 0 must give output 0.\nInputs 0 and 1 must give output 1.\nInputs 1 and 0 must give output 1.\nInputs 1 and 1 must give output 0.\n"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:38:16.54993+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:32.408019+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AyyZJIjdDQCCS9N+Dw/wrg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "In the following video, you’ll see an explanation of the layered structure of neural networks and how neurons are activated, illustrated through a classification problem. The video provides an intuitive rationale for why neural networks are often made up of multiple layers. The layers between the input and output layers are referred to as hidden layers. Toward the end, the video also clarifies the difference between a sigmoid neuron and a rectified linear unit (ReLU) neuron."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:37:37.988747+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:37:39.616574+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "a8xMIojdDQCCQQi7Dw/wrg=="
-				},
-				"code" : "network := NNetwork new.\rnetwork configure: 2 hidden: 3 nbOfOutputs: 1.\r\r20000 timesRepeat: [  \r\tnetwork train: #(0 0) desiredOutputs: #(0).\t\r\tnetwork train: #(0 1) desiredOutputs: #(1).\r\tnetwork train: #(1 0) desiredOutputs: #(1).\r\tnetwork train: #(1 1) desiredOutputs: #(0).\r].\r^ network"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:41:44.302678+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:10.546574+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "tj/7MIjdDQCGYWW9Dw/wrg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Check if it does what it should by inspecting the result of: "
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:41:37.207131+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:37.026825+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "t/yOMIjdDQCGXH4tDw/wrg=="
-				},
-				"code" : "network feed: #(0 0)"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:43.786584+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:51.230037+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "jOiGNIjdDQCH0gm0Dw/wrg=="
-				},
-				"code" : "network feed: #(0 1)"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:44.686907+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:55.464879+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "s6WUNIjdDQCH1tgRDw/wrg=="
-				},
-				"code" : "network feed: #(1 0)"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:45.197679+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:42:59.763361+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "t3CcNIjdDQCH2lEnDw/wrg=="
-				},
-				"code" : "network feed: #(1 1)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:04:26.198025+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:04:50.805848+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "+mlet3XeDQCAxSJGBIX5lw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# ANN inexplained a video"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T14:59:32.404801+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:03:03.489814+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cHzbpXXeDQCAH+QOBIX5lw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We all know how challenging it can be to read someone else’s handwriting. Yet, despite variations in handwriting style, we are generally quite successful at recognizing letters or digits. For example, the human brain is remarkably adept at identifying different representations of the number “5.”"
+				"string" : ""
 			},
 			{
 				"__type" : "youtubeSnippet",
@@ -594,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:00:13.978287+02:00"
+						"dateAndTimeString" : "2024-09-14T15:41:33.628382+02:00"
 					}
 				},
 				"editEmail" : {
@@ -605,14 +251,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-14T15:00:31.975373+02:00"
+						"dateAndTimeString" : "2024-09-14T15:41:52.252627+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "T91VqHXeDQCATEpRBIX5lw=="
+					"uidString" : "5VAiPHbeDQCLu+CjBIX5lw=="
 				},
-				"youtubeUrl" : "https://www.youtube.com/watch?v=aircAruvnKk"
+				"youtubeUrl" : "https://www.youtube.com/watch?v=IHZwWFHWa-w"
 			},
 			{
 				"__type" : "textSnippet",
@@ -628,7 +274,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:43:19.132273+02:00"
+						"dateAndTimeString" : "2024-09-14T15:39:05.799823+02:00"
 					}
 				},
 				"editEmail" : {
@@ -639,17 +285,304 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-02T19:43:28.620272+02:00"
+						"dateAndTimeString" : "2024-09-14T15:43:57.679326+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "5B0DIojdDQCCPBf3Dw/wrg=="
+					"uidString" : "q0TsMnbeDQCLTMfbBIX5lw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Are the results correct? "
+				"string" : "The core algorithm how neural networks learn is backpropagation. An intuitive explanation of the backpropagation algorithm is presented in the next video. In addition, it is explained how the training set is divided into so-called mini-batches to speed-up the algorithm."
+			},
+			{
+				"__type" : "youtubeSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:42:08.476966+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:44:15.526752+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IxE2PnbeDQCLwJwjBIX5lw=="
+				},
+				"youtubeUrl" : "https://www.youtube.com/watch?v=Ilg3gGewQ5U"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:44:01.162915+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:44:01.162915+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qYLtRHbeDQCL+LisBIX5lw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "youtubeSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:44:28.285299+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:45:08.841623+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OWCLRnbeDQCL/Q85BIX5lw=="
+				},
+				"youtubeUrl" : "https://www.youtube.com/watch?v=tIeHLnjs5U8"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:45:35.8691+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:45:45.524493+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KpySSnbeDQCMBnCZBIX5lw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Multivariable calculus\n\nIn the second video, multivariable calculus was used to explain gradient descent. For the interested student, more on multivariable calculus can be found in the next video from Kahn Academy:\n\nMultivariable functions and multivariable calculus (Khan Academy):"
+			},
+			{
+				"__type" : "youtubeSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:46:06.035758+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:46:09.258503+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6O1eTHbeDQCMJl4lBIX5lw=="
+				},
+				"youtubeUrl" : "https://www.youtube.com/watch?v=TrcCbdWwCBc&list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:46:48.135571+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:46:48.135571+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "LEzhTnbeDQCMgd7fBIX5lw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Wanna know more on neural networks?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:45:50.741568+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:46:58.563909+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iIx1S3beDQCMIqpdBIX5lw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In one of the videos by 3Blue1Brown the following freely available digital book was mentioned:\n\nNeural Networks and Deep Learning by Michael Nielsen:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:47:05.212273+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-14T15:47:31.885433+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kuDlT3beDQCMtVw5BIX5lw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[neuralnetworksanddeeplearning.com](http://neuralnetworksanddeeplearning.com/)"
 			}
 		]
 	},
@@ -661,7 +594,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-02T19:37:19.498722+02:00"
+			"dateAndTimeString" : "2024-09-14T15:32:20.888868+02:00"
 		}
 	},
 	"editEmail" : {
@@ -672,15 +605,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-02T19:37:27.894616+02:00"
+			"dateAndTimeString" : "2024-09-14T15:40:08.370559+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Neural Network"
+		"title" : "More on Training and Learning"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "f7ac3221-88dd-0d00-8214-b3b10f0ff0ae"
+		"uuid" : "5930301b-76de-0d00-85e7-68bf0485f997"
 	}
 }

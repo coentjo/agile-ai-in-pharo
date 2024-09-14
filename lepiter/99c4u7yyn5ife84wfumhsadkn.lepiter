@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-05T13:35:22.940453+02:00"
+						"dateAndTimeString" : "2024-09-14T15:25:58.097177+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We saw that a **Neural Network** (let's shorten it to **NNetwork**) is a combination of **Neuron**s  (more or less **Perceptron**s). "
+				"string" : "We saw that a **Neural Network** (let's shorten it to **NNetwork**) is a combination of **Neuron**s. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-05T13:37:33.969322+02:00"
+						"dateAndTimeString" : "2024-09-14T15:34:08.699962+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In a previous chapter we saw how a Neuron can 'learn'. "
+				"string" : "In a previous chapter we saw how a Neuron can 'learn'. When combining Neurons in a Neural Network we want the network also be able to learn. You may be able to imagine that that is more complicated. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -145,7 +145,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-09-05T13:48:24.802214+02:00"
+									"dateAndTimeString" : "2024-09-14T15:29:04.825868+02:00"
 								}
 							},
 							"uid" : {
@@ -155,7 +155,155 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "To **use** NNetworks you don't need to know exactly how backpropagation works, but hereby we point to a really nice video that clearly explains backpropagation: "
+							"string" : "To **use** NNetworks you don't need to know exactly how backpropagation works, but below you will find a really nice video that clearly explains backpropagation. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:05.3644+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:07.060356+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "4bWID3beDQCFHqLyBIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Previously we learned that the number of input neurons corresponds to the dataset being used (in this case, 28 x 28 = 784), while the number of output neurons matches the number of classes (in this case, 10). Additionally, two hidden layers, each containing 16 neurons, were chosen. The number of hidden layers and neurons per layer were selected arbitrarily."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:07.935094+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:14.664866+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2u+vD3beDQCFLfOhBIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Once the structure of the neural network and the activation function for each neuron (e.g., sigmoid or ReLU) are determined, the next step is to assign values to the weights of the connections between neurons and the biases of each neuron. This results in a large number of parameters to assign (about 13,000 in this case). This process happens automatically during training."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:15.243936+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:21.097452+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "03YfEHbeDQCFPFkdBIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The goal of training a neural network is to adjust the weights and biases so that, when a specific input is provided, the expected output neuron will activate (while the others remain inactive). Training involves feeding the network with many examples from the dataset, along with their corresponding expected outputs. As the network processes each example, the weights and biases are updated based on a learning rule."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:21.502863+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-09-14T15:29:27.17239+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "afZ+EHbeDQCFS2iABIX5lw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "In the next video, the concept of gradient descent is introduced, which is the algorithm used to train neural networks. It also discusses the importance of splitting the dataset into a training set and a test set. The training set is used to train the network, while the test set is used to evaluate how well the network has learned by using a cost function. A preview of the next module on Convolutional Neural Networks is also provided."
 						},
 						{
 							"__type" : "youtubeSnippet",
@@ -282,7 +430,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-05T13:33:39.088544+02:00"
+			"dateAndTimeString" : "2024-09-14T15:39:39.763333+02:00"
 		}
 	},
 	"pageType" : {

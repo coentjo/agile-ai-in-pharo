@@ -66,14 +66,16 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-03-19T13:58:51.468267+01:00"
+						"dateAndTimeString" : "2024-09-14T15:29:42.529427+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "nuCfjvOWDQCSuqtJA5nnPA=="
 				},
-				"url" : "attachments/3lszqra6jy6fswevlyq0nbwwp/screenshot-appetizer.png"
+				"url" : "attachments/3lszqra6jy6fswevlyq0nbwwp/screenshot-appetizer.png",
+				"caption" : "",
+				"previewHeight" : 300
 			}
 		]
 	},
