@@ -546,24 +546,6 @@ perceptron fire: #( 1 0 1 )
 ]
 
 { #category : #slides }
-WASlidesNeuralNetwork >> slidePercep0150: aSlide [
-
-	<gtSlide>
-	| filename prio |
-	filename := '2021-AI-General.015.png'.
-	prio := 1.0150.
-	^ aSlide element
-		  priority: prio;
-		  element: [ 
-			  | form |
-			  form := PNGReadWriter formFromFileNamed:
-					          (self slidesDirectory / filename) fullName.
-			  form asElement asScalableElement constraintsDo: [ :c | 
-					  c horizontal matchParent.
-					  c vertical matchParent ] ]
-]
-
-{ #category : #slides }
 WASlidesNeuralNetwork >> slidePercep0152: aSlide [
 
 	<gtSlide>

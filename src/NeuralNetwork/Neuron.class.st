@@ -55,7 +55,7 @@ Neuron >> aiVisual: aView [
 	yCenter := (yMax + yMin) / 2 . 
 	
 	"Calculate y for n-th input"
-	ySlope := (yMax - yMin) / (self weights size - 1).
+	ySlope := (yMax - yMin) / (1 max: self weights size - 1).
 	calcYForNthInput := [ :index | ((index - 1) * ySlope) + yMin ] . 
 	
 	central := xRow2 @ yCenter.
