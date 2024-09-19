@@ -2061,6 +2061,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "If you want to know more about the Glamorous Toolkit a good place to start is the Glamorous Toolkit Book that you can find IN the Toolkit itself!  Open 'Lepiter' (from the Hamburger menu above right) and find that the toolkit book is one of the 'lepiter databases'.  "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-19T12:06:51.686921+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-19T12:07:49.655362+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WsrKvdfeDQCtOM/OCWzPAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A nice chapter to read about Visualizations is for example the Chapter in the GToolkit Book called 'Example-driven development by example'. It will explain about the role of Examples in GT. "
 			}
 		]
 	},

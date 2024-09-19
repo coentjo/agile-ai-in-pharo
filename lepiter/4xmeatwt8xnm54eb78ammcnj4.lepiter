@@ -71,14 +71,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-08-24T15:41:34.415905+02:00"
+									"dateAndTimeString" : "2024-09-19T11:56:33.587805+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "oBEIrueiDQCf8k3RCh9XUw=="
 							},
-							"code" : "\"Press the *inspect* button with 'play'-symbol + 'i' on it \runderneath this playground to see the result of running this code.\"\rnetwork := NNetwork new\r\t\tconfigure: 7\r\t\thidden: 4\r\t\tnbOfOutputs: 3"
+							"code" : "\"Press the *inspect* button with 'play'-symbol + 'i' on it \runderneath this playground to see the result of running this code.\"\rnetwork := NNetwork new\r\t\tconfigure: 7\r\t\thidden: 5\r\t\tnbOfOutputs: 3"
 						}
 					]
 				},

@@ -103,14 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-19T21:12:22.76+02:00"
+						"dateAndTimeString" : "2024-09-19T12:09:29.610851+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "+NdCnf6iDQCDt5pNC5YN7Q=="
 				},
-				"code" : "| slideShow |\rslideShow := WASlidesGeneralIntroNew new.\r\"Replace the string below (everything between the single quotes), \r by the name of the presenter: \"\rslideShow presenterName: 'Rumpelstiltskin'.\r(GtLiveShow create: slideShow) makeArrowsVisible\r\"Press 'Inspect' below to view slides.\""
+				"code" : "| slideShow |\rslideShow := WASlidesGeneralIntroNew new.\r\"Replace the string below (everything between the single quotes), \r by the name of the presenter: \"\rslideShow presenterName: 'Rumpelstiltskin'.\rGtPresenterSlideShow create: slideShow\r\"Press 'Inspect' below to view slides.\"\r"
 			}
 		]
 	},
