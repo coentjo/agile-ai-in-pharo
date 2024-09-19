@@ -576,12 +576,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-02T19:45:58.759736+02:00"
+			"dateAndTimeString" : "2024-09-19T13:36:26.332145+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "The problem with the Perceptron"
+		"title" : "A problem with the Perceptron"
 	},
 	"uid" : {
 		"__type" : "uuid",

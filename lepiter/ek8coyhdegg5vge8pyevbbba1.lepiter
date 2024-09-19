@@ -432,6 +432,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2021-12-18T15:03:13.873443+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-08-24T15:34:31.990154+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "if1o2s2PDQC4c9BPD1Dy1w=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Slides about Neural Networks]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2021-10-28T17:41:36.831007+02:00"
 								}
 							},
@@ -543,7 +580,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2021-12-18T15:03:13.873443+01:00"
+									"dateAndTimeString" : "2024-09-19T13:39:48.966502+02:00"
 								}
 							},
 							"editEmail" : {
@@ -554,17 +591,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-08-24T15:34:31.990154+02:00"
+									"dateAndTimeString" : "2024-09-19T13:40:01.199973+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "if1o2s2PDQC4c9BPD1Dy1w=="
+								"uidString" : "duLyHdneDQCAi8xTCWzPAw=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Slides about Neural Networks]]"
+							"string" : "[[The Learning Perceptron]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -591,7 +628,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-09-02T19:45:57.157568+02:00"
+									"dateAndTimeString" : "2024-09-19T13:36:26.347736+02:00"
 								}
 							},
 							"uid" : {
@@ -601,7 +638,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[The problem with the Perceptron]]"
+							"string" : "[[A problem with the Perceptron]]"
 						},
 						{
 							"__type" : "textSnippet",
