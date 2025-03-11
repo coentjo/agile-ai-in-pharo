@@ -1,15 +1,138 @@
 ---
-title: "OK-Next"
+title: "Next Steps in Your AI Journey"
 ---
 
-Title: OK, now what could I do next?
-#OK, now what could I do next?
+## Congratulations on Your Progress!
 
-By now you have seen a bit of the idea behind Artificial Neural Networks. Maybe you're appetite if satisfied and you know what you want to know. Maybe you want to dive in the Mathematics behind it. Maybe you want to get hands-on in some programming language.
-The scripts in this workshop come from the excellent book 'Agile AI in Pharo' by Alexandre Bergel. In the video 'Introduction to neural networks, genetic, and neuroevolution'  Alexandre Bergel himself tells the story using Pharo, so there you can find a lot of information: 
-[video 'Introduction to neural networks, genetic, and neuroevolution'](https://tube.switch.ch/videos/v6uqRi7Lfm)). After Neural Networks he talks about Genetic Algorithms and in the end about Neuroevolution using NEAT.
-Or you could follow a tutorial in (for example) Python, Keras, Tensorflow...
-[Coding Lane: Image Classification using CNN in Keras](https://www.youtube.com/watch?v=J1jhfAw5Uvo)
-[InvesTime: Deep-learning in Health care](https://www.youtube.com/watch?v=Fxy6WTnUIww)
-[3Blue1Brown - But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)
+You've come a long way in understanding neural networks and their applications. Now, let's explore where to go from here.
+
+## Expanding Your Knowledge
+
+### 1. Advanced Topics
+- Deep Learning architectures
+- Reinforcement Learning
+- Natural Language Processing
+- Computer Vision
+- Generative AI
+
+### 2. Practical Skills
+- Model deployment
+- Cloud computing
+- Version control
+- Data engineering
+- DevOps for AI
+
+## Real-World Applications
+
+### 1. Industry Applications
+- Healthcare diagnostics
+- Financial forecasting
+- Autonomous systems
+- Robotics
+- Smart cities
+
+### 2. Research Areas
+- Explainable AI
+- Ethical AI
+- Federated Learning
+- Few-shot Learning
+- Neural Architecture Search
+
+## Building Your Portfolio
+
+1. **Personal Projects**
+   ```pharo
+   "Example project structure"
+   AIProject new
+       title: 'Image Classification';
+       description: 'Classifying plant species';
+       technologies: #('CNN' 'Transfer Learning');
+       dataset: 'PlantNet';
+       initialize
+   ```
+
+2. **Documentation**
+   - Clear README files
+   - Architecture diagrams
+   - Performance metrics
+   - Deployment instructions
+
+3. **Code Quality**
+   - Clean code principles
+   - Unit tests
+   - Performance optimization
+   - Error handling
+
+## Community Engagement
+
+### 1. Online Communities
+- AI/ML forums
+- GitHub discussions
+- Stack Overflow
+- Research paper discussions
+
+### 2. Local Groups
+- Meetups
+- Hackathons
+- Workshops
+- Study groups
+
+## Continuous Learning
+
+### 1. Advanced Courses
+- Deep Learning specializations
+- MLOps certifications
+- Domain-specific training
+- Research methodologies
+
+### 2. Reading Materials
+- Research papers
+- Technical blogs
+- Industry reports
+- Case studies
+
+## Career Paths
+
+1. **Industry Roles**
+   - Machine Learning Engineer
+   - AI Researcher
+   - Data Scientist
+   - MLOps Engineer
+
+2. **Research Paths**
+   - PhD programs
+   - Research labs
+   - Academic positions
+   - Industry research
+
+## Best Practices Moving Forward
+
+1. **Stay Current**
+   - Follow AI news
+   - Read research papers
+   - Experiment with new tools
+   - Join discussions
+
+2. **Build Network**
+   - Connect with experts
+   - Share knowledge
+   - Collaborate on projects
+   - Mentor others
+
+3. **Maintain Balance**
+   - Theory and practice
+   - Breadth and depth
+   - Learning and applying
+   - Teaching and learning
+
+## Final Thoughts
+
+Remember:
+1. AI is a rapidly evolving field
+2. Focus on fundamentals
+3. Practice regularly
+4. Share your knowledge
+5. Stay curious and experimental
+
+Your journey in AI is just beginning. Keep learning, experimenting, and growing!
 

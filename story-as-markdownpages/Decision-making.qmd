@@ -1,31 +1,49 @@
 ---
-title: "Decision-making"
+title: "Decision Making with Perceptrons"
 ---
 
-Title: Decision making: Metal Concert
-#Decision making: Metal Concert
+## From Simple Gates to Complex Decisions
 
-A perceptron can be used in decision making.
-Suppose there is a Metal concert and you may want to go, but it depends on 3 parameters/inputs:
-- x1: Is the weather good?
-- x2: Do you have company to go with you?
-- x3: Can you get there easy using public transport?
-Using 0 for false, 1 for true.
-When you prioritize going together you give a heigh weight to the company, w2 := 6 for example:
-```Pharo
-perceptron := Neuron new step;
-	weights: #( 3 5 2 );
-	bias: -4.5
+While we've seen how Perceptrons can implement basic logical operations, their true power lies in their ability to make more complex decisions. Let's explore how Perceptrons can handle real-world decision-making scenarios.
+
+### Understanding Decision Boundaries
+
+A Perceptron essentially creates a decision boundary in the input space. For two inputs, this boundary is a straight line that separates the space into two regions: one where the Perceptron outputs 1, and another where it outputs 0.
+
+The weights and bias determine:
+1. The orientation of this line (through the weights)
+2. Where the line is positioned (through the bias)
+
+## Implementing Decision Making
+
+Let's create a Perceptron that can make decisions based on two numeric inputs:
+
+```pharo
+decisionMaker := Neuron new
+    step;
+    weights: #(0.5 -0.8);
+    bias: 0.1.
 ```
-Good weather, no company, difficult by public transport: would I go?
-```Pharo
-perceptron fire: #(1 0 0)
+
+This Perceptron might represent a simple decision-making system where:
+- The first input could be a positive factor (weight 0.5)
+- The second input could be a negative factor (weight -0.8)
+- The bias (0.1) adjusts the overall threshold for making a positive decision
+
+### Testing Different Scenarios
+
+Try these different input combinations to see how the Perceptron makes decisions:
+```pharo
+decisionMaker fire: #(1 0)    "Positive factor only"
+decisionMaker fire: #(0 1)    "Negative factor only"
+decisionMaker fire: #(1 1)    "Both factors"
 ```
-Bad weather, good company, difficult by public transport: would I go?
-```Pharo
-perceptron fire: #(0 1 0)
-```
-Good weather, no company, easy by public transport?
-```Pharo
-perceptron fire: #(1 0 1)
-```
+
+## Real-World Applications
+
+This decision-making capability forms the foundation for many practical applications:
+- Spam detection (deciding if an email is spam based on various features)
+- Credit approval (determining if a loan should be approved)
+- Medical diagnosis (classifying test results as normal or abnormal)
+
+In the next chapters, we'll explore how we can train Perceptrons to learn these decision boundaries automatically from examples, rather than setting the weights and bias manually.

@@ -1,49 +1,84 @@
 ---
-title: "What is a Neural Network?"
+title: "Introduction to Neural Networks"
 ---
 
-Title: Neural Network
-#Neural Network
+## Beyond Single Perceptrons: Building Neural Networks
 
-# What is a Neural Network?
-***Neural Networks***, also called ***Artificial Neural Networks (ANNs)*** are computational systems modeled after the biological neural networks found in human and animal brains. Typically, an ANN is composed of multiple layers of neurons, with each neuron in one layer being connected to every neuron in the following layer. This type of structure is often referred to as a ***multilayer perceptron*** or ***MLP***.
-A neuron represents a single unit that can be either active (firing) or inactive, depending on the activity of neurons in the previous layer, the strength (or weight) of the connections, and a bias factor.
-- ![](attach/2021-AI-General.041.png)
-# Back to a case that was impossible with a Perceptron
-Example network and training it on getting this behavior:
-Inputs 0 and 0 must give output 0.
-Inputs 0 and 1 must give output 1.
-Inputs 1 and 0 must give output 1.
-Inputs 1 and 1 must give output 0.
-In the following video, you’ll see an explanation of the layered structure of neural networks and how neurons are activated, illustrated through a classification problem. The video provides an intuitive rationale for why neural networks are often made up of multiple layers. The layers between the input and output layers are referred to as hidden layers. Toward the end, the video also clarifies the difference between a sigmoid neuron and a rectified linear unit (ReLU) neuron.
-```Pharo
-network := NNetwork new.
-network configure: 2 hidden: 3 nbOfOutputs: 1.
+Having seen the limitations of single Perceptrons, we now venture into the fascinating world of neural networks. These powerful structures combine multiple Perceptrons in layers to solve complex problems that single Perceptrons cannot handle.
 
-20000 timesRepeat: [  
-	network train: #(0 0) desiredOutputs: #(0).	
-	network train: #(0 1) desiredOutputs: #(1).
-	network train: #(1 0) desiredOutputs: #(1).
-	network train: #(1 1) desiredOutputs: #(0).
+![Basic neural network architecture](attach/2021-AI-General.041.png)
+
+## Understanding Network Architecture
+
+A typical neural network consists of three main components:
+
+1. **Input Layer**: Receives the raw data
+2. **Hidden Layer(s)**: Processes the information through multiple Perceptrons
+3. **Output Layer**: Produces the final result
+
+### Key Components
+
+Each connection in the network has:
+- A weight that determines its strength
+- A direction of information flow (forward only)
+- An associated neuron that processes the incoming signals
+
+## How Information Flows
+
+The network processes information in these steps:
+
+1. Input values are presented to the input layer
+2. Each neuron in subsequent layers:
+   - Receives weighted inputs from the previous layer
+   - Applies its activation function
+   - Passes the result to the next layer
+3. The output layer produces the final result
+
+## Creating a Simple Network
+
+Here's how to create a basic neural network:
+
+```pharo
+network := NeuralNetwork new
+    inputSize: 2;
+    addHiddenLayer: 3;
+    outputSize: 1;
+    initialize.
+```
+
+This creates a network with:
+- 2 input neurons
+- 3 neurons in one hidden layer
+- 1 output neuron
+
+## Training the Network
+
+Unlike single Perceptrons, neural networks use more sophisticated training algorithms:
+
+```pharo
+"Training data for XOR problem"
+trainingData := #(
+    ((0 0) 0)
+    ((0 1) 1)
+    ((1 0) 1)
+    ((1 1) 0)
+).
+
+"Train the network"
+1000 timesRepeat: [
+    trainingData do: [:example |
+        inputs := example first.
+        desiredOutput := example second.
+        network trainOn: inputs expecting: desiredOutput
+    ]
 ].
-^ network
 ```
-Check if it does what it should by inspecting the result of:
-```Pharo
-network feed: #(0 0)
-```
-```Pharo
-network feed: #(0 1)
-```
-```Pharo
-network feed: #(1 0)
-```
-```Pharo
-network feed: #(1 1)
-```
-# ANN inexplained a video
-We all know how challenging it can be to read someone else’s handwriting. Yet, despite variations in handwriting style, we are generally quite successful at recognizing letters or digits. For example, the human brain is remarkably adept at identifying different representations of the number “5.”
 
-[But what is a neural network? | Deep learning chapter 1](https://www.youtube.com/watch?v=aircAruvnKk)
+## Advantages of Neural Networks
 
-Are the results correct?
+1. Can solve non-linearly separable problems
+2. Handle complex pattern recognition
+3. Learn hierarchical features automatically
+4. Scale well to large problems
+
+In the next sections, we'll explore practical applications and see how to train networks on real-world data.

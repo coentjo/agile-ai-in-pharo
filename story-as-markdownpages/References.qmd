@@ -1,20 +1,124 @@
 ---
-title: "Used Sources on AI, and the inspi for this workshop:"
+title: "Essential Resources and References"
 ---
 
-Title: References
-#References
+## Core Learning Resources
 
-# Used Sources on AI, and the inspi for this workshop:
-    - + [Book: Agile Artificial Intelligence in Pharo, by Alexandre Bergel, 2020](https://link.springer.com/book/10.1007/978-1-4842-5384-7)
-    - + [Video: Introduction to Neural Networks, genetic Algorithm, and neuroevolution](https://tube.switch.ch/videos/v6uqRi7Lfm)
-    - + [GitHub repository: https://github.com/Apress/agile-ai-in-pharo](https://github.com/Apress/agile-ai-in-pharo): yes, that's were all the basics from this workshop come from... Lots more to discover there: on [[Genetic Algorithms]] ,  
-on [[Traveling Salesman]], [[Maze Robots]],  [[Zoomorphic Creatures]] ,  [[NeuroEvolution]] , [[concluding]] .
-# Sources on GToolkit, Pharo and Smalltalk
-    - + [Pharo site](https://pharo.org/)
-    - + [GToolkit site](https://gtoolkit.com/)
-    - + 'Glamorous Toolkit Book' in this environment (tab 'gt')
-    - + [Books on Pharo](https://books.pharo.org/)
+### Books
+
+1. **Neural Networks and Deep Learning**
+   - Author: Michael Nielsen
+   - [Free Online Book](http://neuralnetworksanddeeplearning.com)
+   - Perfect for beginners and intermediate learners
+   - Clear explanations with interactive examples
+
+2. **Deep Learning**
+   - Authors: Ian Goodfellow, Yoshua Bengio, Aaron Courville
+   - [Available Online](https://www.deeplearningbook.org)
+   - Comprehensive coverage of deep learning
+   - Industry standard reference
+
+3. **Agile AI in Pharo**
+   - Author: Alexandre Bergel
+   - Practical implementation in Pharo
+   - Hands-on examples and exercises
+   - [Book Link](https://books.pharo.org/agile-ai/)
+
+## Video Courses and Tutorials
+
+### 1. Foundational Series
+- [3Blue1Brown Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+  - Visual explanations
+  - Mathematical intuition
+  - Clear animations
+
+### 2. Programming Tutorials
+- [Fast.ai Deep Learning Course](https://course.fast.ai)
+  - Practical approach
+  - Top-down learning
+  - Real-world applications
+
+### 3. Advanced Topics
+- [Stanford CS231n](http://cs231n.stanford.edu)
+  - Computer Vision
+  - Deep Learning
+  - State-of-the-art techniques
+
+## Online Platforms
+
+### 1. Interactive Learning
+- [Kaggle Learn](https://www.kaggle.com/learn)
+  - Hands-on exercises
+  - Real datasets
+  - Community support
+
+### 2. Research Papers
+- [arXiv Machine Learning](https://arxiv.org/list/cs.LG/recent)
+  - Latest research
+  - Open access
+  - Preprint server
+
+### 3. Code Repositories
+- [Papers With Code](https://paperswithcode.com)
+  - Implementations of papers
+  - Benchmarks
+  - State-of-the-art tracking
+
+## Community Resources
+
+### 1. Forums and Discussion
+- [r/MachineLearning](https://reddit.com/r/MachineLearning)
+- [Cross Validated](https://stats.stackexchange.com)
+- [AI Stack Exchange](https://ai.stackexchange.com)
+
+### 2. Blogs and Newsletters
+- [Distill.pub](https://distill.pub)
+  - Interactive explanations
+  - Visual learning
+  - Deep insights
+
+### 3. Tools and Libraries
+- [TensorFlow](https://tensorflow.org)
+- [PyTorch](https://pytorch.org)
+- [Scikit-learn](https://scikit-learn.org)
+
+## Academic Papers
+
+### 1. Foundational Papers
+- "A Logical Calculus of Ideas Immanent in Nervous Activity" (McCulloch & Pitts, 1943)
+- "Learning Internal Representations by Error Propagation" (Rumelhart et al., 1986)
+- "Gradient-Based Learning Applied to Document Recognition" (LeCun et al., 1998)
+
+### 2. Modern Breakthroughs
+- "Deep Residual Learning for Image Recognition" (He et al., 2015)
+- "Attention Is All You Need" (Vaswani et al., 2017)
+- "Language Models are Few-Shot Learners" (Brown et al., 2020)
+
+## How to Use These Resources
+
+1. **For Beginners**
+   - Start with Nielsen's book
+   - Watch 3Blue1Brown videos
+   - Practice with Kaggle Learn
+
+2. **For Intermediate Learners**
+   - Deep Learning book
+   - Stanford courses
+   - Implement papers
+
+3. **For Advanced Users**
+   - Research papers
+   - Contribute to open source
+   - Attend conferences
+
+Remember to:
+- Take notes
+- Implement concepts
+- Join discussions
+- Share knowledge
+- Stay updated
+
+These resources will help you build a strong foundation in neural networks and AI.
 
 
 

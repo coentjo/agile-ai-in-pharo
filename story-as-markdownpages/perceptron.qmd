@@ -1,45 +1,46 @@
 ---
-title: "Perceptron"
+title: "Understanding the Perceptron"
 ---
 
-## The idea behind a Perceptron comes from a neuron in a brain
+## The Biological Inspiration: From Brain Neurons to Artificial Intelligence
 
-In the next example a Perceptron is introduced. A Perceptron is a way of creating an artificial 'simulation' of the way a human brain works. In 1943 Warren S. McCulloch and Walter Pitts expressed the idea in an article 'A Logical Calculus of the Ideas Immanent in Nervous Activity'.
+The Perceptron represents one of the most fundamental concepts in artificial intelligence, drawing its inspiration directly from the human brain's neural structure. This groundbreaking idea was first introduced in 1943 by Warren S. McCulloch and Walter Pitts in their seminal paper 'A Logical Calculus of the Ideas Immanent in Nervous Activity', where they proposed a mathematical model of biological neurons.
 
-![A typical neuron](attach/TypicalNeuron.png)
+![A typical biological neuron structure](attach/TypicalNeuron.png)
 
-## Implementing this in a machine
+## From Biology to Machine: Implementing a Perceptron
 
-The idea behind a Perceptron is that it has a number of `inputs`, each input having its own `weight`, furthermore it has a `bias`. Every input channel accepts a numerical value, and the weight determines the importance of that input.
+A Perceptron's architecture elegantly mirrors its biological counterpart through three key components: `inputs`, `weights`, and a `bias`. Each input connection has an associated weight that determines its relative importance, while the bias helps adjust the Perceptron's overall sensitivity to activation.
 
-![Perceptron diagram](attach/Perceptron01.png)
+![Perceptron's architectural diagram](attach/Perceptron01.png)
 
-This example has 3 inputs: the `feeds` into the inputs are called `x1`, `x2` and `x3`. The corresponding weights are called `w1`, `w2` and `w3`.  To calculate the output of the Perceptron first the `'weighted sum'` is calculated, then the bias is added to that sum:
+Let's explore a practical example with three inputs. We'll call our input values `x1`, `x2`, and `x3`, with their corresponding weights `w1`, `w2`, and `w3`. The Perceptron processes these inputs in two steps:
 
-`z := w1*x1 + w2*x2 + w3*x3 + bias`
+1. First, it calculates a `weighted sum` and adds the bias:
+   `z := w1*x1 + w2*x2 + w3*x3 + bias`
 
-After that it is **`activated`** (or: **`the activation function`** is calculated), for which in this example we take the formula:
-- if value of z is above 0, output will be 1
-- otherwise output will be 0
+2. Then, it applies an **activation function** to produce the final output:
+   - Output is 1 if z > 0
+   - Output is 0 if z ≤ 0
 
-In code the 'z' can be calculated by:
+Here's how we can implement this in code:
 
 ```pharo
 | x1 x2 x3 w1 w2 w3 bias |
-"When a neuron is `fired` that means there are `input` values. 
-The input values are called x1 until x3 here:"
+"Define our input values"
 x1 := 0.35 .
 x2 := 1.2 .
 x3 := 0.54 .
-"The weights w1 to w3 are properties of the neuron, as is the bias:"
+"Set the weights and bias"
 w1 := 0.234 .
 w2 := 0.32 .
 w3 := 0.58 .
 bias := 5 .
+"Calculate the weighted sum with bias"
 z := (w1 * x1) + (w2 * x2) + (w3 * x3) + bias.
 ```
 
-After which the **`activation`** gives:
+The activation function then determines the final output:
 
 ```pharo
 z > 0 
@@ -47,10 +48,9 @@ z > 0
     ifFalse: [0]
 ```
 
-Well, that was an example with 3 inputs. Maybe play around a bit with the input values (x1, x2, x3) to get output 0. (inspect the playgrounds again after changing the values)
+## A More Flexible Implementation
 
-Now we will take a look at some more generic code that is being executed in this system:
-(why is this more generic?)
+Let's examine a more versatile implementation that can handle any number of inputs:
 
 ```pharo
 | inputs_x weights_w bias |
@@ -64,15 +64,5 @@ z := (inputs_x
             + bias
 ```
 
-*Answer*: This is more generic because you can add a fourth (and fifth, and...) value to `inputs_x` and `weights_w`: the code will still work, as long as the number of input values is equal to the number of weights.
-
-The code used by your machine (your laptop running GToolkit with this workshop) is like this:
-
-{{gtMethod:Neuron>>feed:|expanded=true}}
-
-For a Neuron the so-called activationFunction is a 'step' function: If `z>0` the output of the Perceptron will be `1`, otherwise `0`, which you can see coded in method 'eval:' in class 'StepAF':
-
-{{gtMethod:StepAF>>eval:|expanded=true}}
-
-The '**^**' means that the method will 'return' that value.
+This implementation is more flexible because it can process any number of inputs, as long as there's a matching weight for each input value. Try experimenting with different input values to see how the Perceptron's output changes!
 

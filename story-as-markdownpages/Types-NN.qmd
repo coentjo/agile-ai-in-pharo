@@ -1,19 +1,72 @@
 ---
-title: "Recurrent neural network"
+title: "Exploring Neural Network Architectures"
 ---
 
-Title: Different types of Neural Networks
-#Different types of Neural Networks
+## The Rich Landscape of Neural Networks
 
-Although the basic idea of a neural network is more or less the same, a lot of people have tried all kinds of variations:
-We only looked at networks where the outputs of **all** perceptrons/neurons are connnected to the inputs of **all** perceptrons/neurons of the next layer. You can think of networks that do not connect all of these! Also you can think of an output that is leaded back into a previous layer or neuron.
-As activation function we looked at the **Step** function and at the **Sigmoid**, but there are a lot more options.
-For visual recognition also some additions were invented.
-... maybe you have had some ideas/questions while looking and thinking about it: maybe investigate on it...?
-# Recurrent neural network
-- attachments/93mdx43cuyk9ozqsnka2rswnb/2021-AI-General.049.png
-# Convolutional neural network
-    - Succesful in visual recognition
-    - attachments/93mdx45vgrq9ult7mc0ug29re/2021-AI-General.052.png
-    - attachments/93mdx46vvditkr1u9395xa7an/2021-AI-General.050.png
-    - attachments/93mdx42tkirmyu6xep5pninz4/2021-AI-General.051.png
+Neural networks come in many shapes and sizes, each designed to excel at specific types of tasks. Let's explore some of the most important architectures and their applications.
+
+## Feedforward Neural Networks (FNN)
+
+The classic architecture we've been working with so far. Information flows in one direction:
+- Input layer → Hidden layer(s) → Output layer
+- Perfect for classification and regression tasks
+- Examples: Our Iris classifier, handwriting recognition
+
+## Convolutional Neural Networks (CNN)
+
+Inspired by the human visual cortex:
+- Specialized for processing grid-like data (images, video)
+- Uses convolution operations to detect patterns
+- Excellent at feature extraction
+- Applications: Image recognition, computer vision, medical imaging
+
+## Recurrent Neural Networks (RNN)
+
+Networks with memory:
+- Can process sequences of data
+- Information cycles through the network
+- Great for time-series data and natural language
+- Applications: Language translation, speech recognition, stock prediction
+
+## Long Short-Term Memory (LSTM)
+
+A sophisticated type of RNN:
+- Better at remembering long-term dependencies
+- Controls information flow with gates
+- Solves the vanishing gradient problem
+- Applications: Text generation, music composition
+
+## Autoencoders
+
+Self-learning networks:
+- Learn to compress and reconstruct data
+- Useful for dimensionality reduction
+- Can detect anomalies
+- Applications: Data compression, noise reduction, feature learning
+
+## Generative Adversarial Networks (GAN)
+
+Two networks competing with each other:
+- Generator creates fake data
+- Discriminator tries to spot fakes
+- Through competition, both improve
+- Applications: Creating realistic images, style transfer, data augmentation
+
+## Choosing the Right Architecture
+
+The choice of architecture depends on:
+1. Type of data (images, text, time-series)
+2. Task requirements (classification, generation, prediction)
+3. Available computational resources
+4. Need for real-time processing
+
+## Future Directions
+
+Neural network architectures continue to evolve:
+- Hybrid architectures combining multiple types
+- More efficient training methods
+- Better handling of uncertainty
+- Integration with other AI techniques
+
+In the next section, we'll dive deeper into training these networks effectively.

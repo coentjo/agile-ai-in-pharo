@@ -1,40 +1,78 @@
 ---
-title: "The-learning-Perceptron"
+title: "Teaching a Perceptron: The Learning Process"
 ---
 
-Title: The Learning Perceptron
-#The Learning Perceptron
+## Introduction to Perceptron Learning
 
-The Perceptron can ***learn*** when we train it:
-***Training*** means we give input to the perceptron **and** we also tell it what the outputvalue is are that we want for those input values.
-Let's look at an example: 
-- First we create a perceptron, 2 inputs with weights -1 and -1, and a bias of 2.  
-- For  input values `1` and `1`, written as:   `#( 1 1 )` 
-this Perceptron will give an output value of 0 initially. Check this by `inspecting` the next 2 scripts:
-```Pharo
-perceptron := Neuron new step. 
-perceptron weights: #( -1 -1 ).
-perceptron bias: 2.
-^ perceptron
+One of the most fascinating aspects of Perceptrons is their ability to learn from examples. Instead of manually setting weights and bias, we can train a Perceptron to discover the optimal parameters through a process called supervised learning.
+
+## The Learning Algorithm
+
+The learning process follows these key steps:
+
+1. Start with random weights and bias
+2. Present a training example
+3. Compare the Perceptron's output with the desired output
+4. Adjust the weights and bias based on the error
+5. Repeat with more examples until performance is satisfactory
+
+### Mathematical Foundation
+
+The weight update rule is elegantly simple:
 ```
-Set the input values to  `#( 1 1 )` respectively, and see what the output value is.
-```Pharo
-^ perceptron fire: #( 1 1 )
+new_weight = current_weight + learning_rate * error * input
 ```
-***Training***: Now we are going to tell that for inputs `#( 1 1 )`  the desired output is 1. The next script is one trainings step:
-```Pharo
-perceptron train: #( 1 1 ) desiredOutput: 1
+
+Where:
+- `learning_rate` is a small number (like 0.1) that controls how big each adjustment is
+- `error` is the difference between desired and actual output (1 or -1)
+- `input` is the input value for that weight
+
+## Implementing Learning
+
+Here's how we create a learning Perceptron:
+
+```pharo
+learningPerceptron := Neuron new
+    step;
+    learningRate: 0.1;
+    initialize.  "Sets random initial weights"
 ```
-If you look at the
-We call this ***labeled data***: We have inputs (***data***) and tell the machine what the output should be for for those inputs (***the desired output*** or ***label***).
-```Pharo
-10 timesRepeat: [ perceptron train: #( 0 1 ) desiredOutput: 0 ].
-^ perceptron
+
+### Training Process
+
+To train the Perceptron, we present examples with their desired outputs:
+
+```pharo
+"Training for AND gate behavior"
+trainingData := #(
+    ((0 0) 0)
+    ((0 1) 0)
+    ((1 0) 0)
+    ((1 1) 1)
+).
+
+trainingData do: [:example |
+    inputs := example first.
+    desiredOutput := example second.
+    learningPerceptron train: inputs desiredOutput: desiredOutput
+].
 ```
-```Pharo
-"After training the input #(0 1) will give output 0"
-^ perceptron fire: #( 0 1 )
-"If you are curious as to what method 'train:desiredOutput:' does: 
-click at the little triangle behind 'desiredOutput:' in the third script.
-(the triangle does only appear AFTER you executed the first script)"
-```
+
+## Visualizing the Learning Process
+
+As the Perceptron learns, its decision boundary gradually moves to the correct position. You can monitor this progress by:
+
+1. Tracking the error rate over time
+2. Visualizing the decision boundary's movement
+3. Testing the Perceptron with new examples
+
+## Practical Considerations
+
+For successful learning:
+- Ensure your training data is representative
+- Consider using multiple training epochs (complete passes through the data)
+- Monitor for convergence (when the weights stabilize)
+- Be aware that not all problems are linearly separable
+
+In the next chapter, we'll explore the limitations of what a single Perceptron can learn, which will lead us naturally to the need for more complex neural networks.

@@ -3,8 +3,8 @@ project:
   output-dir: _output
 
 book:
-  title: "Understanding AI: From Perceptrons to Neural Networks"
-  author: "Coen"
+  title: "Coen's AI-Page"
+  author: "diverse"
   chapters:
     - index.qmd
     - ai.overview.qmd
@@ -35,13 +35,14 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
-    fig-pos: 'H'
-    include-in-header: 
+    fig-pos: "H"
+    include-in-header:
       text: |
         \usepackage{float}
         \usepackage{graphicx}
         \DeclareGraphicsExtensions{.pdf,.png,.jpg}
         \graphicspath{{./}{./attach/}}
-    
+
 metadata-files:
-  - _metadata.yml 
+  - _metadata.yml
+

@@ -1,21 +1,49 @@
 ---
-title: "A problem with the Perceptron"
+title: "Understanding Perceptron Limitations"
 ---
 
-Title: A problem with the Perceptron
-# A problem with the Perceptron
+## The XOR Problem: A Classic Challenge
 
+While Perceptrons are powerful tools for many classification tasks, they face a fundamental limitation: they can only solve linearly separable problems. The classic example of this limitation is the XOR (exclusive OR) function.
 
-- ![](attach/2021-AI-General.034.png)
-So the Perceptron was able to learn to classify on which side of a straight line dots were, only by training it with a lot of points and telling them which side of the line they should be.
-Looking back at a different example: a Perceptron as a AND and OR port:
-- ![](attach/2021-AI-General.038.png)
-Wait!? This picture also shows a straight line!
-- ![](attach/2021-AI-General.039.png)
-Instead of 2 colors we see 2 different values (T and F).
-- ![](attach/2021-AI-General.040.png)
-Only 1 Perceptron can not act as an XOR-Gate. For that we need to create a network of Perceptrons.
-As you may imagine a lot of 'contexts' are more complex than linear.
+### What is XOR?
+
+The XOR function outputs 1 only when exactly one of its inputs is 1:
+- Input (0,0) → Output: 0
+- Input (0,1) → Output: 1
+- Input (1,0) → Output: 1
+- Input (1,1) → Output: 0
+
+![Visual representation of XOR problem](attach/2021-AI-General.034.png)
+
+### Why Can't a Single Perceptron Solve XOR?
+
+A Perceptron creates a single straight line (or hyperplane in higher dimensions) to separate its outputs. However, the XOR problem requires two separate lines to correctly classify all points.
+
+![Attempted linear separation of XOR](attach/2021-AI-General.038.png)
+
+As you can see, no single straight line can separate the points where output should be 1 (blue) from points where output should be 0 (red).
+
+## The Solution: Multiple Layers
+
+To solve the XOR problem, we need to combine multiple Perceptrons in layers. This is our first glimpse at why we need neural networks!
+
+![Multi-layer solution](attach/2021-AI-General.039.png)
+
+By using multiple Perceptrons, we can:
+1. First create separate regions with individual Perceptrons
+2. Then combine these regions to form more complex decision boundaries
+
+![Complete neural network solution](attach/2021-AI-General.040.png)
+
+## Key Takeaways
+
+1. Single Perceptrons can only solve linearly separable problems
+2. Many real-world problems (like XOR) are not linearly separable
+3. Combining Perceptrons into networks overcomes this limitation
+4. This limitation led to the development of multi-layer neural networks
+
+In the next section, we'll explore how to build and train these more powerful multi-layer networks.
 
 
 

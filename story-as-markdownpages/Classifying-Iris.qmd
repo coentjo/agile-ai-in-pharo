@@ -1,61 +1,82 @@
 ---
-title: "Step 1 - Read data"
+title: "Practical Example: Classifying Iris Flowers"
 ---
 
-Title: Classifying with the Iris dataset
-#Classifying with the Iris dataset
+## A Real-World Machine Learning Challenge
 
-A famous example: The Iris dataset case
+The Iris flower classification problem is a classic example in machine learning. It involves predicting the species of an Iris flower based on measurements of its physical characteristics. This problem perfectly illustrates how neural networks can solve real-world classification tasks.
 
-- ![](attach/2021-AI-General.044.png)
+![Different types of Iris flowers](attach/2021-AI-General.044.png)
 
-Using a *machine* to classify what type of iris we have data from.
-Dataset came from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data).  Some more [info](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names).
+## The Dataset
 
-# Step 1 - Read data
-    - In the 'iris.csv' file there is data about 150 flowers of three types.
-    - ```Pharo
-"Step 1."
-"Download Iris csv from url"
-irisCSV := (ZnEasy get: 'https://agileartificialintelligence.github.io/Datasets/iris.csv') contents.
-```
-# Step 2 - Convert iris types names to numbers
-    - ```Pharo
-"Step 2."
-lines := irisCSV lines allButFirst.	"Initialize the variable irisData."
-tLines := lines
-		collect: [ :line | 
-			| valuesOnThisLine |
-			valuesOnThisLine := line substrings: '',''.
-			(valuesOnThisLine allButLast collect: [ :w | w asNumber ])
-				, (Array with: valuesOnThisLine last) ].
+The Iris dataset includes measurements of three different Iris species:
+- Iris Setosa
+- Iris Versicolor
+- Iris Virginica
 
-irisData := tLines
-		collect: [ :row | 
-			| l |
-			row last = 'setosa' ifTrue: [ l := #(0) ].
-			row last = 'versicolor' ifTrue: [ l := #(1) ].
-			row last = 'virginica' ifTrue: [ l := #(2) ].
-			row allButLast , l ].
-^ irisData
+For each flower, we have four measurements:
+1. Sepal length
+2. Sepal width
+3. Petal length
+4. Petal width
+
+## Building the Neural Network
+
+Let's create a network to classify Iris flowers:
+
+```pharo
+irisNetwork := NeuralNetwork new
+    inputSize: 4;          "Four measurements"
+    addHiddenLayer: 5;     "Hidden layer with 5 neurons"
+    outputSize: 3;         "Three possible species"
+    initialize.
 ```
-# Step 3 - Create Neural Network
-    - ```Pharo
-"Step 3."
-network := NNetwork new.
-network configure: 4 hidden: 6 nbOfOutputs: 3.
-network learningRate: 0.3 .
-^ network
+
+## Preparing the Data
+
+We need to format our data appropriately:
+
+```pharo
+"Example of one flower's data"
+measurements := #(5.1 3.5 1.4 0.2).  "Setosa"
+expectedOutput := #(1 0 0).          "One-hot encoding for Setosa"
 ```
-# Step 4 - Train the network
-    - ```Pharo
-"Step 4."
- " Repeat the script "
-network train: irisData nbEpochs: 1000.
-^ network
+
+## Training Process
+
+```pharo
+"Training with multiple examples"
+trainingData do: [:example |
+    measurements := example measurements.
+    species := example species.
+    irisNetwork trainOn: measurements expecting: species
+].
 ```
-# Step 5 - Try
-    - ```Pharo
-"Step 5."
-network feed: #(  5.6  2.9  3.6  1.3 )
+
+## Making Predictions
+
+After training, we can use the network to classify new flowers:
+
+```pharo
+newFlower := #(6.3 2.9 5.6 1.8).
+prediction := irisNetwork predict: newFlower.
 ```
+
+## Evaluating Performance
+
+To assess our network's accuracy:
+
+1. Split data into training and testing sets
+2. Train on the training set
+3. Evaluate on the testing set
+4. Calculate accuracy metrics
+
+## Key Learning Points
+
+1. Neural networks can handle multi-class classification
+2. Real-world data often needs preprocessing
+3. We can measure success with accuracy metrics
+4. The same principles apply to many similar problems
+
+This practical example demonstrates how neural networks can solve real classification problems. In the next section, we'll explore the mathematics behind how these networks learn.
