@@ -1,0 +1,29 @@
+---
+title: "index"
+---
+
+
+Welcome to this comprehensive guide on artificial intelligence, focusing on the journey from perceptrons to neural networks. This book is designed to provide you with a solid foundation in AI concepts, starting from the basic building blocks and progressing to more complex neural network architectures.
+
+## Book Structure
+
+This book is organized into several main sections:
+
+1. **AI Overview**: A broad introduction to artificial intelligence and its key concepts
+2. **Perceptron Fundamentals**: Understanding the basic building block of neural networks
+3. **Neural Networks**: Exploring more complex architectures and their applications
+4. **Next Steps**: Practical guidance for further learning and development
+
+Each chapter builds upon the previous ones, providing a structured learning path through the material.
+
+## Prerequisites
+
+While this book is designed to be accessible to beginners, basic knowledge of mathematics and programming concepts will be helpful. Python examples are used throughout the book to demonstrate practical implementations.
+
+## How to Use This Book
+
+We recommend reading the chapters in order, as concepts build upon each other. Code examples are provided to help reinforce the theoretical concepts with practical implementations.
+
+::: {.callout-note}
+This book is part of a workshop series on AI and machine learning, with a focus on practical understanding and implementation.
+::: 

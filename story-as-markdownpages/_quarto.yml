@@ -1,0 +1,47 @@
+project:
+  type: book
+  output-dir: _output
+
+book:
+  title: "Understanding AI: From Perceptrons to Neural Networks"
+  author: "Coen"
+  chapters:
+    - index.qmd
+    - ai.overview.qmd
+    - part: "Perceptron Fundamentals"
+      chapters:
+        - perceptron.qmd
+        - applying-the-perceptron.qmd
+        - decision-making.qmd
+        - the-learning-perceptron.qmd
+        - problem-with-perceptron.qmd
+    - part: "Neural Networks"
+      chapters:
+        - neural-network.qmd
+        - classifying-iris.qmd
+        - magic-behind-nnetwork.qmd
+        - more-training-learning.qmd
+        - types-nn.qmd
+    - part: "Next Steps"
+      chapters:
+        - ok-next.qmd
+        - learning-python.qmd
+        - finding-data.qmd
+    - references.qmd
+
+format:
+  pdf:
+    documentclass: book
+    toc: true
+    number-sections: true
+    colorlinks: true
+    fig-pos: 'H'
+    include-in-header: 
+      text: |
+        \usepackage{float}
+        \usepackage{graphicx}
+        \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+        \graphicspath{{./}{./attach/}}
+    
+metadata-files:
+  - _metadata.yml 

@@ -1,0 +1,15 @@
+execute:
+  echo: false
+  warning: false
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+  pdf:
+    papersize: letter
+    toc: true
+    number-sections: true
+    colorlinks: true
+    fig-cap-location: bottom
+    tbl-cap-location: top 
