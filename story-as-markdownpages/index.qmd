@@ -2,33 +2,26 @@
 title: "Journey into Artificial Intelligence"
 ---
 
-Welcome to an exciting journey into the world of artificial intelligence! This guide will take you from the fundamental building blocks of AI to the fascinating realm of neural networks. Whether you're a student, professional, or simply curious about AI, this book will help you build a solid understanding of how machines learn and make decisions.
+Welcome! This guide will always be a Work-in-Progress which can take you from the fundamental building blocks of AI onto 
+neural networks. 
 
-## Your Learning Path
+## Learning Path
 
-We've carefully structured this book into four main sections to ensure a clear and progressive learning experience:
 
-1. **AI Overview**: Begin with a broad perspective of artificial intelligence, understanding its key concepts and how different aspects like machine learning and neural networks fit together.
+1. **AI Overview**.
 
-2. **Perceptron Fundamentals**: Discover the basic building block of neural networks - the Perceptron. You'll learn how this simple yet powerful concept forms the foundation of modern AI systems.
+2. **Perceptron Fundamentals**: The basic building block of neural networks - the Perceptron. 
 
-3. **Neural Networks**: Explore how multiple Perceptrons combine to create sophisticated neural networks capable of solving complex problems. You'll see real-world applications and understand the principles behind deep learning.
+3. **Neural Networks**: How will multiple Perceptrons combine to create neural networks capable of solving complex problems. 
 
-4. **Next Steps**: Get practical guidance on continuing your AI journey, including resources for further learning and hands-on experimentation.
+4. **Possible next Steps**.
 
-## Before You Begin
 
-While we've designed this book to be accessible to beginners, having some basic knowledge of mathematics and programming will help you get the most out of the material. Throughout the book, we use Python examples to demonstrate practical implementations, making the concepts concrete and actionable.
+## Some background
 
-## How to Make the Most of This Book
 
-To maximize your learning:
+1. It started out as visualizations of Perceptrons and Neural Networks in the Glamorous Toolkit, which helped me give students insights in Neural Networks. 
+2. Get Hands-on: start using and trying out AI-tools you encounter.  
+3. When using online AI tools, please keep the privacy in mind when using personal data!!
+4. Please also keep the Societal impact in mind! We can use AI to help us all, but there is of course also a dark side! When concentrating on efficiency only that could mean (and often does!) people getting fired. 
 
-1. Follow the chapters in sequence - each builds upon concepts introduced in previous sections
-2. Try out the code examples yourself - hands-on practice is essential for understanding
-3. Experiment with the provided examples - changing parameters and observing the results will deepen your understanding
-4. Take your time with each concept - understanding the fundamentals will make advanced topics easier to grasp
-
-::: {.callout-note}
-This book is part of an interactive workshop series on AI and machine learning. The focus is on practical understanding and implementation, allowing you to apply these concepts in real-world scenarios.
-::: 

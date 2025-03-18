@@ -4,79 +4,31 @@ title: "Practical Applications of the Perceptron"
 
 ## Building Logic Gates with Perceptrons
 
-One of the most fascinating aspects of Perceptrons is their ability to implement logical operations. Let's explore how we can create an AND gate using a Perceptron with carefully chosen weights and bias.
+Let's look at an example of how Perceptrons can be used? 
 
 ### Creating an AND Gate
 
+You may know the concept of an AND gate: given two inputs (both can be `0` or `1`) the AND gate will output a `1` if both inputs are `1`, and `0` in all other cases. 
+
 Consider a Perceptron with the following configuration:
-- Weights: `w1 = 1`, `w2 = 1` (stored as `#(1 1)`)
+- Weights: `w1 = 1`, `w2 = 1` 
 - Bias: `-1.5`
 
-Here's how to implement it:
+Here's the truth table for an AND gate:
 
-```pharo
-"Creating a Perceptron for AND gate operation"
-perceptron := Neuron new
-    step;
-    weights: #(1 1);
-    bias: -1.5.
-```
+| Input 1 | Input 2 | Output |
+|---------|---------|---------|
+| 0       | 0       | 0       |
+| 0       | 1       | 0       |
+| 1       | 0       | 0       |
+| 1       | 1       | 1       |
 
-### Testing the AND Gate
 
-Let's explore how this Perceptron behaves with different inputs. Try running:
-```pharo
-perceptron fire: #(1 1)
-```
-
-Experiment with all possible input combinations:
-- `#(0 0)` → output: 0
-- `#(0 1)` → output: 0
-- `#(1 0)` → output: 0
-- `#(1 1)` → output: 1
-
-Notice how this perfectly matches an AND gate's behavior: the output is 1 **only** when both inputs are 1.
-
-## Understanding the Mathematics
-
-Let's break down why this works. The formula for calculating `z` with two inputs is:
-```
-z = 1*x1 + 1*x2 - 1.5
-```
-
-When we plug in different input combinations:
-- For inputs (0,0): z = 0 + 0 - 1.5 = -1.5 → output: 0
-- For inputs (0,1): z = 0 + 1 - 1.5 = -0.5 → output: 0
-- For inputs (1,0): z = 1 + 0 - 1.5 = -0.5 → output: 0
-- For inputs (1,1): z = 1 + 1 - 1.5 = 0.5 → output: 1
+One example: when inputs are `1` and `1` the weighted sum is ($1 * 1 + 1 * 1$), adding the bias gives: `0.5`, which is greater than `0`, so the activation function will give `1`. 
 
 ## Beyond AND Gates
 
-The same Perceptron architecture can be configured to implement other logical operations:
+By changing the bias to `-0.5` this Perceptron turns into an OR gate (which returns `1` if at least one of the inputs is `1`)
 
-### OR Gate
-```pharo
-perceptron := Neuron new
-    step;
-    weights: #(1 1);
-    bias: -0.5.
-```
+Changing the values can give you a NOR gate and a NOT gate, which would be nice to figure out yourself (or use your prefered search engine). 
 
-### NOR Gate
-```pharo
-perceptron := Neuron new
-    step;
-    weights: #(-1 -1);
-    bias: 0.5.
-```
-
-### NOT Gate
-```pharo
-perceptron := Neuron new
-    step;
-    weights: #(-1);
-    bias: 0.5.
-```
-
-## Challenge
-Can you determine the weights and bias needed to implement a NAND gate? Try experimenting with different values and test your solution with all possible input combinations!

@@ -19,50 +19,15 @@ Let's explore a practical example with three inputs. We'll call our input values
 1. First, it calculates a `weighted sum` and adds the bias:
    `z := w1*x1 + w2*x2 + w3*x3 + bias`
 
-2. Then, it applies an **activation function** to produce the final output:
-   - Output is 1 if z > 0
-   - Output is 0 if z ≤ 0
+2. Then, it applies what we call an **activation function** to produce the final output: let's use a very simpel one, called a Step function: 
 
-Here's how we can implement this in code:
+$\begin{cases}
+\text{Output is 1 if } z > 0 \\
+\text{Output is 0 if } z \leq 0
+\end{cases}$
 
-```pharo
-| x1 x2 x3 w1 w2 w3 bias |
-"Define our input values"
-x1 := 0.35 .
-x2 := 1.2 .
-x3 := 0.54 .
-"Set the weights and bias"
-w1 := 0.234 .
-w2 := 0.32 .
-w3 := 0.58 .
-bias := 5 .
-"Calculate the weighted sum with bias"
-z := (w1 * x1) + (w2 * x2) + (w3 * x3) + bias.
-```
+which determines the final output.
 
-The activation function then determines the final output:
 
-```pharo
-z > 0 
-    ifTrue: [1]
-    ifFalse: [0]
-```
-
-## A More Flexible Implementation
-
-Let's examine a more versatile implementation that can handle any number of inputs:
-
-```pharo
-| inputs_x weights_w bias |
-inputs_x :=  #(0.35  1.2  0.54).
-weights_w := #(0.234 0.32 0.58).
-bias := 5.
-z := (inputs_x 
-    with: weights_w 
-    collect: [ :x :w | x * w ]) 
-        sum 
-            + bias
-```
-
-This implementation is more flexible because it can process any number of inputs, as long as there's a matching weight for each input value. Try experimenting with different input values to see how the Perceptron's output changes!
+Keep in mind that the number of inputs for a Perceptron can vary. 
 

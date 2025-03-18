@@ -13,10 +13,6 @@ The video "AI, Machine Learning, Deep Learning and Generative AI Explained" prov
 ## Key Concepts to Take Away
 
 After watching the video, you'll understand:
-- How AI serves as the umbrella term for all intelligent systems
-- Where Machine Learning fits within the AI landscape
-- How Deep Learning revolutionized the field
-- Why Generative AI represents the cutting edge of current AI technology
+- Where Machine Learning and Deep Learning fit within the AI landscape. 
 
-This foundation will help you better understand the concepts we'll explore in the following chapters, particularly as we dive into neural networks and their applications.
 
