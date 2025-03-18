@@ -4,6 +4,11 @@ title: "Essential Resources and References"
 
 ## Core Learning Resources
 
+### Coen's Links
+
+- [Jessy: Het belang van duidelijke AI-prompts](https://www.jessydecooker.nl/?p=12877)
+- [Journalists on Hugging Face](https://huggingface.co/spaces/JournalistsonHF/ai-toolkit)
+
 ### Books
 
 1. **Neural Networks and Deep Learning**
@@ -93,32 +98,4 @@ title: "Essential Resources and References"
 - "Deep Residual Learning for Image Recognition" (He et al., 2015)
 - "Attention Is All You Need" (Vaswani et al., 2017)
 - "Language Models are Few-Shot Learners" (Brown et al., 2020)
-
-## How to Use These Resources
-
-1. **For Beginners**
-   - Start with Nielsen's book
-   - Watch 3Blue1Brown videos
-   - Practice with Kaggle Learn
-
-2. **For Intermediate Learners**
-   - Deep Learning book
-   - Stanford courses
-   - Implement papers
-
-3. **For Advanced Users**
-   - Research papers
-   - Contribute to open source
-   - Attend conferences
-
-Remember to:
-- Take notes
-- Implement concepts
-- Join discussions
-- Share knowledge
-- Stay updated
-
-These resources will help you build a strong foundation in neural networks and AI.
-
-
 

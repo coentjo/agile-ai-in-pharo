@@ -47,3 +47,10 @@ When combining Artificial Perceptrons/Neurons to Networks they are  referred to 
 `Multi Layered Perceptron` (MLP) or `(Artificial) Neural Network` (ANN). 
 
 
+## Reference
+
+- [wikipedia: perceptron](https://en.wikipedia.org/wiki/Perceptron)
+
+![The Mark I Perceptron machine, the first implementation of the perceptron algorithm (source: wikipedia)](Mark_I_perceptron.jpeg)
+
+

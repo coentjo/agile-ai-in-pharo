@@ -3,7 +3,7 @@ project:
   output-dir: _output
 
 book:
-  title: "Coen's AI-Page"
+  title: "Coen's AI Notes"
   author: "diverse"
   chapters:
     - index.qmd
