@@ -19,44 +19,39 @@ The learning process follows these key steps:
 ### Mathematical Foundation
 
 The weight update rule is elegantly simple:
+
 ```
-new_weight = current_weight + learning_rate * error * input
+new_weight := current_weight + learning_rate * error * input
 ```
 
 Where:
+
 - `learning_rate` is a small number (like 0.1) that controls how big each adjustment is
 - `error` is the difference between desired and actual output (1 or -1)
 - `input` is the input value for that weight
 
-## Implementing Learning
-
-Here's how we create a learning Perceptron:
-
-```pharo
-learningPerceptron := Neuron new
-    step;
-    learningRate: 0.1;
-    initialize.  "Sets random initial weights"
-```
 
 ### Training Process
 
-To train the Perceptron, we present examples with their desired outputs:
+To train the Perceptron, we have to have `labeled data` (ie. input data combined with the desired output for those values) 
 
-```pharo
-"Training for AND gate behavior"
-trainingData := #(
-    ((0 0) 0)
-    ((0 1) 0)
-    ((1 0) 0)
-    ((1 1) 1)
-).
+So for training AND gate behavior we have to list all combinations of 2 bits that are possible as input, and also the desired output value: 
+```
+| Input  | Desired Output |
+|--------|----------------|
+| (0, 0) | 0              |
+| (0, 1) | 0              |
+| (1, 0) | 0              |
+| (1, 1) | 1              |
+```
 
-trainingData do: [:example |
-    inputs := example first.
-    desiredOutput := example second.
-    learningPerceptron train: inputs desiredOutput: desiredOutput
-].
+and training (1 epoc) means calling the train function with each of these examples:
+
+```
+foreach dataItem in trainingData do: 
+    inputs := dataItem[0]
+    desiredOutput := dataItem[1]
+    learningPerceptron train(inputs, desiredOutput)
 ```
 
 ## Visualizing the Learning Process
