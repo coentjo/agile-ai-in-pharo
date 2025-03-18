@@ -5,6 +5,7 @@ project:
 book:
   title: "Coen's AI Notes"
   author: "diverse"
+  date: last-modified
   chapters:
     - index.qmd
     - ai.overview.qmd

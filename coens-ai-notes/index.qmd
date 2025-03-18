@@ -5,6 +5,8 @@ title: "Journey into Artificial Intelligence"
 Welcome! This guide will always be a Work-in-Progress which can take you from the fundamental building blocks of AI onto 
 neural networks. 
 
+A newer version of this pdf may be found [here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes.pdf)
+
 ## Learning Path
 
 

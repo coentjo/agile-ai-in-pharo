@@ -46,6 +46,18 @@ Up until now we didn't look at how a perceptron can learn and become smarter. Th
 When combining Artificial Perceptrons/Neurons to Networks they are  referred to as
 `Multi Layered Perceptron` (MLP) or `(Artificial) Neural Network` (ANN). 
 
+## First Implementation of Perceptron algorithm
+
+According to Wikipedia: 
+
+\begin{quote}
+The artificial neuron network was invented in 1943 by Warren McCulloch and Walter Pitts in `A logical calculus of the ideas immanent in nervous activity`.
+the Perceptron Machine was first implemented in hardware in the Mark I, which was demonstrated in 1960. 
+
+ It was connected to a camera with 20×20 cadmium sulfide photocells to make a 400-pixel image.
+ The main visible feature is the sensory-to-association plugboard, which sets different combinations of input features.
+ To the right are arrays of potentiometers that implemented the adaptive weights.
+\end{quote}
 
 ## Reference
 
