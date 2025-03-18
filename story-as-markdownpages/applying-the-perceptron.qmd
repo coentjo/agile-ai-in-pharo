@@ -32,3 +32,18 @@ By changing the bias to `-0.5` this Perceptron turns into an OR gate (which retu
 
 Changing the values can give you a NOR gate and a NOT gate, which would be nice to figure out yourself (or use your prefered search engine). 
 
+## Network
+
+By combining several Perceptrons (sending the output of one to the input of another) you can probably imagine that it is possible to create Networks of Perceptrons. By changing the values of weights and biases of the connected Perceptrons it is possible to build complex electronic circuits.
+
+
+So far, we've only looked at binary circuits where inputs and outputs are restricted to 0 and 1. However, when we generalize this concept to allow larger positive values, negative values, floating-point numbers, and different activation functions, the Perceptron becomes an incredibly versatile tool. This generalization opens up possibilities for pattern recognition, classification tasks, regression problems, and complex decision-making systems. This is where the true power of neural networks begins to emerge, as they can learn to handle continuous data and make sophisticated decisions based on multiple inputs.
+
+In relatively simple cases it can be used as sort of a decision machine. More complex applications of this technology can help recognizing objects in the real world.
+
+Up until now we didn't look at how a perceptron can learn and become smarter. That will be subject of next chapter chapters. The concept of a Perceptron was generalized to what we now call an (artificial) Neuron.
+
+When combining Artificial Perceptrons/Neurons to Networks they are  referred to as
+`Multi Layered Perceptron` (MLP) or `(Artificial) Neural Network` (ANN). 
+
+
