@@ -2,8 +2,7 @@
 title: "Journey into Artificial Intelligence"
 ---
 
-Welcome! This guide will always be a Work-in-Progress which can take you from the fundamental building blocks of AI onto 
-neural networks. 
+Welcome! This is a Work-in-Progress, a collection of notes on AI I collected and use in my workshops. 
 
 A newer version of this pdf may be found [here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes.pdf)
 
@@ -19,11 +18,11 @@ A newer version of this pdf may be found [here](https://github.com/coentjo/agile
 4. **Possible next Steps**.
 
 
-## Some background
+## Some background how I started
 
 
 1. It started out as visualizations of Perceptrons and Neural Networks in the Glamorous Toolkit, which helped me give students insights in Neural Networks. 
 2. Get Hands-on: start using and trying out AI-tools you encounter.  
 3. When using online AI tools, please keep the privacy in mind when using personal data!!
-4. Please also keep the Societal impact in mind! We can use AI to help us all, but there is of course also a dark side! When concentrating on efficiency only that could mean (and often does!) people getting fired. 
+4. Please also keep the Societal impact in mind! We can use AI to help us all, but there is of course also a dark side! When concentrating on efficiency only that could mean people getting fired. 
 

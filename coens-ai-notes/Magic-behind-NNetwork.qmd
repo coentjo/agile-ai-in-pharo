@@ -4,23 +4,25 @@ title: "The Mathematics Behind Neural Networks"
 
 ## Understanding the Magic
 
-While neural networks might seem magical, they're built on solid mathematical foundations. Let's demystify how they actually work under the hood.
+While neural networks might seem magical, they're built on solid mathematical foundations. 
+Let's demystify (a bit of) how they actually work under the hood.
 
 ## The Building Blocks
 
 ### 1. Neurons and Weights
 
+To be formally correct we should say `artificial neuron` to distinguish them from 
+`biological neurons` like we have in our brain. A neuron normally has inputs: $1$, or $2$, or $\cdots$
+
+
+
 Each neuron performs two key operations:
-1. Weighted sum of inputs: $z = \sum_{i=1}^n w_i x_i + b$
+1. Weighted sum of inputs.
 2. Activation function: $a = f(z)$
 
-Where:
-- $w_i$ are the weights
-- $x_i$ are the inputs
-- $b$ is the bias
-- $f$ is the activation function
 
 ### 2. Activation Functions
+
 
 Common activation functions include:
 
@@ -40,63 +42,19 @@ Common activation functions include:
 
 ### 1. Forward Propagation
 
-Information flows through the network:
-```pharo
-"Example of forward propagation"
-layer1Activation := (weights1 dot: inputs) + bias1.
-layer1Output := activationFunction value: layer1Activation.
-```
+Information flows through the network.
+
 
 ### 2. Loss Calculation
 
-Measure the network's error:
-$E = \frac{1}{2} \sum (target - output)^2$
+Measure the network's error and Backpropagation
 
-### 3. Backpropagation
+- what is the output?
+- What would be my desired output? 
 
-Update weights to minimize error:
-$\Delta w = -\eta \frac{\partial E}{\partial w}$
-
-Where $\eta$ is the learning rate.
-
-## Gradient Descent Visualization
-
-The network learns by descending the error surface:
-1. Calculate error gradient
-2. Take small steps in the opposite direction
-3. Repeat until reaching a minimum
-
-## Practical Implementation
-
-In Pharo, we can implement these concepts:
-
-```pharo
-NeuralNetwork >> updateWeights: inputs error: error
-    "Update weights using gradient descent"
-    learningRate := 0.1.
-    delta := error * self derivativeActivation: self lastOutput.
-    weights := weights + (learningRate * (inputs * delta))
-```
-
-## Key Insights
-
-1. Neural networks learn through iterative optimization
-2. The choice of activation function matters
-3. Learning rate affects training stability
-4. Gradient descent finds local minima
-
-## Beyond the Basics
-
-Advanced concepts build on these foundations:
-- Momentum for faster convergence
-- Regularization to prevent overfitting
-- Batch normalization for stability
-- Advanced optimizers like Adam
-
-Understanding these mathematical principles helps us:
-1. Debug network issues
-2. Choose appropriate architectures
-3. Optimize performance
-4. Innovate new solutions
+The smaller the difference between the output I got and the output I desired, the better the output of my model is. 
+This difference is calculated with a so-called Loss function. 
+Backpropagation is an algorithm that helps make that difference small. 
+When backpropagation is performed we call that Training the AI model.
 
 

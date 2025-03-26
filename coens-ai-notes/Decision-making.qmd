@@ -4,10 +4,12 @@ title: "Decision Making with Perceptrons"
 
 ## Making Decisions
 
-A Perceptron can be used to make decisions based on multiple inputs. Let's look at a practical example, where we take a perceptron with weights $0.5$ and $-0.8$ 
+A Perceptron can be used to make decisions based on multiple inputs. Let's look at a practical example,
+ where we take a perceptron with weights $0.5$ and $-0.8$ 
 and bias $0.3$
 
-This Perceptron takes two inputs and makes a decision based on their values. The weights and bias determine how the Perceptron interprets the inputs.
+This Perceptron takes two inputs and makes a decision based on their values.
+ The weights and bias determine how the Perceptron interprets the inputs.
 
 For example, if we have inputs `x1 = 1` and `x2 = 0.5`, the Perceptron will:
 1. Calculate the weighted sum: $0.5 \cdot 1 + (-0.8) \cdot 0.5 = 0.1$
@@ -25,10 +27,7 @@ For our example:
 - Weight 2 (-0.8) determines how much we value the second input
 - The bias (0.3) shifts the decision boundary
 
-This creates a line where:
-$0.5x_1 - 0.8x_2 + 0.3 = 0$
 
-Points above this line will result in a "yes" decision, while points below will result in a "no" decision.
 
 ## Applications
 
@@ -39,4 +38,5 @@ This decision-making capability can be used for:
 - Simple rule-based systems
 - Binary decisions based on multiple factors
 
-The beauty of this approach is that by adjusting the weights and bias, we can create different decision boundaries for different types of problems.
+The beauty of this approach is that by adjusting the weights and bias,
+ we can create different decision boundaries for different types of problems.

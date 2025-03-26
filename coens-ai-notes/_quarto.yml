@@ -12,7 +12,7 @@ book:
     - part: "Perceptron Fundamentals"
       chapters:
         - perceptron.qmd
-        - applying-the-perceptron.qmd
+        - applying_the_perceptron.qmd
         - decision-making.qmd
         - the-learning-perceptron.qmd
         - problem-with-perceptron.qmd
@@ -21,7 +21,6 @@ book:
         - neural-network.qmd
         - classifying-iris.qmd
         - magic-behind-nnetwork.qmd
-        - more-training-learning.qmd
         - types-nn.qmd
     - part: "Next Steps"
       chapters:
@@ -46,4 +45,3 @@ format:
 
 metadata-files:
   - _metadata.yml
-

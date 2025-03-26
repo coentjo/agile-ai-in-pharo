@@ -1,10 +1,13 @@
 ---
-title: "Finding and Preparing Data for Neural Networks"
+title: "Finding and Preparing Data"
 ---
 
 ## The Importance of Data
 
-Data is the foundation of any machine learning project. The quality and quantity of your data often matter more than the sophistication of your model.
+Data is the foundation of any machine learning project.
+ The quality and quantity of your data often matter more than the sophistication of your model.
+
+
 
 ## Popular Data Sources
 
@@ -14,115 +17,8 @@ Data is the foundation of any machine learning project. The quality and quantity
   - Active community
   - Detailed documentation
 
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/)
-  - Academic datasets
-  - Well-documented
-  - Quality-controlled
+- [Eindhoven open data](https://data.eindhoven.nl/pages/home/)
+  - lots of data about Eindhoven
 
-- [Google Dataset Search](https://datasetsearch.research.google.com/)
-  - Comprehensive search engine
-  - Various domains
-  - Multiple formats
 
-### 2. Domain-Specific Sources
 
-1. **Images**
-   - ImageNet
-   - CIFAR-10/100
-   - MS COCO
-
-2. **Text**
-   - Wikipedia dumps
-   - Project Gutenberg
-   - Common Crawl
-
-3. **Specialized**
-   - Medical: MIMIC
-   - Financial: Yahoo Finance
-   - Scientific: NASA Earth Data
-
-## Data Preparation Steps
-
-1. **Collection**
-   ```pharo
-   "Example: Download from URL"
-   data := ZnClient new
-       url: 'https://example.com/dataset.csv';
-       get
-   ```
-
-2. **Cleaning**
-   ```pharo
-   "Remove missing values"
-   cleanData := data reject: [:row |
-       row includesAny: #(nil '' 'N/A')
-   ]
-   ```
-
-3. **Preprocessing**
-   ```pharo
-   "Normalize numerical values"
-   normalized := data collect: [:value |
-       (value - mean) / standardDeviation
-   ]
-   ```
-
-## Best Practices
-
-### 1. Data Quality
-- Check for missing values
-- Remove duplicates
-- Handle outliers
-- Validate data types
-
-### 2. Data Split
-```pharo
-"Split into training and testing sets"
-splitRatio := 0.8.
-splitIndex := (data size * splitRatio) asInteger.
-trainingSet := data first: splitIndex.
-testingSet := data allButFirst: splitIndex.
-```
-
-### 3. Data Augmentation
-- Increase dataset size
-- Improve model robustness
-- Balance classes
-
-## Common Challenges
-
-1. **Insufficient Data**
-   - Use data augmentation
-   - Transfer learning
-   - Synthetic data generation
-
-2. **Imbalanced Classes**
-   - Oversampling
-   - Undersampling
-   - SMOTE technique
-
-3. **Noisy Data**
-   - Data cleaning
-   - Outlier detection
-   - Robust preprocessing
-
-## Tools and Libraries
-
-1. **Data Processing**
-   - Pandas (Python)
-   - NumPy (Python)
-   - Pharo Data Frame
-
-2. **Visualization**
-   - Matplotlib
-   - Seaborn
-   - Roassal (Pharo)
-
-## Next Steps
-
-1. Choose appropriate datasets
-2. Implement robust preprocessing
-3. Validate data quality
-4. Document your process
-
-Remember: Good data preparation is crucial for successful machine learning projects.

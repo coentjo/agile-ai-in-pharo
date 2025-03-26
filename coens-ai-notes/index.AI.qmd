@@ -7,14 +7,13 @@ title: "index.AI"
 ## Perceptron to Neural Network: how does it work?
 
 - [perceptron](perceptron.md)
-- [applying the perceptron](applying%20the%20perceptron.md)
+- [applying the perceptron](applying_the_perceptron.md)
 - [Decision-making](Decision-making.md)
 - [The-learning-Perceptron](The-learning-Perceptron.md)
 - [Problem-with-perceptron](Problem-with-perceptron.md)
 - [neural-network](neural-network.md)
 - [Classifying-Iris](Classifying-Iris.md)
 - [Magic-behind-NNetwork](Magic-behind-NNetwork.md)
-- [More-Training-Learning](More-Training-Learning.md)
 
 
 - [Types-NN](Types-NN.md)
