@@ -36,47 +36,13 @@ The network processes information in these steps:
 
 ## Creating a Simple Network
 
-Here's how to create a basic neural network:
+You probably have seen a picture of a  neural network before.
 
-```pharo
-network := NeuralNetwork new
-    inputSize: 2;
-    addHiddenLayer: 3;
-    outputSize: 1;
-    initialize.
-```
 
-This creates a network with:
-- 2 input neurons
-- 3 neurons in one hidden layer
-- 1 output neuron
 
-## Training the Network
+Neural Networks can
 
-Unlike single Perceptrons, neural networks use more sophisticated training algorithms:
-
-```pharo
-"Training data for XOR problem"
-trainingData := #(
-    ((0 0) 0)
-    ((0 1) 1)
-    ((1 0) 1)
-    ((1 1) 0)
-).
-
-"Train the network"
-1000 timesRepeat: [
-    trainingData do: [:example |
-        inputs := example first.
-        desiredOutput := example second.
-        network trainOn: inputs expecting: desiredOutput
-    ]
-].
-```
-
-## Advantages of Neural Networks
-
-1. Can solve non-linearly separable problems
+1. Can solve problems thar are more difficult. 
 2. Handle complex pattern recognition
 3. Learn hierarchical features automatically
 4. Scale well to large problems

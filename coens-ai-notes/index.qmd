@@ -2,27 +2,34 @@
 title: "Journey into Artificial Intelligence"
 ---
 
-Welcome! This is a Work-in-Progress, a collection of notes on AI I collected and use in my workshops. 
+Welcome! This is a Work-in-Progress, a collection of notes on AI 
+I am collecting and which I use in my workshops about AI and GenAI. 
+The newest version of this pdf may be found 
+[here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes.pdf)
 
-A newer version of this pdf may be found [here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes.pdf)
+It is not a complete or self-describing book, 
+but when 
+you attended one of my workshops you will probably find familiar 
+stuff in one or more chapters. 
 
-## Learning Path
-
-
-1. **AI Overview**.
-
-2. **Perceptron Fundamentals**: The basic building block of neural networks - the Perceptron. 
-
-3. **Neural Networks**: How will multiple Perceptrons combine to create neural networks capable of solving complex problems. 
-
-4. **Possible next Steps**.
-
-
-## Some background how I started
+Our world is changing rapidly through AI and GenAI. One can ignore it or decide to not use it, 
+but that does not stop it... One can also decide to dive in and help 'invent' the future, or 
+at least learn about all the new stuff. 
 
 
-1. It started out as visualizations of Perceptrons and Neural Networks in the Glamorous Toolkit, which helped me give students insights in Neural Networks. 
-2. Get Hands-on: start using and trying out AI-tools you encounter.  
-3. When using online AI tools, please keep the privacy in mind when using personal data!!
-4. Please also keep the Societal impact in mind! We can use AI to help us all, but there is of course also a dark side! When concentrating on efficiency only that could mean people getting fired. 
+These notes  started out as visualizations of Perceptrons and Neural 
+Networks in the Glamorous Toolkit, which helped me give students insights 
+in Neural Networks. 
+
+I advice to get hands-on with the tools around.
+
+When using online AI tools, please keep the privacy in mind when 
+using personal data! One way to make sure private data will stay
+private is using local AI's. 
+
+Please also keep the Societal impact in mind! 
+We can use AI to help us all, but there is of course also a huge dark side:  
+When concentrating on efficiency only that could mean people getting fired, 
+it also means it becomes easier to create fake news. 
+Please use it wisely...
 

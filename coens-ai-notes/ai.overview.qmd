@@ -10,9 +10,4 @@ The video "AI, Machine Learning, Deep Learning and Generative AI Explained" prov
 
 [AI, Machine Learning, Deep Learning and Generative AI Explained](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
-## Key Concepts to Take Away
-
-After watching the video, you'll understand:
-- Where Machine Learning and Deep Learning fit within the AI landscape. 
-
 

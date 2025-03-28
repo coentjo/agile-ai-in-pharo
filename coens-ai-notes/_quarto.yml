@@ -24,7 +24,6 @@ book:
         - types-nn.qmd
     - part: "Next Steps"
       chapters:
-        - ok-next.qmd
         - learning-python.qmd
         - finding-data.qmd
     - references.qmd
