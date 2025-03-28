@@ -12,7 +12,6 @@ book:
     - part: "Perceptron Fundamentals"
       chapters:
         - perceptron.qmd
-        - applying_the_perceptron.qmd
         - decision-making.qmd
         - the-learning-perceptron.qmd
         - problem-with-perceptron.qmd

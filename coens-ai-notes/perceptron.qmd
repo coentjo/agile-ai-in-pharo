@@ -4,22 +4,36 @@ title: "Understanding the Perceptron"
 
 ## The Biological Inspiration: From Brain Neurons to Artificial Intelligence
 
-The Perceptron represents one of the most fundamental concepts in artificial intelligence, drawing its inspiration directly from the human brain's neural structure. This groundbreaking idea was first introduced in 1943 by Warren S. McCulloch and Walter Pitts in their seminal paper 'A Logical Calculus of the Ideas Immanent in Nervous Activity', where they proposed a mathematical model of biological neurons.
+The Perceptron represents one of the most fundamental concepts in artificial 
+intelligence, drawing its inspiration directly from the human brain's 
+neural structure. This groundbreaking idea was first introduced in 1943 by 
+Warren S. McCulloch and Walter Pitts in their seminal paper 
+'A Logical Calculus of the Ideas Immanent in Nervous Activity', 
+where they proposed a mathematical model of biological neurons.
 
 ![A typical biological neuron structure](attach/TypicalNeuron.png)
 
 ## From Biology to Machine: Implementing a Perceptron
 
-A Perceptron's architecture elegantly mirrors its biological counterpart through three key components: `inputs`, `weights`, and a `bias`. Each input connection has an associated weight that determines its relative importance, while the bias helps adjust the Perceptron's overall sensitivity to activation.
+A Perceptron's architecture mirrors its biological counterpart 
+through three key components: `inputs`, `weights`, and a `bias`. 
+Each input connection has an associated weight that determines its 
+relative importance, while the bias helps adjust the Perceptron's 
+overall sensitivity to activation.
 
-![Perceptron's architectural diagram](attach/Perceptron01.png)
+Let's look at a simple yet useful perceptron with 2 inputs. 
 
-Let's explore a practical example with three inputs. We'll call our input values `x1`, `x2`, and `x3`, with their corresponding weights `w1`, `w2`, and `w3`. The Perceptron processes these inputs in two steps:
+![Perceptron's architectural diagram](attach/Perceptron02.png)
+
+We'll call our input values `x1`, `x2` with their corresponding weights `w1`, `w2`. The Perceptron processes these inputs in two steps:
 
 1. First, it calculates a `weighted sum` and adds the bias:
-   `z := w1*x1 + w2*x2 + w3*x3 + bias`
+   `z := w1*x1 + w2*x2 + bias`
 
-2. Then, it applies what we call an **activation function** to produce the final output: let's use a very simpel one, called a Step function: 
+2. Then, it applies what we call an **activation function** to produce the final output: 
+   let's use a very simpel activation function, called a Step function: 
+
+![Perceptron's architectural diagram](attach/Perceptron03.png)
 
 $\begin{cases}
 \text{Output is 1 if } z > 0 \\
@@ -28,6 +42,64 @@ $\begin{cases}
 
 which determines the final output.
 
+Let's restrict ourselves for now to possible input values 0 and 1: 
+If we look at all possibilities combinations of input and the 
+corresponding output we can create a table: 
 
-Keep in mind that the number of inputs for a Perceptron can vary. 
+| Input 1 | Input 2 | Output |
+|---------|---------|---------|
+| 0       | 0       | 0       |
+| 0       | 1       | 0       |
+| 1       | 0       | 0       |
+| 1       | 1       | 1       |
+
+A close look will tell us that the output is only 1 when inputs are 1, 
+and 0 in all other cases, which you could recognize as  
+a logical AND. So with these weights and bias this Perceptron 
+can be used to act as a logical AND. 
+
+For different values it will behave like a logical OR (and more). 
+Can you come up with those values?
+
+## Network
+
+By combining several Perceptrons (sending the output of a 
+perceptron to the input of another one) you can probably imagine that 
+it is possible to create Networks of Perceptrons. 
+By changing the values of weights and biases of the connected 
+Perceptrons it is possible to build complex electronic circuits.
+
+When we generalize this concept to other values, not only 0 and 1, 
+and different activation functions, 
+the Perceptron becomes an incredibly versatile tool. 
+This generalization opens up possibilities for pattern recognition, 
+classification tasks, regression problems, and complex decision-making 
+systems. This is where the true power of neural networks begins to emerge, 
+as they can learn to handle continuous data and make 
+sophisticated decisions based on multiple inputs.
+
+Up until now we didn't look at how a perceptron can learn and become smarter. That will be subject of next chapter chapters. The concept of a Perceptron was generalized to what we now call an (artificial) Neuron.
+
+Search terms: Perceptron, Artificial Neuron, 
+`Multi Layered Perceptron` (MLP),  `(Artificial) Neural Network` (ANN). 
+
+## First Implementation of Perceptron algorithm
+
+According to Wikipedia: 
+
+\begin{quote}
+The artificial neuron network was invented in 1943 by Warren McCulloch and Walter Pitts in `A logical calculus of the ideas immanent in nervous activity`.
+the Perceptron Machine was first implemented in hardware in the Mark I, which was demonstrated in 1960. 
+
+ It was connected to a camera with 20×20 cadmium sulfide photocells to make a 400-pixel image.
+ The main visible feature is the sensory-to-association plugboard, which sets different combinations of input features.
+ To the right are arrays of potentiometers that implemented the adaptive weights.
+\end{quote}
+
+## Reference
+
+- [wikipedia: perceptron](https://en.wikipedia.org/wiki/Perceptron)
+
+![The Mark I Perceptron machine, the first implementation of the perceptron algorithm (source: wikipedia)](Mark_I_perceptron.jpeg)
+
 
