@@ -1,10 +1,11 @@
 ---
-title: "Teaching a Perceptron: The Learning Process"
+title: "The Learning Perceptron"
 ---
 
-## Introduction to Perceptron Learning
-
-One of the most fascinating aspects of Perceptrons is their ability to learn from examples. Instead of manually setting weights and bias, we can train a Perceptron to discover the optimal parameters through a process called supervised learning.
+One of the most fascinating aspects of Perceptrons is their ability to 
+learn from examples. Instead of manually setting weights and bias, 
+we can train a Perceptron to discover the optimal parameters 
+through a process called supervised learning.
 
 ## The Learning Algorithm
 
