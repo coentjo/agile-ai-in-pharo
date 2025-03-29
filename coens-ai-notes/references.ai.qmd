@@ -5,18 +5,21 @@ title: "Resources and References AI"
 ## Books
 
 1. **Neural Networks and Deep Learning**
+   
    - Author: Michael Nielsen
    - [Free Online Book](http://neuralnetworksanddeeplearning.com)
    - Perfect for beginners and intermediate learners
    - Clear explanations with interactive examples
 
 2. **Deep Learning**
+
    - Authors: Ian Goodfellow, Yoshua Bengio, Aaron Courville
    - [Available Online](https://www.deeplearningbook.org)
    - Comprehensive coverage of deep learning
    - Industry standard reference
 
 3. **Agile AI in Pharo**
+
    - Author: Alexandre Bergel
    - Practical implementation in Pharo
    - Hands-on examples and exercises
@@ -25,18 +28,25 @@ title: "Resources and References AI"
 ## Video Courses and Tutorials
 
 ### 1. Foundational Series
+
 - [3Blue1Brown Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+
   - Visual explanations
   - Mathematical intuition
   - Clear animations
 
+https://www.youtube.com/watch?v=O5xeyoRL95U
+
 ### 2. Programming Tutorials
+
 - [Fast.ai Deep Learning Course](https://course.fast.ai)
+  
   - Practical approach
   - Top-down learning
   - Real-world applications
 
 ### 3. Advanced Topics
+
 - [Stanford CS231n](http://cs231n.stanford.edu)
   - Computer Vision
   - Deep Learning
@@ -45,18 +55,21 @@ title: "Resources and References AI"
 ## Online Platforms
 
 ### 1. Interactive Learning
+
 - [Kaggle Learn](https://www.kaggle.com/learn)
   - Hands-on exercises
   - Real datasets
   - Community support
 
 ### 2. Research Papers
+
 - [arXiv Machine Learning](https://arxiv.org/list/cs.LG/recent)
   - Latest research
   - Open access
   - Preprint server
 
 ### 3. Code Repositories
+
 - [Papers With Code](https://paperswithcode.com)
   - Implementations of papers
   - Benchmarks
@@ -65,17 +78,20 @@ title: "Resources and References AI"
 ## Community Resources
 
 ### 1. Forums and Discussion
+
 - [r/MachineLearning](https://reddit.com/r/MachineLearning)
 - [Cross Validated](https://stats.stackexchange.com)
 - [AI Stack Exchange](https://ai.stackexchange.com)
 
 ### 2. Blogs and Newsletters
+
 - [Distill.pub](https://distill.pub)
   - Interactive explanations
   - Visual learning
   - Deep insights
 
 ### 3. Tools and Libraries
+
 - [TensorFlow](https://tensorflow.org)
 - [PyTorch](https://pytorch.org)
 - [Scikit-learn](https://scikit-learn.org)
@@ -83,6 +99,7 @@ title: "Resources and References AI"
 ## Academic Papers
 
 ### Foundational Papers
+
 - "A Logical Calculus of Ideas Immanent in Nervous Activity" (McCulloch & Pitts, 1943)
 - "Learning Internal Representations by Error Propagation" (Rumelhart et al., 1986)
 - "Gradient-Based Learning Applied to Document Recognition" (LeCun et al., 1998)
