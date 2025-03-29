@@ -20,7 +20,7 @@ title: "Resources and References AI"
    - Author: Alexandre Bergel
    - Practical implementation in Pharo
    - Hands-on examples and exercises
-   - [Book Link](https://books.pharo.org/agile-ai/)
+   - [Book Link](https://books.pharo.org/)
 
 ## Video Courses and Tutorials
 

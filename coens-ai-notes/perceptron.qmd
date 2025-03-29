@@ -102,4 +102,3 @@ the Perceptron Machine was first implemented in hardware in the Mark I, which wa
 
 ![The Mark I Perceptron machine, the first implementation of the perceptron algorithm (source: wikipedia)](Mark_I_perceptron.jpeg)
 
-

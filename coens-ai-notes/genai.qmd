@@ -19,12 +19,21 @@ Recent:
 - [Prompting basics](https://www.promptingguide.ai/introduction/basics)
 - [Look for course with 'Prompting' in name: https://www.deeplearning.ai/short-courses/](https://www.deeplearning.ai/short-courses/)
 
+## Hallucinating 
+
+
+
+- 'Which day do I have to put the garbage can out on the street?'
+- 'Can you help me find my lost keys?'
+- 'Can you create an image of a watch that says it is 3 o' clock?'
+
+
 ## RAG - Retrieval Augmented Generation
 
 - [IBM, Marina Danilevsky (7 min)](https://www.youtube.com/watch?v=T-D1OfcDW1M)
-- [https://www.deeplearning.ai/short-courses/ Great resource for courses!](https://www.deeplearning.ai/short-courses/)
+- [https://www.deeplearning.ai/short-courses: Great resource for courses!](https://www.deeplearning.ai/short-courses/)
 
-## Avtive Inference
+## Active Inference
 
 - [Andy Clark about Active Interference: How the Brains shapes reality (60 min)](https://www.youtube.com/watch?v=A1Ghrd7NBtk)
 
@@ -44,6 +53,7 @@ On your laptop/desktop or on a company server:
 - [Open Devin: Create any Application with Open Source AI Engineer](https://www.youtube.com/watch?v=3-q5GzRNEe0)
 - [Avante (AI in neovim, free)](https://nithinbekal.com/posts/avante-nvim/)
 
+## GenAI & education
 
 - How AI is changing education: <https://www.youtube.com/watch?v=OaEk-ZYzh80>
 
