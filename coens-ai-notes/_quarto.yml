@@ -9,22 +9,20 @@ book:
   chapters:
     - index.qmd
     - ai.overview.qmd
-    - part: "Perceptron Fundamentals"
+    - part: "GenAI"
+      chapters:
+        - genai.qmd
+        - finding-data.qmd
+        - references.qmd
+    - part: "Neuron & Network"
       chapters:
         - perceptron.qmd
         - the-learning-perceptron.qmd
         - problem-with-perceptron.qmd
-    - part: "Neural Networks"
-      chapters:
         - neural-network.qmd
         - classifying-iris.qmd
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
-    - part: "Next Steps"
-      chapters:
-        - learning-python.qmd
-        - finding-data.qmd
-    - references.qmd
 
 format:
   pdf:

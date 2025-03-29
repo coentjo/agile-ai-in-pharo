@@ -8,7 +8,8 @@ Neural networks come in many shapes and sizes, each designed to excel at specifi
 
 ## Feedforward Neural Networks (FNN)
 
-The classic architecture we've been working with so far. Information flows in one direction:
+The classic architecture: Information flows in one direction:
+
 - Input layer → Hidden layer(s) → Output layer
 - Perfect for classification and regression tasks
 - Examples: Our Iris classifier, handwriting recognition
@@ -16,6 +17,7 @@ The classic architecture we've been working with so far. Information flows in on
 ## Convolutional Neural Networks (CNN)
 
 Inspired by the human visual cortex:
+
 - Specialized for processing grid-like data (images, video)
 - Uses convolution operations to detect patterns
 - Excellent at feature extraction
@@ -24,6 +26,7 @@ Inspired by the human visual cortex:
 ## Recurrent Neural Networks (RNN)
 
 Networks with memory:
+
 - Can process sequences of data
 - Information cycles through the network
 - Great for time-series data and natural language
@@ -32,6 +35,7 @@ Networks with memory:
 ## Long Short-Term Memory (LSTM)
 
 A sophisticated type of RNN:
+
 - Better at remembering long-term dependencies
 - Controls information flow with gates
 - Solves the vanishing gradient problem
@@ -40,6 +44,7 @@ A sophisticated type of RNN:
 ## Autoencoders
 
 Self-learning networks:
+
 - Learn to compress and reconstruct data
 - Useful for dimensionality reduction
 - Can detect anomalies
@@ -48,6 +53,7 @@ Self-learning networks:
 ## Generative Adversarial Networks (GAN)
 
 Two networks competing with each other:
+
 - Generator creates fake data
 - Discriminator tries to spot fakes
 - Through competition, both improve
@@ -56,6 +62,7 @@ Two networks competing with each other:
 ## Choosing the Right Architecture
 
 The choice of architecture depends on:
+
 1. Type of data (images, text, time-series)
 2. Task requirements (classification, generation, prediction)
 3. Available computational resources
@@ -64,6 +71,7 @@ The choice of architecture depends on:
 ## Future Directions
 
 Neural network architectures continue to evolve:
+
 - Hybrid architectures combining multiple types
 - More efficient training methods
 - Better handling of uncertainty
