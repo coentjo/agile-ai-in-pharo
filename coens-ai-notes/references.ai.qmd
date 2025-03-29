@@ -1,28 +1,8 @@
 ---
-title: "Essential Resources and References"
+title: "Resources and References AI"
 ---
 
-## Core Learning Resources
-
-### Coen's Links
-
-- [Jessy: Het belang van duidelijke AI-prompts](https://www.jessydecooker.nl/?p=12877)
-- [Journalists on Hugging Face](https://huggingface.co/spaces/JournalistsonHF/ai-toolkit)
-
-Perplexity is often a great start for finding things (with references): https://www.perplexity.ai/
-To understand about Transformers this is a very nice start: https://ig.ft.com/generative-ai/
-'Our own' page about (Gen)AI: https://stasemsoft.github.io/FontysICT-sem1/docs/artificial-intelligence/ai.html
-To dive further into how Transformers works: https://www.deeplearning.ai/short-courses/how-transformer-llms-work/
-and also to other short courses on deeplearning.ai
-The development I showed was https://www.cursor.com/
-you have like only 500 requests for free...  after that you could choose to pay 20 euro a Month (yes, that can be a lot for students, I know), or look for alternatives, 2 of which I tried a bit (you can use local LLM's with them, which basically makes them free): 
-AIDER: https://aider.chat/.   
-Avante: https://github.com/yetone/avante.nvim   (but then you need to learn about 'vi': https://neovim.io/ which is a  hurdle). 
-
-https://www.prompthub.us/blog/how-polite-should-we-be-when-prompting-llms
-
-
-### Books
+## Books
 
 1. **Neural Networks and Deep Learning**
    - Author: Michael Nielsen
@@ -102,13 +82,8 @@ https://www.prompthub.us/blog/how-polite-should-we-be-when-prompting-llms
 
 ## Academic Papers
 
-### 1. Foundational Papers
+### Foundational Papers
 - "A Logical Calculus of Ideas Immanent in Nervous Activity" (McCulloch & Pitts, 1943)
 - "Learning Internal Representations by Error Propagation" (Rumelhart et al., 1986)
 - "Gradient-Based Learning Applied to Document Recognition" (LeCun et al., 1998)
-
-### 2. Modern Breakthroughs
-- "Deep Residual Learning for Image Recognition" (He et al., 2015)
-- "Attention Is All You Need" (Vaswani et al., 2017)
-- "Language Models are Few-Shot Learners" (Brown et al., 2020)
 

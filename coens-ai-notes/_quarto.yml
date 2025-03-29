@@ -3,7 +3,7 @@ project:
   output-dir: _output
 
 book:
-  title: "Coen's AI Notes"
+  title: "Coen's AI Notes and Links"
   author: "diverse"
   date: last-modified
   chapters:
@@ -13,7 +13,7 @@ book:
       chapters:
         - genai.qmd
         - finding-data.qmd
-        - references.qmd
+        - references.genai.qmd
     - part: "Neuron & Network"
       chapters:
         - perceptron.qmd
@@ -23,6 +23,7 @@ book:
         - classifying-iris.qmd
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
+        - references.ai.qmd
 
 format:
   pdf:

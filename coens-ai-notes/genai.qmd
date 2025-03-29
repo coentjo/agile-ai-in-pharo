@@ -1,17 +1,5 @@
 # AI, GenAI, artificial intelligence
 
-## What is AI?
-
-- When we talk about AI or Artificial Intelligence we mean everything done
-by a 'machine' that  looks like there is intelligence involved.
-These can be a lot of different things, like for example a
-Personal Assistent that helps you get your work done, or  
-Spell and Grammer checking in text editors.
-If you want more examples ask the question "Please give me some examples of AI"
-in [perplexity.ai](https://www.perplexity.ai/) .
-- In the following we provide some links to places we think are helpful in
-discovering AI and/or GenAI. Have fun!
-
 ## What is GenAI?
 
 - Why not ask [perplexity.ai](https://www.perplexity.ai/) ?

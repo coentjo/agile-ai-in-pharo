@@ -1,12 +1,10 @@
 ---
-title: "The AI Landscape: Understanding the Big Picture"
+title: "AI Overview"
 ---
 
-## Navigating the World of AI Technologies
+## AI, Machine Learning, Deep Learning, Generative AI 
 
-In today's rapidly evolving technological landscape, terms like ***AI***, ***Machine Learning***, ***Deep Learning***, and ***Generative AI*** are frequently used, but how do they relate to each other? Let's explore these interconnected concepts through an engaging and informative video presentation.
-
-The video "AI, Machine Learning, Deep Learning and Generative AI Explained" provides an excellent 10-minute overview that will help you understand how these different technologies fit together in the broader AI ecosystem. You can watch it here:
+The video "AI, Machine Learning, Deep Learning and Generative AI Explained" provides an excellent 10-minute overview: 
 
 [AI, Machine Learning, Deep Learning and Generative AI Explained](https://www.youtube.com/watch?v=qYNweeDHiyU)
 

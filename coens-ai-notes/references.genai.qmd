@@ -1,0 +1,51 @@
+---
+title: "Resources and References GenAI"
+---
+
+## Blogs and articles
+
+Perplexity is often a great start for finding things (with references): [perplexity.ai](https://www.perplexity.ai/)
+
+- [Jessy: Het belang van duidelijke AI-prompts](https://www.jessydecooker.nl/?p=12877)
+- [Journalists on Hugging Face](https://huggingface.co/spaces/JournalistsonHF/ai-toolkit)
+- [How polite should we be when prompting LLMs?](https://www.prompthub.us/blog/how-polite-should-we-be-when-prompting-llms)
+- [Information literacy and chatbots as search](https://buttondown.com/maiht3k/archive/information-literacy-and-chatbots-as-search)
+
+To understand about Transformers this is a very nice start: https://ig.ft.com/generative-ai/
+'Our own' page about (Gen)AI: https://stasemsoft.github.io/FontysICT-sem1/docs/artificial-intelligence/ai.html
+To dive further into how Transformers works: https://www.deeplearning.ai/short-courses/how-transformer-llms-work/
+and also to other short courses on deeplearning.ai
+The development I showed was https://www.cursor.com/
+you have like only 500 requests for free...  after that you could choose to pay 20 euro a Month (yes, that can be a lot for students, I know), or look for alternatives, 2 of which I tried a bit (you can use local LLM's with them, which basically makes them free): 
+AIDER: https://aider.chat/.   
+Avante: https://github.com/yetone/avante.nvim   (but then you need to learn about 'vi': https://neovim.io/ which is a  hurdle). 
+
+## Online Platforms
+
+### (Short) Courses
+- [Short courses at Deeplearning.ai](https://www.deeplearning.ai/courses/)
+  - Implementations of papers
+  - Benchmarks
+  - State-of-the-art tracking
+
+### Code Repositories
+
+- [Papers With Code](https://paperswithcode.com)
+  - Implementations of papers
+  - Benchmarks
+  - State-of-the-art tracking
+
+## Community Resources
+
+- [Distill.pub](https://distill.pub)
+  - Interactive explanations
+  - Visual learning
+  - Deep insights
+
+## Academic Papers
+
+### Modern Breakthroughs
+- "Deep Residual Learning for Image Recognition" (He et al., 2015)
+- "Attention Is All You Need" (Vaswani et al., 2017)
+- "Language Models are Few-Shot Learners" (Brown et al., 2020)
+

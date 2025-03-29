@@ -1,5 +1,5 @@
 ---
-title: "Journey into Artificial Intelligence"
+title: "Introduction"
 ---
 
 Welcome! This is a Work-in-Progress, a collection of notes on AI 
