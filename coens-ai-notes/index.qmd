@@ -4,9 +4,8 @@ title: "Introduction"
 
 Welcome! This is a Work-in-Progress, a collection of notes on AI 
 I am collecting and which I use in my workshops about AI and GenAI. 
-The newest version of this pdf may be found 
-[here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes.pdf)
-
+The newest version of this pdf can be downloaded from  
+[here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output)
 
 It is not complete nor self-describing, 
 but when 

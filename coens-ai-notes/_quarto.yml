@@ -12,8 +12,10 @@ book:
     - part: "GenAI"
       chapters:
         - genai.qmd
-        - finding-data.qmd
         - references.genai.qmd
+    - part: "Data"
+      chapters:
+        - finding-data.qmd
     - part: "Neuron & Network"
       chapters:
         - perceptron.qmd
