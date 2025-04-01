@@ -1,0 +1,6 @@
+---
+title: "AI Act Resources and References"
+---
+
+
+- [SURF startdocument AI Act](https://www.surf.nl/files/2025-03/startdocument-ai-act-b5-1.pdf)

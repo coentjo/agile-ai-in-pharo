@@ -26,6 +26,9 @@ book:
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
         - references.ai.qmd
+    - part: "AI Act Europe"
+      chapters:
+        - references.ai.act.qmd
 
 format:
   pdf:
