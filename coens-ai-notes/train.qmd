@@ -1,0 +1,8 @@
+# Training 
+
+Training a model from scratch is a complex and resource-intensive process. 
+It involves collecting a large dataset, preprocessing the data, 
+and training the model using powerful hardware. This is typically done by large organizations with significant resources.
+
+[short course: fine tuning](https://learn.deeplearning.ai/courses/finetuning-large-language-models)
+

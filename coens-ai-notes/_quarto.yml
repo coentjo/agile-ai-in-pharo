@@ -13,6 +13,12 @@ book:
       chapters:
         - genai.qmd
         - references.genai.qmd
+    - part: "Train, Fine Tune, RAG"
+      chapters:
+        - train-finetune-rag.qmd
+        - train.qmd
+        - finetune.qmd
+        - rag.qmd
     - part: "Data"
       chapters:
         - finding-data.qmd

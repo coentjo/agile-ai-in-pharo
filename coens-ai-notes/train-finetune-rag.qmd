@@ -1,0 +1,6 @@
+# Train, Fine Tune, RAG
+
+Several ways to 'teach' the AI about the knowledge it needs to 
+perform the task you need it for.
+
+
