@@ -1,6 +1,9 @@
 # Train, Fine Tune, RAG
 
 Several ways to 'teach' the AI about the knowledge it needs to 
-perform the task you need it for.
+perform the task you need it for. The most easy of these is 
+building a RAG system: Retrieval Augmented Generation. 
+
+
 
 
