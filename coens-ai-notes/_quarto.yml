@@ -35,6 +35,9 @@ book:
     - part: "AI Act Europe"
       chapters:
         - references.ai.act.qmd
+    - part: "Experiments"
+      chapters:
+        - experiments/references.qmd
 
 format:
   pdf:
