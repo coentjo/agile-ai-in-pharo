@@ -13,6 +13,9 @@ book:
       chapters:
         - genai.qmd
         - references.genai.qmd
+    - part: "AI Act Europe"
+      chapters:
+        - references.ai.act.qmd
     - part: "Train, Fine Tune, RAG"
       chapters:
         - train-finetune-rag.qmd
@@ -22,6 +25,9 @@ book:
     - part: "Data"
       chapters:
         - finding-data.qmd
+    - part: "Agents"
+      chapters:
+        - agents.qmd
     - part: "Neuron & Network"
       chapters:
         - perceptron.qmd
@@ -32,9 +38,6 @@ book:
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
         - references.ai.qmd
-    - part: "AI Act Europe"
-      chapters:
-        - references.ai.act.qmd
     - part: "Experiments"
       chapters:
         - experiments/references.qmd
