@@ -12,7 +12,7 @@ book:
     - part: "GenAI"
       chapters:
         - genai.qmd
-        - education.ai.act.qmd
+        - education.ai.qmd
         - references.genai.qmd
     - part: "AI Act Europe"
       chapters:
