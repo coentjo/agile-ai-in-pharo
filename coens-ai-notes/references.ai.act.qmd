@@ -2,5 +2,5 @@
 title: "AI Act Resources and References"
 ---
 
-
+- [youtube 4min: How is Europe becoming a leader in AI?](https://www.youtube.com/watch?v=i268oenkv0U)
 - [SURF startdocument AI Act](https://www.surf.nl/files/2025-03/startdocument-ai-act-b5-1.pdf)
