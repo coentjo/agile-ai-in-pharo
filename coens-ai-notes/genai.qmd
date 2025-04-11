@@ -53,10 +53,6 @@ On your laptop/desktop or on a company server:
 - [Open Devin: Create any Application with Open Source AI Engineer](https://www.youtube.com/watch?v=3-q5GzRNEe0)
 - [Avante (AI in neovim, free)](https://nithinbekal.com/posts/avante-nvim/)
 
-## GenAI & education
-
-- How AI is changing education: <https://www.youtube.com/watch?v=OaEk-ZYzh80>
-
 ## GenAI
 
 - [awesome GenAI guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
