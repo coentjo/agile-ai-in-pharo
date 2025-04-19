@@ -1,0 +1,7 @@
+# MCP - Model Context Protocol
+
+MCP is a standardized way to connect your LLM's to other tools. 
+
+- [Greg Isenberg/Ras Mic explaining MCP](https://www.youtube.com/watch?v=7j_NE6Pjv-E)
+
+

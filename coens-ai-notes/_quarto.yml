@@ -26,9 +26,10 @@ book:
     - part: "Data"
       chapters:
         - finding-data.qmd
-    - part: "Agents"
+    - part: "Related subjects"
       chapters:
         - agents.qmd
+        - mcp.qmd
     - part: "Neuron & Network"
       chapters:
         - perceptron.qmd

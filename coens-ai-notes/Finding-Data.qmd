@@ -11,7 +11,6 @@ The quality and quantity of your data often matter more than the sophistication 
 
 ## Popular Data Sources
 
-### 1. Public Datasets
 - [Kaggle](https://www.kaggle.com/datasets)
   - Competitions and datasets
   - Active community
