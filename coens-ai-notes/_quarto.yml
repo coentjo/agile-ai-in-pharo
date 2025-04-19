@@ -43,6 +43,7 @@ book:
     - part: "Experiments"
       chapters:
         - experiments/references.qmd
+        - experiments/MCP-hands-on.qmd
 
 format:
   pdf:

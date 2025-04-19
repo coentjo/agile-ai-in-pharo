@@ -1,0 +1,25 @@
+# MCP hands-on
+
+Diving in...
+
+So MCP standardizes the way I can combine sources of info (like RAG?) with an LLM.
+
+Duckduckgoing for 'MCP vs ollama hands-on' (adding CLI afterwards) gives me some links to look at, 
+and after a closer look these still seem interesting: 
+
+- [agentic-rag-and-mcp](https://becomingahacker.org/integrating-agentic-rag-with-mcp-servers-technical-implementation-guide-1aba8fd4e442)
+- [Ollama MCP bridge](https://mcp.so/server/ollama-mcp-bridge)
+- [ollama-mcp](https://github.com/rawveg/ollama-mcp)
+- [https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
+- [lazy terminal](https://mcp.so/server/Lazy_Terminal/Heterohabilis)
+- [https://apidog.com/blog/neovim-mcp-server/](https://apidog.com/blog/neovim-mcp-server/)
+
+
+# to look at still: 
+#
+- [agentic-rag-and-mcp](https://becomingahacker.org/integrating-agentic-rag-with-mcp-servers-technical-implementation-guide-1aba8fd4e442)
+- [Ollama MCP bridge](https://mcp.so/server/ollama-mcp-bridge)
+- [ollama-mcp](https://github.com/rawveg/ollama-mcp)
+- [https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
+- [lazy terminal](https://mcp.so/server/Lazy_Terminal/Heterohabilis)
+- [https://apidog.com/blog/neovim-mcp-server/](https://apidog.com/blog/neovim-mcp-server/)
