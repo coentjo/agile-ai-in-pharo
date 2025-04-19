@@ -17,6 +17,7 @@ Recent:
 ## Prompting
 
 - [Prompting basics](https://www.promptingguide.ai/introduction/basics)
+- [Prompting ChatGPT4.1](https://x.com/gregisenberg/status/1912298263987757296?s=48)
 - [Look for course with 'Prompting' in name: https://www.deeplearning.ai/short-courses/](https://www.deeplearning.ai/short-courses/)
 
 ## Hallucinating 
