@@ -42,7 +42,7 @@ You probably have seen a picture of a  neural network before.
 
 Neural Networks can
 
-1. Can solve problems thar are more difficult. 
+1. solve problems that are more difficult. 
 2. Handle complex pattern recognition
 3. Learn hierarchical features automatically
 4. Scale well to large problems

@@ -47,9 +47,9 @@ Information flows through the network.
 
 ### 2. Loss Calculation
 
-Measure the network's error and Backpropagation
+Measure the network's Error and Backpropagation
 
-- what is the output?
+- What is the output?
 - What would be my desired output? 
 
 The smaller the difference between the output I got and the output I desired, the better the output of my model is. 
