@@ -54,6 +54,13 @@ On your laptop/desktop or on a company server:
 - [Open Devin: Create any Application with Open Source AI Engineer](https://www.youtube.com/watch?v=3-q5GzRNEe0)
 - [Avante (AI in neovim, free)](https://nithinbekal.com/posts/avante-nvim/)
 
+## MCP - Model Context Protocol
+
+A way (AI) systems can communicate to each other. 
+This way it helps building modular (AI) systems.  
+
+- [Short deeplearning.ai course MCP](https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/lesson/fkbhh/introduction)
+
 ## GenAI
 
 - [awesome GenAI guide](https://github.com/aishwaryanr/awesome-generative-ai-guide)
