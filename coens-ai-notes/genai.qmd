@@ -59,6 +59,7 @@ On your laptop/desktop or on a company server:
 A way (AI) systems can communicate to each other. 
 This way it helps building modular (AI) systems.  
 
+- [MCP Quickstart](https://modelcontextprotocol.info/docs/quickstart/quickstart/)
 - [Short deeplearning.ai course MCP](https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/lesson/fkbhh/introduction)
 
 ## GenAI

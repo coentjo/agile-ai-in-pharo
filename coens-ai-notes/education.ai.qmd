@@ -3,6 +3,9 @@
 ## AI and education
 
 - [How AI is changing education](https://www.youtube.com/watch?v=OaEk-ZYzh80)
+- [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
+- [aiarchives.org](https://aiarchives.org/)
+- [Did it together with AI? Label it!](https://mmmlabel.tech/)
 
 ## Generation of lesson material
 
