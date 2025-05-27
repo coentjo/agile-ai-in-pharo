@@ -30,6 +30,7 @@ book:
       chapters:
         - agents.qmd
         - mcp.qmd
+        - journalism.ai.qmd
     - part: "Neuron & Network"
       chapters:
         - perceptron.qmd
