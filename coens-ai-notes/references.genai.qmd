@@ -22,13 +22,16 @@ Avante: https://github.com/yetone/avante.nvim   (but then you need to learn abou
 
 ## Online Platforms
 
-### (Short) Courses
+- [spacy.io : NLP](https://spacy.io/)
+
+## (Short) Courses
+
 - [Short courses at Deeplearning.ai](https://www.deeplearning.ai/courses/)
   - Implementations of papers
   - Benchmarks
   - State-of-the-art tracking
 
-### Code Repositories
+## Code Repositories
 
 - [Papers With Code](https://paperswithcode.com)
   - Implementations of papers
@@ -42,9 +45,8 @@ Avante: https://github.com/yetone/avante.nvim   (but then you need to learn abou
   - Visual learning
   - Deep insights
 
-## Academic Papers
+## Academic Papers: Modern Breakthroughs
 
-### Modern Breakthroughs
 - "Deep Residual Learning for Image Recognition" (He et al., 2015)
 - "Attention Is All You Need" (Vaswani et al., 2017)
 - "Language Models are Few-Shot Learners" (Brown et al., 2020)
