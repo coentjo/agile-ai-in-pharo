@@ -13,6 +13,7 @@ book:
       chapters:
         - genai.qmd
         - education.ai.qmd
+        - jobs.ai.qmd
         - references.genai.qmd
         - nocodelowcode.qmd
     - part: "AI Act Europe"
