@@ -14,6 +14,7 @@
 ## Tools, Best Practices & lesson material
 
 - [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
+- [npuls: AI-GO Raamwerk-AI-Geletterdheid-in-het-Onderwijs](https://npuls.nl/wp-content/uploads/2025/07/AI-GO.-Raamwerk-AI-Geletterdheid-in-het-Onderwijs.pdf)
 - [aiarchives.org](https://aiarchives.org/)
 - [You did it together with AI? Make a statement!](https://mmmlabel.tech/)
 - [hbo-i-outcomes-example-generator chatbot](https://chatgpt.com/g/g-FZWlHuaZh-hbo-i-outcomes-example-generator)
