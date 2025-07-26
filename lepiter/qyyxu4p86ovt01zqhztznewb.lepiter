@@ -1,0 +1,111 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-26T13:01:47.806441+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2025-07-26T13:01:49.4003+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "l2jJuDT3DQCch086Bq2nDA=="
+							},
+							"code" : "pages := thisSnippet database pages \r\t\"reject: [:each | \r\t\teach title = 'croco-Knowledge'] \" .\rm := GtMondrian new.\rm nodes\r\tstencil: [ :each | \r\t\tBlTextElement new\r\t\t\tbackground: ((each title includesSubstring: 'ai')\r\t\t\t\t\tifTrue: [ Color lightOrange ]\r\t\t\t\t\tifFalse: [ Color lightGreen ]);\r\t\t\tsize: (7 * each title size) @ 12;\r\t\t\ttext: each title asRopedText;\r\t\t\twhen: BlClickEvent\r\t\t\t\tdo: [ :e | \r\t\t\t\t\te consumed: true.\r\t\t\t\t\te currentTarget phlow spawnTool: each asPhlowTool ] ];\r\twith: pages.\rm edges\r\tstencil: [ BlBezierElement new\r\t\t\tborder: Color veryVeryLightGray;\r\t\t\twidth: 1;\r\t\t\tzIndex: -1 ];\r\tconnectToAll: [ :page | page allOutgoingTextualLinks collectAsSet: #target ].\rm layout force nbIterations: 250.\rm"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-26T13:01:43.917697+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-26T13:02:32.207605+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "khSOuDT3DQCchEjfBq2nDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# overview of the pages in this Lepiter Knowledge Base"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-07-26T13:01:43.892734+02:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-07-26T13:01:43.892734+02:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "overview"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "2bb28db8-34f7-0d00-9c83-811406ada70c"
+	}
+}
