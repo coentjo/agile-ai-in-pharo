@@ -13,6 +13,7 @@
 
 ## Tools, Best Practices & lesson material
 
+- [EduGenai (Npuls)](https://npuls.nl/edugenai/)
 - [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
 - [npuls: AI-GO Raamwerk-AI-Geletterdheid-in-het-Onderwijs](https://npuls.nl/wp-content/uploads/2025/07/AI-GO.-Raamwerk-AI-Geletterdheid-in-het-Onderwijs.pdf)
 - [aiarchives.org](https://aiarchives.org/)
