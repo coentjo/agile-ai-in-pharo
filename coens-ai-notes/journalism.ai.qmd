@@ -1,3 +1,4 @@
 # Journalism and AI
 
+- [stichtingrpo.nl: introductie-ai-kompas](https://www.stichtingrpo.nl/introductie-ai-kompas/)
 - [Hey Aftonbladet (chatbot): What do YOU want to know?](https://www.journalismai.info/blog/what-do-you-want-to-know)
