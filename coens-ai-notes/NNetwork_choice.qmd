@@ -1,0 +1,8 @@
+# If you prefer a story... 
+
+The story that follows right here explains the ideas behind a Neural Network from a technical perspective. 
+If you would rather read an Instructive Story, a Saga, 
+read it online at: 
+[Lonn's neural-net-saga](https://github.com/leonvanbokhorst/neural-net-saga). 
+Scroll down a bit and start reading  'The Percy Chronicles: A Neural Network Saga'. 
+At the end of that story you will find some python to get hands-on with. 

@@ -36,6 +36,7 @@ book:
         - journalism.ai.qmd
     - part: "Neuron & Network"
       chapters:
+        - NNetwork_choice.qmd
         - perceptron.qmd
         - the-learning-perceptron.qmd
         - problem-with-perceptron.qmd
