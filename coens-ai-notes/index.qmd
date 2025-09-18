@@ -3,9 +3,13 @@ title: "Introduction"
 ---
 
 Welcome! This is a Work-in-Progress, a collection of notes on AI 
-I am collecting and which I use in my workshops about AI and GenAI. 
+I am collecting and which I use when talking about or giving workshops about AI and GenAI. 
 The newest version of this pdf can be downloaded from  
 [here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output)
+
+Do NOT this read from beginning to end... instead look at the Index for relevant chapters and dive in...
+
+I advise to get hands-on as soon as possible! 
 
 It is not complete nor self-describing, 
 but when 
@@ -16,12 +20,9 @@ Our world is changing rapidly through AI and GenAI. One can ignore it or decide 
 but that does not stop it... One can also decide to dive in and help 'invent' the future, or 
 at least learn about all the new stuff. 
 
-
 These notes  started out as visualizations of Perceptrons and Neural 
 Networks in the Glamorous Toolkit, which helped me give students insights 
 in Neural Networks. 
-
-I advise to get hands-on with the tools around.
 
 When using online AI tools, please keep the privacy in mind when 
 using personal data! One way to make sure private data will stay
@@ -31,7 +32,7 @@ Please also keep the Societal impact in mind!
 We can use AI to help us all, but there is of course also a dark side:  
 People getting fired, 
 it's easier to create fake news, 
-a few people getting rich at the expense of others,  
+a few people getting filthy rich at the expense of lots of others,  
 some nice activities (I like programming for example) will never be the same.
 Please use it wisely...
 

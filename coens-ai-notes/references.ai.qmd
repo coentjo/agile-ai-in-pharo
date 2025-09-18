@@ -104,3 +104,12 @@ https://www.youtube.com/watch?v=O5xeyoRL95U
 - "Learning Internal Representations by Error Propagation" (Rumelhart et al., 1986)
 - "Gradient-Based Learning Applied to Document Recognition" (LeCun et al., 1998)
 
+
+### Podcasts
+
+- [MLST: Machine Learning Street Talk](https://www.mlst.ai/)
+- [Brainport/Iman interviews Sepp Hochreiter: XLSTM](https://podcastaddict.com/podcasts-4-brainport-featured-by-radio-4-brainport-747am-and-dab/episode/203743072)
+- other podcasts from this series: 'Deep Dives with Iman'. 
+- [Fontys AI Garage](https://podcastaddict.com/podcast/fontys-ai-garage-de-podcast-over-ai/3655950#google_vignette)
+
+
