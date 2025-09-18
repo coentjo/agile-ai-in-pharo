@@ -9,6 +9,8 @@ The newest version of this pdf can be downloaded from
 
 Do NOT this read from beginning to end... instead look at the Index for relevant chapters and dive in...
 
+Questions about this all? [Try to ask here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
+
 I advise to get hands-on as soon as possible! 
 
 It is not complete nor self-describing, 
