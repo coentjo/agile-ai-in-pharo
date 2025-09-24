@@ -16,20 +16,38 @@ Recent:
 
 ## Prompting
 
-New sources with tips how to prompt every day... 
+... and some sources with tips how to prompt every day... 
 
 - [Prompting basics](https://www.promptingguide.ai/introduction/basics)
 - [Prompting ChatGPT4.1](https://x.com/gregisenberg/status/1912298263987757296?s=48)
 - [Look for course with 'Prompting' in name: https://www.deeplearning.ai/short-courses/](https://www.deeplearning.ai/short-courses/)
 - [Ruben Hassid: RISE](https://www.linkedin.com/posts/ruben-hassid_your-prompts-are-too-vague-heres-a-simple-activity-7336980233977286657-4RBY)
 
+- [mention of Llama Prompt Optimization](https://learn.deeplearning.ai/courses/building-with-llama-4)
+
 ## Hallucinating 
 
+When nonsense comes out of an LLM (or out of a Human by the way)
+we call it hallucination. Some questions can trigger hallucination. 
+
+###
+
+### 'Which day do I have to put the garbage can out on the street?' 
+
+Some LLMs will give you a Date when you ask for one, a percentage when
+you ask for one, even when the LLM could not possibly give an answer
+to your question. If you ask which day you should put my garbage out and 
+the LLM mentions a Date without having a clue where you are then you can be 
+sure it just made up a Date (because you asked for a Date). 
+
+### 'Can you help me find my lost keys?'
 
 
-- 'Which day do I have to put the garbage can out on the street?'
-- 'Can you help me find my lost keys?'
-- 'Can you create an image of a watch that says it is 3 o' clock?'
+### 'Can you create an image of a watch that says it is 3 o' clock?'
+
+Try it. You will find that a picture of a clock often shows 10:10. 
+You could ask [perplexity.ai](https://perplexity.ai): 
+Why does a generated image of a clock point to 10:10?
 
 
 ## RAG - Retrieval Augmented Generation

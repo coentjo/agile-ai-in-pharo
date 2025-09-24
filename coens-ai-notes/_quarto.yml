@@ -28,11 +28,12 @@ book:
     - part: "Data"
       chapters:
         - finding-data.qmd
-    - part: "Related subjects"
+    - part: "Related subjects and tools"
       chapters:
         - agents.qmd
         - mcp.qmd
         - acp.qmd
+        - tools.div.qmd
         - journalism.ai.qmd
     - part: "Neuron & Network"
       chapters:

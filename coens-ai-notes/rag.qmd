@@ -1,4 +1,5 @@
 # RAG: Retrieval Augmented Generation
 
+Good to know about if you are in the AI field. 
 
-[deeplearning.ai course: Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+- [deeplearning.ai course: Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
