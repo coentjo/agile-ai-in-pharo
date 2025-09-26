@@ -1,0 +1,10 @@
+# Visual Recognition
+
+
+
+CLIP-models, 
+dyno, 
+yolo,
+resnet,
+alexnet. 
+

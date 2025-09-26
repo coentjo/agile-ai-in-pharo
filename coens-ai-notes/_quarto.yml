@@ -25,6 +25,7 @@ book:
         - rag.qmd
         - finetune.qmd
         - train.qmd
+        - recognition.qmd
     - part: "Data"
       chapters:
         - finding-data.qmd
