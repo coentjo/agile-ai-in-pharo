@@ -7,6 +7,7 @@ Recent:
 ## What is GenAI?
 
 - Why not ask [perplexity.ai](https://www.perplexity.ai/) ?
+- Or [duck.ai](https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1)?
 
 ## GPT - Generative Pre-Trained Transformer
 
@@ -69,6 +70,7 @@ On your laptop/desktop or on a company server:
 
 ## Coding with GenAI
 
+- [cursor course: AI Fundamentals](https://cursor.com/learn)
 - [vs code with co-pilot (free plan)](https://code.visualstudio.com/docs/copilot/overview)
 - [Cursor.com (20 euro p/m)](https://cursor.com)
 - [AIDER.chat (free)](https://aider.chat/)
