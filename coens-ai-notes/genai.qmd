@@ -24,7 +24,11 @@ Recent:
 - [Look for course with 'Prompting' in name: https://www.deeplearning.ai/short-courses/](https://www.deeplearning.ai/short-courses/)
 - [Ruben Hassid: RISE](https://www.linkedin.com/posts/ruben-hassid_your-prompts-are-too-vague-heres-a-simple-activity-7336980233977286657-4RBY)
 
+- [In cursor.ai course: Info about 'managing your context in cursor](https://cursor.com/learn/context)
+
 - [mention of Llama Prompt Optimization](https://learn.deeplearning.ai/courses/building-with-llama-4)
+
+
 
 ## Hallucinating 
 

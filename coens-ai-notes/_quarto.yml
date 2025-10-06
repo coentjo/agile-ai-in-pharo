@@ -8,6 +8,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - search.qmd
     - ai.overview.qmd
     - part: "GenAI"
       chapters:
@@ -31,6 +32,7 @@ book:
         - finding-data.qmd
     - part: "Related subjects and tools"
       chapters:
+        - tools-n-co.md
         - agents.qmd
         - mcp.qmd
         - acp.qmd
