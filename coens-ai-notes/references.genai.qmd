@@ -2,6 +2,10 @@
 title: "Resources and References GenAI"
 ---
 
+## How te mention that you did use AI? 
+
+- [fontys.libguides.com/apa/AI](https://fontys.libguides.com/apa/AI)
+
 ## Blogs and articles
 
 Perplexity is often a great start for finding things (with references): [perplexity.ai](https://www.perplexity.ai/)
