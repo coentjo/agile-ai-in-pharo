@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - workshop-ai-literacy.qmd
+    - managing-context.qmd
     - search.qmd
     - ai.overview.qmd
     - part: "GenAI"

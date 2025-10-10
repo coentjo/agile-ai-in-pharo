@@ -1,0 +1,38 @@
+---
+title: "Beyond the Prompt: The Power of AI Context"
+---
+
+A simple prompt is just a question. But to get truly powerful results from an AI, you need to master the art of providing **context**. This chapter, inspired by best practices from tools like [Cursor](https://cursor.com/learn/context), reframes this crucial skill for everyone, not just programmers.
+
+## What is Context? (For Everyone)
+
+Think of context as a **briefing you give to a human assistant**. The better the briefing, the better the result. You wouldn't just tell an assistant "write a report" without giving them the source material. The same is true for AI.
+
+Context is all the relevant information you provide *along with* your prompt. This can include:
+
+-   **Pasting in text:** Providing the specific email you want to reply to, or the article you want summarized.
+-   **Setting the scene:** Telling the AI who it is ("You are a friendly, expert marketer") and who you are ("I am a beginner learning about this topic").
+-   **Providing examples:** Giving it a sample of the writing style you want it to adopt.
+-   **Referencing the conversation:** Using the information discussed earlier in your chat.
+
+Without context, the AI has to guess. And when it guesses, you get generic, boring, and often unhelpful answers.
+
+## A Practical Example: Replying to an Email
+
+Let's see context in action.
+
+#### Bad Prompt (No Context)
+> "Draft a polite and professional email saying I can't make it."
+
+The AI will produce a generic, fill-in-the-blanks template. It's not very helpful because it lacks any specific details.
+
+#### Good Prompt (With Context)
+> "I need to reply to this email. **[Paste the full text of the original email here]**. Please draft a polite and professional reply explaining that I can't make the 'Project Phoenix' meeting on Wednesday because of a conflict, but I am very interested. Ask if they can send me the minutes and suggest I'm available to connect next week."
+
+See the difference? By providing the original email and clear instructions, you've given the AI all the context it needs to draft a perfect, ready-to-send reply.
+
+## The "Context Window": An AI's Short-Term Memory
+
+It's important to know that every AI has a limited memory, called a **"context window."** This is the maximum amount of information (your prompt, the text you've pasted, the conversation history) that the model can "see" at one time.
+
+If your conversation gets very long, the AI might start to "forget" things you discussed at the beginning. If you notice the AI losing track, it might be time to start a new conversation to give it a fresh, clean context to work with.
