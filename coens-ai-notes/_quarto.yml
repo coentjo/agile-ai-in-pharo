@@ -61,6 +61,7 @@ book:
 format:
   pdf:
     documentclass: book
+    classoption: [landscape]
     toc: true
     number-sections: true
     colorlinks: true
