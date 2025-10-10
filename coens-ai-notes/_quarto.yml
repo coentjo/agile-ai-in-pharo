@@ -13,6 +13,7 @@ book:
     - part: "AI Literacy"
       chapters:
         - workshop-ai-literacy.qmd
+        - scenarios.qmd
         - managing-context.qmd
     - search.qmd
     - ai.overview.qmd
