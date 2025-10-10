@@ -69,6 +69,8 @@ format:
     number-sections: true
     colorlinks: true
     fig-pos: "H"
+    toc-depth: 2
+    number-depth: 2
     include-in-header:
       text: |
         \usepackage{titlesec}
