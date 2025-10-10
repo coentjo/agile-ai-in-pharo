@@ -6,8 +6,10 @@ book:
   title: "Coen's AI Notes and Links"
   author: "(by several intelligences cooperating)"
   date: last-modified
+  cover-image: attach/download-qr-code.png
   chapters:
     - index.qmd
+    - download.qmd
     - part: "AI Literacy"
       chapters:
         - workshop-ai-literacy.qmd
@@ -70,6 +72,7 @@ format:
       text: |
         \usepackage{float}
         \usepackage{graphicx}
+        \usepackage{qrcode}
         \DeclareGraphicsExtensions{.pdf,.png,.jpg}
         \graphicspath{{./}{./attach/}}
 

@@ -4,7 +4,9 @@ title: "Beyond the Prompt: The Power of AI Context"
 
 A simple prompt is just a question. But to get truly powerful results from an AI, you need to master the art of providing **context**. This chapter, inspired by best practices from tools like [Cursor](https://cursor.com/learn/context), reframes this crucial skill for everyone, not just programmers.
 
-## What is Context? (For Everyone)
+{{< pagebreak >}}
+
+## What is Context?
 
 Think of context as a **briefing you give to a human assistant**. The better the briefing, the better the result. You wouldn't just tell an assistant "write a report" without giving them the source material. The same is true for AI.
 
@@ -25,6 +27,8 @@ Let's see context in action.
 > "Draft a polite and professional email saying I can't make it."
 
 The AI will produce a generic, fill-in-the-blanks template. It's not very helpful because it lacks any specific details.
+
+{{< pagebreak >}}
 
 #### Good Prompt (With Context)
 > "I need to reply to this email. **[Paste the full text of the original email here]**. Please draft a polite and professional reply explaining that I can't make the 'Project Phoenix' meeting on Wednesday because of a conflict, but I am very interested. Ask if they can send me the minutes and suggest I'm available to connect next week."

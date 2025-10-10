@@ -1,0 +1,13 @@
+---
+title: "How to download"
+---
+
+The newest version of the PDF of this book can be downloaded from [here](https://github.com/coentjo/agile-ai-in-pharo/blob/master/coens-ai-notes/_output/Coen-s-AI-Notes-and-Links.pdf).
+
+To download, click on the download button on the Github page as shown below.
+
+![How to download the file on Github](attach/github.download.raw.file.png)
+
+You can also use this QR code to get to the download location.
+
+![QR code for download link](attach/download-qr-code.png)
