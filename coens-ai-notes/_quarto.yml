@@ -71,6 +71,8 @@ format:
     fig-pos: "H"
     include-in-header:
       text: |
+        \usepackage{titlesec}
+        \titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter.}{1em}{}
         \usepackage{float}
         \usepackage{graphicx}
         \usepackage{qrcode}
