@@ -8,11 +8,13 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    - workshop-ai-literacy.qmd
-    - managing-context.qmd
+    - part: "AI Literacy"
+      chapters:
+        - workshop-ai-literacy.qmd
+        - managing-context.qmd
     - search.qmd
     - ai.overview.qmd
-    - part: "GenAI"
+    - part: "AI"
       chapters:
         - genai.qmd
         - education.ai.qmd
