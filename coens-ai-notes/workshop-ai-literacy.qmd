@@ -1,0 +1,29 @@
+---
+title: "Diving into AI: some AI Literacy"
+---
+
+
+## Key Tools We'll Use Today
+
+*   [ChatGPT](https://chat.openai.com/)
+*   [Perplexity.AI](https://www.perplexity.ai/) - The AI-powered search engine that gives links to sources and suggests follow-up questions.
+*   [Comet](https://www.perplexity.ai/comet) - The browser from Perplexity that has AI browsing built-in.
+*   [Cursor](https://cursor.sh/) - The AI-powered development environment we're using right now!
+*   More to be added...
+
+## Core Concepts at a Glance
+
+*   **Large Language Models (LLMs):** What they are and how they work.
+*   **Generative AI:** Creating new things with AI.
+*   More to be added...
+
+## Your Next Steps in AI
+
+*   A curated list of resources to continue your journey.
+*   [![Understanding AI Literacy](https://img.youtube.com/vi/jrK3PsD3APk/0.jpg)](https://www.youtube.com/watch?v=jrK3PsD3APk)
+*   More to be added...
+
+## AI Jargon Buster
+
+*   **Prompt:** The question or instruction you give to an AI.
+*   More to be added...

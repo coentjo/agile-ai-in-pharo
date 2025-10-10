@@ -8,6 +8,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
+    - workshop-ai-literacy.qmd
     - search.qmd
     - ai.overview.qmd
     - part: "GenAI"
