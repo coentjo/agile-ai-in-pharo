@@ -36,3 +36,5 @@ See the difference? By providing the original email and clear instructions, you'
 It's important to know that every AI has a limited memory, called a **"context window."** This is the maximum amount of information (your prompt, the text you've pasted, the conversation history) that the model can "see" at one time.
 
 If your conversation gets very long, the AI might start to "forget" things you discussed at the beginning. If you notice the AI losing track, it might be time to start a new conversation to give it a fresh, clean context to work with.
+
+{{< pagebreak >}}

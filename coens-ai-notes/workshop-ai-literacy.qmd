@@ -30,3 +30,5 @@ title: "Diving into AI: some AI Literacy"
 *   **Prompt:** The question or instruction you give to an AI.
 *   **Hallucination:** When an AI confidently states incorrect or nonsensical information as if it were a fact.
 *   **Model:** The core AI program that has been trained on data to perform a specific task (e.g., GPT-4 is a language model).
+
+{{< pagebreak >}}
