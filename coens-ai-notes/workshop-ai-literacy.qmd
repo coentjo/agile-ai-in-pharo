@@ -9,9 +9,7 @@ title: "Diving into AI: some AI Literacy"
 *   [Comet](https://www.perplexity.ai/comet) - The browser from Perplexity that has AI browsing built-in.
 *   [Cursor](https://cursor.sh/) - The AI-powered development environment we're using right now!
 
-## Possible Core Concepts to Explore
-
-The field of AI is vast! Here are some of the core concepts. We'll only be able to touch on a few of these, but this list gives you a map for future explorations.
+## Some Core Concepts to Explore
 
 *   **Large Language Models (LLMs):** What they are and how they work.
 *   **Generative AI:** Creating new things with AI.
@@ -25,7 +23,6 @@ The field of AI is vast! Here are some of the core concepts. We'll only be able 
 
 ## Your Next Steps in AI
 
-*   A curated list of resources to continue your journey.
 *   [![Understanding AI Literacy](https://img.youtube.com/vi/jrK3PsD3APk/0.jpg)](https://www.youtube.com/watch?v=jrK3PsD3APk)
 
 ## AI Jargon Buster
