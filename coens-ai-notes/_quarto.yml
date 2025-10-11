@@ -13,7 +13,6 @@ book:
     - part: "Diving into AI: some AI Literacy"
       chapters:
         - key-tools.qmd
-        - core-concepts.qmd
         - next-steps.qmd
         - jargon-buster.qmd
         - scenarios.qmd
