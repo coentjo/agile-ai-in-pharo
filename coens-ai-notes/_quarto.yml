@@ -63,7 +63,7 @@ book:
 format:
   pdf:
     documentclass: book
-    classoption: [landscape]
+    classoption: [landscape, oneside]
     geometry:
       - margin=2cm
     toc: true
