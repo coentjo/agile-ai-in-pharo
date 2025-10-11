@@ -10,12 +10,15 @@ book:
   chapters:
     - index.qmd
     - download.qmd
-    - part: "AI Literacy"
+    - part: "Diving into AI: some AI Literacy"
       chapters:
-        - workshop-ai-literacy.qmd
+        - key-tools.qmd
+        - core-concepts.qmd
+        - next-steps.qmd
+        - jargon-buster.qmd
         - scenarios.qmd
         - managing-context.qmd
-    - search.qmd
+        - search.qmd
     - part: "AI"
       chapters:
         - ai.overview.qmd

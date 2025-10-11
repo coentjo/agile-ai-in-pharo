@@ -1,0 +1,8 @@
+---
+title: "Key Tools to Get Started"
+---
+
+*   [ChatGPT](https://chat.openai.com/) - well, maybe...
+*   [Perplexity.AI](https://www.perplexity.ai/) - The AI-powered search engine that gives links to sources and suggests follow-up questions.
+*   [Comet](https://www.perplexity.ai/comet) - The browser from Perplexity that has AI browsing built-in.
+*   [Cursor](https://cursor.sh/) - The AI-powered development environment we're using right now!

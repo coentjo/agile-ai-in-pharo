@@ -1,0 +1,13 @@
+---
+title: "Some Core Concepts to Explore"
+---
+
+*   **Large Language Models (LLMs):** What they are and how they work.
+*   **Generative AI:** Creating new things with AI.
+*   **Training Data:** The information (like text, images, or code) used to teach an AI.
+*   **Prompt Engineering:** The art and science of writing effective instructions to get the best results from an AI.
+*   **Neural Networks:** The brain-inspired models that power much of modern AI.
+*   **Supervised vs. Unsupervised Learning:** Different ways that machines can learn from data.
+*   **Computer Vision:** How computers see and interpret the visual world.
+*   **Natural Language Processing (NLP):** How computers understand and process human language.
+*   **AI Ethics & Bias:** The important considerations of fairness, safety, and transparency in AI.
