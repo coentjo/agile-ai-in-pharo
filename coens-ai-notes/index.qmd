@@ -3,38 +3,24 @@ title: "Introduction"
 ---
 
 Welcome! This is a Work-in-Progress, a collection of notes on AI 
-I am collecting and which I use when talking about or giving workshops about AI and GenAI. 
-The newest version of this pdf can be downloaded from the next chapter.
+used in session about about AI. 
+The next chapter explains how this pdf can be downloaded.
 
-Do NOT this read from beginning to end... instead look at the Index for relevant chapters and dive in...
+Do not read this document from beginning to end... instead look at the relevant chapters for you...
 
-Questions about this all? [Try to ask here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
+Questions about this all? [Ask here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
 
-I advise to get hands-on as soon as possible! 
+Advise: get hands-on as soon as possible! Change your activities by inventing ways to make them better, nicer or more efficiently. 
 
-It is not complete nor self-describing, 
-but when 
-you attended one of my workshops you will probably find familiar 
-stuff in one or more chapters. 
-
-Our world is changing rapidly through AI and GenAI. One can ignore it or decide to not use it, 
-but that does not stop it... One can also decide to dive in and help 'invent' the future, or 
-at least learn about all the new stuff. 
-
-These notes  started out as visualizations of Perceptrons and Neural 
-Networks in the Glamorous Toolkit, which helped me give students insights 
-in Neural Networks. 
-
-When using online AI tools, please keep the privacy in mind when 
+Keep privacy in mind: watch out when 
 using personal data! One way to make sure private data will stay
-private is using local AI's. 
+private is using local AI's, although this takes some extra knowledge, and a powerful machine. 
 
-Please also keep the Societal impact in mind! 
-We can use AI to help us all, but there is of course also a dark side:  
-People getting fired, 
-it's easier to create fake news, 
-a few people getting filthy rich at the expense of lots of others,  
-some nice activities (I like programming for example) will never be the same.
+
+```
+It's easier to invent the future than predict it (Alan Kay)
+```
+
 Please use it wisely...
 
 ![art and laundry](ai.laundry.art.maciejewska.jpg)

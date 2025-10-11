@@ -65,6 +65,8 @@ format:
   pdf:
     documentclass: book
     classoption: [landscape]
+    geometry:
+      - margin=2cm
     toc: true
     number-sections: true
     colorlinks: true
