@@ -16,17 +16,16 @@ book:
         - scenarios.qmd
         - managing-context.qmd
     - search.qmd
-    - ai.overview.qmd
     - part: "AI"
       chapters:
+        - ai.overview.qmd
         - genai.qmd
         - education.ai.qmd
         - jobs.ai.qmd
         - references.genai.qmd
         - nocodelowcode.qmd
-    - part: "AI Act Europe"
-      chapters:
         - references.ai.act.qmd
+        - finding-data.qmd
     - part: "Train, Fine Tune, RAG"
       chapters:
         - train-finetune-rag.qmd
@@ -34,10 +33,7 @@ book:
         - finetune.qmd
         - train.qmd
         - recognition.qmd
-    - part: "Data"
-      chapters:
-        - finding-data.qmd
-    - part: "Related subjects and tools"
+    - part: "Tools-n-Technologies"
       chapters:
         - tools-n-co.md
         - agents.qmd

@@ -2,12 +2,7 @@
 title: "Finding and Preparing Data"
 ---
 
-## The Importance of Data
-
-Data is the foundation of most machine learning projects.
-The quality and quantity of your data often matter more than the sophistication of your model.
-
-
+Data is important in AI projects. The quality and quantity of your data often matter more than the sophistication of your model.
 
 ## Popular Data Sources
 

@@ -1,5 +1,5 @@
 ---
-title: "AI Act Resources and References"
+title: "EU AI Act"
 ---
 
 - [youtube 4min: How is Europe becoming a leader in AI?](https://www.youtube.com/watch?v=i268oenkv0U)
