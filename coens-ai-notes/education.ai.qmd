@@ -22,3 +22,39 @@
 - [https://roadmap.sh/ai](https://roadmap.sh/ai)
 
 
+## The E-Bike Effect: Cognitive Offloading and Desired Difficulties
+
+In his TEDx talk, Barend Last introduces a powerful metaphor for understanding our relationship with AI: **AI is the e-bike for our thinking**. This concept helps explain the nuances of "cognitive offloading" – outsourcing our mental tasks to technology.
+
+You can find the talk and resources here:
+- [LinkedIn Post by Barend Last](https://www.linkedin.com/posts/barendlast_ai-cognitieve-uitbesteding-ugcPost-7382072227355213826-Kt_5)
+- [YouTube Video of the TEDx Talk](https://youtu.be/5q8v2vcqzIQ)
+
+### The Core Metaphor: Two Ways to Use the E-Bike
+
+The talk highlights two distinct ways we can use AI, mirrored in how people use an e-bike:
+
+1.  **Making a Tedious Task Bearable**: Like someone who dislikes cycling but uses an e-bike to get to work, we can use AI to accomplish the same necessary tasks with less effort.
+2.  **Exploring New Horizons**: Like an avid cyclist using an e-bike to travel further and faster, we can use AI to reach new cognitive destinations and achieve things we couldn't before.
+
+### Cognitive Offloading & Desired Difficulties
+
+This isn't a new phenomenon (think calculators or GPS), but AI supercharges it. There's a trade-off: while offloading can make us more efficient, over-reliance can weaken our own cognitive "muscles".
+
+This leads to the idea of **"desired difficulties"**. Just as we go to the gym to stay physically fit, we should consciously choose when to tackle mental challenges without AI to keep our minds sharp. It's about finding a balance between using AI as a tool and ensuring we still get our mental workout. 🧠💪
+
+### Transforming, Not Just Replacing, Thinking
+
+A key insight is that AI doesn't just eliminate thinking; it can *transform* it. An experiment cited in the talk showed that students using AI to brainstorm ideas for a paperclip generated more ideas. While they *felt* less creative, their cognitive effort shifted from idea generation to the equally demanding skills of **evaluating and refining** the AI's output.
+
+The new generation might become like **conductors of an orchestra**, not playing every instrument but knowing how to bring them all together to create something beautiful.
+
+### Key Takeaway for Education
+
+For education, the challenge is to teach students how to make conscious choices. They need to learn when AI is a helpful shortcut and when it's a springboard for deeper learning. This requires creating educational environments that build in "desired difficulties" – productive struggles, both with and without AI.
+
+The talk concludes with a powerful statement:
+
+> **"AI doesn't make us dumber, dumb choices do."**
+
+
