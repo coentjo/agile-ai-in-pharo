@@ -15,7 +15,8 @@ book:
         - key-tools.qmd
         - godfather-hinton.qmd
         - jargon-buster.qmd
-        - scenarios.qmd
+        - transcribing.qmd
+        - summarizing.qmd
         - managing-context.qmd
         - search.qmd
     - part: "AI"

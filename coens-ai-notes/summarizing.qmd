@@ -1,52 +1,13 @@
 ---
-title: "AI Literacy Scenarios"
+title: "Summarizing a Meeting (Locally and Privately)"
 ---
 
-# Scenario: Transcribing and Summarizing a Meeting (Locally and Privately)
-
-One of the most practical and impressive uses of AI is to automatically transcribe a meeting and then have an AI assistant summarize it for you. This guide will walk you through how to do this yourself, using tools that are easy to install and that keep all your data private on your own computer.
-
-## Why Local Tools? A Note on Privacy
-
-When you record a meeting, the contents can be sensitive. Using an online transcription or summarization service means you are sending that data to a company's servers. While many services have strong privacy policies, the most secure way to handle confidential information is to never let it leave your machine in the first place.
-
-The tools recommended here run **100% offline**. Your audio files and transcripts are processed on your computer and are never sent over the internet. This gives you complete control and peace of mind. 😌
+Once you have a transcript, you can use a local AI to summarize it and create minutes. This guide will walk you through how to do this yourself, using tools that are easy to install and that keep all your data private on your own computer.
 
 ## The Tools You'll Need
 
-We'll use a two-step process with two different, user-friendly applications:
-
-1.  **For Transcription**: We need an app that turns your audio recording into a text file.
-    *   **On macOS**: We recommend **[MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper)**.
-    *   **On Windows**: We recommend **[WhisperDesktop](https://github.com/chidiwilliams/WhisperDesktop)**.
-
-2.  **For Summarization**: We'll use a tool that can run a powerful AI language model locally on your machine to create the summary and action items.
-    *   **On both macOS and Windows**: We recommend **[LM Studio](https://lmstudio.ai/)**.
-
-## Step 1: Transcribing Your Meeting
-
-First, let's turn that audio file into text.
-
-### Installation
-
-*   **macOS**:
-    1.  Go to the [MacWhisper website](https://goodsnooze.gumroad.com/l/macwhisper).
-    2.  Download, unzip, and drag the application to your `Applications` folder.
-
-*   **Windows**:
-    1.  Go to the [WhisperDesktop releases page](https://github.com/chidiwilliams/WhisperDesktop/releases).
-    2.  Download the `.exe` file from the most recent release.
-    3.  On first run, the app will automatically download the required AI model files.
-
-### Usage
-
-Both applications are very straightforward:
-1.  Open the app.
-2.  Drag and drop your audio file (e.g., an `.mp3` or `.wav` file) into the app window.
-3.  Click the "Transcribe" button.
-4.  Wait for the magic to happen! ✨ When it's done, you can copy the full text or save it as a text file.
-
-You now have a complete transcript of your meeting!
+We'll use a tool that can run a powerful AI language model locally on your machine to create the summary and action items.
+*   **On both macOS and Windows**: We recommend **[LM Studio](https://lmstudio.ai/)**.
 
 ## Step 2: Summarizing with a Local AI
 
@@ -115,6 +76,7 @@ During the meeting, the status of "Project Sunflower" was discussed. The new mod
 
 1.  **Status of Project Sunflower:**
     *   The new module has been tested and is functional.
+    .
     *   There are performance issues on the staging environment.
 
 2.  **Status of Marketing Campaign:**

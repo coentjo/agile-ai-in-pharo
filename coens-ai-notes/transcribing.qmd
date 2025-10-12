@@ -1,0 +1,15 @@
+---
+title: "Hands-On: Transcribe a Meeting 🎤"
+---
+
+Let's turn spoken words into text using AI! 🗣️➡️📝
+
+We'll use a simple online tool called **[Otter.ai](https://otter.ai/)** 🦦.
+
+### Your Mission (in 3 steps):
+
+1.  **Sign Up:** Go to `Otter.ai` and create a free account. ✍️
+2.  **Upload:** Find the "Import" button and upload your meeting audio file (`.mp3`, `.wav`, etc.). 📤
+3.  **Transcribe:** Otter will work its magic! ✨ Then you can read, edit, and export your new transcript. 📄
+
+**That's it!** You've just transcribed a meeting with AI. High five! 🙌🚀
