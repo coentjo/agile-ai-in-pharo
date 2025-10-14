@@ -21,8 +21,9 @@ book:
     - part: "AI"
       chapters:
         - ai.overview.qmd
-        - genai.qmd
+        - prediction.amy.web.qmd
         - godfather-hinton.qmd
+        - genai.qmd
         - education.ai.qmd
         - jobs.ai.qmd
         - references.genai.qmd

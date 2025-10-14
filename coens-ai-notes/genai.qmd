@@ -1,9 +1,5 @@
 # GenAI
 
-Recent: 
-
-- [Amy Webb SxSW 2025 - Emerging Tech Trend](https://www.youtube.com/watch?v=oT33_MrqyHo)
-
 ## What is GenAI?
 
 - Why not ask [perplexity.ai](https://www.perplexity.ai/) ?
