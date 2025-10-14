@@ -13,7 +13,6 @@ book:
     - part: "Diving into AI: some AI Literacy"
       chapters:
         - key-tools.qmd
-        - godfather-hinton.qmd
         - jargon-buster.qmd
         - transcribing.qmd
         - summarizing.qmd
@@ -23,6 +22,7 @@ book:
       chapters:
         - ai.overview.qmd
         - genai.qmd
+        - godfather-hinton.qmd
         - education.ai.qmd
         - jobs.ai.qmd
         - references.genai.qmd

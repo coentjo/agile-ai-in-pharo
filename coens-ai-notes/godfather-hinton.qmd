@@ -2,5 +2,9 @@
 title: "Your Next Steps in AI"
 ---
 
-*   [![Understanding AI Literacy](https://img.youtube.com/vi/jrK3PsD3APk/0.jpg)](https://www.youtube.com/watch?v=jrK3PsD3APk)
+- Jon Stewart interviews Geoffrey Hinton.
+- First half hour Geoffrey explains how neural networks work.
+- After that they discuss the implications of AI.
+
+[![Understanding AI Literacy](https://img.youtube.com/vi/jrK3PsD3APk/0.jpg){width=50%}](https://www.youtube.com/watch?v=jrK3PsD3APk)
 
