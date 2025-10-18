@@ -17,6 +17,7 @@ book:
         - transcribing.qmd
         - summarizing.qmd
         - managing-context.qmd
+        - sending-an-email.qmd
         - search.qmd
     - part: "AI"
       chapters:
