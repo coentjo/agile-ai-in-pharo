@@ -9,3 +9,4 @@ In this chapter, we'll explore some key tools that are making waves in the world
 *   [duck.ai](https://duck.ai) - AI-powered search from duckduckgo. 
 *   [Comet](https://www.perplexity.ai/comet) - The browser from Perplexity that has AI browsing built-in.
 *   [Cursor](https://cursor.sh/) - An AI-powered development environment.
+*   [and there's lots more to find, for example look at: www.rankmyai.com/](https://www.rankmyai.com/)
