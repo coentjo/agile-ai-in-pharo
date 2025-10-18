@@ -1,10 +1,9 @@
 ---
-title: "Finding and Preparing Data"
+title: "Popular Data Sources"
 ---
 
 Data is important in AI projects. The quality and quantity of your data often matter more than the sophistication of your model.
 
-## Popular Data Sources
 
 - [Kaggle](https://www.kaggle.com/datasets)
   - Competitions and datasets
@@ -13,6 +12,8 @@ Data is important in AI projects. The quality and quantity of your data often ma
 
 - [Eindhoven open data](https://data.eindhoven.nl/pages/home/)
   - lots of data about Eindhoven
+  
+- [E-MM1: a big open source dataset](https://encord.com/multimodal-dataset-emm1/)
 
 
 
