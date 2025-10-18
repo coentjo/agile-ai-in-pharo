@@ -31,8 +31,6 @@
 When nonsense comes out of an LLM (or out of a Human by the way)
 we call it hallucination. Some questions can trigger hallucination. 
 
-###
-
 ### 'Which day do I have to put the garbage can out on the street?' 
 
 Some LLMs will give you a Date when you ask for one, a percentage when

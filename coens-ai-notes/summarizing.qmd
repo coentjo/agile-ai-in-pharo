@@ -1,24 +1,24 @@
 ---
-title: "Summarizing a Meeting (Locally and Privately)"
+title: "Scenario: Summarizing a Meeting"
 ---
 
 Once you have a transcript, you can use a local AI to summarize it and create minutes. This guide will walk you through how to do this yourself, using tools that are easy to install and that keep all your data private on your own computer.
 
-## The Tools You'll Need
+**The Tools You'll Need**
 
 We'll use a tool that can run a powerful AI language model locally on your machine to create the summary and action items.
 *   **On both macOS and Windows**: We recommend **[LM Studio](https://lmstudio.ai/)**.
 
-## Step 2: Summarizing with a Local AI
+**Summarizing with a Local AI**
 
 Now, let's take that wall of text and turn it into a neat summary and a list of action items.
 
-### Installation of LM Studio
+**Installation of LM Studio**
 
 1.  Go to the [LM Studio website](https://lmstudio.ai/) and download the installer for your operating system (Mac or Windows).
 2.  Run the installer and follow the on-screen instructions.
 
-### Downloading an AI Model
+**Downloading an AI Model**
 
 LM Studio is a home for AI models. Before you can chat with one, you need to download it.
 1.  Open LM Studio.
@@ -27,13 +27,15 @@ LM Studio is a home for AI models. Before you can chat with one, you need to dow
 4.  You'll see a list of different versions. Look for one that is a good balance of size and quality. The versions marked with **Q4_K_M** are often a good choice.
 5.  Click the **Download** button next to the model you choose. This might take a while as the file is several gigabytes.
 
-### Creating the Summary
+**Creating the Summary**
 
 1.  Once the model is downloaded, click on the **Chat** icon (💬) in the left-hand menu.
 2.  At the top of the screen, make sure your downloaded model is selected.
 3.  Now you can chat with your local AI! Copy the transcript from Step 1 and paste it into the chat box using a prompt like the one in the example below.
 
-## Putting It All Together: The Full Workflow
+{{< pagebreak >}}
+
+**Putting It All Together: The Full Workflow**
 
 Here is an example of what your prompt and the AI's response might look like inside LM Studio.
 
@@ -60,11 +62,13 @@ Here is the text:
 
 Of course! Here is a summary and the minutes of the meeting.
 
-### Summary
+{{< pagebreak >}}
+
+**Summary**
 
 During the meeting, the status of "Project Sunflower" was discussed. The new module is functional, but there are performance issues on the staging environment, likely due to unoptimized database queries. Additionally, an update was given on the upcoming marketing campaign; the visuals have been approved, but the texts for social media posts are still needed.
 
-### Minutes and Action Points
+**Minutes and Action Points**
 
 **Attendees:** Speaker A, Speaker B, Speaker C
 
