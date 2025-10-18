@@ -5,7 +5,7 @@ title: "Key Tools to Get Started"
 In this chapter, we'll explore some key tools that are making waves in the world of AI. Get familiar with them, because in the next chapter, we'll dive into practical scenarios and figure out which of these tools is the best fit for each challenge!
 
 *   [chatGPT](https://chat.openai.com/) - well, maybe...
-*   [perplexity.AI](https://www.perplexity.ai/) - The AI-powered search engine that gives links to sources and suggests follow-up questions.
+*   [perplexity.AI](https://www.perplexity.ai/) - The AI-powered search engine that gives links to sources and suggests follow-up questions. (you may have to press ESCape after opening the page to get to the search)
 *   [duck.ai](https://duck.ai) - AI-powered search from duckduckgo. 
 *   [Comet](https://www.perplexity.ai/comet) - The browser from Perplexity that has AI browsing built-in.
 *   [Cursor](https://cursor.sh/) - An AI-powered development environment.
