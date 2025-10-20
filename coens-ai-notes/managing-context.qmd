@@ -19,3 +19,4 @@ Context is all the relevant information you provide *along with* your prompt. Th
 Without context, the AI has to guess. And when it guesses, you get generic, boring, and often unhelpful answers.
 
 
+[Anthropic about Context](https://www.anthropic.com/news/context-management)
