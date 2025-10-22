@@ -1,0 +1,12 @@
+# Scenario: A 17 Minute AI Workflow To Stand Out At Work
+
+
+![](https://img.youtube.com/vi/yqq_U2fxd2U/mqdefault.jpg)
+
+[Video by Vicky Zhao](https://www.youtube.com/watch?v=yqq_U2fxd2U)
+
+- The video proposes a 3-step AI workflow (using Elicit, NotebookLM, and Claude) to improve knowledge work by focusing on finding and leveraging high-quality academic inputs, rather than relying on generic web search or LLM outputs.[1]
+- Elicit is used to discover and access scholarly papers; NotebookLM summarizes and extracts actionable frameworks from these, and Claude turns insights into practical, leadership-oriented plans for the workplace.[1]
+- The key message is that “improving your input” with robust sources and critical thinking—rather than just automating output—will give you a significant edge in the AI-powered workplace of 2025.[1]
+
+

@@ -10,6 +10,7 @@ book:
   chapters:
     - index.qmd
     - download.qmd
+    - news.qmd
     - part: "Diving into AI: some AI Literacy"
       chapters:
         - key-tools.qmd
@@ -18,6 +19,8 @@ book:
         - summarizing.qmd
         - managing-context.qmd
         - sending-an-email.qmd
+        - my-17-minute-AI-workflow.qmd
+        - markdown.qmd
     - part: "AI"
       chapters:
         - ai.overview.qmd
