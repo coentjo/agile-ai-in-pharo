@@ -13,24 +13,16 @@ Is it AI? Is it ai plane? No, but if you wanna do whatever in ICT then it's good
 
 **Basic Markdown Rules**
 
-1. **Headers**: Write `# Heading` for a big heading
+1. **Headers**: Write `# Heading` for a big heading (`##` for `## Subheading`)
 2. **Bold text**: Surround with double asterisks: `**Text**`
 3. **Italics**: Surround with single asterisks: `*Text*`
-4. **Links**: Write `[Link text](http://www.example.com)`
-Here are some basic Markdown syntax examples:
-
-* Headers: `# Heading` or `## Subheading`
-* Bold text: `**Bold text**`
-* Italic text: `*Italic text*`
-* Lists: `- Item 1`, `- Item 2`, etc.
-* Links: `[Link text](http://www.example.com)`
-* Images: `[Image alt text](http://www.example.com/image.jpg)`
-
-Now that you know the basics of Markdown, give it a try and experiment with different formatting options!
+4. **Lists**: `- Item 1`, `- Item 2`, etc.
+5. **Links**: Write `[Link text](http://www.perplexity.ai.com)`
+6. **Images**: `[Image alt text](http://www.example.com/image.jpg)`
 
 
 
-If you are new to markdown, for example because you still use a text-editor like ms-word, we suggest start with installing [Obsidian](https://obsidian.md/), then maybe look at an introduction like [this one](https://www.youtube.com/watch?v=9ft9G6JUfO0), or [this](https://www.youtube.com/watch?v=d3e7GWsqoU0), or [the least scary Obsidian](https://www.youtube.com/watch?v=3ccktMJ1YHI). 
+If you are new to markdown, for example because you are used to a text-editor like ms-word, we suggest start with installing [Obsidian](https://obsidian.md/), then maybe look at an introduction like [this one by Ross Zeiger](https://www.youtube.com/watch?v=9ft9G6JUfO0), or [this one by Vicky Zhao about Obsidian Note Taking](https://www.youtube.com/watch?v=d3e7GWsqoU0), or [the least scary Obsidian guide](https://www.youtube.com/watch?v=3ccktMJ1YHI). 
 
-If you really want a deep dive: [spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/) 
+For a deep dive: [spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/) 
 
