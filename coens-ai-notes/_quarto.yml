@@ -43,6 +43,7 @@ book:
     - part: "Tools-n-Technologies"
       chapters:
         - tools-n-co.md
+        - git-intro.md
         - agents.qmd
         - mcp.qmd
         - acp.qmd
