@@ -1,0 +1,41 @@
+---
+title: "The Surprising Energy Cost of an AI Chat"
+---
+
+This chapter was written by gemini-2.5-pro, feel free to check: see the links at the bottom of the page. 
+
+When we use an AI, like asking a chatbot a question, it feels clean and digital. There's no smoke or noise, so it's easy to think it doesn't have a real-world footprint. But every single one of those queries uses electricity in a massive data center, somewhere in the world.
+
+This is called "inference." It's the energy cost of the AI *using* its training to give you an answer. While the energy for one single question is tiny, the global scale is enormous.
+
+But how can we understand these numbers? The best way is to compare them to everyday activities we're more familiar with.
+
+***Your Dinner vs. Your AI Usage***
+
+How does sitting down to a modest, 100g steak dinner compare to asking an AI questions? The difference is still staggering.
+
+A single 100g (about 3.5oz) steak requires about **7,000 Watt-hours** of energy to produce.
+
+To use that same amount of energy with an AI, you would need to ask it roughly **2,300 questions**.
+
+So, from a purely energy perspective, that one meal has the same impact as thousands of your interactions with an AI.
+
+\newpage
+
+***The Real Story: A Question of Scale***
+
+So, does this mean your AI usage is insignificant? Not quite. It's about how your habits scale over time.
+
+Let's compare a week's worth of activity:
+
+-   **Your AI Use:** If you are a heavy AI user asking **100 questions per day**, you would ask 700 questions in a week. That's a significant amount of interaction!
+-   **Your Diet:** In that same week, eating just **two 100g steaks** would have a larger energy footprint than all 700 of those AI questions combined.
+
+The takeaway is that on a personal, day-to-day level, choices about high-impact foods and activities (like diet and travel) still have a much larger immediate effect on your personal energy footprint than your AI usage does. The global challenge of AI's energy consumption comes from *everyone* doing it at once.
+
+---
+
+***Sources***
+
+- **AI Energy Consumption:** Detailed analysis from Stanford researcher S. Flamphier on the energy cost of large language models. [sflamphier.github.io/ai-energy-consumption/](https://sflamphier.github.io/ai-energy-consumption/)
+- **Environmental Impacts of Food:** A comprehensive study from Our World in Data, showing the high resource intensity of beef production. [ourworldindata.org/environmental-impacts-of-food](https://ourworldindata.org/environmental-impacts-of-food)

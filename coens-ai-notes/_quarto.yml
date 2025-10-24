@@ -20,6 +20,7 @@ book:
         - managing-context.qmd
         - sending-an-email.qmd
         - my-17-minute-AI-workflow.qmd
+        - ai-energy.qmd
         - markdown.qmd
     - part: "AI"
       chapters:
