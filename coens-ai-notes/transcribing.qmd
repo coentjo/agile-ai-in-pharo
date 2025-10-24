@@ -1,15 +1,15 @@
 ---
-title: "Scenario: Transcribe a Meeting 🎤"
+title: "Scenario: Transcribe a Meeting"
 ---
 
-Let's turn spoken words into text using AI! 🗣️➡️📝
+Let's turn spoken words into text using AI! \emoji{speaking-head}\emoji{right-arrow}\emoji{pencil}
 
-We'll use a simple online tool called **[Otter.ai](https://otter.ai/)** 🦦.
+We'll use a simple online tool called **[Otter.ai](https://otter.ai/)** \emoji{otter}.
 
 **Your Mission (in 3 steps):**
 
-1.  **Sign Up:** Go to `Otter.ai` and create a free account. ✍️
-2.  **Upload:** Find the "Import" button and upload your meeting audio file (`.mp3`, `.wav`, etc.). 📤
-3.  **Transcribe:** Otter will work its magic! ✨ Then you can read, edit, and export your new transcript. 📄
+1.  **Sign Up:** Go to `Otter.ai` and create a free account. \emoji{writing-hand}
+2.  **Upload:** Find the "Import" button and upload your meeting audio file (`.mp3`, `.wav`, etc.). \emoji{outbox-tray}
+3.  **Transcribe:** Otter will work its magic! \emoji{sparkles} Then you can read, edit, and export your new transcript. \emoji{page-facing-up}
 
-**That's it!** You've just transcribed a meeting with AI. High five! 🙌🚀
+**That's it!** You've just transcribed a meeting with AI. High five! \emoji{raised-hands}\emoji{rocket}

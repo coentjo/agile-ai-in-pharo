@@ -67,6 +67,7 @@ book:
 
 format:
   pdf:
+    pdf-engine: lualatex
     documentclass: book
     classoption: [landscape, oneside]
     geometry:
@@ -84,6 +85,7 @@ format:
         \usepackage{float}
         \usepackage{graphicx}
         \usepackage{qrcode}
+        \usepackage{emoji}
         \DeclareGraphicsExtensions{.pdf,.png,.jpg}
         \graphicspath{{./}{./attach/}}
 

@@ -1,97 +1,15 @@
 ---
-title: "Scenario: Summarizing a Meeting"
+title: "Scenario: Summarize a Text"
 ---
 
-Once you have a transcript, you can use a local AI to summarize it and create minutes. This guide will walk you through how to do this yourself, using tools that are easy to install and that keep all your data private on your own computer.
+Let's make a long story short with AI! \emoji{scroll}\emoji{arrow-right}️\emoji{memo}
 
-**The Tools You'll Need**
+We'll use a simple online tool called **[Summarizer](https://www.summarizer.org/)** \emoji{brain}.
 
-We'll use a tool that can run a powerful AI language model locally on your machine to create the summary and action items.
-*   **On both macOS and Windows**: We recommend **[LM Studio](https://lmstudio.ai/)**.
+**Your Mission (in 3 steps):**
 
-**Summarizing with a Local AI**
+1.  **Find Text:** Grab a long article or text you want to shorten. \emoji{magnifying-glass-tilted-left}
+2.  **Paste & Go:** Copy the text, paste it into the Summarizer website, and click the "Summarize" button. \emoji{clipboard}
+3.  **Read:** Enjoy your new, shorter text! \emoji{party-popper} You can even choose how long you want the summary to be.
 
-Now, let's take that wall of text and turn it into a neat summary and a list of action items.
-
-**Installation of LM Studio**
-
-1.  Go to the [LM Studio website](https://lmstudio.ai/) and download the installer for your operating system (Mac or Windows).
-2.  Run the installer and follow the on-screen instructions.
-
-**Downloading an AI Model**
-
-LM Studio is a home for AI models. Before you can chat with one, you need to download it.
-1.  Open LM Studio.
-2.  Click on the **Search** icon (🔍) in the left-hand menu.
-3.  In the search bar, type a model name. A good, versatile model to start with is **"Mistral 7B Instruct"**.
-4.  You'll see a list of different versions. Look for one that is a good balance of size and quality. The versions marked with **Q4_K_M** are often a good choice.
-5.  Click the **Download** button next to the model you choose. This might take a while as the file is several gigabytes.
-
-**Creating the Summary**
-
-1.  Once the model is downloaded, click on the **Chat** icon (💬) in the left-hand menu.
-2.  At the top of the screen, make sure your downloaded model is selected.
-3.  Now you can chat with your local AI! Copy the transcript from Step 1 and paste it into the chat box using a prompt like the one in the example below.
-
-{{< pagebreak >}}
-
-**Putting It All Together: The Full Workflow**
-
-Here is an example of what your prompt and the AI's response might look like inside LM Studio.
-
----
-
-**You:**
-
-Hello! I have a transcript of a team meeting here. Could you summarize it for me and create minutes with action points? I have anonymized the speakers' names to Speaker A, B, and C.
-
-Here is the text:
-```
-[Speaker A]: Good morning everyone. Let's start with the progress on Project Sunflower. How are we doing?
-[Speaker B]: Good morning. I've run the latest tests on the new module. It looks good, but the performance is not yet what it should be on the staging environment. I think we need to optimize the database queries.
-[Speaker A]: Understood. Can you make an analysis of that and come up with a proposal?
-[Speaker B]: Sure, I'll put it on my list.
-[Speaker C]: I'd like to touch on the marketing campaign we're launching next week. The visuals have been approved by the client. I just need the final texts for the social media posts.
-[Speaker A]: Who was supposed to deliver those?
-[Speaker B]: That would be me. I have a first draft ready, but I wanted to wait for the latest details of the technical specifications. I'll make sure you have it by the end of the day, Speaker C.
-[Speaker C]: Great, thank you!
-[Speaker A]: Perfect. Then we'll close here. Good work everyone.
-```
-
-**Local AI Assistant (running in LM Studio):**
-
-Of course! Here is a summary and the minutes of the meeting.
-
-{{< pagebreak >}}
-
-**Summary**
-
-During the meeting, the status of "Project Sunflower" was discussed. The new module is functional, but there are performance issues on the staging environment, likely due to unoptimized database queries. Additionally, an update was given on the upcoming marketing campaign; the visuals have been approved, but the texts for social media posts are still needed.
-
-**Minutes and Action Points**
-
-**Attendees:** Speaker A, Speaker B, Speaker C
-
-**Date:** [Current Date]
-
-**Subject:** Progress on Project Sunflower & Marketing Campaign
-
-**Discussion Points:**
-
-1.  **Status of Project Sunflower:**
-    *   The new module has been tested and is functional.
-    .
-    *   There are performance issues on the staging environment.
-
-2.  **Status of Marketing Campaign:**
-    *   Visuals have been approved by the client.
-    *   Texts for social media posts are not yet final.
-
-**Action Points:**
-
-*   **[Speaker B]**: Analyze the database queries of the new module and come up with a proposal for optimization.
-*   **[Speaker B]**: Deliver the final texts for the social media posts to Speaker C by the end of the day.
-
----
-
-And that's it! You've successfully gone from an audio recording to a complete set of meeting minutes, without your data ever leaving your computer. You're now an AI-powered, privacy-conscious productivity wizard! 🧙‍♀️🚀
+**That's it!** You've just summarized a text with AI. So cool! \emoji{smiling-face-with-sunglasses}
