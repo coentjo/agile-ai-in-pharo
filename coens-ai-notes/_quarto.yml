@@ -19,6 +19,7 @@ book:
         - summarizing.qmd
         - managing-context.qmd
         - sending-an-email.qmd
+        - ai-quirks.qmd
         - my-17-minute-AI-workflow.qmd
         - ai-energy.qmd
         - markdown.qmd

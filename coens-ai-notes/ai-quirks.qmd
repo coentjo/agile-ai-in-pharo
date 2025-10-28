@@ -1,0 +1,13 @@
+
+---
+title: "Some AI quirks"
+---
+
+
+- Try generating an image of clock other time than 10:10.
+- Ask LLM how many times character 'R' is in STRAWBERRY. 
+- How much is 1 + 1?
+- Which day I have to put my garbage out on the street. 
+- What percentage of people likes ...?
+- Saying 'Please' gives you better answers?
+
