@@ -85,6 +85,7 @@ format:
       text: |
         \usepackage{titlesec}
         \titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter.}{1em}{}
+        \pagestyle{empty}
         \usepackage{float}
         \usepackage{graphicx}
         \usepackage{qrcode}
