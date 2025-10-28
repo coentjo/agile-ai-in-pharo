@@ -1,0 +1,29 @@
+---
+title: "AI Failures: When Image Context is Misleading"
+---
+
+Modern AI, especially in deep learning, is great at recognizing images. But sometimes, it gets things hilariously and dangerously wrong! 😱 This happens when the AI focuses on irrelevant details like the background, lighting, or weird artifacts in the data, instead of the actual subject. This is a classic case of the "black box" problem and something called "spurious correlations."
+
+### The Problem: Black Boxes and Spurious Correlations
+
+Neural networks are often called "black boxes" because it's hard to see *how* they decide things. They just learn statistical patterns. If your training data has weird patterns, the AI will learn those instead of what you want. This leads to **spurious correlations**, where the AI links unrelated things. For example, if all your "wolf" pictures have snow in the background, the AI might learn that "snow = wolf" 🐺❄️, which is... not quite right.
+
+### Real-World Goofs 🤪
+
+Here are a couple of examples where this has happened:
+
+1.  **The Wolf in Husky's Clothing:** An AI was trained to tell wolves from huskies. It did great!... until researchers realized it was just checking for snow in the background. It had learned that wolves are always in snowy pictures and huskies aren't. Show it a husky in the snow, and it would confidently shout "Wolf!".
+
+2.  **Medical Mayhem:** In a more serious case, an AI designed to spot pneumonia in chest X-rays started using hospital logos or the presence of a chest tube as a sign of pneumonia. It wasn't looking at the lungs at all! This is super dangerous because it could easily misdiagnose patients based on the wrong clues.
+
+### Why Does This Happen and How Do We Fix It?
+
+These blunders are usually caused by **biased datasets** (like only having wolf pictures in the snow). Since the AI's learning process is opaque, we don't catch these mistakes until later.
+
+To make our AI buddies smarter, we need:
+
+*   **Better Data:** More diverse and less biased training images.
+*   **Explainable AI (XAI):** Tools that help us peek inside the "black box" to see what the AI is *really* thinking.
+*   **Tougher Tests:** We need to test AI in all sorts of weird situations, not just the ones it was trained on.
+
+This approach will help us build more reliable and trustworthy AI. And hopefully, fewer AIs that think snow is a type of dog. 😂
