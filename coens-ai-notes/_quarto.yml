@@ -36,6 +36,7 @@ book:
         - nocodelowcode.qmd
         - references.ai.act.qmd
         - finding-data.qmd
+        - transformers.qmd
     - part: "Train, Fine Tune, RAG"
       chapters:
         - train-finetune-rag.qmd
