@@ -68,13 +68,6 @@ https://www.youtube.com/watch?v=O5xeyoRL95U
   - Open access
   - Preprint server
 
-### 3. Code Repositories
-
-- [Papers With Code](https://paperswithcode.com)
-  - Implementations of papers
-  - Benchmarks
-  - State-of-the-art tracking
-
 ## Community Resources
 
 ### 1. Forums and Discussion
