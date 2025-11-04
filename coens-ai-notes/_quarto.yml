@@ -37,13 +37,14 @@ book:
         - references.ai.act.qmd
         - finding-data.qmd
         - transformers.qmd
-    - part: "Train, Fine Tune, RAG"
+    - part: "Train, Fine Tune, RAG, Validate"
       chapters:
         - train-finetune-rag.qmd
         - rag.qmd
         - finetune.qmd
         - train.qmd
         - recognition.qmd
+        - validate.qmd
     - part: "Tools-n-Technologies"
       chapters:
         - tools-n-co.md

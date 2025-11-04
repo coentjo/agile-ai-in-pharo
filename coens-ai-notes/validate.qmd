@@ -1,0 +1,3 @@
+# Validate
+
+- [James Bach - Seriously Testing LLMs](https://www.satisfice.com/blog/archives/487957)
