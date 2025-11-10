@@ -6,6 +6,7 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 
 ***October 2025***
 
+- [opencode](https://github.com/sst/opencode)
 - [oct2025 - Everything about Transformers](https://www.krupadave.com/articles/everything-about-transformers)
 - [NOS: data verkiezingen](https://specials.app.nos.nl/dataverhalen-tk2025/migratie/)
 - [local alternative for google notebook](https://github.com/lfnovo/open-notebook)

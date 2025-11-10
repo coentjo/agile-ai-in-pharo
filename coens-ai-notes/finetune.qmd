@@ -1,3 +1,5 @@
 # Finetune
 
 
+- [AI Engineering at Jane Street - John Crepezzi](https://www.youtube.com/watch?v=0ML7ZLMdcl4)
+- [xcancel introducing qqWen](https://xcancel.com/brendanh0gan/status/1955641113693561071#m)
