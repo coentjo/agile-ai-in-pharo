@@ -15,5 +15,5 @@ Data is important in AI projects. The quality and quantity of your data often ma
   
 - [E-MM1: a big open source dataset](https://encord.com/multimodal-dataset-emm1/)
 
-
+- [Augmenta: an AI agent for enhancing datasets with information from the internet](https://github.com/Global-Witness/augmenta/)
 
