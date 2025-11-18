@@ -6,7 +6,7 @@ Welcome! This is a Work-in-Progress, a collection of notes on AI
 used in session about about AI. 
 The next chapter explains how this pdf can be downloaded.
 
-Do not read this document from beginning to end... instead look at the relevant chapters for you...
+Do not read this document from beginning to end... instead look at the relevant chapters for you... Or chat with it (see next chapter). 
 
 Questions about this all? [Ask here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
 

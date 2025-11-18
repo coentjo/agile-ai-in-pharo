@@ -10,6 +10,7 @@ book:
   chapters:
     - index.qmd
     - download.qmd
+    - chat-with-content.qmd
     - news.qmd
     - part: "Diving into AI: some AI Literacy"
       chapters:
@@ -35,6 +36,7 @@ book:
         - references.genai.qmd
         - nocodelowcode.qmd
         - references.ai.act.qmd
+        - privacy.qmd
         - finding-data.qmd
         - transformers.qmd
     - part: "Train, Fine Tune, RAG, Validate"

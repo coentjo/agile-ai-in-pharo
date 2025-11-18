@@ -4,6 +4,10 @@
 New, seems interesting or important, maybe I looked at it already, maybe not... 
 
 
+***November 2025***
+
+- [han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent](https://www.gld.nl/nieuws/8392671/han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent)
+
 ***October 2025***
 
 - [opencode](https://github.com/sst/opencode)

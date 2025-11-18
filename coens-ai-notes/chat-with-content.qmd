@@ -1,0 +1,7 @@
+---
+title: "Chat with this document"
+---
+
+Want to Chat with the contents of this document? 
+[Chat here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
+
