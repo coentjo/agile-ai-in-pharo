@@ -1,4 +1,0 @@
-# Div tools that could be interesting
-
-
-- [opencode](https://github.com/sst/opencode)

@@ -54,7 +54,6 @@ book:
         - agents.qmd
         - mcp.qmd
         - acp.qmd
-        - tools.div.qmd
         - journalism.ai.qmd
     - part: "Neuron & Network"
       chapters:
