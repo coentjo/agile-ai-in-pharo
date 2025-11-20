@@ -50,6 +50,7 @@ book:
     - part: "Tools-n-Technologies"
       chapters:
         - tools-n-co.md
+        - n8n.qmd
         - git-intro.md
         - agents.qmd
         - mcp.qmd

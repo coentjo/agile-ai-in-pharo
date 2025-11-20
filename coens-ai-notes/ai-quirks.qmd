@@ -1,4 +1,3 @@
-
 ---
 title: "Some AI quirks"
 ---
@@ -10,4 +9,10 @@ title: "Some AI quirks"
 - Which day I have to put my garbage out on the street. 
 - What percentage of people likes ...?
 - Saying 'Please' gives you better answers?
+
+---
+
+- [NOS: Overleden paus nog aan 't werk](https://nos.nl/l/2587368)
+
+
 
