@@ -33,6 +33,7 @@ book:
         - genai.qmd
         - coding.qmd
         - education.ai.qmd
+        - feedback.qmd
         - jobs.ai.qmd
         - references.genai.qmd
         - nocodelowcode.qmd
