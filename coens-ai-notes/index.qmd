@@ -17,9 +17,6 @@ using personal data! One way to make sure private data will stay
 private is using local AI's, although this takes some extra knowledge, and a powerful machine. 
 
 
-```
-It's easier to invent the future than predict it (Alan Kay)
-```
 
 Please use it wisely...
 
