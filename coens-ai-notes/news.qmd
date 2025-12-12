@@ -10,6 +10,7 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 
 ***November 2025***
 
+- [Martin Fowler: How AI will change software engineering](https://www.youtube.com/watch?v=CQmI4XKTa0U)
 - [han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent](https://www.gld.nl/nieuws/8392671/han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent)
 
 ***October 2025***

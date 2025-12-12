@@ -32,6 +32,7 @@ book:
         - godfather-hinton.qmd
         - genai.qmd
         - coding.qmd
+        - softwareengineering.md
         - education.ai.qmd
         - feedback.qmd
         - jobs.ai.qmd
