@@ -18,7 +18,7 @@ book:
         - jargon-buster.qmd
         - transcribing.qmd
         - summarizing.qmd
-        - managing-context.qmd
+        - context-management.qmd
         - sending-an-email.qmd
         - ai-quirks.qmd
         - ai-image-failures.qmd
