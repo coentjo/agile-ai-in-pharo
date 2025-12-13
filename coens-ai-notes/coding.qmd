@@ -4,10 +4,7 @@ title: "Coding with AI"
 
 Master the art of providing **context**.
 
-See also the chapter 'Beyond the Prompt: The Power of AI Context'. 
-
-
 - [Cursor](https://cursor.com/learn/context)
 - [202510 LLM Coding Personalities](https://www.sonarsource.com/sem/the-coding-personalities-of-leading-llms/)
 - [Anthropic about Context](https://www.anthropic.com/news/context-management)
-
+- [Most devs don’t understand how context windows work](https://www.youtube.com/watch?v=-uW5-TaVXu4)

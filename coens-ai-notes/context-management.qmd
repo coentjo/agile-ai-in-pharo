@@ -2,8 +2,9 @@
 title: "Beyond the Prompt: The Power of AI Context"
 ---
 
-A simple prompt is just a question. But to get truly powerful results from an AI, you need to master the art of providing **context**. This chapter, inspired by best practices from tools like [Cursor](https://cursor.com/learn/context), reframes this crucial skill for everyone, not just programmers.
+A simple prompt is just a question. But to get truly powerful results from an AI, you need to master the art of providing **context**. 
 
+- [Cursor: Context](https://cursor.com/learn/context)
 
 **What is Context?**
 
@@ -18,5 +19,4 @@ Context is all the relevant information you provide *along with* your prompt. Th
 
 Without context, the AI has to guess. And when it guesses, you get generic, boring, and often unhelpful answers.
 
-
-[Anthropic about Context](https://www.anthropic.com/news/context-management)
+- [Anthropic about Context](https://www.anthropic.com/news/context-management)

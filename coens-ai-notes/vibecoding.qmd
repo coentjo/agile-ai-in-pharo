@@ -1,0 +1,11 @@
+---
+title: "Coding with GenAI"
+---
+
+- [cursor course: AI Fundamentals](https://cursor.com/learn)
+- [vs code with co-pilot (free plan)](https://code.visualstudio.com/docs/copilot/overview)
+- [Cursor.com (20 euro p/m)](https://cursor.com)
+- [AIDER.chat (free)](https://aider.chat/)
+- [Open Devin: Create any Application with Open Source AI Engineer](https://www.youtube.com/watch?v=3-q5GzRNEe0)
+- [Avante (AI in neovim, free)](https://nithinbekal.com/posts/avante-nvim/)
+

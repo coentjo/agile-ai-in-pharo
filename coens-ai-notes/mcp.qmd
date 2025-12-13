@@ -2,6 +2,7 @@
 
 MCP is a standardization of the way to how LLM's connect to other tools. 
 
+- [MCP Quickstart](https://modelcontextprotocol.info/docs/quickstart/quickstart/)
 - [modelcontextprotocol.info/](https://modelcontextprotocol.info/)
 - [Example Clients](https://modelcontextprotocol.io/clients)
 - [mcpservers.org](https://mcpservers.org/)
@@ -12,4 +13,5 @@ MCP is a standardization of the way to how LLM's connect to other tools.
 - [Ruud mijn-nieuwe-mcp-server-laat-ai-zichzelf-actief tegenspreken](https://www.linkedin.com/posts/rhuijts_mijn-nieuwe-mcp-server-laat-ai-zichzelf-actief-activity-7336375412236644352-VhSr)
 
 - [mcp for whatsapp](https://github.com/lharries/whatsapp-mcp)
+
 
