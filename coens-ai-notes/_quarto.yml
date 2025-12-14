@@ -33,6 +33,7 @@ book:
         - genai.qmd
         - coding.qmd
         - vibecoding.qmd
+        - dspy.qmd
         - softwareengineering.md
         - education.ai.qmd
         - feedback.qmd
