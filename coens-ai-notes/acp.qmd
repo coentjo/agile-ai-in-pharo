@@ -1,4 +1,6 @@
-# ACP - Agent Communication Protocol
+---
+title: "ACP - Agent Communication Protocol"
+---
 
 To let Agents communicate, no matter what framework the Agents were built in. 
 

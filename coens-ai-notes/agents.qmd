@@ -1,4 +1,7 @@
-# Agents
+---
+title: "Agents"
+---
+
 
 - [Engineering LLM-Based Agentic Systems](https://se-ml.github.io/blog/2025/agentic/)
 - [HF: Introduction to Agents](https://huggingface.co/learn/agents-course/unit1/introduction)

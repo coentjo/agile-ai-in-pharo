@@ -12,7 +12,7 @@ book:
     - download.qmd
     - chat-with-content.qmd
     - news.qmd
-    - part: "Diving into AI: some AI Literacy"
+    - part: "AI Literacy"
       chapters:
         - key-tools.qmd
         - jargon-buster.qmd
@@ -31,11 +31,6 @@ book:
         - prediction.amy.web.qmd
         - godfather-hinton.qmd
         - genai.qmd
-        - coding.qmd
-        - vibecoding.qmd
-        - dspy.qmd
-        - softwareengineering.md
-        - education.ai.qmd
         - feedback.qmd
         - jobs.ai.qmd
         - references.genai.qmd
@@ -52,16 +47,17 @@ book:
         - train.qmd
         - recognition.qmd
         - validate.qmd
-    - part: "Tools-n-Technologies"
+    - part: "Learning with AI"
       chapters:
-        - tools-n-co.md
-        - n8n.qmd
-        - git-intro.md
-        - agents.qmd
-        - mcp.qmd
-        - acp.qmd
-        - journalism.ai.qmd
-    - part: "Neuron & Network"
+        - education.ai.qmd
+        - NBAAPL.qmd
+    - part: "Programming with AI"
+      chapters:
+        - coding.qmd
+        - vibecoding.qmd
+        - dspy.qmd
+        - softwareengineering.md
+    - part: "Neural Networks"
       chapters:
         - NNetwork_choice.qmd
         - perceptron.qmd
@@ -72,6 +68,15 @@ book:
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
         - references.ai.qmd
+    - part: "Tools-n-Technologies"
+      chapters:
+        - tools-n-co.md
+        - n8n.qmd
+        - git-intro.md
+        - agents.qmd
+        - mcp.qmd
+        - acp.qmd
+        - journalism.ai.qmd
     - part: "Experiments"
       chapters:
         - experiments/references.qmd

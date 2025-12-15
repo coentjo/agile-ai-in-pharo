@@ -16,7 +16,7 @@ A typical neural network consists of three main components:
 2. **Hidden Layer(s)**: Processes the information through multiple Perceptrons
 3. **Output Layer**: Produces the final result
 
-### Key Components
+## Key Components
 
 Each connection in the network has:
 - A weight that determines its strength
