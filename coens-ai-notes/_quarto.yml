@@ -25,6 +25,7 @@ book:
         - my-17-minute-AI-workflow.qmd
         - ai-energy.qmd
         - markdown.qmd
+        - aitiquette.brabantkennis.md
     - part: "AI"
       chapters:
         - ai.overview.qmd
