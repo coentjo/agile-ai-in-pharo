@@ -31,6 +31,7 @@ book:
         - ai.overview.qmd
         - prediction.amy.web.qmd
         - godfather-hinton.qmd
+        - how-llms-generate-text.qmd
         - genai.qmd
         - feedback.qmd
         - jobs.ai.qmd

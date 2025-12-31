@@ -1,0 +1,7 @@
+---
+title: "Youtube/Learnthatstack: How LLMs generate text. "
+---
+
+[How LLMs Actually Generate Text](https://www.youtube.com/watch?v=NKnZYvZA7w4)
+
+
