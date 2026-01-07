@@ -22,6 +22,7 @@ book:
         - sending-an-email.qmd
         - ai-quirks.qmd
         - ai-image-failures.qmd
+        - creating-an-app-with-ai.qmd
         - my-17-minute-AI-workflow.qmd
         - ai-energy.qmd
         - markdown.qmd
