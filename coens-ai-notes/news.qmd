@@ -3,6 +3,10 @@
 
 New, seems interesting or important, maybe I looked at it already, maybe not... 
 
+***January 2026***
+
+- [VideoRAG: Chat with Your Videos](https://github.com/HKUDS/VideoRAG)
+
 ***December 2025***
 
 - [Cursor: onderwijs aan TU/e](https://www.cursor.tue.nl/nieuws/2025/december/week-1/ai-zal-onderwijs-aan-de-tu-e-fundamenteel-transformeren)

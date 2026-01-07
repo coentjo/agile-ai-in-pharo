@@ -1,0 +1,6 @@
+---
+title: "Guardrailing"
+---
+
+
+- [short course on guardrailing](https://www.deeplearning.ai/short-courses/safe-and-reliable-ai-via-guardrails)
