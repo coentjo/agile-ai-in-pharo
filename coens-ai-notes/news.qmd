@@ -6,6 +6,7 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 ***January 2026***
 
 - [VideoRAG: Chat with Your Videos](https://github.com/HKUDS/VideoRAG)
+- [deeplearning.ai: document-ai-from-ocr-to-agentic-doc-extraction](https://learn.deeplearning.ai/courses/document-ai-from-ocr-to-agentic-doc-extraction)
 
 ***December 2025***
 
@@ -15,11 +16,9 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 ***November 2025***
 
 - [Martin Fowler: How AI will change software engineering](https://www.youtube.com/watch?v=CQmI4XKTa0U)
-- [han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent](https://www.gld.nl/nieuws/8392671/han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent)
 
 ***October 2025***
 
-- [opencode](https://github.com/sst/opencode)
 - [oct2025 - Everything about Transformers](https://www.krupadave.com/articles/everything-about-transformers)
 - [NOS: data verkiezingen](https://specials.app.nos.nl/dataverhalen-tk2025/migratie/)
 - [local alternative for google notebook](https://github.com/lfnovo/open-notebook)
