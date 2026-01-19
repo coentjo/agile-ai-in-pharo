@@ -7,6 +7,7 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 
 - [VideoRAG: Chat with Your Videos](https://github.com/HKUDS/VideoRAG)
 - [deeplearning.ai: document-ai-from-ocr-to-agentic-doc-extraction](https://learn.deeplearning.ai/courses/document-ai-from-ocr-to-agentic-doc-extraction)
+- [Handy: open source Speech2Text](https://github.com/cjpais/Handy)
 
 ***December 2025***
 
