@@ -1,3 +1,5 @@
 # Validate
 
+
+- [short course deeplearning.ai automated-testing-llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops)
 - [James Bach - Seriously Testing LLMs](https://www.satisfice.com/blog/archives/487957)
