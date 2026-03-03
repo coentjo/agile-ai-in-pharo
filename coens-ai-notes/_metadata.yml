@@ -7,7 +7,7 @@ format:
     theme: cosmo
     code-fold: true
   pdf:
-    papersize: letter
+    papersize: a4
     toc: true
     number-sections: true
     colorlinks: true
