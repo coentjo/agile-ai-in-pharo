@@ -27,6 +27,7 @@ book:
         - ai-energy.qmd
         - markdown.qmd
         - aitiquette.brabantkennis.md
+        - languages.qmd
     - part: "AI"
       chapters:
         - ai.overview.qmd

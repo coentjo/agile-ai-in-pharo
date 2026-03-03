@@ -1,4 +1,8 @@
-# Privacy
+---
+title: "LLM Languages"
+---
+
+## Dutch models
 
 - [tweakers.net: Nederlandse GPT‑NL is klaar voor gebruik: 'Voldoet als enige taalmodel aan AVG'](https://tweakers.net/reviews/14412/nederlandse-gpt-nl-is-klaar-voor-gebruik-voldoet-als-enige-taalmodel-aan-avg.html)
-- [han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent](https://www.gld.nl/nieuws/8392671/han-onderzoekt-mogelijk-datalek-na-ongeoorloofd-ai-gebruik-door-docent)
+- Dutch LLM Geitje: tommy/geitje:7b_ultra_q8_0
