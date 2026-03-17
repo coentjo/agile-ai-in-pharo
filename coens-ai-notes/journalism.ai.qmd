@@ -1,4 +1,9 @@
-# Journalism and AI
+# AI, Journalism, Democracy
 
+- [NOS: Special: hoe herken je valse beelden over de oorlog?](https://nos.nl/l/2605259#UPDATE-92837799)
+- [NOS: Lokale partijen worden genegeerd door AI-chatbots, 'niet geschikt als stemhulp'](https://nos.nl/l/2606063)
+- [Jonathan Boymal: AI’s deepest educational risk is cognitive offloading...](https://www.linkedin.com/posts/jonathan-boymal-448b5870_the-recent-report-by-jason-m-lodge-and-leslie-activity-7439503812626870272-B0yG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAO9wtwB4Z7xeD6SerWNj2fZLPXwKUSCRk4)
+- [De Speld: ai-beelden-van-beverwijk-misleiden-toeristen](https://speld.nl/2025/12/23/ai-beelden-van-beverwijk-misleiden-toeristen/)
+- [Shuwey Fang: information-ecosystem-being-redrawn-ai-might-be-good-news](https://reutersinstitute.politics.ox.ac.uk/news/information-ecosystem-being-redrawn-ai-might-be-good-news)
 - [stichtingrpo.nl: introductie-ai-kompas](https://www.stichtingrpo.nl/introductie-ai-kompas/)
 - [Hey Aftonbladet (chatbot): What do YOU want to know?](https://www.journalismai.info/blog/what-do-you-want-to-know)
