@@ -75,6 +75,7 @@ book:
         - references.ai.qmd
     - part: "Tools-n-Technologies"
       chapters:
+        - my-free-ai.qmd
         - tools-n-co.md
         - n8n.qmd
         - git-intro.md

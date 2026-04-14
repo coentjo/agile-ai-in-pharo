@@ -1,0 +1,23 @@
+---
+title: "My/Free AI tools"
+---
+
+In this chapter I want to collect ideas for AI's that you can use (partly) for free, (mostly as in: free beer, as opposed to: free speech). 
+
+
+
+# ChatGPT, Cursor.ai, Perplexity.ai, Claude, Gemini, Duck.ai
+
+A lot of online tools give you some free tokens. how many tokens you get depends on of course what you are doing but also if if it's a search tool like Perplexity or a chatbot like ChatGPT, or a development environment like cursor. 
+
+# chat.fontysict.nl
+
+For Fontys ICT students who have an i-account, I advise looking at [chat.fontysict.nl](chat.fontysict.nl). Ask the project lead for an API token to be able to incorporate those models in your own apps.  
+
+# Ollama (local or on your own server)
+
+If you have a powerful laptop, then you could try running models locally, for example in Ollama. If you don't know, I advice you to just try it out. Start with a small model, like 'llame3.2' (2 GB) or 'phi3:latest' (2.4 GB)
+
+# Google Colab
+
+In Google CoLab you can develop source code, for example a Python notebook, and you will have a copilot that will help you with programming. 
