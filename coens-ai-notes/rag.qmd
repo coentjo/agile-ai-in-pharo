@@ -1,7 +1,13 @@
 # RAG: Retrieval Augmented Generation
 
+
+
+- [deeplearning.ai course: Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
+- [building-evaluating-advanced-rag](https://learn.deeplearning.ai/courses/building-evaluating-advanced-rag)
+
+
+
 - [IBM, March 2026: Is RAG still needed?](https://www.youtube.com/watch?v=UabBYexBD4k)
 - [IBM, March 2026: What is OpenRAG?](https://www.youtube.com/watch?v=qreMmsOY86A)
-- [deeplearning.ai course: Chat with your data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/)
 - [IBM, Marina Danilevsky (7 min)](https://www.youtube.com/watch?v=T-D1OfcDW1M)
 
