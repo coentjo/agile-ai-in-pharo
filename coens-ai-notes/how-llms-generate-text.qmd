@@ -1,7 +1,13 @@
 ---
-title: "Youtube/Learnthatstack: How LLMs generate text. "
+title: How LLMs work
 ---
 
-[How LLMs Actually Generate Text](https://www.youtube.com/watch?v=NKnZYvZA7w4)
+
+
+[ynarwal: how-llms-work](https://ynarwal.github.io/how-llms-work/)
+
+[youtube, 60min, Andrej Karpathy](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+
+[youtube, 9min, How LLMs Actually Generate Text](https://www.youtube.com/watch?v=NKnZYvZA7w4)
 
 
