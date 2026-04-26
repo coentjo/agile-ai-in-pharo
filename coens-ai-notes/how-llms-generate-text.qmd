@@ -6,8 +6,13 @@ title: How LLMs work
 
 [ynarwal: how-llms-work](https://ynarwal.github.io/how-llms-work/)
 
-[youtube, 60min, Andrej Karpathy](https://www.youtube.com/watch?v=zjkBMFhNj_g)
-
 [youtube, 9min, How LLMs Actually Generate Text](https://www.youtube.com/watch?v=NKnZYvZA7w4)
 
 
+---
+
+[youtube, 60min, Andrej Karpathy: Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+
+Without getting too technical, Andrej explains in such a way that you can understand why LLMs are good in some actions and less in others. 
+
+keywords: LLM, inference, training, pre-training, fine-tuning, RHLF, base model, assistent model, Label, Scaling, Tool use, Multimodality, System 1/2 thinking, Prompt Injection, Data Poisoning, AlphaGo, Self improvement, jailbreak. 

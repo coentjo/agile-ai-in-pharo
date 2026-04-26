@@ -8,3 +8,12 @@ Master the art of providing **context**.
 - [202510 LLM Coding Personalities](https://www.sonarsource.com/sem/the-coding-personalities-of-leading-llms/)
 - [Anthropic about Context](https://www.anthropic.com/news/context-management)
 - [Most devs don’t understand how context windows work](https://www.youtube.com/watch?v=-uW5-TaVXu4)
+
+
+## Codebook
+
+![What is a Codebook?](attach/Perceptron03.png)
+
+[Youtube/Shribe: How to create a codebook in qualitative research](https://www.youtube.com/watch?v=K8Zq-G3Rg28&t=31s)
+
+
