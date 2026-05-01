@@ -60,6 +60,7 @@ book:
     - part: "Programming with AI"
       chapters:
         - coding.qmd
+        - spec.driven.development.agent.qmd
         - vibecoding.qmd
         - dspy.qmd
         - softwareengineering.md
@@ -78,6 +79,7 @@ book:
       chapters:
         - my-free-ai.qmd
         - tools-n-co.md
+        - codebook.qmd
         - n8n.qmd
         - git-intro.md
         - agents.qmd

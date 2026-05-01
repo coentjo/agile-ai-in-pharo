@@ -1,0 +1,16 @@
+---
+title: "Spec-Drive Development with Coding Agents"
+---
+
+Short course at deeplearning.ai: 
+
+[Spec-Drive Development with Coding Agents](https://learn.deeplearning.ai/courses/spec-driven-development-with-coding-agents)
+
+
+
+![Constitution](attach/sdd.constitution.png)
+
+
+![Project evolution](attach/sdd.project.evolution.png)
+
+
