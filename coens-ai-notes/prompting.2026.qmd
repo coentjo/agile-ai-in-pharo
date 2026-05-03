@@ -1,0 +1,9 @@
+---
+title: "prompting for Everyone (Andrew)"
+---
+
+Short course about prompting in 2026
+
+[ai-prompting-for-everyone](https://learn.deeplearning.ai/courses/ai-prompting-for-everyone)
+
+![prompting.context](attach/prompting.context.png)

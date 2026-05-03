@@ -19,6 +19,7 @@ book:
         - transcribing.qmd
         - summarizing.qmd
         - context-management.qmd
+        - prompting.2026.qmd
         - sending-an-email.qmd
         - ai-quirks.qmd
         - ai-image-failures.qmd
@@ -28,7 +29,19 @@ book:
         - markdown.qmd
         - aitiquette.brabantkennis.md
         - languages.qmd
-    - part: "AI"
+    - part: "AI & EDU"
+      chapters:
+        - education.ai.qmd
+        - NBAAPL.qmd
+    - part: "AI & democracy / journalism"
+    - part: "AI & programming"
+      chapters:
+        - coding.qmd
+        - spec.driven.development.agent.qmd
+        - vibecoding.qmd
+        - dspy.qmd
+        - softwareengineering.md
+    - part: "AI Field Overview"
       chapters:
         - ai.overview.qmd
         - prediction.amy.web.qmd
@@ -53,17 +66,6 @@ book:
         - train.qmd
         - recognition.qmd
         - validate.qmd
-    - part: "Learning with AI"
-      chapters:
-        - education.ai.qmd
-        - NBAAPL.qmd
-    - part: "Programming with AI"
-      chapters:
-        - coding.qmd
-        - spec.driven.development.agent.qmd
-        - vibecoding.qmd
-        - dspy.qmd
-        - softwareengineering.md
     - part: "Neural Networks"
       chapters:
         - NNetwork_choice.qmd
@@ -80,6 +82,7 @@ book:
         - my-free-ai.qmd
         - tools-n-co.md
         - codebook.qmd
+        - thunderbolt.mozilla.qmd
         - n8n.qmd
         - git-intro.md
         - agents.qmd
