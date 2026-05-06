@@ -1,10 +1,12 @@
 ---
-title: "Scenario: Transcribe a Meeting"
+title: "Speech2Text"
 ---
 
-Let's turn spoken words into text using AI! \emoji{speaking-head}\emoji{right-arrow}\emoji{pencil}
 
-We'll use a simple online tool called **[Otter.ai](https://otter.ai/)** \emoji{otter}.
+- [github.com/cjpais/Handy: open source Speech2Text](https://github.com/cjpais/Handy)
+
+
+- [Otter.ai](https://otter.ai/)
 
 **Your Mission (in 3 steps):**
 

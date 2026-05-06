@@ -16,8 +16,6 @@ Keep privacy in mind: watch out when
 using personal data! One way to make sure private data will stay
 private is using local AI's, although this takes some extra knowledge, and a powerful machine. 
 
-
-
 Please use it wisely...
 
 ![art and laundry](ai.laundry.art.maciejewska.jpg)

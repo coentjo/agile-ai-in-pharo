@@ -31,16 +31,21 @@ book:
         - languages.qmd
     - part: "AI & EDU"
       chapters:
+        - ai.augmented.learning01.qmd
+        - ai.augmented.learning02.qmd
         - education.ai.qmd
         - NBAAPL.qmd
     - part: "AI & democracy / journalism"
-    - part: "AI & programming"
+      chapters:
+        - journalism.ai.qmd
+    - part: "AI & programming & Software Engineering"
       chapters:
         - coding.qmd
-        - spec.driven.development.agent.qmd
         - vibecoding.qmd
         - dspy.qmd
+        - spec.driven.development.agent.qmd
         - softwareengineering.md
+        - jobs.ai.qmd
     - part: "AI Field Overview"
       chapters:
         - ai.overview.qmd
@@ -48,8 +53,6 @@ book:
         - godfather-hinton.qmd
         - how-llms-generate-text.qmd
         - genai.qmd
-        - feedback.qmd
-        - jobs.ai.qmd
         - references.genai.qmd
         - nocodelowcode.qmd
         - references.ai.act.qmd
@@ -58,6 +61,13 @@ book:
         - guardrailing.qmd
         - transformers.qmd
         - multimodal.qmd
+    - part: "AI Cookbook"
+      chapters:
+        - transcribing.qmd
+        - summarizing.qmd
+        - sending-an-email.qmd
+        - creating-an-app-with-ai.qmd
+
     - part: "Train, Fine Tune, RAG, Validate"
       chapters:
         - train-finetune-rag.qmd
@@ -66,7 +76,7 @@ book:
         - train.qmd
         - recognition.qmd
         - validate.qmd
-    - part: "Neural Networks"
+    - part: "Neural Network, How does it all work?"
       chapters:
         - NNetwork_choice.qmd
         - perceptron.qmd
@@ -87,12 +97,12 @@ book:
         - git-intro.md
         - agents.qmd
         - mcp.qmd
+        - experiments/MCP-hands-on.qmd
         - acp.qmd
-        - journalism.ai.qmd
+        - feedback.qmd
     - part: "Experiments"
       chapters:
         - experiments/references.qmd
-        - experiments/MCP-hands-on.qmd
 
 format:
   pdf:
