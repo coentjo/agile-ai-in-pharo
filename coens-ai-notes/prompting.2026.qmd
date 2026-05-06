@@ -1,5 +1,5 @@
 ---
-title: "prompting for Everyone (Andrew)"
+title: "prompting for Everyone (Andrew Ng)"
 ---
 
 Short course about prompting in 2026
@@ -7,3 +7,8 @@ Short course about prompting in 2026
 [ai-prompting-for-everyone](https://learn.deeplearning.ai/courses/ai-prompting-for-everyone)
 
 ![prompting.context](attach/prompting.context.png)
+
+
+# Some tips 
+
+- Asking biased questions gives biased answers. 

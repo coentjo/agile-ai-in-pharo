@@ -19,8 +19,8 @@ book:
         - transcribing.qmd
         - summarizing.qmd
         - context-management.qmd
-        - prompting.2026.qmd
         - sending-an-email.qmd
+        - prompting.2026.qmd
         - ai-quirks.qmd
         - ai-image-failures.qmd
         - creating-an-app-with-ai.qmd
@@ -45,6 +45,7 @@ book:
         - dspy.qmd
         - spec.driven.development.agent.qmd
         - softwareengineering.md
+        - generative-ui.qmd
         - jobs.ai.qmd
     - part: "AI Field Overview"
       chapters:

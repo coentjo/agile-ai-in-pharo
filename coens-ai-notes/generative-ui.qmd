@@ -1,0 +1,9 @@
+---
+title: "Generative UI"
+---
+
+Course at deeplearning.ai: 
+
+- [build-interactive-agents-with-generative-ui](https://learn.deeplearning.ai/courses/build-interactive-agents-with-generative-ui)
+
+![](attach/dpl.ai.copilotkit.agui.png)
