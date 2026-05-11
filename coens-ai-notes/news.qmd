@@ -3,6 +3,7 @@
 
 New, seems interesting or important, maybe I looked at it already, maybe not... 
 
+
 ***January 2026***
 
 - [deeplearning.ai: document-ai-from-ocr-to-agentic-doc-extraction](https://learn.deeplearning.ai/courses/document-ai-from-ocr-to-agentic-doc-extraction)

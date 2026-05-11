@@ -8,7 +8,7 @@ title: "Speech2Text"
 
 - [Otter.ai](https://otter.ai/)
 
-**Your Mission (in 3 steps):**
+**Otter.ai : Your Mission (in 3 steps):**
 
 1.  **Sign Up:** Go to `Otter.ai` and create a free account. \emoji{writing-hand}
 2.  **Upload:** Find the "Import" button and upload your meeting audio file (`.mp3`, `.wav`, etc.). \emoji{outbox-tray}

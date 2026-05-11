@@ -68,7 +68,6 @@ book:
         - summarizing.qmd
         - sending-an-email.qmd
         - creating-an-app-with-ai.qmd
-
     - part: "Train, Fine Tune, RAG, Validate"
       chapters:
         - train-finetune-rag.qmd
