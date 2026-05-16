@@ -1,4 +1,6 @@
 # Transformers
 
+[deeplearning.ai - transformers-in-practice](https://learn.deeplearning.ai/courses/transformers-in-practice)
 [oct2025 - Everything about Transformers](https://www.krupadave.com/articles/everything-about-transformers)
 
+FSM: Finite State Machine

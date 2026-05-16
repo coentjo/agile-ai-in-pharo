@@ -86,6 +86,7 @@ book:
         - classifying-iris.qmd
         - magic-behind-nnetwork.qmd
         - types-nn.qmd
+        - transformers.qmd
         - references.ai.qmd
     - part: "Tools-n-Technologies"
       chapters:
