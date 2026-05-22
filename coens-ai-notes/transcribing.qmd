@@ -2,11 +2,14 @@
 title: "Speech2Text"
 ---
 
+Whisper is kind of a standard in transcription. There exist a lot of versions. For Mac you could try MacWhisper and for MS-Windows you could search for WinWhisper, or use transcribbly. 
+
 
 - [github.com/cjpais/Handy: open source Speech2Text](https://github.com/cjpais/Handy)
-
-
+- [Transcribbly](https://apps.microsoft.com/detail/9ndjq45jlqlf?hl=nl-NL&gl=NL)
+- [elevenlabs.io/audio-to-text](https://elevenlabs.io/audio-to-text)
 - [Otter.ai](https://otter.ai/)
+
 
 **Otter.ai : Your Mission (in 3 steps):**
 
