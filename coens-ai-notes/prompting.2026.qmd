@@ -18,3 +18,4 @@ Short course about prompting in 2026
 ![prompting.context](attach/prompting.context.png)
 
 
+- [Anthropic/Margot van Laar: The Prompting Playbook](https://www.youtube.com/watch?v=G2B0YWuJUgI)
