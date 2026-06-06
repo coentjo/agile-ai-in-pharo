@@ -3,6 +3,8 @@
 One good reason to start using Git: 
 Take control while Vibe Coding: use Git to exactly see and control changes. 
 
+Question: Is it still Vibe Coding when you take control?
+
 **A video**
 
 - [Vibe Coding Course 7 – Version Control Basics (Git)](https://www.youtube.com/watch?v=qUE-nVUrpq4)

@@ -27,14 +27,14 @@ book:
         - my-17-minute-AI-workflow.qmd
         - ai-energy.qmd
         - markdown.qmd
-        - aitiquette.brabantkennis.md
+        - aitiquette.brabantkennis.qmd
         - languages.qmd
-    - part: "AI & EDU"
+    - part: "AI & Learning"
       chapters:
         - ai.augmented.learning01.qmd
         - ai.augmented.learning02.qmd
-        - education.ai.qmd
         - NBAAPL.qmd
+        - education.ai.qmd
     - part: "AI & democracy / journalism"
       chapters:
         - journalism.ai.qmd
@@ -95,7 +95,7 @@ book:
         - codebook.qmd
         - thunderbolt.mozilla.qmd
         - n8n.qmd
-        - git-intro.md
+        - git-intro.qmd
         - agents.qmd
         - mcp.qmd
         - experiments/MCP-hands-on.qmd
