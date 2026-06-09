@@ -14,6 +14,7 @@ book:
     - news.qmd
     - part: "AI Literacy"
       chapters:
+        - ai-literacy.qmd
         - key-tools.qmd
         - jargon-buster.qmd
         - transcribing.qmd

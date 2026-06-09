@@ -1,12 +1,13 @@
 # AI versus education
 
-## Media & Opinions
+## AI & Learning: News, Media & Opinions
 
 - [202606: bron.fontys: Mogen studenten zomaar AI gebruiken?](https://bron.fontys.nl/mogen-studenten-zomaar-ai-gebruiken/)
+- [misschien-begrijpen-ze-niet-elke-regel-code-en-dat-is-oke](https://trends.knack.be/ai-en-tech/digitale-strategie/misschien-begrijpen-ze-niet-elke-regel-code-en-dat-is-oke-informatica-onderwijs-zoekt-nieuwe-rol-in-een-wereld-vol-ai-2/)
 
 - [podcast: Your undivided Attention: AI Is Breaking Education. Rebecca Winthrop Has the Blueprint to Fix It](https://podcastaddict.com/your-undivided-attention/episode/218538560). 
 - [202603: JP Ligthart: De verschuiving in softwareontwikkeling door AI: van implementatie naar oordeel](https://www.linkedin.com/pulse/de-verschuiving-softwareontwikkeling-door-ai-van-naar-ligthart-uekxc)
-- [Cursor: onderwijs aan TU/e](https://www.cursor.tue.nl/nieuws/2025/december/week-1/ai-zal-onderwijs-aan-de-tu-e-fundamenteel-transformeren)
+- [202512: Cursor: onderwijs aan TU/e verandert fundamenteel](https://www.cursor.tue.nl/nieuws/2025/december/week-1/ai-zal-onderwijs-aan-de-tu-e-fundamenteel-transformeren)
 - [bron: word-geen-ai-zombie-zo-blijf-je-kritisch-in-een-wereld-vol-ai](https://bron.fontys.nl/word-geen-ai-zombie-zo-blijf-je-kritisch-in-een-wereld-vol-ai/)
 - [bron: ICT maakt eigen 'zelf in te kleuren' AI-opleiding mogelijk](https://bron.fontys.nl/ict-maakt-eigen-zelf-in-te-kleuren-ai-opleiding)
 - [Saçan: Schuurpapier voor het onderwijs...](https://www.linkedin.com/posts/erdincsacan_schuurpapier-voor-het-onderwijs-in-tijdperk-activity-7342444607244234753-ZhL1/?rcm=ACoAAAO9wtwB4Z7xeD6SerWNj2fZLPXwKUSCRk4)
@@ -20,7 +21,6 @@
 
 - [EduGenai (Npuls)](https://npuls.nl/edugenai/)
 - [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
-- [npuls: AI-GO Raamwerk-AI-Geletterdheid-in-het-Onderwijs](https://npuls.nl/wp-content/uploads/2025/07/AI-GO.-Raamwerk-AI-Geletterdheid-in-het-Onderwijs.pdf)
 - [aiarchives.org](https://aiarchives.org/)
 - [You did it together with AI? Make a statement!](https://mmmlabel.tech/)
 - [hbo-i-outcomes-example-generator chatbot](https://chatgpt.com/g/g-FZWlHuaZh-hbo-i-outcomes-example-generator)
