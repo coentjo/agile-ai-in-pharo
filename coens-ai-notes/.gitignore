@@ -1,3 +1,9 @@
 /.quarto/
 
 **/*.quarto_ipynb
+
+# Quarto HTML / website outputs (PDF-only project)
+_output/**/*.html
+_output/site_libs/
+_site/
+**/*_files/
