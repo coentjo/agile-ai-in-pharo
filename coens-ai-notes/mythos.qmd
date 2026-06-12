@@ -1,0 +1,5 @@
+---
+title: "Mythos (June 2026)"
+---
+
+- [Ethan Mollick: what-it-feels-like-to-work-with-mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos)

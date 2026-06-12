@@ -27,3 +27,7 @@ New, seems interesting or important, maybe I looked at it already, maybe not...
 - [technical: Train a tiny LLM from scratch in 2 hours](https://github.com/jingyaogong/minimind/blob/master/README_en.md)
 - [git repo: DrewThomasson/ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook)
 - [Ethan Mollick: a-guide-to-which-ai-to-use-in-the](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the)
+
+***Related***
+
+- [Kisjes: social media keurmerk](https://bron.fontys.nl/nieuw-keurmerk-neemt-social-media-onder-de-loep/)

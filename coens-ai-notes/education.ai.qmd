@@ -1,5 +1,7 @@
 # AI versus education
 
+Narrative and colleague session: [AI-Augmented Learning](ai.augmented.learning01.qmd). LO6 engagement framework: [Engagement quality](ai.augmented.learning02.qmd).
+
 ## AI & Learning: News, Media & Opinions
 
 - [202606: bron.fontys: Mogen studenten zomaar AI gebruiken?](https://bron.fontys.nl/mogen-studenten-zomaar-ai-gebruiken/)

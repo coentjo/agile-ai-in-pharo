@@ -1,1 +1,145 @@
-x
+# Engagement quality (LO6)
+
+*How well did you collaborate with AI?*
+
+This chapter summarizes the **LO6: AI-Augmented Learning** framework from the Fontys *AI for Society* minor — useful for coaches, assessors, and ICT professionals who want a shared vocabulary for AI-augmented learning.
+
+Narrative and colleague-session guide: [AI-Augmented Learning](ai.augmented.learning01.qmd).
+
+## The learning outcome
+
+> You use conversational AI to learn, plan, critique, and reflect. You set boundaries, cite AI contributions, and demonstrate growth over time.
+
+We **require** conversational AI use and evidence of process — not avoidance. For LO6, **"AI" means conversational AI** (ChatGPT, Claude, Copilot), not building models (that is a different learning outcome).
+
+## Two students revisited
+
+Same deliverable, different growth. Student A **accepted** output; Student B **integrated** AI with their own thinking and left a trail. Assessment must look beyond polish:
+
+> If we only assess the document, we assess ChatGPT — not the student.
+
+The only way to know whether someone understands their work is **ongoing conversation** across tasks and time. AI makes skipping that conversation impossible.
+
+## Quantity vs quality
+
+The [MMM label system](https://mmmlabel.tech/) (Lazy Prompter → Man-Made) measures **how much** AI was involved — valuable for transparency. It can smuggle in a hidden norm: less AI = more authentic = better.
+
+LO6 asks a different question:
+
+| MMM-style | LO6-style |
+|-----------|-----------|
+| How much AI did you use? | How well did you collaborate with AI? |
+| Quantity | Quality |
+| Less AI = better (implicit) | Conscious engagement (explicit) |
+
+Students need skills for **how and when** to collaborate, an ethical compass, and the ability to **articulate their choices** — not shame for using tools that are already everywhere in professional life.
+
+## Four levels of engagement
+
+These describe **processes**, not fixed identities. Someone may Integrate on Monday and Accept on Tuesday — that is fine if they **notice** and recover when the task demands more.
+
+| Level | Name | Investment | What it looks like |
+|:-----:|------|------------|-------------------|
+| 1 | **Accepting** | Minimal | Taking output at face value; copy-paste with surface edits |
+| 2 | **Refining** | Moderate | Adjusting and polishing; core ideas unchanged |
+| 3 | **Challenging** | Significant | Pushing back, verifying, fact-checking, documenting disagreements |
+| 4 | **Integrating** | Deep | Combining AI input with own thinking; original insights emerge |
+
+**Calibrating:** A student who says they were *Challenging* because they "Googled whether numbers seemed reasonable" may be *Refining with good intentions*. Help them see what actual Challenging would require — that is learning, not punishment.
+
+Know when Accepting is enough (quick fact lookup) and when Integrating is required (complex analysis). Be honest about the difference.
+
+## Patterns to recognize
+
+| Pattern | What you observe | What may be happening | Try asking |
+|---------|------------------|----------------------|------------|
+| Hiding use | Polish, vague "I used AI a bit", can't explain reasoning | Shame, fear, or Accepting without awareness | Walk me through your process — where did *you* decide? |
+| Receipts only | Long prompt logs, no reflection | Documentation mistaken for engagement | Where did you disagree or learn something new? |
+| Avoiding AI | Struggle on tasks AI could scaffold | AI seen as cheating or threatening | What if AI challenged your ideas instead of writing them? |
+| Growing collaboration | Dialogue trail; can separate contributions | This is what we want | What made you push back on X? |
+| Regressing under pressure | Early Integrating, late Accepting when rushed | Deadlines; human, but needs noticing | What happened? How might you handle that differently next time? |
+| Outsourcing the thinking | Polished portfolio or report; cannot recall or explain own text after time away | Accepting at scale — deliverable done, learning skipped | What do you still own? What would recovery look like (messy notes first, AI as memory not author)? |
+
+See also the [portfolio story](ai.augmented.learning01.qmd#keeping-control-a-portfolio-story) and [notes-first section](ai.augmented.learning01.qmd#your-notes-first-mind-maps-handwriting-and-memory) in chapter 1 — encoding while you listen matters as much as who polishes the final text.
+
+## Growth is messy
+
+A realistic trajectory — not a straight line:
+
+- Week 2: Integrating (excited, experimenting)
+- Week 4: Accepting (deadline pressure)
+- Week 6: Challenging (feedback landed)
+- Week 8: Accepting (project chaos)
+- Week 10: Integrating (breakthrough)
+- Week 14: Integrating (pulled it together)
+
+What matters: Can they **notice** slipping into Accepting when higher engagement is needed? **Recover** when the task demands it? **Articulate** what they learned?
+
+## What "proficient" looks like
+
+A proficient learner (student or professional):
+
+- Knows the difference between Accepting and Integrating
+- Chooses consciously based on the task
+- Documents process — not only prompts
+- Explains what they learned vs what AI contributed
+- Reflects honestly on shortcuts
+
+They do not need to be brilliant at prompting. They need to be **in the driver's seat**.
+
+## Proficiency scale (LO6)
+
+| Scale | What it looks like |
+|-------|-------------------|
+| **Undefined** | No evidence of collaboration; avoids or hides use; cannot discuss process |
+| **Orienting** | Uses AI without awareness; mostly Accepting; "I used ChatGPT" is the whole reflection |
+| **Beginning** | Developing awareness; occasional Challenging or Integrating; starting to notice patterns |
+| **Proficient** | Consistent conscious choice; articulates why; integrates when needed; honest about shortcuts |
+| **Advanced** | Sophisticated integration; models practice for others; connects collaboration to societal impact |
+
+## LO6 alongside other outcomes
+
+LO6 is judged **in context** with the rest of the minor — same idea applies in professional teams:
+
+| Focus | LO6 shows up as… |
+|-------|------------------|
+| Societal impact | Did AI widen perspectives — or narrow them? |
+| Needs analysis | Verified suggestions — or accepted the first list? |
+| Model interaction | Challenged outputs when building with AI? |
+| Professional standard | How was AI used in stakeholder communication? |
+| Personal leadership | Can they reflect on their own AI patterns? |
+
+## Coaches: learn alongside
+
+Most of us are still at a basic level with our own AI use. That is okay.
+
+We have judged students for technologies we did not yet understand — calculators, Wikipedia, Google, Stack Overflow. Each time the tool became normal; each time we eventually taught **how to use it well** instead of **whether to use it at all**.
+
+AI is this generation's moment. The invitation: **learn alongside your students**. Notice your own patterns. Curiosity models exactly what we ask of them.
+
+## Quick reference
+
+1. **Quality over quantity** — how well they collaborated, not how much AI they used
+2. **Process over polish** — dialogue documentation beats glossy output
+3. **Calibrate, don't catch** — help them understand the standard
+4. **Growth is messy** — awareness and recovery, not a straight line
+5. **You are learning too** — model curiosity
+
+### Questions that work
+
+| Situation | Try asking |
+|-----------|------------|
+| Vague about AI use | Walk me through your process. Where did AI help? Where did you push back? |
+| Polished output, no documentation | This looks great — I can't see your thinking. How did you get here? |
+| Avoided AI | What stopped you? What would you try if you did use it? |
+| Self-assessment seems inflated | You said Challenging — show me the evidence. |
+| Student struggling | AI can help you think, not just produce. What if it critiqued your ideas? |
+| Student shows growth | I see your engagement deepened. What changed? |
+
+## Materials and tools
+
+- Engagement framework source (internal coach copy): *LO6 Narrative Guide: AI-Augmented Learning*
+- Transparency: [MMM Label](https://mmmlabel.tech/), [AI Archives](https://aiarchives.org/)
+- Citing AI use: [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
+- Edu sector tools: [EduGenAI (Npuls)](https://npuls.nl/edugenai/)
+- Broader link list: [AI versus education](education.ai.qmd)

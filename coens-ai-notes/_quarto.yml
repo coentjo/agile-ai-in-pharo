@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _output
+  render:
+    - pdf
 
 book:
   title: "Coen's AI Notes and Links"
@@ -12,6 +14,7 @@ book:
     - download.qmd
     - chat-with-content.qmd
     - news.qmd
+    - mythos.qmd
     - part: "AI Literacy"
       chapters:
         - ai-literacy.qmd

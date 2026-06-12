@@ -3,9 +3,6 @@ execute:
   warning: false
 
 format:
-  html:
-    theme: cosmo
-    code-fold: true
   pdf:
     papersize: a4
     toc: true
