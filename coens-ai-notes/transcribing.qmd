@@ -1,9 +1,8 @@
 ---
-title: "Speech2Text / Transcribing"
+title: "Transcribing / Speech2Text"
 ---
 
-Whisper is kind of a standard in transcription. There exist a lot of versions. For Mac you could try MacWhisper and for MS-Windows you could search for WinWhisper, or use transcribbly. 
-
+Talking to your machine! 
 
 - [github.com/cjpais/Handy: open source Speech2Text](https://github.com/cjpais/Handy)
 - [Transcribbly](https://apps.microsoft.com/detail/9ndjq45jlqlf?hl=nl-NL&gl=NL)
@@ -17,4 +16,5 @@ Whisper is kind of a standard in transcription. There exist a lot of versions. F
 2.  **Upload:** Find the "Import" button and upload your meeting audio file (`.mp3`, `.wav`, etc.). \emoji{outbox-tray}
 3.  **Transcribe:** Otter will work its magic! \emoji{sparkles} Then you can read, edit, and export your new transcript. \emoji{page-facing-up}
 
-**That's it!** You've just transcribed a meeting with AI. High five! \emoji{raised-hands}\emoji{rocket}
+**That's it!** You've just transcribed a meeting with AI. \emoji{raised-hands}\emoji{rocket}
+

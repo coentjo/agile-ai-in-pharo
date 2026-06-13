@@ -1,8 +1,8 @@
 ---
-title: "LLM Languages"
+title: "Dutch models: Nederlandstalige models"
 ---
-
-## Dutch models
 
 - [tweakers.net: Nederlandse GPT‑NL is klaar voor gebruik: 'Voldoet als enige taalmodel aan AVG'](https://tweakers.net/reviews/14412/nederlandse-gpt-nl-is-klaar-voor-gebruik-voldoet-als-enige-taalmodel-aan-avg.html)
 - Dutch LLM Geitje: tommy/geitje:7b_ultra_q8_0
+
+![202605?: NL.van.chatGPT.steeds.slechter](202605.kortschot.NL.van.chatGPT.steeds.slechter.png)
