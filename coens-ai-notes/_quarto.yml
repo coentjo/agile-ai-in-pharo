@@ -36,6 +36,7 @@ book:
     - part: "AI & Learning"
       chapters:
         - ai.augmented.learning.intro.qmd
+        - ai.augmented.learning.habits.qmd
         - edu.learning.not.teaching.qmd
         - education.ai.ebike.qmd
         - ai.augmented.learning.notes-first.qmd

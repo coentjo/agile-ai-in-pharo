@@ -1,0 +1,9 @@
+# Helpful Habits
+
+These transfer directly from LO6 coaching to daily practice:
+
+1. **Start messy, then AI** — your rough notes before the model's smooth prose
+2. **Ask for critique, not answers** — *"What am I missing?"* beats *"Write it for me"*
+3. **Leave a trail** — prompts, disagreements, what you verified ([AI Archives](https://aiarchives.org/), [MMM label](https://mmmlabel.tech/) where transparency matters)
+
+Stay in the driver's seat: orchestrate tools; you own the judgment call.

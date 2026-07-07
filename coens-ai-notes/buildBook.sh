@@ -32,4 +32,4 @@ else
   exit 1
 fi
 
-open _output/Coen-s-AI-Notes-and-Links.pdf
+open -a skim _output/Coen-s-AI-Notes-and-Links.pdf
