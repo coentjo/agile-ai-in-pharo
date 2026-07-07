@@ -2,6 +2,7 @@
 title: "Software Engineering with AI"
 ---
 
+- [202606,  Heck: competences-for-the-ai-augmented-software-engineer](https://fontysblogt.nl/competences-for-the-ai-augmented-software-engineer/)
 - [NL: kwaliteit-software-onder-druk-door-ai-gegenereerde-code](https://www.agconnect.nl/tech-en-toekomst/development/kwaliteit-software-onder-druk-door-ai-gegenereerde-code?tid=TIDP15608700X8DABB0B7AF984C8599999E7DEC1EC737YI5)
 - [202511 - Martin Fowler: How AI will change software engineering](https://www.youtube.com/watch?v=CQmI4XKTa0U)
 

@@ -1,0 +1,54 @@
+# Coen's personal toolchain: Lepiter, paper, and LLM
+
+Mainly for Coen's own reference. (Copied together... not human-readable ... yet)
+
+## Lepiter: a living wiki
+
+Inside Glamorous Toolkit (GT) — a moldable development environment — using **Lepiter**, its built-in knowledge-management system. 
+Each page is assembled from **snippets** (Markdown text, live code, queries, visualizations), and pages link into a **knowledge graph** you can browse over time. 
+
+Lepiter is not a polished publishing tool. It is a **persistent, linkable workshop**.
+
+## Paper bullets when load is high
+
+When meetings stack up or attention is thin, I reach for a **paper notebook** and **bullet points** — fast, low ceremony, no layout trap. 
+
+
+## The combination principle
+
+No single medium wins every cognitive job. A practical rule:
+
+| Cognitive job | Favored medium | AI role |
+|---------------|----------------|---------|
+| **Structure while learning**  | Lepiter pages + links | Critique gaps later — not first author |
+| **Capture under load** (back-to-back meetings, travel) | Paper bullets | Transcribe or summarize only after you have rough bullets |
+| **Polish or archive** (portfolio prose, colleague-facing write-up) | Your home base (Lepiter, repo notes, or docs) | Tighten wording, spot missing stakeholders — not replace your trail |
+
+The mistake to avoid is the same as in the [portfolio story](ai.augmented.learning.portfolio.qmd): letting the **polish tool** become the **capture tool**. Chat sessions disappear; Lepiter pages and notebook spreads do not — if you actually write in them first.
+
+## Demo for colleagues: process visibility, not "fancy IDE"
+
+If you see a GT demo in a colleague session, the useful frame is **process visibility** — making thinking and exploration inspectable — not "another IDE to learn." Lepiter shows *how* someone structures a problem over days: linked notes, live snippets, revisitable reasoning. That parallels what we want from AI-augmented learning: a trail you can explain, not only a deliverable that looks finished.
+
+Pair that with the recovery pattern from the portfolio story:
+
+- **Cursor** (or similar) — short-term **memory and to-do** (*"what actions are still open?"*) while you talk through material
+- **Lepiter** — **persistent notes** that outlive any single chat thread
+- **Paper** — **overload valve** when digital structure would slow you down
+
+Together they keep **you** in the driver's seat across timescales: this hour, this week, this qualification portfolio.
+
+## GT and The GT Book
+
+**learning in the same environment you think in**. 
+
+- [GToolkit Book](https://book.gtoolkit.com): also embedded in GToolkit itself. 
+
+
+## Tips for colleagues 
+
+These transfer without installing Glamorous Toolkit:
+
+1. **Separate capture tools from polish tools.** A frictionless inbox (paper, voice memo, scratch file) and a slower "home" (wiki, repo docs, Obsidian, team handbook) beat one chat window that does both — chats optimize for fluent answers, not your long-term memory.
+2. **Pick one home for notes that must outlive a session.** Where will *you* find this in three months? If the answer is "scroll the chat," the encoding step probably did not happen.
+3. **When speed beats perfection, use paper.** Bullets in a notebook during a dense day are a feature, not a failure of discipline — migrate to digital structure when load drops, then involve AI if you need critique or prose.

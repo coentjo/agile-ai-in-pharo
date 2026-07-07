@@ -1,0 +1,40 @@
+# Your notes first: mind maps, handwriting, and memory
+
+**Do you encode ideas while learning** — and that starts earlier, when you watch a lecture, follow a course video, or discuss with colleagues.
+
+**Your own notes stick better than someone else's summary**. Mind maps while listening, rough outlines on paper, keywords with arrows — the format varies. The common thread is *you* doing the structuring **during** the input, not after.
+
+## What research suggests (and where it disagrees)
+
+**Laptop typing vs longhand.** In a widely cited study, [Mueller and Oppenheimer (2014)](https://journals.sagepub.com/doi/10.1177/0956797614524581) found that students who typed lecture notes on laptops often **transcribed verbatim** and did worse on **conceptual** questions than students who wrote longhand — even without multitasking or distraction. The proposed mechanism: typing is fast enough to **record** without **processing**; handwriting forces summarizing and reframing in your own words.
+
+That headline is not the whole story. A direct replication and mini meta-analysis by [Urry et al. (2021)](https://journals.sagepub.com/doi/10.1177/0956797620965541) found small, often non-significant differences between laptop and longhand in similar setups. Modality alone is not destiny — note-taking *style* (verbatim vs selective) matters, and study design varies.
+
+**Handwriting vs typing at scale.** A 2024 meta-analysis of 24 studies ([Flanigan et al., 2024](https://doi.org/10.1007/s10648-024-09914-w)) reported a **modest advantage for handwritten notes** on achievement (Hedges' *g* ≈ 0.25), while typing produced **more notes** (*g* ≈ 0.92). Faster capture can mean more verbatim content and less synthesis — useful as an external record, weaker as encoding. Paper may edge typing for retention in some contexts; the effect size is real but not magic.
+
+**Generation and desirable difficulties.** Note-taking is a **generative** act: you choose what matters, name it, connect it. The [generation effect](https://doi.org/10.1037/h0036875) (Slamecka & Graf, 1978) shows that producing information yourself beats passively reading it. Robert Bjork's **desirable difficulties** (Bjork, 1994; [Bjork & Bjork, 2011](https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf)) generalizes the pattern: effort that slows you down during learning often **improves long-term retention**. Making messy notes is supposed to feel harder than receiving a polished summary — that friction is the point.
+
+**Mind maps and live structure.** Visual mapping — central idea, branches, relationships — pushes the same lever: **elaboration while listening**, not decoration after the fact. Evidence is **mixed**. Reviews distinguish mind maps, concept maps, and argument maps ([Davies, 2011](https://doi.org/10.1007/s10734-010-9387-6)); outcomes depend on training, subject, and whether mapping happens **during** or **after** input. We cannot claim mind maps beat every other format. We *can* say that **structuring in real time** beats passive consumption, and that many practitioners (including examiners rebuilding BKI portfolios) report that live mapping helps them **hold the thread** of a long session.
+
+**Honest caveat:** We still do not know how much benefit comes from **motor activity** (pen on paper), **visual layout** (branches and spatial grouping), or **cognitive selection** (choosing keywords under time pressure). Those likely overlap. What is clearer: **if someone else — human or AI — does the structuring for you, you skip the encoding step**.
+
+## The AI angle: polished notes are Accepting in disguise
+
+Let AI transcribe the webinar, summarize the chapter, or rewrite your bullets into fluent prose **before you have struggled with the material**, and you get a risk:
+
+| You skip… | What you lose |
+|-----------|----------------|
+| Selecting what matters | No personal filter on the content |
+| Reframing in your words | Shallow overlap with the source |
+| Connecting to what you already know | No integrative hooks for later recall |
+| Retrieval practice | Nothing to rebuild when the portfolio is closed |
+
+That is **Accepting** applied to your own learning process — efficient on screen, empty a week later. Recovery patterns from the portfolio story still apply: **start messy**, use AI as **memory and critique**, not as first author of your understanding.
+
+## Tips
+
+- **Mind-map or outline while watching** — not after. Even a rough central node and three branches beats a full replay plus AI summary.
+- **Voice → transcribe → your edit → then AI polish.** Talk through what you heard; fix the transcript yourself; only then ask the model to tighten prose or spot gaps (same pattern as voice + Cursor for portfolio recovery).
+- **Paper for "must stick" concepts; digital structure for speed.** Match modality to stakes — exam domains, architecture principles, definitions you must defend aloud.
+- **After the session: close AI and explain one idea without notes.** Thirty seconds of retrieval practice beats rereading a perfect summary ([testing effect](https://doi.org/10.1016/j.jml.2006.09.004); Roediger & Karpicke, 2006).
+- **Let AI summarize only after messy notes exist.** If there is no rough trail, the summary is not yours — it is a borrowed deliverable.

@@ -1,0 +1,57 @@
+# AI-Augmented Learning
+
+***I want to Learn (something). How best to use (or not use) AI in the learning process?***
+
+
+
+
+
+For ICT professionals who already prompt, the practical question is narrower:
+
+> When *you* learn something new, how do you use AI so it actually helps you grow — not only helps you finish?
+
+## AI and education: same tension, new tool
+
+Several patterns repeat every time a disruptive tool arrives:
+
+- Learners submit polished work while the **process stays invisible**
+- Educators and professionals **judge tools they do not yet use well** (calculators, Wikipedia, Google, Stack Overflow — the greatest hits)
+- Policy and headlines obsess over **whether** to use AI; daily practice needs **how** and **when**
+
+The shift we need — in classrooms and in our own upskilling — is from policing **quantity** of AI use to coaching **quality** of collaboration.
+
+News, opinions, and Fontys/HBO-i context: see [AI versus education](education.ai.news.qmd).
+
+
+
+
+
+## Two students, same deliverable
+
+Picture two students submitting a stakeholder analysis for a project.
+
+**Student A** hands in polished work. Clear structure, professional tone. Asked *"How did you make this?"* they answer: *"I used ChatGPT."* That is the whole story.
+
+**Student B** submits something that looks similar. Their documentation tells a different tale:
+
+1. They started from their own messy notes
+2. They asked AI to poke holes in their reasoning
+3. They noticed a stakeholder group they had missed
+4. They verified AI suggestions against the project brief
+5. They ended with a **different conclusion** than AI's first draft
+
+Both used AI heavily. Only one learned.
+
+
+
+That distinction is the heart of **AI-augmented learning**: not *did you use AI?* but *did working with AI help you grow?* The detailed engagement framework lives in [Engagement quality (LO6)](ai.augmented.learning.engagement.qmd).
+
+## Three habits for ICT professionals
+
+These transfer directly from LO6 coaching to daily practice:
+
+1. **Start messy, then AI** — your rough notes before the model's smooth prose
+2. **Ask for critique, not answers** — *"What am I missing?"* beats *"Write it for me"*
+3. **Leave a trail** — prompts, disagreements, what you verified ([AI Archives](https://aiarchives.org/), [MMM label](https://mmmlabel.tech/) where transparency matters)
+
+Stay in the driver's seat: orchestrate tools; you own the judgment call.

@@ -35,10 +35,17 @@ book:
         - languages.qmd
     - part: "AI & Learning"
       chapters:
-        - ai.augmented.learning01.qmd
-        - ai.augmented.learning02.qmd
-        - NBAAPL.qmd
-        - education.ai.qmd
+        - ai.augmented.learning.intro.qmd
+        - edu.learning.not.teaching.qmd
+        - education.ai.ebike.qmd
+        - ai.augmented.learning.notes-first.qmd
+        - ai.augmented.learning.colleague-session.qmd
+        - ai.augmented.learning.engagement.qmd
+        - ai.augmented.learning.coaching.qmd
+        - ai.augmented.learning.reference.qmd
+        - ai.augmented.learning.toolchain.qmd
+        - education.ai.news.qmd
+        - education.ai.tools.qmd
     - part: "AI & democracy / journalism"
       chapters:
         - journalism.ai.qmd
@@ -48,7 +55,7 @@ book:
         - vibecoding.qmd
         - dspy.qmd
         - spec.driven.development.agent.qmd
-        - softwareengineering.md
+        - softwareengineering.qmd
         - generative-ui.qmd
         - jobs.ai.qmd
     - part: "AI Field Overview"

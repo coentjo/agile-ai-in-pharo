@@ -1,0 +1,66 @@
+# Fontys ICT Colleague session
+
+This section was used to **present and discuss** with ICT colleagues. Timing below assumes ~15 minutes input and ~15 minutes discussion; compress or expand as needed.
+
+## Suggested flow
+
+| Minutes | Beat |
+|--------:|------|
+| 0–2 | Hook: learning ≠ teaching; show of hands — who used a chatbot to *learn* this week? |
+| 2–5 | E-bike metaphor; two modes; desired difficulties |
+| 5–8 | Student A vs B |
+| 8–11 | Four levels (skim table in [Engagement quality](ai.augmented.learning.engagement.qmd#four-levels-of-engagement)); quality over quantity |
+| 11–12 | Three habits; optional [portfolio story](ai.augmented.learning.portfolio.qmd) and [notes-first](ai.augmented.learning.notes-first.qmd) beat (1–2 min) |
+| 12–14 | Optional [personal toolchain](ai.augmented.learning.toolchain.qmd) or GT/Lepiter demo — frame as process visibility (1–2 min) |
+| 14–15 | Takeaway quote; open discussion |
+
+## Discussion prompts
+
+Pick two or three:
+
+- When is **Accepting** enough in your daily work?
+- Last week: which engagement level were you *most* of the time — honestly?
+- Where do **desired difficulties** belong when we teach or onboard juniors?
+- What would **Integrating** look like in a code review or architecture decision?
+- How do we model curiosity when we learn alongside students?
+- **Portfolio or assessment work:** when does AI help you *document* learning — and when does it replace the learning you were meant to do? (BKI-style portfolios are a concrete example.)
+- **Your notes first:** for something you learned online last month — do you still have *your* messy notes, or only an AI summary? Which could you explain aloud today?
+- **Personal toolchain:** what is your capture tool vs your polish tool vs your long-term home for notes? Where does paper still win for you?
+
+**Pair variant (2 min):** Describe one AI session this week — which level was it?
+
+Listen for **awareness**, not perfection. Close by inviting one habit to try before the next stand-up.
+
+::: {.callout-note appearance="simple"}
+## Speaker note — opening
+
+Acknowledge we are all still figuring this out. You do not need to be an AI expert to host this conversation — curiosity and honesty about your own patterns is enough.
+:::
+
+::: {.callout-note appearance="simple"}
+## Speaker note — Student A vs B
+
+Pause after Student B's list. Optional question: *"Which colleague would you rather pair-program with?"*
+:::
+
+::: {.callout-note appearance="simple"}
+## Speaker note — portfolio story (optional)
+
+Invite **Coen** to tell the BKI portfolio story live (1–2 min): enthusiasm with AI → lost control → forgotten own text after a week away → recovery with voice + Cursor as memory/to-do (*"what actions are still open?"*), not as ghostwriter. Bridge to Accepting vs Integrating and **start messy, then AI**.
+:::
+
+::: {.callout-note appearance="simple"}
+## Speaker note — Lepiter / GT demo (optional)
+
+If you demo [Glamorous Toolkit](https://gtoolkit.com/), lead with **linked notes and revisitable reasoning**, not Smalltalk syntax. One Lepiter page with bullets from today's session beats a feature tour. Point colleagues to the **[GT Book](https://book.gtoolkit.com)** — documentation written as Lepiter pages in the same medium — as the line: *learning in the environment you think in*.
+:::
+
+::: {.callout-note appearance="simple"}
+## Speaker note — discussion
+
+You are calibrating self-awareness, not catching cheaters. Feed up / feed back / feed forward still applies.
+:::
+
+## Presenting
+
+For colleague sessions, use the **book PDF** — scroll or share-screen through [AI-Augmented Learning](ai.augmented.learning.intro.qmd), this chapter, and [Engagement quality (LO6)](ai.augmented.learning.engagement.qmd). No separate slide deck; render the book as usual (`quarto render`).

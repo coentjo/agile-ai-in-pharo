@@ -1,0 +1,28 @@
+# Engagement quality - How well did you collaborate with AI (while learning)?
+
+Use conversational AI to learn, plan, critique, and reflect. You set boundaries, cite AI contributions, and demonstrate growth over time.
+
+We **require** conversational AI use and evidence of process — not avoidance. For LO6, **"AI" means conversational AI** (ChatGPT, Claude, Copilot), not building models (that is a different learning outcome).
+
+## Two students revisited
+
+Same deliverable, different growth. Student A **accepted** output; Student B **integrated** AI with their own thinking and left a trail. Assessment must look beyond polish:
+
+> If we only assess the document, we assess ChatGPT — not the student.
+
+The only way to know whether someone understands their work is **ongoing conversation** across tasks and time. AI makes skipping that conversation impossible.
+
+## Four levels of engagement
+
+These describe **processes**, not fixed identities. Someone may Integrate on Monday and Accept on Tuesday — that is fine if they **notice** and recover when the task demands more.
+
+| Level | Name | Investment | What it looks like |
+|:-----:|------|------------|-------------------|
+| 1 | **Accepting** | Minimal | Taking output at face value; copy-paste with surface edits |
+| 2 | **Refining** | Moderate | Adjusting and polishing; core ideas unchanged |
+| 3 | **Challenging** | Significant | Pushing back, verifying, fact-checking, documenting disagreements |
+| 4 | **Integrating** | Deep | Combining AI input with own thinking; original insights emerge |
+
+**Calibrating:** A student who says they were *Challenging* because they "Googled whether numbers seemed reasonable" may be *Refining with good intentions*. Help them see what actual Challenging would require — that is learning, not punishment.
+
+Know when Accepting is enough (quick fact lookup) and when Integrating is required (complex analysis). Be honest about the difference.
