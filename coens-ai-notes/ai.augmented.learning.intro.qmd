@@ -1,9 +1,6 @@
 # AI-Augmented Learning
 
-***I want to Learn (something). How best to use (or not use) AI in the learning process?***
-
-
-
+***I want to Learn ...(something) . How best to use (or not use) AI in the learning process?***
 
 
 For ICT professionals who already prompt, the practical question is narrower:
@@ -34,17 +31,19 @@ Picture two students submitting a stakeholder analysis for a project.
 
 **Student B** submits something that looks similar. Their documentation tells a different tale:
 
-1. They started from their own messy notes
-2. They asked AI to poke holes in their reasoning
-3. They noticed a stakeholder group they had missed
-4. They verified AI suggestions against the project brief
-5. They ended with a **different conclusion** than AI's first draft
+1. Student B started from their own messy notes
+2. Student B asked AI to poke holes in their reasoning
+3. Student B noticed a stakeholder group they had missed
+4. Student B verified AI suggestions against the project brief
+5. Student B ended with a **different conclusion** than AI's first draft. 
 
-Both used AI heavily. Only one learned.
+Both used AI heavily. Student B learned most!?
 
 
 
-That distinction is the heart of **AI-augmented learning**: not *did you use AI?* but *did working with AI help you grow?* The detailed engagement framework lives in [Engagement quality (LO6)](ai.augmented.learning.engagement.qmd).
+That distinction is the heart of **AI-augmented learning**: not *did you use AI?* but *did working with AI help you grow?
+
+* The detailed engagement framework lives in [Engagement Quality Framework](ai.augmented.learning.engagement.qmd).
 
 ## Three habits for ICT professionals
 

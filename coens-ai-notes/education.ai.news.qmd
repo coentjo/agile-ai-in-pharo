@@ -1,14 +1,8 @@
-# AI & education
+# References AI & Education
 
-Narrative and colleague session: [AI-Augmented Learning](ai.augmented.learning.intro.qmd). LO6 engagement framework: [Engagement quality](ai.augmented.learning.engagement.qmd). Tools and lesson material: [Tools & best practices](education.ai.tools.qmd). E-bike metaphor: [The E-Bike Effect](education.ai.ebike.qmd).
-
-# AI & Learning ICT
-
-## AI & Learning: News, Media & Opinions
-
+- [The Objective of Education Is Learning, Not Teaching](https://knowledge.wharton.upenn.edu/article/the-objective-of-education-is-learning-not-teaching/)
 - [202606: bron.fontys: Mogen studenten zomaar AI gebruiken?](https://bron.fontys.nl/mogen-studenten-zomaar-ai-gebruiken/)
 - [misschien-begrijpen-ze-niet-elke-regel-code-en-dat-is-oke](https://trends.knack.be/ai-en-tech/digitale-strategie/misschien-begrijpen-ze-niet-elke-regel-code-en-dat-is-oke-informatica-onderwijs-zoekt-nieuwe-rol-in-een-wereld-vol-ai-2/)
-
 - [podcast: Your undivided Attention: AI Is Breaking Education. Rebecca Winthrop Has the Blueprint to Fix It](https://podcastaddict.com/your-undivided-attention/episode/218538560). 
 - [202603: JP Ligthart: De verschuiving in softwareontwikkeling door AI: van implementatie naar oordeel](https://www.linkedin.com/pulse/de-verschuiving-softwareontwikkeling-door-ai-van-naar-ligthart-uekxc)
 - [202512: Cursor: onderwijs aan TU/e verandert fundamenteel](https://www.cursor.tue.nl/nieuws/2025/december/week-1/ai-zal-onderwijs-aan-de-tu-e-fundamenteel-transformeren)
