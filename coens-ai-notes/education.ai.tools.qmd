@@ -1,6 +1,7 @@
 # Tools, best practices & lesson material
 
 - [tintara.nl](https://tintara.nl/)
+- [aivoordocenten.nl](https://aivoordocenten.nl/)
 - [EduGenai (Npuls)](https://npuls.nl/edugenai/)
 - [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
 - [aiarchives.org](https://aiarchives.org/)
