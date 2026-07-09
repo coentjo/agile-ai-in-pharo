@@ -1,26 +1,6 @@
-# LO6 quick reference
+# AI augmented learning: some takeaways
 
-1. **Quality over quantity** — how well they collaborated, not how much AI they used
+1. **Quality over quantity** — how well you collaborated, not how much AI they used
 2. **Process over polish** — dialogue documentation beats glossy output
-3. **Calibrate, don't catch** — help them understand the standard
-4. **Growth is messy** — awareness and recovery, not a straight line
-5. **You are learning too** — model curiosity
+4. **Growth is messy** 
 
-## Questions that work
-
-| Situation | Try asking |
-|-----------|------------|
-| Vague about AI use | Walk me through your process. Where did AI help? Where did you push back? |
-| Polished output, no documentation | This looks great — I can't see your thinking. How did you get here? |
-| Avoided AI | What stopped you? What would you try if you did use it? |
-| Self-assessment seems inflated | You said Challenging — show me the evidence. |
-| Student struggling | AI can help you think, not just produce. What if it critiqued your ideas? |
-| Student shows growth | I see your engagement deepened. What changed? |
-
-## Materials and tools
-
-- Engagement framework source (internal coach copy): *LO6 Narrative Guide: AI-Augmented Learning*
-- Transparency: [MMM Label](https://mmmlabel.tech/), [AI Archives](https://aiarchives.org/)
-- Citing AI use: [How to cite ChatGPT? Use AI Archive](https://medium.com/@kcao0228/how-to-cite-chatgpt-use-a-i-archives-bc254cb006d1)
-- Edu sector tools: [EduGenAI (Npuls)](https://npuls.nl/edugenai/)
-- Broader link list: [AI versus education](education.ai.news.qmd)

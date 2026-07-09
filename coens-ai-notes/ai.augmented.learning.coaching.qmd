@@ -1,7 +1,5 @@
 # Coaching AI collaboration
 
-## Patterns to recognize
-
 | Pattern | What you observe | What may be happening | Try asking |
 |---------|------------------|----------------------|------------|
 | Hiding use | Polish, vague "I used AI a bit", can't explain reasoning | Shame, fear, or Accepting without awareness | Walk me through your process — where did *you* decide? |
@@ -11,59 +9,5 @@
 | Regressing under pressure | Early Integrating, late Accepting when rushed | Deadlines; human, but needs noticing | What happened? How might you handle that differently next time? |
 | Outsourcing the thinking | Polished portfolio or report; cannot recall or explain own text after time away | Accepting at scale — deliverable done, learning skipped | What do you still own? What would recovery look like (messy notes first, AI as memory not author)? |
 
-See also the [portfolio story](ai.augmented.learning.portfolio.qmd) and [notes-first section](ai.augmented.learning.notes-first.qmd) — encoding while you listen matters as much as who polishes the final text.
+You do not need to be brilliant at prompting. You need to be **in the driver's seat**.
 
-## Growth is messy
-
-A realistic trajectory — not a straight line:
-
-- Week 2: Integrating (excited, experimenting)
-- Week 4: Accepting (deadline pressure)
-- Week 6: Challenging (feedback landed)
-- Week 8: Accepting (project chaos)
-- Week 10: Integrating (breakthrough)
-- Week 14: Integrating (pulled it together)
-
-What matters: Can they **notice** slipping into Accepting when higher engagement is needed? **Recover** when the task demands it? **Articulate** what they learned?
-
-## What "proficient" looks like
-
-A proficient learner (student or professional):
-
-- Knows the difference between Accepting and Integrating
-- Chooses consciously based on the task
-- Documents process — not only prompts
-- Explains what they learned vs what AI contributed
-- Reflects honestly on shortcuts
-
-They do not need to be brilliant at prompting. They need to be **in the driver's seat**.
-
-## Proficiency scale (LO6)
-
-| Scale | What it looks like |
-|-------|-------------------|
-| **Undefined** | No evidence of collaboration; avoids or hides use; cannot discuss process |
-| **Orienting** | Uses AI without awareness; mostly Accepting; "I used ChatGPT" is the whole reflection |
-| **Beginning** | Developing awareness; occasional Challenging or Integrating; starting to notice patterns |
-| **Proficient** | Consistent conscious choice; articulates why; integrates when needed; honest about shortcuts |
-| **Advanced** | Sophisticated integration; models practice for others; connects collaboration to societal impact |
-
-## LO6 alongside other outcomes
-
-LO6 is judged **in context** with the rest of the minor — same idea applies in professional teams:
-
-| Focus | LO6 shows up as… |
-|-------|------------------|
-| Societal impact | Did AI widen perspectives — or narrow them? |
-| Needs analysis | Verified suggestions — or accepted the first list? |
-| Model interaction | Challenged outputs when building with AI? |
-| Professional standard | How was AI used in stakeholder communication? |
-| Personal leadership | Can they reflect on their own AI patterns? |
-
-## Coaches: learn alongside
-
-Most of us are still at a basic level with our own AI use. That is okay.
-
-We have judged students for technologies we did not yet understand — calculators, Wikipedia, Google, Stack Overflow. Each time the tool became normal; each time we eventually taught **how to use it well** instead of **whether to use it at all**.
-
-AI is this generation's moment. The invitation: **learn alongside your students**. Notice your own patterns. Curiosity models exactly what we ask of them.

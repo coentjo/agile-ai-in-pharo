@@ -36,11 +36,9 @@ book:
     - part: "AI & Learning"
       chapters:
         - ai.augmented.learning.intro.qmd
-        - ai.augmented.learning.habits.qmd
         - edu.learning.not.teaching.qmd
         - education.ai.ebike.qmd
         - ai.augmented.learning.notes-first.qmd
-        - ai.augmented.learning.colleague-session.qmd
         - ai.augmented.learning.engagement.qmd
         - ai.augmented.learning.coaching.qmd
         - ai.augmented.learning.reference.qmd
@@ -54,6 +52,7 @@ book:
       chapters:
         - coding.qmd
         - vibecoding.qmd
+        - karpathys-method.qmd
         - dspy.qmd
         - spec.driven.development.agent.qmd
         - softwareengineering.qmd

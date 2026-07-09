@@ -1,0 +1,7 @@
+---
+title: "Karpathy's method"
+---
+
+![karpathys-method](attach/karpathys-method.png)
+
+[youtube: Stop prompting Claude. Use Karpathys's Method instead](https://www.youtube.com/watch?v=7zZy1QTvokM)
