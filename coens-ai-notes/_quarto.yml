@@ -25,6 +25,7 @@ book:
         - context-management.qmd
         - sending-an-email.qmd
         - prompting.2026.qmd
+        - prompting.AIM.qmd
         - ai-quirks.qmd
         - ai-image-failures.qmd
         - creating-an-app-with-ai.qmd

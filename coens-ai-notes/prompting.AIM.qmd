@@ -1,0 +1,7 @@
+---
+title: "Prompting: A.I.M."
+---
+
+![AIM: Actor Input Mission](attach/ai.AIM.Actor.Input.Mission.png)
+
+[Sandeep Swadia: You’re Not Behind (Yet): How to Learn AI in 17 Minutes](https://www.youtube.com/watch?v=EWFFaKxsz_s)
