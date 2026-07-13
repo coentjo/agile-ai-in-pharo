@@ -2,19 +2,18 @@
 title: "Introduction"
 ---
 
-Welcome! This is a Work-in-Progress, a collection of notes on AI 
-used in session about about AI. 
-The next chapter explains how this pdf can be downloaded.
+Welcome! This is a Work-in-Progress, a collection of notes on AI. The next chapter explains how this pdf can be downloaded.
 
 Do not read this document from beginning to end... instead look at the relevant chapters for you... Or chat with it (see next chapter). 
 
 Questions about this all? [Ask here](https://deepwiki.com/coentjo/agile-ai-in-pharo)
 
-Advise: get hands-on as soon as possible! Change your activities by inventing ways to make them better, nicer or more efficiently. 
+AI is not magic. It's a skill.
+And skills are learned by doing.
 
-Keep privacy in mind: watch out when 
-using personal data! One way to make sure private data will stay
-private is using local AI's, although this takes some extra knowledge, and a powerful machine. 
+Advise: get hands-on as soon as possible! Change your activities by inventing ways to make them better, more fun, more engaging. Yes, some activities can be done more efficient, but make sure **you** are in the driver's seat... and think of how to usefully spend the time you won. 
+
+Keep privacy in mind: watch out when using personal data! One way to make sure private data will stay private is using local AI's, although this takes some extra knowledge, and a powerful machine. 
 
 Please use it wisely...
 

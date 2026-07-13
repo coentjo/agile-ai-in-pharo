@@ -12,7 +12,6 @@ book:
   chapters:
     - index.qmd
     - download.qmd
-    - chat-with-content.qmd
     - news.qmd
     - mythos.qmd
     - part: "AI Literacy"

@@ -1,6 +1,6 @@
 # Coen's personal toolchain: Lepiter, paper, and LLM
 
-Mainly for Coen's own reference. (Copied together... not human-readable ... yet)
+Mainly for Coen's own reference. (Copied together... not human-readable ... yet ... well, maybe)
 
 ## Lepiter: a living wiki
 
@@ -13,7 +13,6 @@ Lepiter is not a polished publishing tool. It is a **persistent, linkable worksh
 
 When meetings stack up or attention is thin, I reach for a **paper notebook** and **bullet points** — fast, low ceremony, no layout trap. 
 
-
 ## The combination principle
 
 No single medium wins every cognitive job. A practical rule:
@@ -24,26 +23,15 @@ No single medium wins every cognitive job. A practical rule:
 | **Capture under load** (back-to-back meetings, travel) | Paper bullets | Transcribe or summarize only after you have rough bullets |
 | **Polish or archive** (portfolio prose, colleague-facing write-up) | Your home base (Lepiter, repo notes, or docs) | Tighten wording, spot missing stakeholders — not replace your trail |
 
-The mistake to avoid is the same as in the [portfolio story](ai.augmented.learning.portfolio.qmd): letting the **polish tool** become the **capture tool**. Chat sessions disappear; Lepiter pages and notebook spreads do not — if you actually write in them first.
+## Process visibility, not "fancy IDE"
 
-## Demo for colleagues: process visibility, not "fancy IDE"
-
-If you see a GT demo in a colleague session, the useful frame is **process visibility** — making thinking and exploration inspectable — not "another IDE to learn." Lepiter shows *how* someone structures a problem over days: linked notes, live snippets, revisitable reasoning. That parallels what we want from AI-augmented learning: a trail you can explain, not only a deliverable that looks finished.
-
-Pair that with the recovery pattern from the portfolio story:
-
-- **Cursor** (or similar) — short-term **memory and to-do** (*"what actions are still open?"*) while you talk through material
-- **Lepiter** — **persistent notes** that outlive any single chat thread
-- **Paper** — **overload valve** when digital structure would slow you down
-
-Together they keep **you** in the driver's seat across timescales: this hour, this week, this qualification portfolio.
+**process visibility** — making thinking and exploration inspectable — not "another IDE to learn." Lepiter shows *how* someone structures a problem over days: linked notes, live snippets, revisitable reasoning. That parallels what we want from AI-augmented learning: a trail you can explain, not only a deliverable that looks finished.
 
 ## GT and The GT Book
 
 **learning in the same environment you think in**. 
 
-- [GToolkit Book](https://book.gtoolkit.com): also embedded in GToolkit itself. 
-
+- [GToolkit Book](https://book.gtoolkit.com): embedded in GToolkit itself. 
 
 ## Tips for colleagues 
 
