@@ -48,8 +48,9 @@ book:
     - part: "AI & democracy / journalism"
       chapters:
         - journalism.ai.qmd
-    - part: "AI & programming & Software Engineering"
+    - part: "AI & (learning) programming & Software Engineering"
       chapters:
+        - therapy.vibed.brain.qmd
         - coding.qmd
         - vibecoding.qmd
         - karpathys-method.qmd

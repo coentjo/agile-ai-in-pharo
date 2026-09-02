@@ -2,6 +2,8 @@
 
 ***I want to Learn ...(something) . How best to use (or not use) AI in the learning process?***
 
+***Specific for learning programming or even software engineering: see a next part in this document***
+
 
 For ICT professionals who already prompt, the practical question is narrower:
 
