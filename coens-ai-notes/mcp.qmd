@@ -2,16 +2,23 @@
 
 MCP is a standardization of the way to how LLM's connect to other tools. 
 
+Teacher r-huijts dove into it, created useful stuff: 
+
+- [github.com/r-huijts](https://github.com/r-huijts)
+
+
+and there's more: 
+
+- [short course: mcp-build-rich-context-ai-apps-with-anthropic](https://www.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic)
+- [short course: build-ai-apps-with-mcp-server-working-with-box-files](https://www.deeplearning.ai/courses/build-ai-apps-with-mcp-server-working-with-box-files)
 - [MCP Quickstart](https://modelcontextprotocol.info/docs/quickstart/quickstart/)
 - [modelcontextprotocol.info/](https://modelcontextprotocol.info/)
 - [Example Clients](https://modelcontextprotocol.io/clients)
 - [mcpservers.org](https://mcpservers.org/)
-- [github.com/r-huijts](https://github.com/r-huijts)
 - [Servers](https://github.com/modelcontextprotocol/servers)
 - [Greg Isenberg/Ras Mic explaining MCP](https://www.youtube.com/watch?v=7j_NE6Pjv-E)
 - [short course MCP at deeplearning.ai](https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic)
 - [Ruud mijn-nieuwe-mcp-server-laat-ai-zichzelf-actief tegenspreken](https://www.linkedin.com/posts/rhuijts_mijn-nieuwe-mcp-server-laat-ai-zichzelf-actief-activity-7336375412236644352-VhSr)
-
 - [mcp for whatsapp](https://github.com/lharries/whatsapp-mcp)
 
 
