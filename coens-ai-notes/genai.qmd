@@ -5,11 +5,15 @@
 - Why not ask [perplexity.ai](https://www.perplexity.ai/) ?
 - Or [duck.ai](https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1)?
 
+{{< pagebreak >}}
+
 ## GPT - Generative Pre-Trained Transformer
 
 - [Generative AI & the Transformer (Financial Times, interactive site)](https://ig.ft.com/generative-ai/)
 - [History of ChatGPT (30 min)](https://www.youtube.com/watch?v=OFS90-FX6pg)
 - [But what is a GPT? (3Blue1Brown, 30 min)](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+![3Blue1Brown: But what is a GPT?](attach/yt.3b1b.what-is-a-gpt.jpg){height=7cm}
 
 ## Prompting
 
