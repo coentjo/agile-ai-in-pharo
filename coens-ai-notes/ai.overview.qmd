@@ -1,8 +1,6 @@
 ---
-title: "AI Overview"
+title: "AI Overview: AI, Machine Learning, Deep Learning, Generative AI"
 ---
-
-## AI, Machine Learning, Deep Learning, Generative AI
 
 The video "AI, Machine Learning, Deep Learning and Generative AI Explained" provides an excellent 10-minute overview:
 

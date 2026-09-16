@@ -17,7 +17,9 @@ book:
     - part: "AI Literacy"
       chapters:
         - ai-literacy.qmd
+        - privacy.steal.data.qmd
         - key-tools.qmd
+        - ai-unplugged.qmd
         - jargon-buster.qmd
         - transcribing.qmd
         - summarizing.qmd

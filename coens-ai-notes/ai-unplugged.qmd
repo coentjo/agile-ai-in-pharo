@@ -1,0 +1,7 @@
+---
+title: "LLMs unplugged"
+---
+
+Learn how it works:
+
+- [LLM's unplugged](https://www.llmsunplugged.org/)
