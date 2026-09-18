@@ -1,4 +1,6 @@
-# Hot or Not
+---
+title: "~Hot or not"
+---
 
 
 New, seems interesting or important, maybe I looked at it already, maybe not... 

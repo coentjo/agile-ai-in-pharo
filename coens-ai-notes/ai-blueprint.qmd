@@ -1,0 +1,6 @@
+---
+title: "AI BluePrint"
+---
+
+[https://github.com/aiblueprinthq/ai-blueprint](https://github.com/aiblueprinthq/ai-blueprint)
+

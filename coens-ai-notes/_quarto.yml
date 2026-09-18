@@ -13,6 +13,10 @@ book:
     - index.qmd
     - download.qmd
     - news.qmd
+    - the-risen-framework.qmd
+    - ai-blueprint.qmd
+    - ponytail.qmd
+    - superpowers.qmd
     - mythos.qmd
     - part: "AI Literacy"
       chapters:

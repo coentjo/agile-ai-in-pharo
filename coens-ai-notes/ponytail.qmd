@@ -1,0 +1,9 @@
+---
+title: "Ponytail"
+---
+
+
+
+[github.com/DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+
+![ponytail github](attach/github.ponytail.png){fig-alt="ponytail github" width="500px"}
