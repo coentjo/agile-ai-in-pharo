@@ -10,14 +10,34 @@ book:
   date: last-modified
   cover-image: attach/download-qr-code.png
   chapters:
-    - index.qmd
-    - download.qmd
-    - news.qmd
-    - the-risen-framework.qmd
-    - ai-blueprint.qmd
-    - ponytail.qmd
-    - superpowers.qmd
-    - mythos.qmd
+    - part: "Onboarding"
+      chapters:
+        - index.qmd
+        - download.qmd
+    - part: "Unsorted: Hot or Not?"
+      chapters:
+        - news.qmd
+        - the-risen-framework.qmd
+        - ai-blueprint.qmd
+        - ponytail.qmd
+        - superpowers.qmd
+        - mythos.qmd
+    - part: "AI Field Overview"
+      chapters:
+        - ai.braindump.qmd
+        - ai.overview.qmd
+        - prediction.amy.web.qmd
+        - godfather-hinton.qmd
+        - how-llms-generate-text.qmd
+        - genai.qmd
+        - references.genai.qmd
+        - nocodelowcode.qmd
+        - references.ai.act.qmd
+        - privacy.qmd
+        - finding-data.qmd
+        - guardrailing.qmd
+        - transformers.qmd
+        - multimodal.qmd
     - part: "AI Literacy"
       chapters:
         - ai-literacy.qmd
@@ -65,22 +85,6 @@ book:
         - softwareengineering.qmd
         - generative-ui.qmd
         - jobs.ai.qmd
-    - part: "AI Field Overview"
-      chapters:
-        - ai.braindump.qmd
-        - ai.overview.qmd
-        - prediction.amy.web.qmd
-        - godfather-hinton.qmd
-        - how-llms-generate-text.qmd
-        - genai.qmd
-        - references.genai.qmd
-        - nocodelowcode.qmd
-        - references.ai.act.qmd
-        - privacy.qmd
-        - finding-data.qmd
-        - guardrailing.qmd
-        - transformers.qmd
-        - multimodal.qmd
     - part: "AI Cookbook"
       chapters:
         - transcribing.qmd

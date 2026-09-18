@@ -1,5 +1,5 @@
 ---
-title: "~Hot or not"
+title: "Hot or not"
 ---
 
 
