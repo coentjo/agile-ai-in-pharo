@@ -1,0 +1,5 @@
+---
+title: "OpenAI agents hack HuggingFace"
+---
+
+[redwoodresearch: hugging-face-incident core-takeaways-about-this-incident](https://www.redwoodresearch.org/research/hugging-face-incident#core-takeaways-about-this-incident)

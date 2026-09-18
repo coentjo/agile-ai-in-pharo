@@ -17,6 +17,7 @@ book:
     - part: "Unsorted: Hot or Not?"
       chapters:
         - news.qmd
+        - 2026.openai.hugging-face.hack.qmd
         - the-risen-framework.qmd
         - ai-blueprint.qmd
         - ponytail.qmd

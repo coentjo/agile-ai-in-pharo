@@ -5,7 +5,11 @@ title: "Hot or not"
 
 New, seems interesting or important, maybe I looked at it already, maybe not... 
 
-***July 2026***
+***2026 Sep***
+
+- [NOS: kritiek-op-ai-bedrijven-die-oproepen-tot-vertraging](https://nos.nl/artikel/2631270-kritiek-op-ai-bedrijven-die-oproepen-tot-vertraging-vanwege-gevaar-doe-het-dan)
+
+***2026 Jul***
 
 - [dutchitchannel: leanstral-1.5-bewijst-dat-ai-verborgen-codeerfouten-feilloos-opspoort](https://www.dutchitchannel.nl/news/755013/leanstral-1.5-bewijst-dat-ai-verborgen-codeerfouten-feilloos-opspoort)
 
