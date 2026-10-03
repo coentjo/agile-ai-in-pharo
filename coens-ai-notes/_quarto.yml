@@ -34,12 +34,11 @@ book:
         - references.genai.qmd
         - nocodelowcode.qmd
         - references.ai.act.qmd
-        - privacy.qmd
         - finding-data.qmd
         - guardrailing.qmd
         - transformers.qmd
         - multimodal.qmd
-    - part: "AI Literacy"
+    - part: "AI Literacy (mostly GenAI)"
       chapters:
         - ai-literacy.qmd
         - privacy.steal.data.qmd
@@ -58,8 +57,13 @@ book:
         - my-17-minute-AI-workflow.qmd
         - ai-energy.qmd
         - markdown.qmd
-        - aitiquette.brabantkennis.qmd
         - languages.qmd
+    - part: "AI & Law, privacy, leaks, common sense"
+      chapters:
+        - privacy.qmd
+        - privacy.steal.data.qmd
+        - data-exposing.qmd
+        - aitiquette.brabantkennis.qmd
     - part: "AI & Learning"
       chapters:
         - ai.augmented.learning.intro.qmd

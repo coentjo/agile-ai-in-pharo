@@ -1,0 +1,5 @@
+---
+title: "AI is exposing your data"
+---
+
+[IBM: AI Is Exposing Your Data: An AI Security Problem You Can't See](https://www.youtube.com/watch?v=kyJ1vd7yEPc)
