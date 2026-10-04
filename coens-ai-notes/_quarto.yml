@@ -128,6 +128,7 @@ book:
         - mcp.qmd
         - experiments/MCP-hands-on.qmd
         - acp.qmd
+        - herdr.qmd
         - feedback.qmd
     - part: "Experiments"
       chapters:
