@@ -4,3 +4,6 @@ title: "herdr"
 
 [Academind: herdr is a must use (10m)](https://www.youtube.com/watch?v=2CR9tDNAzB0)
 
+[Dave Ebbelaar: How to set up... (30m)](https://www.youtube.com/watch?v=Shqtk_2Jd3c)
+
+[C. Lempa: A Better way to run terminal agents (22m)](https://www.youtube.com/watch?v=RB9k-S4DfPI)

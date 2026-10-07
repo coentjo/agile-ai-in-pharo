@@ -125,7 +125,9 @@ book:
         - n8n.qmd
         - git-intro.qmd
         - agents.qmd
+        - glaido.qmd
         - mcp.qmd
+        - dsh.qmd
         - experiments/MCP-hands-on.qmd
         - acp.qmd
         - herdr.qmd

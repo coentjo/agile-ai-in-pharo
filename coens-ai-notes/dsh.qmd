@@ -1,0 +1,6 @@
+---
+title: "dsh: Deepseek Harness"
+---
+
+Want Search with that?
+[github.com/liustack/modsearch](https://github.com/liustack/modsearch)

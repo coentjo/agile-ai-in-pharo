@@ -1,0 +1,10 @@
+---
+title: "glaido"
+---
+
+The voice layer for every app. 
+
+Uses local storage only, Nothing is saved to our database (so looks like it is still online!)
+
+[https://glaido.com/](https://glaido.com/)
+
