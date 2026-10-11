@@ -121,6 +121,7 @@ book:
         - my-free-ai.qmd
         - tools-n-co.md
         - codebook.qmd
+        - function-calling.qmd
         - thunderbolt.mozilla.qmd
         - n8n.qmd
         - git-intro.qmd

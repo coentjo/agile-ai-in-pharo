@@ -1,0 +1,10 @@
+---
+title: "Function-calling"
+---
+
+A bridge between the 'non-strict' way that an LLM does things and the strict way that program code works: An LLM is train and instructed to recognize when and how to call a function/tool and 'create the call'. 
+
+[deeplearning.ai short course: function-calling-and-data-extraction-with-llms](https://learn.deeplearning.ai/courses/function-calling-and-data-extraction-with-llms)
+
+![idea function-calling](function-calling.png)
+
