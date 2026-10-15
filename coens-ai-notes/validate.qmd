@@ -1,5 +1,15 @@
-# Validate
+# Evaluation / Validation
 
+***Evaluate*** means assess *how good*, *effective*, or *suitable* something is.
+
+***Validate*** means check that something is correct or meets defined requirements.
+
+For example, with an AI model:
+
+- Evaluate: How accurate or helpful is it across a set of tasks?
+- Validate: Does it meet the agreed launch criteria, such as a minimum accuracy or safety threshold?
+
+They overlap: validation often uses evaluation results. The distinction is usually the purpose—evaluation helps you understand performance; validation checks whether it satisfies a specific requirement.
 
 - [short course deeplearning.ai automated-testing-llmops](https://learn.deeplearning.ai/courses/automated-testing-llmops)
 - [James Bach - Seriously Testing LLMs](https://www.satisfice.com/blog/archives/487957)

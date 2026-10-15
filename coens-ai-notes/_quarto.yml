@@ -64,7 +64,7 @@ book:
         - privacy.steal.data.qmd
         - data-exposing.qmd
         - aitiquette.brabantkennis.qmd
-    - part: "AI & Learning"
+    - part: "Learning (with/without AI)"
       chapters:
         - ai.augmented.learning.intro.qmd
         - edu.learning.not.teaching.qmd
