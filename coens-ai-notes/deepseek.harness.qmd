@@ -1,0 +1,20 @@
+---
+title: "Deepseek Harness - dsh"
+---
+
+***Everything is a plug in***. 
+
+- What is a Harness?
+- Creater Mode
+- Cordis and Koishi
+- Smalltalk: Everything is an Object
+- Unix: Everything is a File
+- Architecture 
+
+
+- [youtube Deepseek just open-sourced Harness and it will blow your mind](https://www.youtube.com/watch?v=jtyV7O4Pt0s)
+- [Julian Goldie: Deepseek Harness vs Hermes](https://www.youtube.com/watch?v=VjNHV3PKXhQ)
+
+Want Search with that?
+[github.com/liustack/modsearch](https://github.com/liustack/modsearch)
+

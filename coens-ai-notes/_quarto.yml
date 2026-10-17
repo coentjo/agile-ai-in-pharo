@@ -76,6 +76,7 @@ book:
         - ai.augmented.learning.toolchain.qmd
         - education.ai.news.qmd
         - education.ai.tools.qmd
+        - aivoordocenten.qmd
     - part: "AI & democracy / journalism"
       chapters:
         - journalism.ai.qmd
@@ -127,8 +128,8 @@ book:
         - git-intro.qmd
         - agents.qmd
         - glaido.qmd
+        - deepseek.harness.qmd
         - mcp.qmd
-        - dsh.qmd
         - experiments/MCP-hands-on.qmd
         - acp.qmd
         - herdr.qmd
