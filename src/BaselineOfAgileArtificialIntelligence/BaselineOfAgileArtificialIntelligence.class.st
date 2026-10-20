@@ -1,10 +1,11 @@
 Class {
-	#name : #BaselineOfAgileArtificialIntelligence,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfAgileArtificialIntelligence
+	#name : 'BaselineOfAgileArtificialIntelligence',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfAgileArtificialIntelligence',
+	#package : 'BaselineOfAgileArtificialIntelligence'
 }
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfAgileArtificialIntelligence class >> loadLepiter [
 	| currentProperties |
 	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
@@ -20,7 +21,7 @@ BaselineOfAgileArtificialIntelligence class >> loadLepiter [
 
 ]
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfAgileArtificialIntelligence >> baseline: spec [
 	<baseline>
 	spec
@@ -47,14 +48,14 @@ spec for: #GToolkit do: [
 		spec package: 'NeuralNetwork-GToolkit' with: [ spec requires: #(NeuralNetwork) ] ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfAgileArtificialIntelligence >> customProjectAttributes [
 	^ self isGTImage
 			ifFalse: [ #(notGToolkit) ]
 			ifTrue: [ #(GToolkit) ]
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfAgileArtificialIntelligence >> isGTImage [
-^ RPackageOrganizer default packageNames anySatisfy: [ :pn | pn beginsWith: 'GToolkit-']
+^ PackageOrganizer default packageNames anySatisfy: [ :pn | pn beginsWith: 'GToolkit-']
 ]

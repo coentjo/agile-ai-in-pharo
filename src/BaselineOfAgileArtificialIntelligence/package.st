@@ -1,1 +1,1 @@
-Package { #name : #BaselineOfAgileArtificialIntelligence }
+Package { #name : 'BaselineOfAgileArtificialIntelligence' }
