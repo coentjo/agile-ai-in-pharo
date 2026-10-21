@@ -1,0 +1,5 @@
+# Open Euro LLM
+
+A series of foundation models for transparent AI in Europe: 
+
+[Open Euro llm - eu](https://openeurollm.eu/)

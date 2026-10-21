@@ -1,0 +1,5 @@
+# NeurIPS 2026
+
+Who wrote the accepted papers, and who works on what? 
+
+[juevn.github.io/neurips2026](https://juevn.github.io/neurips2026/)

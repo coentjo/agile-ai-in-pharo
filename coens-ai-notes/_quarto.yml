@@ -23,6 +23,7 @@ book:
         - ponytail.qmd
         - superpowers.qmd
         - mythos.qmd
+        - NeurIPS2026.qmd
     - part: "AI Field Overview"
       chapters:
         - ai.braindump.qmd
@@ -64,6 +65,7 @@ book:
         - privacy.steal.data.qmd
         - data-exposing.qmd
         - aitiquette.brabantkennis.qmd
+        - openeurollm.qmd
     - part: "Learning (with/without AI)"
       chapters:
         - ai.augmented.learning.intro.qmd
