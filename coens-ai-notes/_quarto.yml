@@ -69,6 +69,7 @@ book:
     - part: "Learning (with/without AI)"
       chapters:
         - ai.augmented.learning.intro.qmd
+        - aivoorleerlingen.qmd
         - edu.learning.not.teaching.qmd
         - education.ai.ebike.qmd
         - ai.augmented.learning.notes-first.qmd
