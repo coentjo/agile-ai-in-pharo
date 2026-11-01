@@ -80,9 +80,10 @@ book:
         - education.ai.news.qmd
         - education.ai.tools.qmd
         - aivoordocenten.qmd
-    - part: "AI & democracy / journalism"
+    - part: "AI & democracy / journalism / dangers"
       chapters:
         - journalism.ai.qmd
+        - leave-humanity-behind.qmd
     - part: "AI & (learning) programming & Software Engineering"
       chapters:
         - therapy.vibed.brain.qmd
