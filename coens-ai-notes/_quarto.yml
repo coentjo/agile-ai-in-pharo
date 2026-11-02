@@ -84,6 +84,7 @@ book:
       chapters:
         - journalism.ai.qmd
         - leave-humanity-behind.qmd
+        - hugging-face-hack-post-mortem.qmd
     - part: "AI & (learning) programming & Software Engineering"
       chapters:
         - therapy.vibed.brain.qmd

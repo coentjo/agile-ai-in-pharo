@@ -1,0 +1,4 @@
+# Post mortem for Huggingface hack
+
+[redwood research](https://www.redwoodresearch.org/research/hugging-face-incident)
+
