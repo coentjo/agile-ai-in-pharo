@@ -14,3 +14,4 @@ Short course at deeplearning.ai:
 ![Project evolution](attach/sdd.project.evolution.png)
 
 
+But if you really want to dive in ask your AI-coding-tool to do ***Spec Driven Development***.

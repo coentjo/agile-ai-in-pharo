@@ -87,6 +87,7 @@ book:
         - hugging-face-hack-post-mortem.qmd
     - part: "AI & (learning) programming & Software Engineering"
       chapters:
+        - it-jobs.qmd
         - therapy.vibed.brain.qmd
         - coding.qmd
         - vibecoding.qmd
